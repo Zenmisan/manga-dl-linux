@@ -1,0 +1,65 @@
+{
+    "chapter": {
+        "count": 8550,
+        "error": "",
+        "id": "after-becoming-a-solo-player-my-unlimited-skills-made-me-invincible/chapter-1-solo-player-an-unconventional-talent-i-just-rub",
+        "ok": true,
+        "title": "<h3>Chapter 1: Solo Player, an Unconventional Talent, I Just Rub</h3><br><br><p>"
+    },
+    "detail": {
+        "count": 208,
+        "error": "",
+        "id": "after-becoming-a-solo-player-my-unlimited-skills-made-me-invincible",
+        "ok": true,
+        "title": "After Becoming a Solo Player, My Unlimited Skills Made Me Invincible"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://readnovelfull.com/novel-list/search?keyword=solo",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Freadnovelfull.com%2Fnovel-list%2Fsearch%3Fkeyword%3Dsolo",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://readnovelfull.com/after-becoming-a-solo-player-my-unlimited-skills-made-me-invincible.html",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Freadnovelfull.com%2Fafter-becoming-a-solo-player-my-unlimited-skills-made-me-invincible.html",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://readnovelfull.com/ajax/chapter-archive?novelId=2041",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Freadnovelfull.com%2Fajax%2Fchapter-archive%3FnovelId%3D2041",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0004.dat",
+            "finalUrl": "https://readnovelfull.com/after-becoming-a-solo-player-my-unlimited-skills-made-me-invincible/chapter-1-solo-player-an-unconventional-talent-i-just-rub.html",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Freadnovelfull.com%2Fafter-becoming-a-solo-player-my-unlimited-skills-made-me-invincible%2Fchapter-1-solo-player-an-unconventional-talent-i-just-rub.html",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "readnovelfull",
+    "novel": true,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:30:39Z",
+    "search": {
+        "count": 1,
+        "error": "",
+        "id": "after-becoming-a-solo-player-my-unlimited-skills-made-me-invincible",
+        "ok": true,
+        "title": "After Becoming a Solo Player, My Unlimited Skills Made Me Invincible"
+    }
+}

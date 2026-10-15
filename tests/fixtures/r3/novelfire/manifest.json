@@ -1,0 +1,65 @@
+{
+    "chapter": {
+        "count": 12838,
+        "error": "",
+        "id": "solo-cultivating-in-superhero-academy/chapter-1",
+        "ok": true,
+        "title": "<h4>Chapter 1 - Past life memories</h4><p>A sharp inhale. Hiiiih. </p><p>A slow"
+    },
+    "detail": {
+        "count": 174,
+        "error": "",
+        "id": "solo-cultivating-in-superhero-academy",
+        "ok": true,
+        "title": "Solo Cultivating in Superhero Academy"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://novelfire.net/search/?keyword=solo&page=1",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelfire.net%2Fsearch%2F%3Fkeyword%3Dsolo%26page%3D1",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://novelfire.net/book/solo-cultivating-in-superhero-academy",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelfire.net%2Fbook%2Fsolo-cultivating-in-superhero-academy",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://novelfire.net/ajax/listChapterDataAjax?draw=1&columns%5B0%5D%5Bdata%5D=n_sort&columns%5B0%5D%5Bname%5D=cmm_posts_detail.n_sort&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=-1&search%5Bvalue%5D=&search%5Bregex%5D=false&post_id=13007&only_bookmark=false",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelfire.net%2Fajax%2FlistChapterDataAjax%3Fdraw%3D1%26columns%255B0%255D%255Bdata%255D%3Dn_sort%26columns%255B0%255D%255Bname%255D%3Dcmm_posts_detail.n_sort%26columns%255B0%255D%255Bsearchable%255D%3Dtrue%26columns%255B0%255D%255Borderable%255D%3Dtrue%26columns%255B0%255D%255Bsearch%255D%255Bvalue%255D%3D%26columns%255B0%255D%255Bsearch%255D%255Bregex%255D%3Dfalse%26order%255B0%255D%255Bcolumn%255D%3D0%26order%255B0%255D%255Bdir%255D%3Dasc%26start%3D0%26length%3D-1%26search%255Bvalue%255D%3D%26search%255Bregex%255D%3Dfalse%26post_id%3D13007%26only_bookmark%3Dfalse",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0004.dat",
+            "finalUrl": "https://novelfire.net/book/solo-cultivating-in-superhero-academy/chapter-1",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelfire.net%2Fbook%2Fsolo-cultivating-in-superhero-academy%2Fchapter-1",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "novelfire",
+    "novel": true,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:29:15Z",
+    "search": {
+        "count": 29,
+        "error": "",
+        "id": "solo-cultivating-in-superhero-academy",
+        "ok": true,
+        "title": "Solo Cultivating in Superhero Academy"
+    }
+}

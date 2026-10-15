@@ -1,0 +1,65 @@
+{
+    "chapter": {
+        "count": 10851,
+        "error": "",
+        "id": "mtl-solo-not-solo/chapter-1-company-commander-you-are-hard",
+        "ok": true,
+        "title": "<div class=\"my-4\"></div><div> <div></div> On the polished glass coffee table,"
+    },
+    "detail": {
+        "count": 98,
+        "error": "",
+        "id": "mtl-solo-not-solo",
+        "ok": true,
+        "title": "MTL-solo not solo"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://api.novelbuddy.me/titles/search?page=1&limit=20&q=solo",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fapi.novelbuddy.me%2Ftitles%2Fsearch%3Fpage%3D1%26limit%3D20%26q%3Dsolo",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://novelbuddy.me/mtl-solo-not-solo",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelbuddy.me%2Fmtl-solo-not-solo",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://api.novelbuddy.me/titles/g8j49rzD/chapters?page=1&limit=500",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fapi.novelbuddy.me%2Ftitles%2Fg8j49rzD%2Fchapters%3Fpage%3D1%26limit%3D500",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0004.dat",
+            "finalUrl": "https://novelbuddy.me/mtl-solo-not-solo/chapter-1-company-commander-you-are-hard",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelbuddy.me%2Fmtl-solo-not-solo%2Fchapter-1-company-commander-you-are-hard",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "novelbuddy",
+    "novel": true,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:29:12Z",
+    "search": {
+        "count": 20,
+        "error": "",
+        "id": "mtl-solo-not-solo",
+        "ok": true,
+        "title": "MTL-solo not solo"
+    }
+}

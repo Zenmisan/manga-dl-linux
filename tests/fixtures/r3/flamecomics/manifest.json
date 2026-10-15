@@ -1,0 +1,56 @@
+{
+    "chapter": {
+        "count": 15,
+        "error": "",
+        "id": "44/3b9e01d83b7197d4",
+        "ok": true,
+        "title": "https://cdn.flamecomics.xyz/uploads/images/series/44/3b9e01d83b7197d4/SN-223-00.jpg"
+    },
+    "detail": {
+        "count": 224,
+        "error": "",
+        "id": "44",
+        "ok": true,
+        "title": "Solo Necromancy"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://flamecomics.xyz/api/series",
+            "method": "GET",
+            "request": "/manga/proxy/json?url=https%3A%2F%2Fflamecomics.xyz%2Fapi%2Fseries",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://flamecomics.xyz/series/44",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fflamecomics.xyz%2Fseries%2F44",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://flamecomics.xyz/series/44/3b9e01d83b7197d4",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fflamecomics.xyz%2Fseries%2F44%2F3b9e01d83b7197d4",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "flamecomics",
+    "novel": false,
+    "query": "solo",
+    "recordedAt": "2026-10-14T15:43:57Z",
+    "search": {
+        "count": 3,
+        "error": "",
+        "id": "44",
+        "ok": true,
+        "title": "Solo Necromancy"
+    }
+}

@@ -1,0 +1,195 @@
+<script>document.cookie = "browser_check=v1:1791984770.337f3a2dc82e50769af6759e55a553cc4246996df64c6637b6c46b1472746d30; path=/; max-age=86400";</script><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="referrer" content="no-referrer">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<title>Just a moment...</title>
+	<link rel="shortcut icon" href="/templates/Dark/images/favicon.ico">
+	<style>
+	html,body,div,span,p,a,img,strong,form,button{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+	body,html{height:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+	body,button{font:normal 14px/1.5 "GothaPro",Arial,Helvetica,sans-serif;letter-spacing:.012em;color:#ccc}
+	body{background:#1a1a1a}
+	button{outline:none}
+	.vb-custom-page{display:table;position:absolute;left:0;top:0;width:100%;height:100%;background:#1a1a1a}
+	.vb-custom-wrap{display:table-cell;vertical-align:middle;text-align:center;padding:20px}
+	.vb-custom-card{max-width:600px;margin:0 auto;padding:5px;border-radius:15px;background:#171717}
+	.vb-custom-alert{margin:0 auto 18px;color:#ff6464}
+	.vb-custom-content{max-width:430px;margin:25px auto;font-size:18px;text-align:center}
+	.vb-custom-captcha-shell{max-width:430px;margin:0 auto;color:#f1f1f1}
+	.vb-custom-captcha-target{display:flex;justify-content:center;margin:2px auto 18px}
+	.vb-custom-captcha-target-canvas{display:block;width:90px;height:90px}
+	.vb-custom-captcha-instruction{margin:0 0 18px;font-size:18px;line-height:1.35;color:#fff;text-wrap:balance}
+	.vb-custom-captcha-attempts{margin:-8px 0 16px;font-size:14px;line-height:1.3;color:#9aa}
+	.vb-custom-captcha-options{position:relative;display:grid;grid-template-columns:repeat(3,90px);width:306px;margin:0 auto;gap:18px}
+	.vb-custom-captcha-grid-line{position:absolute;z-index:0;pointer-events:none;background:rgba(255,255,255,.16);border-radius:999px}
+	.vb-custom-captcha-grid-line-v1,.vb-custom-captcha-grid-line-v2{top:-8px;width:1px;height:214px}
+	.vb-custom-captcha-grid-line-v1{left:99px}
+	.vb-custom-captcha-grid-line-v2{left:207px}
+	.vb-custom-captcha-grid-line-h{left:-14px;top:99px;width:334px;height:1px}
+	.vb-custom-captcha-option{position:relative;z-index:1;width:90px;height:90px;padding:0;border:0;background:transparent;box-shadow:none;cursor:pointer;transition-property:transform,opacity;transition-duration:150ms;transition-timing-function:ease-out}
+	.vb-custom-captcha-option:hover,.vb-custom-captcha-option:focus{outline:none;transform:translateY(-1px);opacity:.9}
+	.vb-custom-captcha-option:active{transform:scale(.96)}
+	.vb-custom-captcha-option img{display:block;width:90px;height:90px}
+	.vb-custom-fallback-slot{margin-top:10px;min-height:24px;visibility:hidden}
+	.vb-custom-fallback{display:inline;color:#4e8cda;text-decoration:underline;background:transparent;border:0;padding:0;font-size:13px;font-weight:400;line-height:1.2}
+	.vb-custom-footer{display:table-row}
+	.vb-custom-copyright{display:table-cell;height:1%;padding:20px;line-height:20px;text-align:center;font-size:.8em;background:#181818;color:#999}
+	@media (max-width:420px){.vb-custom-wrap{padding:12px}.vb-custom-card{max-width:340px}.vb-custom-content{max-width:310px}.vb-custom-captcha-shell{max-width:310px}.vb-custom-captcha-instruction{font-size:16px}.vb-custom-captcha-options{grid-template-columns:repeat(3,82px);width:270px;gap:12px}.vb-custom-captcha-grid-line-v1,.vb-custom-captcha-grid-line-v2{top:-7px;height:190px}.vb-custom-captcha-grid-line-v1{left:88px}.vb-custom-captcha-grid-line-v2{left:182px}.vb-custom-captcha-grid-line-h{left:-12px;top:88px;width:294px}.vb-custom-captcha-option{width:82px;height:82px}.vb-custom-captcha-option img{width:82px;height:82px}}
+	</style>
+</head>
+<body>
+	<div class="vb-custom-page">
+		<div class="vb-custom-wrap">
+			<div class="vb-custom-card">
+								<form method="post">
+					<div class="vb-custom-content" id="content">
+						<input type="hidden" name="fp" id="vb-fp" value="">
+						<input type="hidden" name="vb_challenge" value="Y3VzdG9tX2NhcHRjaGF8MXwxMDUuMTEyLjE4My4xMTN8MTc5MTk4NDc3MHx1YW18JTJGY2hhcHRlcnMlMkYxMjA3MDk2JTJGfGEzZmIwYzJmY2E5M2ZjYWU0N2YyYjk3ODJhOGQwMzU2.472b3b8626effd59d54f34860993068add4fc9c691c68713fe08f214f47d1d76">
+						<input type="hidden" name="vb_custom_captcha_id" value="774963540b07b8beb166bb8d8dc96dcb">
+						<div id="vb-captcha-shell" class="vb-custom-captcha-shell">
+							<div class="vb-custom-captcha-target">
+								<canvas id="vb-custom-captcha-target" class="vb-custom-captcha-target-canvas" width="90" height="90" role="img" aria-label="Reference image to match" data-payload="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" data-key="c34488251724bf7b" data-mime="image/jpeg"></canvas>
+							</div>
+							<p id="vb-custom-captcha-instruction" class="vb-custom-captcha-instruction">If you are human, click on the similar image</p>
+															<p class="vb-custom-captcha-attempts">You have 3 attempts left</p>
+														<div class="vb-custom-captcha-options" role="group" aria-labelledby="vb-custom-captcha-instruction">
+																	<button class="vb-custom-captcha-option" type="submit" name="vb_custom_captcha_answer" value="1c424166b88b14ce3c534da7" aria-label="Option 1: similar image candidate">
+										<img src="/visit.blocker/assets/img/custom-captcha/4.jpg?v=1785522692" alt="" width="90" height="90">
+									</button>
+																	<button class="vb-custom-captcha-option" type="submit" name="vb_custom_captcha_answer" value="0a5ba6d12991fdb376a716aa" aria-label="Option 2: similar image candidate">
+										<img src="/visit.blocker/assets/img/custom-captcha/5.jpg?v=1785522692" alt="" width="90" height="90">
+									</button>
+																	<button class="vb-custom-captcha-option" type="submit" name="vb_custom_captcha_answer" value="39b1000dd651e6b197c626c3" aria-label="Option 3: similar image candidate">
+										<img src="/visit.blocker/assets/img/custom-captcha/2.jpg?v=1785522692" alt="" width="90" height="90">
+									</button>
+																	<button class="vb-custom-captcha-option" type="submit" name="vb_custom_captcha_answer" value="b8a9637fbafb313efdd3dfd4" aria-label="Option 4: similar image candidate">
+										<img src="/visit.blocker/assets/img/custom-captcha/6.jpg?v=1785522692" alt="" width="90" height="90">
+									</button>
+																	<button class="vb-custom-captcha-option" type="submit" name="vb_custom_captcha_answer" value="7f17d84eb324e87040452eff" aria-label="Option 5: similar image candidate">
+										<img src="/visit.blocker/assets/img/custom-captcha/3.jpg?v=1785522692" alt="" width="90" height="90">
+									</button>
+																	<button class="vb-custom-captcha-option" type="submit" name="vb_custom_captcha_answer" value="f38fd2962e9d73c6f1fd677e" aria-label="Option 6: similar image candidate">
+										<img src="/visit.blocker/assets/img/custom-captcha/1.jpg?v=1785522692" alt="" width="90" height="90">
+									</button>
+																<span class="vb-custom-captcha-grid-line vb-custom-captcha-grid-line-v1" aria-hidden="true"></span>
+								<span class="vb-custom-captcha-grid-line vb-custom-captcha-grid-line-v2" aria-hidden="true"></span>
+								<span class="vb-custom-captcha-grid-line vb-custom-captcha-grid-line-h" aria-hidden="true"></span>
+							</div>
+						</div>
+											</div>
+				</form>
+			</div>
+		</div>
+		<div class="vb-custom-footer">
+			<p class="vb-custom-copyright"><strong>Ranobes</strong> online</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+	(function() {
+		function vbCustomCaptchaDecodeTarget() {
+			const canvas = document.getElementById('vb-custom-captcha-target');
+			const objectUrlApi = window.URL || window.webkitURL;
+			if (!canvas || !window.atob || !window.Blob || !objectUrlApi) {
+				return;
+			}
+
+			const payload = canvas.getAttribute('data-payload') || '';
+			const key = canvas.getAttribute('data-key') || '';
+			if (payload === '' || key === '') {
+				return;
+			}
+
+			let binary = '';
+			try {
+				binary = window.atob(payload);
+			} catch (e) {
+				return;
+			}
+
+			const bytes = new Uint8Array(binary.length);
+			for (let i = 0; i < binary.length; i++) {
+				bytes[i] = binary.charCodeAt(i) ^ key.charCodeAt(i % key.length);
+			}
+
+			const blob = new Blob([bytes], {type: canvas.getAttribute('data-mime') || 'image/jpeg'});
+			const url = objectUrlApi.createObjectURL(blob);
+			const image = new Image();
+
+			image.onload = function() {
+				const context = canvas.getContext('2d');
+				if (!context) {
+					objectUrlApi.revokeObjectURL(url);
+					return;
+				}
+
+				// Сервер уже отдал готовый кадр 90x90 со всей порчей
+				// (vb_custom_captcha_render_target): рисуем его как есть.
+				context.clearRect(0, 0, canvas.width, canvas.height);
+				context.drawImage(image, 0, 0, canvas.width, canvas.height);
+				canvas.removeAttribute('data-payload');
+				canvas.removeAttribute('data-key');
+				objectUrlApi.revokeObjectURL(url);
+			};
+
+			image.onerror = function() {
+				objectUrlApi.revokeObjectURL(url);
+			};
+
+			image.src = url;
+		}
+
+		vbCustomCaptchaDecodeTarget();
+
+		const input = document.getElementById('vb-fp');
+		if (!input || !window.crypto || !window.crypto.subtle || !window.TextEncoder) {
+			return;
+		}
+
+		const canvasFingerprint = function() {
+			try {
+				const canvas = document.createElement('canvas');
+				canvas.width = 220;
+				canvas.height = 40;
+				const context = canvas.getContext('2d');
+				if (!context) {
+					return '';
+				}
+
+				context.textBaseline = 'top';
+				context.font = '16px Arial';
+				context.fillStyle = '#f60';
+				context.fillRect(0, 0, 220, 40);
+				context.fillStyle = '#069';
+				context.fillText('vb-fingerprint', 2, 2);
+				context.fillStyle = 'rgba(102, 204, 0, 0.7)';
+				context.fillText('vb-fingerprint', 4, 4);
+				return canvas.toDataURL();
+			} catch (e) {
+				return '';
+			}
+		};
+
+		const payload = [
+			navigator.userAgent || '',
+			navigator.language || '',
+			String(screen.width || ''),
+			String(screen.height || ''),
+			String(new Date().getTimezoneOffset()),
+			canvasFingerprint()
+		].join('|');
+
+		window.crypto.subtle.digest('SHA-256', new TextEncoder().encode(payload)).then(function(buffer) {
+			input.value = Array.from(new Uint8Array(buffer)).map(function(byte) {
+				return byte.toString(16).padStart(2, '0');
+			}).join('');
+		}).catch(function() {});
+	})();
+	</script>
+</body>
+</html>

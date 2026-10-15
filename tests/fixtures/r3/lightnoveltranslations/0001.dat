@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en-US" class=" light_mode">
+<head>
+	<meta charset="UTF-8" />
+	<!-- <meta name="viewport" content="width=device-width" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Browse</title>
+<meta name='robots' content='max-image-preview:large' />
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="PktQUBFAL9glhLd85Q8qZ_kH1LratItOpbVM40yGtt0">
+<!-- Google tag (gtag.js) consent mode dataLayer added by Site Kit -->
+<script id="google_gtagjs-js-consent-mode-data-layer">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","security_storage":"denied","personalization_storage":"denied","region":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"],"wait_for_update":500});
+window._googlesitekitConsentCategoryMap = {"statistics":["analytics_storage"],"marketing":["ad_storage","ad_user_data","ad_personalization"],"functional":["functionality_storage","security_storage"],"preferences":["personalization_storage"]};
+window._googlesitekitConsents = {"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","security_storage":"denied","personalization_storage":"denied","region":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"],"wait_for_update":500};
+</script>
+<!-- End Google tag (gtag.js) consent mode dataLayer added by Site Kit -->
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Light Novels Translations &raquo; Feed" href="https://lightnovelstranslations.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Light Novels Translations &raquo; Comments Feed" href="https://lightnovelstranslations.com/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://lightnovelstranslations.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flightnovelstranslations.com%2Fbrowse%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://lightnovelstranslations.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flightnovelstranslations.com%2Fbrowse%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='wc-blocks-integration-css' href='https://lightnovelstranslations.com/wp-content/plugins/woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/build/index.css?ver=8.0.1' media='all' />
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://lightnovelstranslations.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=11.2.1' media='all' />
+<style id="woocommerce-layout-inline-css">
+
+	.infinite-scroll .woocommerce-pagination {
+		display: none;
+	}
+/*# sourceURL=woocommerce-layout-inline-css */
+</style>
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://lightnovelstranslations.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=11.2.1' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://lightnovelstranslations.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=11.2.1' media='all' />
+<style id="woocommerce-inline-inline-css">
+.woocommerce form .form-row .required { visibility: visible; }
+/*# sourceURL=woocommerce-inline-inline-css */
+</style>
+<style id="jetpack-stats-inline-css">
+img#wpstats{display:none}
+/*# sourceURL=jetpack-stats-inline-css */
+</style>
+<link rel='stylesheet' id='wc-memberships-frontend-css' href='https://lightnovelstranslations.com/wp-content/plugins/woocommerce-memberships/assets/css/frontend/wc-memberships-frontend.min.css?ver=1.26.10' media='all' />
+<link rel='stylesheet' id='lightnovel-style-css' href='https://lightnovelstranslations.com/wp-content/themes/light_novel/style.css?ver=1791708642' media='all' />
+<link rel='stylesheet' id='custom-font-css' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&#038;display=swap&#038;ver=1.0' media='all' />
+<link rel='stylesheet' id='css-swiper-slider-css' href='https://lightnovelstranslations.com/wp-content/themes/light_novel/css/swiper-bundle.min.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='css-rating-css' href='https://lightnovelstranslations.com/wp-content/themes/light_novel/css/star-rating-svg.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='css-select2-css' href='https://lightnovelstranslations.com/wp-content/themes/light_novel/css/select2.min.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='css-custom-css' href='https://lightnovelstranslations.com/wp-content/themes/light_novel/css/custom.css?ver=1791712470' media='all' />
+<link rel='stylesheet' id='css-custom-night-mode-css' href='https://lightnovelstranslations.com/wp-content/themes/light_novel/css/night_mode.css?ver=1791708617' media='all' />
+<link rel='stylesheet' id='css-responsive-css' href='https://lightnovelstranslations.com/wp-content/themes/light_novel/css/responsives.css?ver=1791708617' media='all' />
+<script id="jquery-core-js" src="https://lightnovelstranslations.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://lightnovelstranslations.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script data-wp-strategy="defer" id="wc-jquery-blockui-js" src="https://lightnovelstranslations.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.11.2.1"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https://lightnovelstranslations.com/cart/","is_cart":"","cart_redirect_after_add":"no"};
+//# sourceURL=wc-add-to-cart-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="wc-add-to-cart-js" src="https://lightnovelstranslations.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=11.2.1"></script>
+<script data-wp-strategy="defer" id="wc-js-cookie-js" src="https://lightnovelstranslations.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.11.2.1"></script>
+<script id="cookie_jquery-js" src="https://lightnovelstranslations.com/wp-content/themes/light_novel/js/jquery.cookie.min.js?ver=1.4.1"></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+<!-- Google Analytics snippet added by Site Kit -->
+<script id="google_gtagjs-js" src="https://www.googletagmanager.com/gtag/js?id=G-NH052S1M45" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["lightnovelstranslations.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "G-NH052S1M45");
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }; 
+//# sourceURL=google_gtagjs-js-after
+</script>
+<link rel="https://api.w.org/" href="https://lightnovelstranslations.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://lightnovelstranslations.com/wp-json/wp/v2/pages/64864" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://lightnovelstranslations.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.3" />
+<meta name="generator" content="WooCommerce 11.2.1" />
+<link rel="canonical" href="https://lightnovelstranslations.com/browse/" />
+<link rel='shortlink' href='https://lightnovelstranslations.com/?p=64864' />
+<meta name="generator" content="Site Kit by Google 1.189.0" /><style id="lnt-rating-display">
+.lnt-rating-summary { display:inline-flex; flex-wrap:wrap; justify-content:center; gap:3px 6px; font-size:12px; line-height:1.6; }
+.lnt-rating-count { display:block; flex-basis:100%; font-size:11px; }
+.lnt-rating-average { font-weight:600; }
+.read_list-story-item .star_rate, .highest_rated_shortcode .star_rate { flex-wrap:wrap; gap:5px; justify-content:center; text-align:center; }
+.read_list-story-item .star_rate .lnt-rating-summary { flex-basis:100%; }
+.lnt-ranking-note { text-align:center; font-size:12px; margin:-8px 0 20px; }
+</style>
+<style id="lnt-library-controls">
+.lnt-reading-action { display:flex; align-items:center; flex-wrap:wrap; gap:12px; }
+button.lnt-library-button, a.lnt-library-button { display:inline-flex; align-items:center; justify-content:center; min-height:46px; padding:10px 20px; border:1px solid #0875b7; border-radius:3px; background:transparent; color:#086aa7; font-family:inherit; font-size:14px; font-weight:600; line-height:24px; text-decoration:none; cursor:pointer; white-space:nowrap; }
+button.lnt-library-button:hover, a.lnt-library-button:hover { background:#e6f3fc; color:#086aa7; }
+body.night_mode .lnt-library-button { color:#65c4ff; border-color:#419ed8; background:transparent; }
+body.night_mode .lnt-library-button:hover { background:#173548; color:#91d5ff; }
+.control_page_btn .lnt-library-button-compact { min-height:32px; padding:3px 10px; font-size:12px; line-height:24px; width:auto; text-indent:0; background-image:none; }
+.lnt-library-button:focus-visible, .lnt-library-remove:focus-visible { outline:2px solid #0e85d1; outline-offset:3px; }
+.lnt-library-button:disabled { opacity:.65; cursor:wait; }
+.lnt-library-feedback { display:block; font-size:12px; line-height:1.5; margin:5px 0; color:inherit; }
+.library-page .lnt-library-manage-panel { min-width:180px; }
+</style>
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style>.wp-block-gallery.is-cropped .blocks-gallery-item picture{height:100%;width:100%;}</style><link rel="icon" href="https://lightnovelstranslations.com/wp-content/uploads/2020/12/cropped-favicon-32px-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://lightnovelstranslations.com/wp-content/uploads/2020/12/cropped-favicon-32px-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://lightnovelstranslations.com/wp-content/uploads/2020/12/cropped-favicon-32px-180x180.png" />
+<meta name="msapplication-TileImage" content="https://lightnovelstranslations.com/wp-content/uploads/2020/12/cropped-favicon-32px-270x270.png" />
+<style id="lnt-presentation-batch">/* Presentation only: no changes to ad loading, access rules, or purchase controls. */
+body { --lnt-ui-paper:#fff; --lnt-ui-panel:#f8f9fb; --lnt-ui-ink:#25262b; --lnt-ui-line:#d0d3da; --lnt-ui-link:#086aa7; }
+body.night_mode { --lnt-ui-paper:#202228; --lnt-ui-panel:#292c33; --lnt-ui-ink:#e8e6e1; --lnt-ui-line:#666a74; --lnt-ui-link:#79c7f2; }
+body.lnt-reader-page { --lnt-ui-paper:var(--lr-paper); --lnt-ui-panel:var(--lr-panel); --lnt-ui-ink:var(--lr-ink); --lnt-ui-line:var(--lr-line); --lnt-ui-link:var(--lr-accent); }
+/* A reading theme can differ from the legacy site-wide theme. */
+html[data-lnt-reader-theme="light"] body.lnt-reader-page #header-wrapper #site-logo,
+html[data-lnt-reader-theme="sepia"] body.lnt-reader-page #header-wrapper #site-logo { display:block!important; }
+html[data-lnt-reader-theme="light"] body.lnt-reader-page #header-wrapper #site-logo-night-mode,
+html[data-lnt-reader-theme="sepia"] body.lnt-reader-page #header-wrapper #site-logo-night-mode { display:none!important; }
+html[data-lnt-reader-theme="dark"] body.lnt-reader-page #header-wrapper #site-logo { display:none!important; }
+html[data-lnt-reader-theme="dark"] body.lnt-reader-page #header-wrapper #site-logo-night-mode { display:block!important; }
+/* Limit overrides to native captions and the site's own disclosure labels. */
+.lnt-ad--native [class$="__title"], .lnt-ad--native [class$="__title"] a { color:var(--lnt-ui-ink)!important; }
+.lnt-ad--native [class$="__title"] { background-color:var(--lnt-ui-paper)!important; }
+.lnt-ad[aria-label] > div:first-child:not(:has(*)) { color:var(--lnt-ui-ink)!important; background-color:var(--lnt-ui-panel)!important; }
+.single-novels-parent-page .novel-info > .lnt-reading-action { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin:16px 0 20px; }
+@media (max-width:768px) {
+  body.lnt-mobile-header-ready #header-wrapper,
+  body.lnt-mobile-header-ready #header-wrapper.header_fixed { position:relative; inset:auto; height:auto; }
+  body.lnt-mobile-header-ready #header-wrapper #header { padding:8px 0; background:var(--lnt-ui-paper); border-bottom:1px solid var(--lnt-ui-line); }
+  body.lnt-mobile-header-ready #header-wrapper #header #branding { flex-wrap:nowrap; gap:8px; width:100%; align-items:center; }
+  body.lnt-mobile-header-ready #header-wrapper #header #branding #site-title { flex:1 1 auto; }
+  body.lnt-mobile-header-ready #header-wrapper #site-title h1 { margin:0; line-height:1; }
+  body.lnt-mobile-header-ready #header-wrapper #site-title picture,
+  body.lnt-mobile-header-ready #header-wrapper #site-title img { display:block; }
+  body.lnt-mobile-header-ready #header-wrapper #header #site-title a img { width:102px; height:auto; transition:none; }
+  body.lnt-mobile-header-ready #header-wrapper #header #three-bar-menu { display:none; }
+  body.lnt-mobile-header-ready:not(.lnt-reader-page) #header-wrapper #header #site-logo { display:block; }
+  body.lnt-mobile-header-ready:not(.lnt-reader-page) #header-wrapper #header #site-logo-night-mode { display:none; }
+  body.lnt-mobile-header-ready.night_mode:not(.lnt-reader-page) #header-wrapper #header #site-logo { display:none; }
+  body.lnt-mobile-header-ready.night_mode:not(.lnt-reader-page) #header-wrapper #header #site-logo-night-mode { display:block; }
+  body.lnt-mobile-header-ready #header-wrapper .mobile_buttons { flex:0 1 auto; width:auto; padding:0; }
+  body.lnt-mobile-header-ready #header-wrapper .mobile_buttons_content { min-height:44px; gap:6px; }
+  body.lnt-mobile-header-ready #header-wrapper .top-bar { display:none; }
+  body.lnt-mobile-header-ready #header-wrapper .mobile_buttons :is(.shop_icon,.menu-mobile) { margin:0; }
+  body.lnt-mobile-header-ready #header-wrapper .mobile_buttons .shop_icon { width:44px; }
+  body.lnt-mobile-header-ready #header-wrapper .mobile_buttons .mini-shopping-cart { margin:0 auto; width:44px; height:44px; }
+  body.lnt-mobile-header-ready #header-wrapper .mobile_buttons .mini-shopping-cart::before { left:9px; top:9px; }
+  body.lnt-mobile-header-ready #header-wrapper .mobile_buttons .mini-cart-counter { left:17px; top:10px; }
+  body.lnt-mobile-header-ready #header-wrapper .lnt-mobile-login { color:var(--lnt-ui-link)!important; min-height:44px; display:inline-flex; align-items:center; padding-inline:4px; }
+  body.lnt-mobile-header-ready #header-wrapper .menu-mobile-dropdown { top:100%; max-height:calc(100dvh - 80px); overflow-x:hidden; overflow-y:auto; background:var(--lnt-ui-panel); color:var(--lnt-ui-ink); border:1px solid var(--lnt-ui-line); }
+  body.lnt-mobile-header-ready.admin-bar #header-wrapper .menu-mobile-dropdown { max-height:calc(100dvh - 80px - var(--wp-admin--admin-bar--height,46px)); }
+  body.lnt-mobile-header-ready #header-wrapper .menu-mobile-dropdown ul li a { color:var(--lnt-ui-ink); }
+  body.lnt-mobile-header-ready #header-wrapper .lnt-reader-menu-utilities { display:block; padding:18px 0 8px; margin:0; }
+  body.lnt-mobile-header-ready #header-wrapper .lnt-reader-menu-utilities ul { display:flex; flex-wrap:wrap; gap:4px 16px; padding:0 12px; }
+  body.lnt-mobile-header-ready #header-wrapper .lnt-reader-menu-utilities ul li a { position:relative; display:flex; align-items:center; min-height:44px; width:auto; height:auto; text-indent:0; background:none; color:var(--lnt-ui-ink); }
+  body.lnt-mobile-header-ready #header-wrapper .lnt-reader-menu-utilities ul li a::before,
+  body.lnt-mobile-header-ready #header-wrapper .lnt-reader-menu-utilities ul li a::after { display:none; }
+  body.lnt-mobile-header-ready #header-wrapper .lnt-reader-menu-account { display:block; padding:12px; }
+  body.lnt-mobile-header-ready #header-wrapper .menu-mobile .menu-btn { background:transparent; }
+  body.lnt-mobile-header-ready #header-wrapper .menu-mobile .menu-btn span,
+  body.lnt-mobile-header-ready #header-wrapper .menu-mobile .menu-btn span::before { background:transparent; border-color:var(--lnt-ui-ink); }
+  body.lnt-mobile-header-ready #header-wrapper .search_field { background:var(--lnt-ui-paper); color:var(--lnt-ui-ink); border-color:var(--lnt-ui-line); }
+  body.lnt-mobile-header-ready:not(.lnt-reader-page) #wrapper #container { padding-top:24px; }
+  .single-novels-parent-page .novel_info .novel-image { flex:0 0 100%; max-width:100%; margin:0 0 18px; text-align:center; }
+  .single-novels-parent-page .novel_info .novel-image img { width:120px; height:auto; }
+  .single-novels-parent-page .novel_info .novel-info { flex:0 0 100%; max-width:100%; }
+  .single-novels-parent-page .novel-info .novel_title h3 { font-size:24px; line-height:1.35; margin:0; }
+}
+</style> 	<!-- <style>
+		body {
+			-webkit-touch-callout:none;
+			-webkit-user-select:none;
+			-khtml-user-select:none;
+			-moz-user-select:none;
+			-ms-user-select:none;
+			user-select:none;
+		}
+	</style>
+	<script type="text/javascript"> 
+		document.onkeypress=function(event) {
+		event= (event||window.event);
+		if (event.keyCode===123) { 
+		return false;
+		}
+		};
+		document.onmousedown=function(event) {
+		event= (event||window.event);
+		if (event.keyCode===123) { 
+		return false;
+		}
+		};
+		document.onkeydown=function(event) {
+		event= (event||window.event);
+		if (event.keyCode===123) {
+		//alert('No F-keys');
+		return false;
+		}
+		};
+		function contentprotector() {
+			return false;
+		}
+		function mousehandler(e) {
+		var myevent= (isNS) ?e:event;
+		var eventbutton= (isNS) ?myevent.which:myevent.button;
+		if ((eventbutton===2) || (eventbutton===3))
+		return false;
+		}
+		document.oncontextmenu=contentprotector;
+		document.onmouseup=contentprotector;
+		var isCtrl=false;
+		window.onkeyup=function(e){
+		if (e.which===17)
+		isCtrl=false;
+		}
+		window.onkeydown=function(e){
+		if (e.which===17)
+		isCtrl=true;
+		if (((e.which===85) || (e.which===65) || (e.which===88) || (e.which===67) || (e.which===86) || (e.which===83)) &&isCtrl===true){
+		return false;
+		}
+		}
+		isCtrl=false;
+		document.ondragstart=contentprotector; 
+	</script>  --> 
+	  	 
+						<style type="text/css">
+			.close-mess-btn {
+				width: 24px;
+				height: 24px;
+				background-image: url('https://lightnovelstranslations.com/wp-content/themes/light_novel/images/sprite.png');
+				background-repeat: no-repeat;
+				background-position: 0px -751px;
+				display: none;
+				text-indent: -999em;
+				top: 10px;
+			}
+			
+			.close-mess-span {
+				position: relative;
+				height: 24px;
+				width: 24px;
+				display: inline-block;
+				margin-left: 10px;
+
+			}
+			@media(max-width: 768px){
+				.close-mess-btn {
+					display: block;
+				}
+				.top-bar.hide{
+					display: none!important;
+				}
+			}
+		</style>
+		<script type="text/javascript">
+			jQuery(document).ready(function($){
+				jQuery(document).on('click','.close-mess-btn',function(){
+					console.log('fdfdfdf');
+					jQuery('.top-bar').addClass('hide');
+					 var $this = jQuery(this);
+				        jQuery.cookie('disable_mess', 'yes', { expires: 1, path: '/' });
+					return false;
+				})
+			});
+		</script>
+		<script id="lnt-reader-font-size">
+(function () {
+    'use strict';
+    if (window.LNTReaderPreferences) return; // LNT_READER_V2_GUARD
+    var key = 'lnt.reader.fontSize.v1';
+    var minimum = 8;
+    var maximum = 72;
+    var controls = '.plus_content, .minus_content, .copy_content';
+    var entries = [];
+    var defaultSize;
+    var currentSize;
+
+    function readSize() {
+        try {
+            var value = window.localStorage.getItem(key);
+            var size = value === null || value === '' ? NaN : Number(value);
+            return isFinite(size) && size >= minimum && size <= maximum ? size : null;
+        } catch (error) {
+            return null; // Reading controls still work when storage is unavailable.
+        }
+    }
+
+    function apply(size) {
+        currentSize = size === null ? defaultSize : size;
+        var delta = currentSize - defaultSize;
+        entries.forEach(function (entry) {
+            if (size === null) {
+                if (entry.inline) {
+                    entry.node.style.setProperty('font-size', entry.inline, entry.priority);
+                } else {
+                    entry.node.style.removeProperty('font-size');
+                }
+            } else {
+                entry.node.style.setProperty('font-size', Math.max(minimum, entry.base + delta) + 'px', entry.priority);
+            }
+        });
+    }
+
+    function initialize() {
+        var stories = document.querySelectorAll('.text_story');
+        if (!stories.length) { return; }
+        var sample = stories[0].querySelector('p') || stories[0];
+        defaultSize = parseFloat(window.getComputedStyle(sample).fontSize) || 16;
+        currentSize = defaultSize;
+        // Read original sizes together, before writing styles, to avoid repeated layout work.
+        Array.prototype.forEach.call(stories, function (story) {
+            var nodes = [story].concat(Array.prototype.slice.call(story.querySelectorAll('p, div, span, a, strong, b, em, i, u, s, del, small, sub, sup, li, ul, ol, blockquote, pre, code, h1, h2, h3, h4, h5, h6')));
+            nodes.forEach(function (node) {
+                if (node.closest('ins, iframe, .lnt-ad')) { return; }
+                entries.push({
+                    node: node,
+                    base: parseFloat(window.getComputedStyle(node).fontSize) || defaultSize,
+                    inline: node.style.getPropertyValue('font-size'),
+                    priority: node.style.getPropertyPriority('font-size')
+                });
+            });
+        });
+        Array.prototype.forEach.call(document.querySelectorAll(controls), function (control) {
+            // The theme's class names are reversed: minus_content displays the A+ icon.
+            var label = control.classList.contains('copy_content') ? 'Reset font size' :
+                control.classList.contains('minus_content') ? 'Increase font size' : 'Decrease font size';
+            control.setAttribute('aria-label', label);
+            control.setAttribute('title', label);
+        });
+        var saved = readSize();
+        if (saved !== null) { apply(saved); }
+
+        // Capture only these controls so a cached copy of the old custom.js cannot resize twice.
+        document.addEventListener('click', function (event) {
+            var control = event.target.closest && event.target.closest(controls);
+            if (!control) { return; }
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            var reset = control.classList.contains('copy_content');
+            var size = reset ? null : Math.max(minimum, Math.min(maximum,
+                currentSize + (control.classList.contains('minus_content') ? 1 : -1)));
+            apply(size);
+            try {
+                if (reset) { window.localStorage.removeItem(key); }
+                else { window.localStorage.setItem(key, String(size)); }
+            } catch (error) { /* Keep the controls usable if storage is blocked or full. */ }
+        }, true);
+
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) { apply(readSize()); }
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initialize, { once: true });
+    } else {
+        initialize();
+    }
+}());
+
+		</script> 
+</head>
+<body class="wp-singular page-template page-template-page-templates page-template-page-read page-template-page-templatespage-read-php page page-id-64864 wp-theme-light_novel theme-light_novel woocommerce-no-js woocommerce-checkout woocommerce-page light_mode">
+	<div id="wrapper" class="hfeed">
+		
+		<div id="header-wrapper" class="header-wrapper">
+			<div class="top-bar ">
+				<div class="container">
+					<div class="row"> 
+														
+							<div class="col-md-8 col-sm-12 top-bar-content">
+															</div>
+							
+							<div class="col-md-4 col-sm-12 top-bar-login d-flex justify-content-start justify-content-md-end justify-content-sm-start ">
+																<a class="lnt-header-login" href="https://lightnovelstranslations.com/?lnt_accounts=login&#038;return_to=https://lightnovelstranslations.com/browse/?field-search=solo">Login</a>
+															<div class="shop_icon">
+									<a href="https://lightnovelstranslations.com/cart/" class="mini-shopping-cart">
+																				<span class='mini-cart-counter desktop-hide' id="counter">
+											0										</span>
+									</a>
+								</div>
+							</div>
+						<!-- </div> -->
+					</div>
+				</div>
+			</div>
+			<header id="header"> 
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-12 d-flex">
+							<div id="branding">
+								<div id="site-title">
+									<h1>
+										<a id="site-logo" href="https://lightnovelstranslations.com/" title="Light Novels Translations" rel="home">
+											<picture><source srcset="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/logo.png.webp"  type="image/webp"><img src='https://lightnovelstranslations.com/wp-content/themes/light_novel/images/logo.png' width="170" height="80" alt="Light Novels Translations" data-eio="p"></picture>
+										</a>
+										<a id="site-logo-night-mode" href="https://lightnovelstranslations.com/" title="Light Novels Translations" rel="home"><picture><source srcset="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/night-mode-logo.png.webp"  type="image/webp"><img src='https://lightnovelstranslations.com/wp-content/themes/light_novel/images/night-mode-logo.png' width="170" height="79" alt="Light Novels Translations" data-eio="p"></picture></a> 
+										<a id="three-bar-menu" href="https://lightnovelstranslations.com/" title="Home"  >3 bar menu</a>
+									</h1>
+								</div>
+							<div class="mobile_buttons">
+									<div class="mobile_buttons_content">
+																				<div class="mobile_vip_view_mode">
+											<ul> 
+												 
+												<li><a href="#krystal_pricing_table_popup" class="buy-krystal top_up_btn">Krystal</a></li>
+											 
+												<li><a href="https://lightnovelstranslations.com/vip/" class="vip-member">Vip</a></li>
+											 
+												<!-- <li><a href="javascript:changecolor(1);" class="view-mode">View mode</a></li> -->
+												 <li><a href="#" class="view-mode" data-viewmode="light_mode">View mode</a></li> 
+											</ul>
+										</div>
+										<a class="lnt-header-login lnt-mobile-login" href="https://lightnovelstranslations.com/?lnt_accounts=login&#038;return_to=https://lightnovelstranslations.com/browse/?field-search=solo">Login</a>
+<div class="shop_icon">
+											<a href="https://lightnovelstranslations.com/cart/" class="mini-shopping-cart">
+																								<span class='mini-cart-counter desktop-hide' id="counter">
+													0												</span>
+											</a>
+										</div>
+									
+										<div class="menu-mobile">
+											<button type="button" class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="lnt-mobile-menu"><span aria-hidden="true">&nbsp;</span></button>
+										</div>
+									</div>
+								</div>
+								<div class="menu-mobile-dropdown" id="lnt-mobile-menu">
+									<div class="search_dropdown">
+										<div class="search_dropdown_content">
+											<form class="search_form" action="" method="post">
+												<input type='text' autocomplete="off" name="search" value="" class="search_field">
+												<input type="submit" name="search_submit" class="search_btn" value="Search"> 
+												<a href="#" class="remove_seach_key"></a>
+											</form>
+										</div>
+									</div>
+									<div class="menu-lnt-new-website-container"><ul id="menu-lnt-new-website" class="menu"><li id="menu-item-66845" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-64864 current_page_item menu-item-66845"><a href="https://lightnovelstranslations.com/browse/" aria-current="page">Browse</a></li>
+<li id="menu-item-144042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144042"><a href="https://lightnovelstranslations.com/my-library/">My Library</a></li>
+<li id="menu-item-66849" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66849"><a href="https://lightnovelstranslations.com/latest-updates/">Latest Updates</a></li>
+</ul></div>									 
+								</div>
+							</div>
+							<nav id="main-menu">
+								<div class="menu-lnt-new-website-container"><ul id="menu-lnt-new-website-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-64864 current_page_item menu-item-66845"><a href="https://lightnovelstranslations.com/browse/" aria-current="page">Browse</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144042"><a href="https://lightnovelstranslations.com/my-library/">My Library</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66849"><a href="https://lightnovelstranslations.com/latest-updates/">Latest Updates</a></li>
+</ul></div>							</nav>
+							<div class="header-buttons">
+								<ul>
+									<li><a href="#krystal_pricing_table_popup" class="buy-krystal top_up_btn">Krystal</a></li>
+									<li><a href="https://lightnovelstranslations.com/vip/" class="vip-member">Vip</a></li>
+									<li>
+										<a href="#" class="search-icon">Search</a>
+										<div class="search_dropdown">
+											<div class="search_dropdown_content">
+												<form class="search_form" action="https://lightnovelstranslations.com/" method="get">
+													<input type='text' autocomplete="off" name="search" value="" class="search_field">
+													<input type="submit" name="search_submit" class="search_btn" value="Search"> 
+													<a href="#" class="remove_seach_key"></a>
+												</form>
+											</div>
+										</div>
+									</li>
+									<!-- <li><a href="javascript:changecolor(1);" class="view-mode">View mode</a></li> -->
+									 <li><a href="#" class="view-mode"  data-viewmode="light_mode">View mode</a></li> 
+									 <!-- <li><a href="#" class="viewmodetest">Viewmode</a></li> -->
+									 <!-- <li><a href="#" class="viewmodetesttest">Viewmode</a></li> -->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+							</header>
+		</div>
+		<div id="container"> 
+			<script type="text/javascript">
+				jQuery(function() {
+
+				    // jQuery('.viewmodetesttest').click(function(e) {
+				    // 	 var mode = 'night_mode';
+				    //     //  if (jQuery.cookie('my_cookie') ) { jQuery.cookie( 'my_cookie', null) }
+				    //     // jQuery.cookie('my_cookie', 'my_value', { expires: 30 });
+				    //     jQuery.cookie('darkmode', mode, { expires: 7, path: '/' });
+				    // });
+				    jQuery(document).on('click','.view-mode', function(){
+				        var $this = jQuery(this);
+				        console.log('hhhhh');
+				        if($this.attr('data-viewmode') == 'light_mode'){
+				           jQuery('body').removeClass('light_mode') ;
+				           jQuery('html').removeClass('light_mode') ;
+				           $this.attr('data-viewmode','night_mode');
+				           jQuery('body').addClass('night_mode');
+				           jQuery('html').addClass('night_mode');
+				            var mode = 'night_mode';
+				            jQuery.cookie('darkmode', mode, { expires: 7, path: '/' });
+				        } else if($this.attr('data-viewmode') == 'night_mode'){
+				            jQuery('body').removeClass('night_mode'); 
+				            jQuery('html').removeClass('night_mode'); 
+				           $this.attr('data-viewmode','light_mode');
+				           jQuery('body').addClass('light_mode');
+				           jQuery('html').addClass('light_mode');
+				           var mode = 'light_mode';
+				          jQuery.cookie('darkmode', mode, { expires: 7, path: '/' });
+				        } 
+				        
+				        return false;
+				    });
+				});
+			</script><main class="lnt-browse read-page">
+<section class="lnt-b-top"><div class="container">
+    <h1>Browse Novels</h1><p class="lnt-b-intro">Find your next read by title, genre, or status.</p>
+    <form id="lnt-b-form" class="lnt-b-form" action="https://lightnovelstranslations.com/browse/" method="get" role="search" aria-label="Search novels">
+        <label class="lnt-b-search-label" for="lnt-b-query">Novel title</label>
+        <div class="lnt-b-search-row"><input id="lnt-b-query" type="search" name="field-search" maxlength="120" placeholder="Search titles or alternate titles…" value="solo"><button class="lnt-b-primary" type="submit">Search novels <span aria-hidden="true">→</span></button></div>
+        <button class="lnt-b-filter-toggle" type="button" aria-expanded="true" aria-controls="lnt-b-controls">Filters <span id="lnt-b-filter-count"></span><span aria-hidden="true">⌄</span></button>
+        <div id="lnt-b-controls">
+            <div class="lnt-b-filter-grid">
+                <div><label for="lnt-b-status">Status</label><select id="lnt-b-status" name="status"><option value="all">All statuses</option><option value="ongoing" >Ongoing</option><option value="hiatus" >Hiatus</option><option value="completed" >Completed</option></select></div>
+                <div class="lnt-b-genre-field"><span id="lnt-b-genre-label" class="lnt-b-field-label">Genre</span><details class="lnt-b-genres"><summary aria-labelledby="lnt-b-genre-label lnt-b-genre-summary"><span id="lnt-b-genre-summary">All genres</span><span aria-hidden="true">⌄</span></summary><div class="lnt-b-genre-menu"><p>Match any selected genre.</p><div class="lnt-b-checks"><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="121" ><span>Action</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="122" ><span>Adventure</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="220" ><span>Ancient Times</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="145" ><span>Anti-Hero Lead</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="224" ><span>Calm-protagonist</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="123" ><span>Comedy</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="241" ><span>Dark Fantasy</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="146" ><span>Different World (Isekai)</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="148" ><span>Drama</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="147" ><span>Dungeon</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="177" ><span>Ecchi</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="153" ><span>Fantasy</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="150" ><span>Female Lead</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="242" ><span>fiction</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="151" ><span>Gender Bender</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="125" ><span>Harem</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="154" ><span>Historical</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="156" ><span>Horror</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="222" ><span>Kingdom Building</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="157" ><span>LitRPG</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="159" ><span>Magic</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="214" ><span>Martial Arts</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="160" ><span>Mecha</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="161" ><span>Mystery</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="162" ><span>Non-Human Lead</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="163" ><span>OP Main Lead</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="226" ><span>Politics</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="223" ><span>Polygamy</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="164" ><span>Post-Apocalyptic</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="225" ><span>Pragmatic Protagonist</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="165" ><span>Psychological</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="166" ><span>Reincarnation</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="167" ><span>Revenge</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="126" ><span>Romance</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="169" ><span>Ruling Class</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="127" ><span>School Life</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="170" ><span>Science Fiction</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="215" ><span>Shounen</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="172" ><span>Slice of Life</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="171" ><span>Sports</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="221" ><span>Strategic Battles</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="168" ><span>Strategy</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="128" ><span>Supernatural</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="158" ><span>Tragedy</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="155" ><span>Virtual Reality</span></label><label class="lnt-b-check"><input type="checkbox" name="tag_name[]" value="152" ><span>War and Military</span></label></div></div></details></div>
+                <div><label for="lnt-b-sort">Sort by</label><select id="lnt-b-sort" name="sortby"><option value="most-recent"  selected='selected'>Newest additions</option><option value="asc" >Title A–Z</option><option value="desc" >Title Z–A</option><option value="chapters" >Most Chapters</option><option value="highest-rated" >Highest rated</option><option value="most-liked" >Most liked</option></select></div>
+                <div><label for="lnt-b-type">Type</label><select id="lnt-b-type" name="type"><option value="all">All novels</option><option value="translated" >Translated</option><option value="original" >Original</option></select></div>
+            </div>
+            <details class="lnt-b-more"><summary>Exclude genres &amp; content preferences</summary><div class="lnt-b-more-body">
+                <fieldset><legend>Exclude genres</legend><p>Hide novels with any of these genres.</p><div class="lnt-b-checks lnt-b-exclude"><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="121" ><span>Action</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="122" ><span>Adventure</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="220" ><span>Ancient Times</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="145" ><span>Anti-Hero Lead</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="224" ><span>Calm-protagonist</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="123" ><span>Comedy</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="241" ><span>Dark Fantasy</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="146" ><span>Different World (Isekai)</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="148" ><span>Drama</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="147" ><span>Dungeon</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="177" ><span>Ecchi</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="153" ><span>Fantasy</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="150" ><span>Female Lead</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="242" ><span>fiction</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="151" ><span>Gender Bender</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="125" ><span>Harem</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="154" ><span>Historical</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="156" ><span>Horror</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="222" ><span>Kingdom Building</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="157" ><span>LitRPG</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="159" ><span>Magic</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="214" ><span>Martial Arts</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="160" ><span>Mecha</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="161" ><span>Mystery</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="162" ><span>Non-Human Lead</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="163" ><span>OP Main Lead</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="226" ><span>Politics</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="223" ><span>Polygamy</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="164" ><span>Post-Apocalyptic</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="225" ><span>Pragmatic Protagonist</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="165" ><span>Psychological</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="166" ><span>Reincarnation</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="167" ><span>Revenge</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="126" ><span>Romance</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="169" ><span>Ruling Class</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="127" ><span>School Life</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="170" ><span>Science Fiction</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="215" ><span>Shounen</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="172" ><span>Slice of Life</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="171" ><span>Sports</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="221" ><span>Strategic Battles</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="168" ><span>Strategy</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="128" ><span>Supernatural</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="158" ><span>Tragedy</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="155" ><span>Virtual Reality</span></label><label class="lnt-b-check"><input type="checkbox" name="exclude_genres[]" value="152" ><span>War and Military</span></label></div></fieldset>
+                <fieldset><legend>Hide content warnings</legend><div class="lnt-b-checks"><label class="lnt-b-check"><input type="checkbox" name="hide_content[]" value="139" ><span>Gore</span></label><label class="lnt-b-check"><input type="checkbox" name="hide_content[]" value="138" ><span>Sexual Content</span></label></div></fieldset>
+                <fieldset><legend>Include content tags</legend><p>Optional: find novels tagged with any of these.</p><div class="lnt-b-checks"><label class="lnt-b-check"><input type="checkbox" name="content_warning_search_value[]" value="139" ><span>Gore</span></label><label class="lnt-b-check"><input type="checkbox" name="content_warning_search_value[]" value="138" ><span>Sexual Content</span></label></div></fieldset>
+            </div></details>
+            <div class="lnt-b-actions"><button class="lnt-b-primary" type="submit">Apply filters</button><a class="lnt-b-clear" href="https://lightnovelstranslations.com/browse/">Clear all</a><span>Filters apply together. Exclusions take priority.</span></div>
+        </div>
+    </form>
+</div></section>
+<section class="lnt-b-results" aria-labelledby="lnt-b-result-heading"><div class="container">
+    <div class="lnt-b-results-heading"><h2 id="lnt-b-result-heading">0 novels matching “solo”</h2><span>Newest additions</span></div>
+    <nav class="lnt-b-chips" aria-label="Active search filters"><a href="https://lightnovelstranslations.com/browse/" aria-label="Remove Title: solo">Title: solo <span aria-hidden="true">×</span></a></nav>    <div class="wrap_read_list-story">
+            <div class="lnt-b-empty"><h3>No novels found</h3><p>Try a shorter title, another spelling, or remove a filter above.</p><a class="lnt-b-primary" href="https://lightnovelstranslations.com/browse/">Browse all novels</a></div>
+        </div>
+    </div></section>
+</main>
+<style>
+.lnt-browse{--lb-bg:#fff;--lb-page:#f6f6fc;--lb-text:#202730;--lb-muted:#535f70;--lb-line:#d9e1e9;--lb-soft:#edf7fc;--lb-accent:#0079a5;color:var(--lb-text);background:var(--lb-page)}
+.lnt-b-warning-label{font-size:12px;color:var(--lb-muted);margin:4px 0 8px}
+body.night_mode .lnt-browse{--lb-bg:#1b232e;--lb-page:#1f222a;--lb-text:#f0f4f8;--lb-muted:#b8c4d2;--lb-line:#455365;--lb-soft:#243947;--lb-accent:#65d3ff}
+.lnt-browse .lnt-b-top{padding:26px 0 24px}.lnt-browse h1{font-size:30px;line-height:1.25;margin:0 0 8px;text-transform:none}.lnt-b-intro{color:var(--lb-muted);margin:0 0 22px}
+.lnt-b-form{padding:24px;background:var(--lb-bg);border:1px solid var(--lb-line);border-radius:12px}.lnt-b-form label:not(.lnt-b-check),.lnt-b-field-label{display:block;font-size:13px;font-weight:700;margin:0 0 8px}
+.lnt-b-search-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;margin-bottom:20px}.lnt-browse input[type=search],.lnt-browse select{width:100%;min-width:0;height:46px;border:1px solid var(--lb-line);border-radius:7px;padding:10px 12px;background:var(--lb-bg);color:var(--lb-text);font:inherit;font-size:14px}.lnt-browse input::placeholder{color:var(--lb-muted);opacity:1}
+.lnt-b-primary{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:44px;padding:11px 20px;border:0;border-radius:6px;background:#008abd;color:#fff!important;font-size:14px;font-weight:700;line-height:1.4;text-decoration:none;cursor:pointer}.lnt-b-primary:hover{background:#006e97}.lnt-browse a{color:var(--lb-accent)}.lnt-browse :is(a,button,input,select,summary):focus-visible{outline:3px solid var(--lb-accent);outline-offset:3px}
+.lnt-b-filter-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.lnt-b-genre-field{position:relative}.lnt-b-genres>summary{list-style:none;min-height:46px;border:1px solid var(--lb-line);border-radius:7px;padding:11px 12px;display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:14px;cursor:pointer}.lnt-b-genres>summary::-webkit-details-marker{display:none}.lnt-b-genre-menu{position:absolute;left:0;top:100%;z-index:20;width:min(620px,70vw);padding:16px;background:var(--lb-bg);border:1px solid var(--lb-line);border-radius:8px;box-shadow:0 8px 24px #0002}.lnt-b-genre-menu p,.lnt-b-more p{margin:0 0 10px;color:var(--lb-muted);font-size:13px}
+.lnt-b-checks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 12px}.lnt-b-genre-menu .lnt-b-checks,.lnt-b-exclude{max-height:320px;overflow:auto;overscroll-behavior:contain}.lnt-b-check{display:flex!important;align-items:center;gap:9px;min-height:40px;font-size:13px!important;line-height:1.4;margin:0!important;padding:5px 2px;cursor:pointer;overflow-wrap:anywhere}.lnt-b-check input{position:static!important;appearance:auto!important;opacity:1!important;width:17px!important;height:17px!important;flex:0 0 17px;margin:0!important;accent-color:#008abd}.lnt-b-check span{color:var(--lb-text)}
+.lnt-b-more{margin-top:18px;border-top:1px solid var(--lb-line);padding-top:14px}.lnt-b-more>summary{cursor:pointer;font-size:13px;min-height:36px;color:var(--lb-accent);font-weight:600}.lnt-b-more-body{padding:14px 0 0}.lnt-b-more fieldset{border:0;padding:0;margin:0 0 20px;min-width:0}.lnt-b-more legend{font-size:14px;font-weight:700;margin-bottom:10px;color:var(--lb-text)}.lnt-b-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:14px}.lnt-b-clear{display:inline-flex;align-items:center;min-height:44px;font-size:14px;font-weight:600}.lnt-b-actions>span{font-size:12px;color:var(--lb-muted)}.lnt-b-filter-toggle{display:none}
+.lnt-b-results{padding:8px 0 40px}.lnt-b-results-heading{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:16px}.lnt-b-results-heading h2{font-size:20px;text-transform:none;line-height:1.45;margin:0}.lnt-b-results-heading>span{font-size:12px;color:var(--lb-muted);white-space:nowrap}.lnt-b-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}.lnt-b-chips a{display:inline-flex;gap:12px;align-items:center;min-height:36px;padding:7px 12px;background:var(--lb-soft);border:1px solid var(--lb-line);border-radius:20px;font-size:12px;max-width:100%;overflow-wrap:anywhere}
+.lnt-browse .read_list-story-item{display:flex;gap:24px;padding:24px 0;border-bottom:1px solid var(--lb-line);margin:0}.lnt-browse .item_thumb{width:125px;flex:0 0 125px;margin:0}.lnt-browse .item_thumb img{width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;border-radius:6px}.lnt-browse .star_rate{display:block!important;text-align:center;font-size:12px;margin-top:10px;color:var(--lb-text)}.lnt-browse .wrap_item_content{flex:1;min-width:0;width:auto;padding:0}.lnt-browse .wrap_item_content h3{font-size:20px;line-height:1.4;text-transform:none;margin:0 0 10px}.lnt-browse .wrap_item_content h3 a{color:var(--lb-text)}.lnt-b-book-meta{display:flex;flex-wrap:wrap;gap:7px 14px;margin:0 0 10px;padding:0;list-style:none;color:var(--lb-muted);font-size:12px}.lnt-b-book-genres{display:flex;gap:6px 12px;flex-wrap:wrap;font-size:12px;margin-bottom:10px}.lnt-b-description{font-size:14px;line-height:1.75;color:var(--lb-muted);margin:0 0 8px}.lnt-b-view{display:inline-flex;align-items:center;gap:10px;min-height:40px;font-size:13px;font-weight:600}.lnt-b-empty{padding:40px 20px;text-align:center;background:var(--lb-bg);border:1px solid var(--lb-line);border-radius:10px}.lnt-b-empty h3{font-size:22px;text-transform:none}.lnt-b-empty p{color:var(--lb-muted)}.lnt-b-pagination{margin-top:28px}.lnt-b-pagination .page-numbers{color:var(--lb-text)}
+@media(max-width:991px){.lnt-b-filter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lnt-b-genre-menu{left:auto;right:0;width:min(620px,75vw)}}
+@media(max-width:767px){.lnt-browse .lnt-b-top{padding-top:18px}.lnt-browse h1{font-size:25px}.lnt-b-intro{font-size:13px;margin-bottom:16px}.lnt-b-form{padding:16px}.lnt-b-search-row{grid-template-columns:minmax(0,1fr);gap:10px;margin-bottom:12px}.lnt-browse input[type=search],.lnt-browse select{font-size:16px}.lnt-b-filter-toggle{display:flex;width:100%;align-items:center;gap:7px;min-height:44px;padding:10px 0;color:var(--lb-accent);border:0;background:none;font-weight:700;text-align:left}.lnt-b-filter-toggle>span:last-child{margin-left:auto}.lnt-browse-ready #lnt-b-controls.is-collapsed{display:none}.lnt-b-filter-grid{gap:14px 10px;margin-top:10px}.lnt-b-genre-menu{position:static;width:100%;padding:10px;margin-top:6px;box-shadow:none}.lnt-b-genre-menu .lnt-b-checks{grid-template-columns:1fr;max-height:270px}.lnt-b-checks{grid-template-columns:repeat(2,minmax(0,1fr))}.lnt-b-check{min-height:44px}.lnt-b-actions{gap:12px}.lnt-b-actions>span{flex-basis:100%}.lnt-b-results-heading{display:block}.lnt-b-results-heading h2{font-size:18px;margin-bottom:5px}.lnt-browse .read_list-story-item{gap:14px;padding:20px 0}.lnt-browse .item_thumb{width:85px;flex-basis:85px}.lnt-browse .wrap_item_content h3{font-size:16px}.lnt-b-description{font-size:13px;line-height:1.65;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}.lnt-b-book-meta{font-size:11px}.lnt-b-chips a{min-height:44px}.lnt-browse .star_rate{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.lnt-browse *{scroll-behavior:auto!important}}
+</style>
+<script>
+(function(){
+var form=document.getElementById('lnt-b-form'),toggle=form.querySelector('.lnt-b-filter-toggle'),panel=document.getElementById('lnt-b-controls'),genres=form.querySelector('.lnt-b-genres');
+form.classList.add('lnt-browse-ready');
+if(window.matchMedia('(max-width:767px)').matches){panel.classList.add('is-collapsed');toggle.setAttribute('aria-expanded','false');}
+toggle.addEventListener('click',function(){var closed=panel.classList.toggle('is-collapsed');toggle.setAttribute('aria-expanded',String(!closed));});
+form.addEventListener('change',function(e){
+ var x=e.target, pairs={'tag_name[]':'exclude_genres[]','exclude_genres[]':'tag_name[]','content_warning_search_value[]':'hide_content[]','hide_content[]':'content_warning_search_value[]'};
+ if(x.checked && pairs[x.name]){Array.prototype.forEach.call(form.elements,function(other){if(other.name===pairs[x.name]&&other.value===x.value)other.checked=false;});}
+ var included=form.querySelectorAll('input[name="tag_name[]"]:checked').length,count=form.querySelectorAll('input[type=checkbox]:checked').length+(form.elements.status.value!=='all'?1:0)+(form.elements.type.value!=='all'?1:0);
+ document.getElementById('lnt-b-genre-summary').textContent=included?included+' selected':'All genres';document.getElementById('lnt-b-filter-count').textContent=count?'('+count+')':'';
+});
+document.addEventListener('click',function(e){if(!genres.contains(e.target))genres.open=false;});
+genres.addEventListener('keydown',function(e){if(e.key==='Escape'){genres.open=false;genres.querySelector('summary').focus();}});
+}());
+</script>
+</div>
+<footer class="footer-widget-area footer-sections">
+	<section class="container footer-container">
+		<div class="row footer-content">
+			<div class="col-sm-12 col-md-6 footer_social_icon">
+			<div class="social-networks-wrapper"><span>FOLLOW US:</span><a class="social-network-icon icon-discord" href="https://discord.com/invite/PZkrWJwc99">discord</a><a class="social-network-icon icon-rss" href="https://lightnovelstranslations.com/feed/latest-updates/">rss</a></div>			</div>
+			<div class="col-sm-12 col-md-6 footer_menu">
+			<div class="menu-menu-footer-container"><ul id="menu-menu-footer" class="menu"><li id="menu-item-64899" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64899"><a href="https://lightnovelstranslations.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-66973" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66973"><a href="https://lightnovelstranslations.com/terms-conditions/">Terms of Service</a></li>
+<li id="menu-item-144039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144039"><a href="https://lightnovelstranslations.com/faq/">FAQ</a></li>
+<li id="menu-item-144040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144040"><a href="https://lightnovelstranslations.com/author/">Become an Author</a></li>
+<li id="menu-item-144041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144041"><a href="https://lightnovelstranslations.com/translator/">Become a Translator</a></li>
+</ul></div>			</div>
+		</div>
+		<div class="row footer-copyright">
+							<div class="col-12 text-left">
+					<p id="copyright">Copyright © 2019 - 2026 Light Novels Translations. All Rights Reserved.</p>
+				</div>
+							
+		</div>
+	</section>
+
+</footer>
+ <div id="bg_7118298149"></div>
+<button onclick="topFunction()" id="btn-scroll-top" title="Go to top">Top</button>
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/light_novel/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+	<script>
+	jQuery(document).ready(function ($) {
+		var deviceAgent = navigator.userAgent.toLowerCase();
+		if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
+			$("html").addClass("ios");
+			$("html").addClass("mobile");
+		}
+		if (navigator.userAgent.search("MSIE") >= 0) {
+			$("html").addClass("ie");
+		}
+		else if (navigator.userAgent.search("Chrome") >= 0) {
+			$("html").addClass("chrome");
+		}
+		else if (navigator.userAgent.search("Firefox") >= 0) {
+			$("html").addClass("firefox");
+		}
+		else if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+			$("html").addClass("safari");
+		}
+		else if (navigator.userAgent.search("Opera") >= 0) {
+			$("html").addClass("opera");
+		}
+	});
+	</script>
+	<script type='text/javascript'>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script id="wcPPCPSettings">
+				window['wcPPCPSettings'] = {"cart":{"total":"0.00","totalCents":0,"needsShipping":false,"isEmpty":true,"currency":"USD","countryCode":"AU","availablePaymentMethods":["stripe","ppcp","ppcp_applepay"],"lineItems":[],"shippingOptions":[],"selectedShippingMethod":""},"requiredFields":["shipping_first_name","shipping_last_name","shipping_country","shipping_address_1","shipping_city","shipping_state","shipping_postcode","shipping_phone","account_username","account_password","account_password-2"],"version":"2.0.27","generalData":{"clientId":"Afm0gDfmRZxjekARcablp7ruOQ3Nj5kpakRQCqGFhdlekW18-eDEhlvnXsXvL827VwviolH282q7MYSi","environment":"production","partner_id":"PaymentPlugins_PCP","page":null,"version":"2.0.27","is_admin":false,"restRoutes":{"connect/account":{"namespace":"wc-ppcp/v1/admin","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/admin/account/connect"},"domain-association-file":{"namespace":"wc-ppcp/v1/admin","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/admin/domain-association-file"},"cart/item":{"namespace":"wc-ppcp/v1","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/cart/item"},"cart/shipping":{"namespace":"wc-ppcp/v1","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/cart/shipping"},"cart/billing":{"namespace":"wc-ppcp/v1","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/cart/billing"},"cart/checkout":{"namespace":"wc-ppcp/v1","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/cart/checkout"},"cart/refresh":{"namespace":"wc-ppcp/v1","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/cart/refresh"},"cart/order-update-callback":{"namespace":"wc-ppcp/v1","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/cart/order-update-callback"},"cart/order":{"namespace":"wc-ppcp/v1","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/cart/order"},"order/pay":{"namespace":"wc-ppcp/v1","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/order/pay"},"billing-agreement/token":{"namespace":"wc-ppcp/v1","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/billing-agreement/token/?(?P\u003Cid\u003E[\\w-]+)"},"webhook":{"namespace":"wc-ppcp/v1","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/webhook/(?P\u003Cenvironment\u003E[\\w]+)"},"admin/order":{"namespace":"wc-ppcp/v1/admin","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/admin/order/(?P\u003Corder_id\u003E[\\w]+)"},"admin/tracking":{"namespace":"wc-ppcp/v1/admin","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/admin/order/(?P\u003Corder_id\u003E[\\w]+)/tracking"},"admin/carriers":{"namespace":"wc-ppcp/v1/admin","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/admin/order/(?P\u003Corder_id\u003E[\\w]+)/carriers"},"admin/webhook":{"namespace":"wc-ppcp/v1/admin","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/admin/webhook"},"setup-tokens":{"namespace":"wc-ppcp/v1","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/vault/setup-tokens"},"payment-tokens":{"namespace":"wc-ppcp/v1","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/vault/payment-tokens"},"checkout/validation":{"namespace":"wc-ppcp/v1","url":"/?wc-ajax=wc_ppcp_frontend_request&path=/wc-ppcp/v1/checkout-validation"}},"ajaxRestPath":"/?wc-ajax=wc_ppcp_frontend_request&path=/%s"},"errorMessages":{"terms":"Please check the terms and conditions before proceeding.","invalid_client_id":"Invalid PayPal client ID. Please check your API Settings.","invalid_currency":"PayPal does not support currency %. Please use a supported currency.","order_button_click":"Please click the %s button before placing your order.","gpay_order_button_click":"Please click the Google Pay button before placing your order","order_missing_address":"Please fill out all billing and shipping fields before clicking PayPal.","order_missing_billing_address":"Please fill out all billing fields before clicking PayPal.","cancel":"Cancel","required_fields":"Please fill out all required fields.","Y_N_NO":"3DS authentication failed.","Y_R_NO":"3DS authentication was rejected.","Y_U_UNKNOWN":"Unable to complete 3DS authentication. Please try again.","Y_U_NO":"Unable to complete 3DS authentication. Please try again.","Y_C_UNKNOWN":"3DS authentication challenge required but could not be completed. Please try again.","Y__NO":"3DS authentication could not be processed. Please try again.","U__UNKNOWN":"3DS system is currently unavailable. Please try again later.","___UNKNOWN":"3DS authentication status unknown. Please try again.","total":"Total","ERROR_VALIDATING_MERCHANT":"Domain registration is not complete. Visit https://paymentplugins.com/documentation/paypal/applepay/setup/ for instructions on completing domain registration."},"i18n":{"locale":"{\"AE\":{\"postcode\":{\"required\":false,\"hidden\":true},\"state\":{\"required\":false}},\"AF\":{\"state\":{\"required\":false,\"hidden\":true}},\"AL\":{\"state\":{\"label\":\"County\"}},\"AO\":{\"postcode\":{\"required\":false,\"hidden\":true},\"state\":{\"label\":\"Province\"}},\"AT\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"AU\":{\"city\":{\"label\":\"Suburb\"},\"postcode\":{\"label\":\"Postcode\"},\"state\":{\"label\":\"State\"}},\"AX\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"BA\":{\"postcode\":{\"priority\":65},\"state\":{\"label\":\"Canton\",\"required\":false,\"hidden\":true}},\"BD\":{\"postcode\":{\"required\":false},\"state\":{\"label\":\"District\"}},\"BE\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"BG\":{\"state\":{\"required\":false}},\"BH\":{\"postcode\":{\"required\":false},\"state\":{\"required\":false,\"hidden\":true}},\"BI\":{\"state\":{\"required\":false,\"hidden\":true}},\"BO\":{\"postcode\":{\"required\":false,\"hidden\":true},\"state\":{\"label\":\"Department\"}},\"BS\":{\"postcode\":{\"required\":false,\"hidden\":true}},\"BW\":{\"postcode\":{\"required\":false,\"hidden\":true},\"state\":{\"required\":false,\"hidden\":true,\"label\":\"District\"}},\"BZ\":{\"postcode\":{\"required\":false,\"hidden\":true},\"state\":{\"required\":false}},\"CA\":{\"postcode\":{\"label\":\"Postal code\"},\"state\":{\"label\":\"Province\"}},\"CH\":{\"postcode\":{\"priority\":65},\"state\":{\"label\":\"Canton\",\"required\":false}},\"CL\":{\"city\":{\"required\":true},\"postcode\":{\"required\":false,\"hidden\":false},\"state\":{\"label\":\"Region\"}},\"CN\":{\"state\":{\"label\":\"Province\"}},\"CO\":{\"postcode\":{\"required\":false},\"state\":{\"label\":\"Department\"}},\"CR\":{\"state\":{\"label\":\"Province\"}},\"CW\":{\"postcode\":{\"required\":false,\"hidden\":true},\"state\":{\"required\":false}},\"CY\":{\"state\":{\"required\":false,\"hidden\":true}},\"CZ\":{\"state\":{\"required\":false,\"hidden\":true}},\"DE\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false}},\"DK\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"DO\":{\"state\":{\"label\":\"Province\"}},\"EC\":{\"state\":{\"label\":\"Province\"}},\"EE\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"ET\":{\"state\":{\"required\":false,\"hidden\":true}},\"FI\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"FR\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"GG\":{\"state\":{\"required\":false,\"label\":\"Parish\"}},\"GH\":{\"postcode\":{\"required\":false},\"state\":{\"label\":\"Region\"}},\"GP\":{\"state\":{\"required\":false,\"hidden\":true}},\"GF\":{\"state\":{\"required\":false,\"hidden\":true}},\"GR\":{\"state\":{\"required\":false}},\"GT\":{\"postcode\":{\"required\":false},\"state\":{\"label\":\"Department\"}},\"HK\":{\"postcode\":{\"required\":false},\"city\":{\"label\":\"Town \\/ District\"},\"state\":{\"label\":\"Region\"}},\"HN\":{\"state\":{\"label\":\"Department\"}},\"HU\":{\"last_name\":{\"class\":[\"form-row-first\"],\"priority\":10},\"first_name\":{\"class\":[\"form-row-last\"],\"priority\":20},\"postcode\":{\"class\":[\"form-row-first\",\"address-field\"],\"priority\":65},\"city\":{\"class\":[\"form-row-last\",\"address-field\"]},\"address_1\":{\"priority\":71},\"address_2\":{\"priority\":72},\"state\":{\"label\":\"County\",\"required\":false}},\"ID\":{\"state\":{\"label\":\"Province\"}},\"IE\":{\"postcode\":{\"required\":true,\"label\":\"Eircode\"},\"state\":{\"label\":\"County\"}},\"IS\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"IL\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"IM\":{\"state\":{\"required\":false,\"hidden\":true}},\"IN\":{\"postcode\":{\"label\":\"PIN Code\"},\"state\":{\"label\":\"State\"}},\"IR\":{\"state\":{\"priority\":50},\"city\":{\"priority\":60},\"address_1\":{\"priority\":70},\"address_2\":{\"priority\":80}},\"IT\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":true,\"label\":\"Province\"}},\"JM\":{\"city\":{\"label\":\"Town \\/ City \\/ Post Office\"},\"postcode\":{\"required\":false,\"label\":\"Postal Code\"},\"state\":{\"required\":true,\"label\":\"Parish\"}},\"JP\":{\"last_name\":{\"class\":[\"form-row-first\"],\"priority\":10},\"first_name\":{\"class\":[\"form-row-last\"],\"priority\":20},\"postcode\":{\"class\":[\"form-row-first\",\"address-field\"],\"priority\":65},\"state\":{\"label\":\"Prefecture\",\"class\":[\"form-row-last\",\"address-field\"],\"priority\":66},\"city\":{\"priority\":67},\"address_1\":{\"priority\":68},\"address_2\":{\"priority\":69}},\"KN\":{\"postcode\":{\"required\":false,\"label\":\"Postal code\"},\"state\":{\"required\":true,\"label\":\"Parish\"}},\"KR\":{\"state\":{\"required\":false,\"hidden\":true}},\"KW\":{\"state\":{\"required\":false,\"hidden\":true}},\"LV\":{\"state\":{\"label\":\"Municipality\",\"required\":false}},\"LB\":{\"state\":{\"required\":false,\"hidden\":true}},\"MF\":{\"state\":{\"required\":false,\"hidden\":true}},\"MQ\":{\"state\":{\"required\":false,\"hidden\":true}},\"MT\":{\"state\":{\"required\":false,\"hidden\":true}},\"MZ\":{\"postcode\":{\"required\":false,\"hidden\":true},\"state\":{\"label\":\"Province\"}},\"NI\":{\"state\":{\"label\":\"Department\"}},\"NL\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"NG\":{\"postcode\":{\"label\":\"Postcode\",\"required\":false,\"hidden\":true},\"state\":{\"label\":\"State\"}},\"NZ\":{\"postcode\":{\"label\":\"Postcode\"},\"state\":{\"required\":false,\"label\":\"Region\"}},\"NO\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"NP\":{\"state\":{\"label\":\"State \\/ Zone\"},\"postcode\":{\"required\":false}},\"PA\":{\"state\":{\"label\":\"Province\"}},\"PL\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"PR\":{\"city\":{\"label\":\"Municipality\"},\"state\":{\"required\":false,\"hidden\":true}},\"PT\":{\"state\":{\"required\":false,\"hidden\":true}},\"PY\":{\"state\":{\"label\":\"Department\"}},\"QA\":{\"postcode\":{\"required\":false,\"hidden\":true},\"state\":{\"required\":false}},\"RE\":{\"state\":{\"required\":false,\"hidden\":true}},\"RO\":{\"state\":{\"label\":\"County\",\"required\":true}},\"RS\":{\"city\":{\"required\":true},\"postcode\":{\"required\":true},\"state\":{\"label\":\"District\",\"required\":false}},\"RW\":{\"state\":{\"required\":false,\"hidden\":true}},\"SG\":{\"state\":{\"required\":false,\"hidden\":true},\"city\":{\"required\":false}},\"SK\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"SI\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"SR\":{\"postcode\":{\"required\":false,\"hidden\":true}},\"SV\":{\"state\":{\"label\":\"Department\"}},\"ES\":{\"postcode\":{\"priority\":65},\"state\":{\"label\":\"Province\"}},\"LI\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"LK\":{\"state\":{\"required\":false,\"hidden\":true}},\"LU\":{\"state\":{\"required\":false,\"hidden\":true}},\"MD\":{\"state\":{\"label\":\"Municipality \\/ District\"}},\"SE\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"TR\":{\"postcode\":{\"priority\":65},\"state\":{\"label\":\"Province\"}},\"UG\":{\"postcode\":{\"required\":false,\"hidden\":true},\"city\":{\"label\":\"Town \\/ Village\",\"required\":true},\"state\":{\"label\":\"District\",\"required\":true}},\"US\":{\"postcode\":{\"label\":\"ZIP Code\"},\"state\":{\"label\":\"State\"}},\"UY\":{\"state\":{\"label\":\"Department\"}},\"GB\":{\"postcode\":{\"label\":\"Postcode\"},\"state\":{\"label\":\"County\",\"required\":false}},\"ST\":{\"postcode\":{\"required\":false,\"hidden\":true},\"state\":{\"label\":\"District\"}},\"VN\":{\"state\":{\"required\":false,\"hidden\":true},\"postcode\":{\"priority\":65,\"required\":false,\"hidden\":false},\"address_2\":{\"required\":false,\"hidden\":false}},\"WS\":{\"postcode\":{\"required\":false,\"hidden\":true}},\"YT\":{\"state\":{\"required\":false,\"hidden\":true}},\"ZA\":{\"state\":{\"label\":\"Province\"}},\"ZW\":{\"postcode\":{\"required\":false,\"hidden\":true}},\"default\":{\"first_name\":{\"label\":\"First name\",\"required\":true,\"class\":[\"form-row-first\"],\"autocomplete\":\"given-name\",\"priority\":10},\"last_name\":{\"label\":\"Last name\",\"required\":true,\"class\":[\"form-row-last\"],\"autocomplete\":\"family-name\",\"priority\":20},\"company\":{\"label\":\"Company name\",\"class\":[\"form-row-wide\"],\"autocomplete\":\"organization\",\"priority\":30,\"required\":false},\"country\":{\"type\":\"country\",\"label\":\"Country \\/ Region\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\",\"update_totals_on_change\"],\"autocomplete\":\"country\",\"priority\":40,\"hidden\":false},\"address_1\":{\"label\":\"Street address\",\"placeholder\":\"House number and street name\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-line1\",\"priority\":50},\"address_2\":{\"label\":\"Apartment, suite, unit, etc.\",\"label_class\":[\"screen-reader-text\"],\"placeholder\":\"Apartment, suite, unit, etc. (optional)\",\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-line2\",\"priority\":60,\"required\":false},\"city\":{\"label\":\"Town \\/ City\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-level2\",\"priority\":70},\"state\":{\"type\":\"state\",\"label\":\"State \\/ County\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"validate\":[\"state\"],\"autocomplete\":\"address-level1\",\"priority\":80},\"postcode\":{\"label\":\"Postcode \\/ ZIP\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"validate\":[\"postcode\"],\"autocomplete\":\"postal-code\",\"priority\":90},\"phone\":{\"label\":\"Phone\",\"required\":true,\"type\":\"tel\",\"class\":[\"form-row-wide\"],\"validate\":[\"phone\"],\"autocomplete\":\"tel\",\"priority\":100}}}","locale_fields":"{\"address_1\":\"#billing_address_1_field, #shipping_address_1_field\",\"address_2\":\"#billing_address_2_field, #shipping_address_2_field\",\"state\":\"#billing_state_field, #shipping_state_field, #calc_shipping_state_field\",\"postcode\":\"#billing_postcode_field, #shipping_postcode_field, #calc_shipping_postcode_field\",\"city\":\"#billing_city_field, #shipping_city_field, #calc_shipping_city_field\",\"country\":\"#billing_country_field, #shipping_country_field, #calc_shipping_country_field\",\"phone\":\"#billing_phone_field, #shipping_phone_field\"}"},"ppcp_data":{"title":"PayPal","sections":["order_pay","checkout"],"needsSetupToken":false,"funding":["paypal","card"],"buttons_order":["paypal","paylater"],"buttonPlacement":"place_order","buttons":{"paypal":{"layout":"vertical","label":"paypal","shape":"rect","height":40,"color":"gold"},"paylater":{"layout":"vertical","label":"paypal","shape":"rect","height":40,"color":"blue"},"card":{"layout":"vertical","label":"paypal","shape":"rect","height":40,"color":"black","tagline":false},"venmo":{"layout":"vertical","shape":"rect","height":40}},"paypal_sections":["order_pay","checkout","add_payment_method"],"paylater_sections":["checkout","order_pay"],"credit_card_sections":["checkout"],"venmo_sections":["checkout","order_pay"],"placeOrderEnabled":false,"serverSideShippingCallback":false},"ppcp_applepay_data":{"button":{"style":"black","type":"plain","radius":"4px","height":"40px"},"sections":["checkout","cart","order_pay"],"display_name":"Light Novels Translations","html":{"button":"\u003Cbutton class=\"wc-ppcp_applepay-button\"\u003E\u003C/button\u003E\n"},"supported_currencies":["AUD","BRL","CAD","CHF","CZK","DKK","EUR","GBP","HKD","HUF","ILS","JPY","MXN","NOK","NZD","PHP","PLN","SEK","SGD","THB","TWD","USD"],"i18n":{"total_label":"Total"}},"recaptcha":{"site_key":null,"i18n":{"error":"reCAPTCHA error: %s"},"paymentMethods":["ppcp","ppcp_applepay"]},"queryParams":{"client-id":"Afm0gDfmRZxjekARcablp7ruOQ3Nj5kpakRQCqGFhdlekW18-eDEhlvnXsXvL827VwviolH282q7MYSi","intent":"capture","commit":"true","components":"buttons,messages,card-fields,googlepay,applepay","currency":"USD","enable-funding":"paylater","data-partner-attribution-id":"PaymentPlugins_PCP","locale":"en_US"},"ppcp_api":[],"ppcp_advanced":{"miniCartLocation":"below"},"ppcp_paylater_message":[]};
+		</script><script id="lnt-accounts-js-before">
+window.LNTAccounts={"ajax":"https:\/\/lightnovelstranslations.com\/wp-admin\/admin-ajax.php","loginUrl":"https:\/\/lightnovelstranslations.com\/?lnt_accounts=login\u0026return_to=https:\/\/lightnovelstranslations.com\/browse\/?field-search=solo","returnTo":"https:\/\/lightnovelstranslations.com\/browse\/?field-search=solo","novelId":0,"enabled":true,"signedIn":false};
+//# sourceURL=lnt-accounts-js-before
+</script>
+<script id="lnt-accounts-js" src="https://lightnovelstranslations.com/wp-content/plugins/lnt-accounts/assets/accounts.js?ver=0.7.16"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_password_show":"Show password","i18n_password_hide":"Hide password"};
+//# sourceURL=woocommerce-js-extra
+</script>
+<script data-wp-strategy="defer" id="woocommerce-js" src="https://lightnovelstranslations.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=11.2.1"></script>
+<script id="js-swiper-slider-js" src="https://lightnovelstranslations.com/wp-content/themes/light_novel/js/swiper-bundle.min.js"></script>
+<script id="js-rating-js" src="https://lightnovelstranslations.com/wp-content/themes/light_novel/js/jquery.star-rating-svg.js"></script>
+<script id="select2_jquery-js" src="https://lightnovelstranslations.com/wp-content/themes/light_novel/js/select2.min.js"></script>
+<script id="custom-js-js-extra">
+var viwiz = {"ajaxurl":"https://lightnovelstranslations.com/wp-admin/admin-ajax.php","loginUrl":"https://lightnovelstranslations.com/?lnt_accounts=login&return_to=https://lightnovelstranslations.com/browse/?field-search=solo","krystalNonce":""};
+var lntPasswordRecovery = {"url":"https://lightnovelstranslations.com/my-account/lost-password/"};
+//# sourceURL=custom-js-js-extra
+</script>
+<script id="custom-js-js" src="https://lightnovelstranslations.com/wp-content/plugins/lnt-site-integrity/custom.js?ver=1.0.2"></script>
+<script id="googlesitekit-consent-mode-js" src="https://lightnovelstranslations.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-consent-mode-755f1678e260138d789e.js"></script>
+<script id="sourcebuster-js-js" src="https://lightnovelstranslations.com/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=11.2.1"></script>
+<script id="wc-order-attribution-js-extra">
+var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"base64":false,"ajaxurl":"https://lightnovelstranslations.com/wp-admin/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+//# sourceURL=wc-order-attribution-js-extra
+</script>
+<script id="wc-order-attribution-js" src="https://lightnovelstranslations.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=11.2.1"></script>
+<script id="wp-consent-api-js-extra">
+var consent_api = {"consent_type":"","waitfor_consent_hook":"","cookie_expiration":"30","cookie_prefix":"wp_consent","services":[]};
+//# sourceURL=wp-consent-api-js-extra
+</script>
+<script id="wp-consent-api-js" src="https://lightnovelstranslations.com/wp-content/plugins/wp-consent-api/assets/js/wp-consent-api.min.js?ver=2.1.0"></script>
+<script id="wp-consent-api-integration-js-before">
+window.wc_order_attribution.params.consentCategory = "marketing";
+//# sourceURL=wp-consent-api-integration-js-before
+</script>
+<script id="wp-consent-api-integration-js" src="https://lightnovelstranslations.com/wp-content/plugins/woocommerce/assets/js/frontend/wp-consent-api-integration.min.js?ver=11.2.1"></script>
+<script id="googlesitekit-events-provider-content-events-js-before">
+window._googlesitekit = window._googlesitekit || {};
+window._googlesitekit.contentEvents = {"postID":64864,"isReadableSinglePost":false,"hasVimeoEmbed":false,"wordCount":0,"estimatedReadTimeSeconds":0,"isLastPageOfMultiPagePost":false,"readTimeThresholdPercent":85,"minimumReadTimeSeconds":5};
+//# sourceURL=googlesitekit-events-provider-content-events-js-before
+</script>
+<script id="googlesitekit-events-provider-content-events-js" src="https://lightnovelstranslations.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-content-events-6b04077d00f0d606ba42.js" defer></script>
+<script id="googlesitekit-events-provider-woocommerce-js-before">
+window._googlesitekit.wcdata = window._googlesitekit.wcdata || {};
+window._googlesitekit.wcdata.products = [];
+window._googlesitekit.wcdata.add_to_cart = null;
+window._googlesitekit.wcdata.currency = "USD";
+window._googlesitekit.wcdata.currencyMinorUnit = 2;
+window._googlesitekit.wcdata.eventsToTrack = ["add_to_cart","purchase"];
+//# sourceURL=googlesitekit-events-provider-woocommerce-js-before
+</script>
+<script id="googlesitekit-events-provider-woocommerce-js" src="https://lightnovelstranslations.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-woocommerce-86c5a3ff303665006998.js" defer></script>
+<script id="jetpack-stats-js-before">
+_stq = window._stq || [];
+_stq.push([ "view", {"v":"ext","blog":"104713889","post":"64864","tz":"10","srv":"lightnovelstranslations.com","j":"1:16.3"} ]);
+_stq.push([ "clickTrackerInit", "104713889", "64864" ]);
+//# sourceURL=jetpack-stats-js-before
+</script>
+<script data-wp-strategy="defer" defer fetchpriority="low" id="jetpack-stats-js" src="https://stats.wp.com/e-202641.js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://lightnovelstranslations.com/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://lightnovelstranslations.com/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script id="lnt-presentation-batch-js">(function () {
+    'use strict';
+    function initialize() {
+        const header = document.getElementById('header-wrapper');
+        const menu = document.getElementById('lnt-mobile-menu');
+        if (header && menu) {
+            // Move the existing elements, retaining their URLs and event handlers.
+            // Reader pages already perform these moves in reader.js.
+            if (!document.body.classList.contains('lnt-reader-page')) {
+                const utilities = header.querySelector('.mobile_vip_view_mode');
+                const account = header.querySelector('.mobile_krystal_user');
+                if (utilities) { utilities.classList.add('lnt-reader-menu-utilities'); menu.append(utilities); }
+                if (account) { account.classList.add('lnt-reader-menu-account'); menu.prepend(account); }
+            }
+            header.querySelectorAll('.mini-shopping-cart').forEach(link => link.setAttribute('aria-label', 'Shopping cart'));
+            header.querySelectorAll('.search_field').forEach(field => { if (!field.getAttribute('aria-label')) field.setAttribute('aria-label', 'Search novels'); });
+            document.body.classList.add('lnt-mobile-header-ready');
+        }
+        document.querySelectorAll('.single-novels-parent-page .novel-info').forEach(info => {
+            const title = info.querySelector('.novel_title');
+            const action = info.querySelector('.lnt-reading-action');
+            if (title && action) title.after(action);
+        });
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialize, { once:true });
+    else initialize();
+}());
+</script> 
+<div class="sta_popup" id="krystal_pricing_table_popup">
+	<div class="sta_popup_container">
+		<div class="sta_popup_content">
+			<div class="krystal_pricing_table_popup_container">
+				<div class="krystal_pricing_table_popup_content">
+					<div class="krystal_pricing_table_popup_header">
+						<h3>Get More Krystals</h3>
+						<span class="popup_close_btn"></span>
+					</div>
+					<div class="krystal_pricing_table_popup_body">
+						<ul>
+							<li>
+								<div class='krystlal-pack krystal-pack1'>
+									<div class='krystlal-pack-content'>
+										<div class="krystal-pack-header">
+											<div class="">
+												<span>500</span>
+											</div>
+										</div>
+										<div class="krystal-pack-body">
+											<picture><source srcset="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/krystal-pack1.png.webp"  type="image/webp"><img src="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/krystal-pack1.png" width="85" height="62" alt="Krystal" data-eio="p" /></picture>
+										</div>
+										<div class="krystal-pack-footer">
+											<a href="?krystal=krytal-250" data-krystal_id='66146' class="btn btn_path buy_krystal">$5</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class='krystlal-pack krystal-pack2'>
+									<div class='krystlal-pack-content'>
+										<div class="krystal-pack-header">
+											<div class="">
+												<span>1000</span>
+											</div>
+										</div>
+										<div class="krystal-pack-body">
+											<picture><source srcset="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/krystal-pack2.png.webp"  type="image/webp"><img src="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/krystal-pack2.png" width="85" height="77" alt="Krystal" data-eio="p" /></picture>
+										</div>
+										<div class="krystal-pack-footer">
+											<a href="?krystal=krytal-500" data-krystal_id='66147' class="btn btn_path buy_krystal">$10</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class='krystlal-pack krystal-pack3'>
+									<div class='krystlal-pack-content'>
+										<div class="krystal-pack-header">
+											<div class="">
+												<span>3000</span>
+											</div>
+										</div>
+										<div class="krystal-pack-body">
+											<picture><source srcset="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/krystal-pack3.png.webp"  type="image/webp"><img src="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/krystal-pack3.png" width="74" height="99" alt="Krystal" data-eio="p" /></picture>
+										</div>
+										<div class="krystal-pack-footer">
+											<a href="?krystal=krytal-1500" data-krystal_id='66149' class="btn btn_path buy_krystal">$30</a>
+										</div>
+									</div>
+								</div>
+							</li> 
+							<li >
+								<div class='krystlal-pack krystal-pack4'>
+									<div class='krystlal-pack-content'>
+										<div class="krystal-pack-header">
+											<div class="">
+												<span>5250</span>
+											</div>
+										</div>
+										<div class="krystal-pack-body">
+											<p>5000 + 250 bonus</p>
+											<picture><source srcset="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/krystal-pack4.png.webp"  type="image/webp"><img src="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/krystal-pack4.png" width="70" height="109" alt="Krystal" data-eio="p" /></picture>
+										</div>
+										<div class="krystal-pack-footer">
+											<a href="?krystal=krytal-2750" data-krystal_id='66150' class="btn btn_path buy_krystal">$50</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="mt-3">
+								<div class='krystlal-pack krystal-pack5'>
+									<div class='krystlal-pack-content'>
+										<div class="krystal-pack-header">
+											<div class="">
+												<span>10500</span>
+											</div>
+										</div>
+										<div class="krystal-pack-body">
+											<p>10000 + 500 bonus</p>
+											<picture><source srcset="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/krystal-pack5.png.webp"  type="image/webp"><img src="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/krystal-pack5.png" width="99" height="107" alt="Krystal" data-eio="p" /></picture>
+										</div>
+										<div class="krystal-pack-footer">
+											<a href="?krystal=krytal-5500" data-krystal_id='66151' class="btn btn_path buy_krystal">$100</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="mt-3">
+								<div class='krystlal-pack krystal-pack6'> 
+									<div class='krystlal-pack-content'>
+										<div class="krystal-pack-header">
+											<div class="">
+												<span>21500</span>
+											</div>
+										</div>
+										<div class="krystal-pack-body">
+											<p>20000 + 1500 bonus</p>
+											<picture><source srcset="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/krystal-pack6.png.webp"  type="image/webp"><img src="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/krystal-pack6.png" width="103" height="110" alt="Krystal" data-eio="p" /></picture>
+										</div>
+										<div class="krystal-pack-footer">
+											<a href="?krystal=krytal-1250" data-krystal_id='66152' class="btn btn_path buy_krystal"><span>$200</span>$180</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="mt-3">
+								<div class='krystlal-pack krystal-pack6 krystal-pack7'> 
+									<div class='krystlal-pack-content'>
+										<div class="krystal-pack-header">
+											<div class="">
+												<span>54500</span>
+											</div>
+										</div>
+										<div class="krystal-pack-body">
+											<p>50000 + 4500 bonus</p>
+											<picture><source srcset="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/pack7.png.webp"  type="image/webp"><img src="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/pack7.png" width="97" height="104" alt="Krystal" data-eio="p" /></picture>
+										</div>
+										<div class="krystal-pack-footer">
+											<a href="?krystal=krytal-1250" data-krystal_id='107187' class="btn btn_path buy_krystal"><span>$500</span>$450</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="mt-3">
+								<div class='krystlal-pack krystal-pack6 krystal-pack8'>
+									<div class="best_deal"></div>
+									<div class='krystlal-pack-content'>
+										<div class="krystal-pack-header">
+											<div class="">
+												<span>110000</span>
+											</div>
+										</div>
+										<div class="krystal-pack-body">
+											<p>100000 + 10k bonus</p>
+											<picture><source srcset="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/pack8.png.webp"  type="image/webp"><img src="https://lightnovelstranslations.com/wp-content/themes/light_novel/images/pack8.png" width="111" height="104" alt="Krystal" data-eio="p" /></picture>
+										</div>
+										<div class="krystal-pack-footer">
+											<a href="?krystal=krytal-1250" data-krystal_id='106980' class="btn btn_path buy_krystal"><span>$1000</span>$900</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class='krystal_pricing_table_popup_footer'>
+						<p>Purchased Krystals don’t expire and are non-transferrable.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"571fc84a4d2e4cca8b160eff6cdd188c","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html><!--
+Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com
+
+Retrieved 4358 objects (970 KB) from Redis using Predis (v2.4.1).
+-->

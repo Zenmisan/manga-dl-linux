@@ -1,0 +1,38 @@
+{
+    "chapter": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "detail": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://www.mangakakalot.gg/search/story/piece",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fwww.mangakakalot.gg%2Fsearch%2Fstory%2Fpiece",
+            "status": 403,
+            "transportError": ""
+        }
+    ],
+    "id": "mangakakalot",
+    "novel": false,
+    "query": "piece",
+    "recordedAt": "2026-10-14T13:34:33Z",
+    "search": {
+        "count": 0,
+        "error": "no search results",
+        "id": "",
+        "ok": false,
+        "title": ""
+    }
+}

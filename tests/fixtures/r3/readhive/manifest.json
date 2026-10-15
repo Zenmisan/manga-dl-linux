@@ -1,0 +1,56 @@
+{
+    "chapter": {
+        "count": 26411,
+        "error": "",
+        "id": "64901/1",
+        "ok": true,
+        "title": "<div @click=\"$dispatch('tools')\" class=\"mb-4\" style=\"font-size: var(--font-"
+    },
+    "detail": {
+        "count": 76,
+        "error": "",
+        "id": "64901",
+        "ok": true,
+        "title": "Solo For Two"
+    },
+    "fetches": [
+        {
+            "body": "query=solo&action=search",
+            "file": "0001.dat",
+            "finalUrl": "https://readhive.org/ajax",
+            "method": "POST",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Freadhive.org%2Fajax",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://readhive.org/series/64901/",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Freadhive.org%2Fseries%2F64901%2F",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://readhive.org/series/64901/1/",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Freadhive.org%2Fseries%2F64901%2F1",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "readhive",
+    "novel": true,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:29:56Z",
+    "search": {
+        "count": 4,
+        "error": "",
+        "id": "64901",
+        "ok": true,
+        "title": "Solo For Two"
+    }
+}

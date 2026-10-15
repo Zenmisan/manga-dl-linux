@@ -1,0 +1,38 @@
+{
+    "chapter": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "detail": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Ftcbscans.me%2Fprojects",
+            "status": 0,
+            "transportError": "[network] SSL handshake failed: The issuer certificate of a locally looked up certificate could not be found"
+        }
+    ],
+    "id": "tcbscans",
+    "novel": false,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:30:46Z",
+    "search": {
+        "count": 0,
+        "error": "SSL handshake failed: The issuer certificate of a locally looked up certificate could not be found",
+        "id": "",
+        "ok": false,
+        "title": ""
+    }
+}

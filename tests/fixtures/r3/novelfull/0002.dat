@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <script type="c1799767e9a57912f16cc4e4-text/javascript">
+(function () {
+    if (document.cookie.indexOf('nt_csrf=') !== -1) return;
+    var a = new Uint8Array(32);
+    (window.crypto || window.msCrypto).getRandomValues(a);
+    var t = '';
+    for (var i = 0; i < a.length; i++) t += ('0' + a[i].toString(16)).slice(-2);
+    document.cookie = 'nt_csrf=' + t + '; path=/; max-age=31536000; SameSite=Lax'
+        + (location.protocol === 'https:' ? '; Secure' : '');
+})();
+</script>
+    <title>Read Emperor of Solo Play online free - Novelfull</title>
+
+    <meta name="title" content="Read Emperor of Solo Play online free - Novelfull"><meta name="description" content="Read Emperor of Solo Play online free from your Mobile, Table, PC...Emperor of Solo Play is genre Sci-fi novel by author D-Dart"><meta name="image" content="https://novelfull.com/uploads/webp/novel/emperor-of-solo-play-c9dcc1629e.webp"><meta name="keywords" content="Emperor of Solo Play,Emperor of Solo Play full chapters,Emperor of Solo Play latest chapter, author D-Dart">
+            <link rel="preload" href="/web/fonts/glyphicons-halflings-regular.woff2" as="font" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="/web/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/web/images/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="/web/css/style.css?v=1787142892">
+    <link rel="stylesheet" href="/web/css/rateit.css?v=1593792433">
+    <link rel="stylesheet" href="/web/css/custom.css?v=1601717968">
+    <link rel="stylesheet" href="/web/css/responsive.css?v=1593792433">
+        <link rel="stylesheet" href="/web/css/v2.css?v=1787152168">
+
+    <script type="c1799767e9a57912f16cc4e4-text/javascript">
+        // Co trong ban cu (base.php dong 31). Da tim ca thu muc js: KHONG tep nao
+        // doc bien nay — no di kem adframe.js, ma tep do ban cu da chu thich khong
+        // nap nua. Giu lai cho khop, khong co tac dung gi.
+        var adblock = true;
+
+        var ajaxSearchUrl        = '/ajax-search';
+        var ajaxNovelRateUrl     = '/ajax-novel-rate';
+        var ajaxReportChapterUrl = '/ajax-report-chapter';
+        var ajaxUserSettingsUrl  = '/ajax-user-settings';
+        var ajaxChapterOptionUrl = '/ajax-chapter-option';
+    </script>
+
+    
+        <script defer src="/web/js/plugins.js?v=1596267511" type="c1799767e9a57912f16cc4e4-text/javascript"></script>
+    <script defer src="/web/js/scripts.js?v=1787155244" type="c1799767e9a57912f16cc4e4-text/javascript"></script>
+            <script defer src="/web/js/novel.js?v=1785853485" type="c1799767e9a57912f16cc4e4-text/javascript"></script>
+    </head>
+<body>
+<div id="wrapper">
+    
+<header class="header" style="display: block">
+    <div class="navbar navbar-default navbar-static-top" role="navigation" id="nav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Show menu</span>
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                                <h5>
+                    <a class="header-logo" href="/" title="Read novel online">
+                                                <img src="/uploads/webp/site/banner-75b2b7a774-bf0efeba81.webp"
+                             alt="Novelfull">
+                    </a>
+                </h5>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="control nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-list"></span> Novel List <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/latest-release-novel" title="Latest Release">Latest Release</a></li>
+                            <li><a href="/hot-novel" title="Hot Novel">Hot Novel</a></li>
+                            <li><a href="/completed-novel" title="Completed Novel">Completed Novel</a></li>
+                            <li><a href="/most-popular" title="Most Popular">Most Popular</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-list"></span> Genre <span class="caret"></span>
+                        </a>
+                        <div class="dropdown-menu multi-column">
+                            <div class="row">
+                                                                    <div class="col-md-4">
+                                        <ul class="dropdown-menu">
+                                                                                            <li>
+                                                    <a href="/genre/Harem"
+                                                       title="Harem">Harem</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Gender+Bender"
+                                                       title="Gender Bender">Gender Bender</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Sci-fi"
+                                                       title="Sci-fi">Sci-fi</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Mature"
+                                                       title="Mature">Mature</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Drama"
+                                                       title="Drama">Drama</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Tragedy"
+                                                       title="Tragedy">Tragedy</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Shounen"
+                                                       title="Shounen">Shounen</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Horror"
+                                                       title="Horror">Horror</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Mystery"
+                                                       title="Mystery">Mystery</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Shoujo"
+                                                       title="Shoujo">Shoujo</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Psychological"
+                                                       title="Psychological">Psychological</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Adventure"
+                                                       title="Adventure">Adventure</a>
+                                                </li>
+                                                                                    </ul>
+                                    </div>
+                                                                    <div class="col-md-4">
+                                        <ul class="dropdown-menu">
+                                                                                            <li>
+                                                    <a href="/genre/School+Life"
+                                                       title="School Life">School Life</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Xuanhuan"
+                                                       title="Xuanhuan">Xuanhuan</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Comedy"
+                                                       title="Comedy">Comedy</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Ecchi"
+                                                       title="Ecchi">Ecchi</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Martial+Arts"
+                                                       title="Martial Arts">Martial Arts</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Action"
+                                                       title="Action">Action</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Fantasy"
+                                                       title="Fantasy">Fantasy</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Romance"
+                                                       title="Romance">Romance</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Supernatural"
+                                                       title="Supernatural">Supernatural</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Xianxia"
+                                                       title="Xianxia">Xianxia</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Wuxia"
+                                                       title="Wuxia">Wuxia</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Historical"
+                                                       title="Historical">Historical</a>
+                                                </li>
+                                                                                    </ul>
+                                    </div>
+                                                                    <div class="col-md-4">
+                                        <ul class="dropdown-menu">
+                                                                                            <li>
+                                                    <a href="/genre/Slice+of+Life"
+                                                       title="Slice of Life">Slice of Life</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Seinen"
+                                                       title="Seinen">Seinen</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Lolicon"
+                                                       title="Lolicon">Lolicon</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Adult"
+                                                       title="Adult">Adult</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Josei"
+                                                       title="Josei">Josei</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Sports"
+                                                       title="Sports">Sports</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Smut"
+                                                       title="Smut">Smut</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Mecha"
+                                                       title="Mecha">Mecha</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Yaoi"
+                                                       title="Yaoi">Yaoi</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Shounen+Ai"
+                                                       title="Shounen Ai">Shounen Ai</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/History"
+                                                       title="History">History</a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="/genre/Martial"
+                                                       title="Martial">Martial</a>
+                                                </li>
+                                                                                    </ul>
+                                    </div>
+                                                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown" id="options">
+    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        <span class="glyphicon glyphicon-cog"></span> Options <span class="caret"></span>
+    </a>
+
+    <div class="dropdown-menu dropdown-menu-right settings">
+        <form class="form-horizontal">
+                            <div class="form-group form-group-sm">
+                    <label class="col-sm-2 col-md-5 control-label" for="option-background">Background</label>
+                    <div class="col-sm-5 col-md-7">
+                        <select class="form-control" id="option-background">
+                                                            <option value="#F4F4F4"
+                                    selected>Light gray</option>
+                                                            <option value="#E9EBEE"
+                                    >Light blue</option>
+                                                            <option value="#F4F4E4"
+                                    >Light yellow</option>
+                                                            <option value="#EAE4D3"
+                                    >Sepia</option>
+                                                            <option value="#D5D8DC"
+                                    >Dark blue</option>
+                                                            <option value="#FAFAC8"
+                                    >Dark yellow</option>
+                                                            <option value="#EFEFAB"
+                                    >Wood grain</option>
+                                                            <option value="#FFF"
+                                    >White</option>
+                                                            <option value="#232323"
+                                    >Dark</option>
+                                                    </select>
+                    </div>
+                </div>
+                            <div class="form-group form-group-sm">
+                    <label class="col-sm-2 col-md-5 control-label" for="option-font-family">Font family</label>
+                    <div class="col-sm-5 col-md-7">
+                        <select class="form-control" id="option-font-family">
+                                                            <option value="&apos;Palatino Linotype&apos;, serif"
+                                    >Palatino Linotype</option>
+                                                            <option value="&apos;Segoe UI&apos;, sans-serif"
+                                    >Segoe UI</option>
+                                                            <option value="&apos;Roboto Reader&apos;, sans-serif"
+                                    >Roboto</option>
+                                                            <option value="&apos;Roboto Condensed Reader&apos;, sans-serif"
+                                    >Roboto Condensed</option>
+                                                            <option value="&apos;Patrick Hand&apos;, sans-serif"
+                                    >Patrick Hand</option>
+                                                            <option value="&apos;Noticia Text&apos;, sans-serif"
+                                    >Noticia Text</option>
+                                                            <option value="&apos;Times New Roman&apos;, serif"
+                                    >Times New Roman</option>
+                                                            <option value="Verdana, sans-serif"
+                                    >Verdana</option>
+                                                            <option value="Tahoma, sans-serif"
+                                    >Tahoma</option>
+                                                            <option value="Arial, sans-serif"
+                                    selected>Arial</option>
+                                                    </select>
+                    </div>
+                </div>
+                            <div class="form-group form-group-sm">
+                    <label class="col-sm-2 col-md-5 control-label" for="option-font-size">Font size</label>
+                    <div class="col-sm-5 col-md-7">
+                        <select class="form-control" id="option-font-size">
+                                                            <option value="16px"
+                                    >16</option>
+                                                            <option value="18px"
+                                    selected>18</option>
+                                                            <option value="20px"
+                                    >20</option>
+                                                            <option value="22px"
+                                    >22</option>
+                                                            <option value="24px"
+                                    >24</option>
+                                                            <option value="26px"
+                                    >26</option>
+                                                            <option value="28px"
+                                    >28</option>
+                                                            <option value="30px"
+                                    >30</option>
+                                                            <option value="32px"
+                                    >32</option>
+                                                            <option value="34px"
+                                    >34</option>
+                                                            <option value="36px"
+                                    >36</option>
+                                                            <option value="38px"
+                                    >38</option>
+                                                            <option value="40px"
+                                    >40</option>
+                                                    </select>
+                    </div>
+                </div>
+                            <div class="form-group form-group-sm">
+                    <label class="col-sm-2 col-md-5 control-label" for="option-line-height">Line height</label>
+                    <div class="col-sm-5 col-md-7">
+                        <select class="form-control" id="option-line-height">
+                                                            <option value="100%"
+                                    >100%</option>
+                                                            <option value="120%"
+                                    >120%</option>
+                                                            <option value="140%"
+                                    >140%</option>
+                                                            <option value="160%"
+                                    selected>160%</option>
+                                                            <option value="180%"
+                                    >180%</option>
+                                                            <option value="200%"
+                                    >200%</option>
+                                                    </select>
+                    </div>
+                </div>
+            
+                            <div class="form-group form-group-sm">
+                    <label class="col-sm-2 col-md-5 control-label">Full frame</label>
+                    <div class="col-sm-5 col-md-7">
+                                                    <label class="radio-inline">
+                                <input type="radio" name="fluid-switch" value="yes"
+                                    > Yes                            </label>
+                                                    <label class="radio-inline">
+                                <input type="radio" name="fluid-switch" value="no"
+                                    checked> No                            </label>
+                                            </div>
+                </div>
+                            <div class="form-group form-group-sm">
+                    <label class="col-sm-2 col-md-5 control-label">No line break</label>
+                    <div class="col-sm-5 col-md-7">
+                                                    <label class="radio-inline">
+                                <input type="radio" name="onebreak-switch" value="yes"
+                                    > Yes                            </label>
+                                                    <label class="radio-inline">
+                                <input type="radio" name="onebreak-switch" value="no"
+                                    checked> No                            </label>
+                                            </div>
+                </div>
+                    </form>
+    </div>
+</li>
+                </ul>
+
+                <form class="navbar-form navbar-right" action="/search" method="get">
+                    <div class="input-group search-holder">
+                        <input class="form-control" id="search-input" type="search" name="keyword"
+                               placeholder="Search..." value="">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="list-group list-search-res hide"></div>
+                </form>
+
+                                <div id="login-status" class="hide"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main id="container" class="" style="">
+    
+    <div class="navbar-breadcrumb" style="display: block">
+    <div class="container breadcrumb-container">
+                    <ol class="breadcrumb">
+                <li>
+                    <a href="/"><span class="glyphicon glyphicon-home"></span></a>
+                    <a href="/" title="Read novel online"><span>Novel</span></a>
+                </li>
+                <li class="active">
+                    <h1><a href="/genre/Sci-fi" title="Sci-fi"><span>Sci-fi</span></a></h1>
+                </li>
+            </ol>
+
+            </div>
+</div>
+
+<div class="container" id="truyen">
+    <div class="csstransforms3d">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-truyen-main">
+
+            <div class="col-xs-12 col-info-desc">
+                <div class="title-list"><h2>Novel info</h2></div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4 info-holder">
+                    <div class="books">
+                        <div class="desc"><h3 class="title">Emperor of Solo Play</h3></div>
+                        <div class="book">
+                            <img src="/uploads/webp/novel/emperor-of-solo-play-c9dcc1629e.webp"
+                                 alt="Emperor of Solo Play">
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div><h3>Author:</h3><a href="/author/D-Dart">D-Dart</a>, <a href="/author/%EB%94%94%EB%8B%A4%ED%8A%B8">디다트</a></div>
+                        <div><h3>Alternative names:</h3>ESP, solpeul-ui jewang, 솔플의 제왕</div>
+                        <div><h3>Genre:</h3><a href="/genre/Sci-fi">Sci-fi</a>, <a href="/genre/Adventure">Adventure</a>, <a href="/genre/Comedy">Comedy</a>, <a href="/genre/Action">Action</a></div>
+                                                    <div><h3>Source:</h3><a href="/translator/Wuxiaworld">Wuxiaworld</a></div>
+                                                <div><h3>Status:</h3><a href="/status/Completed">Completed</a></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 col-md-8 desc">
+                    <h3 class="title">Emperor of Solo Play</h3>
+
+                    <div class="rate">
+    <input type="hidden" id="rateVal" value="8.7">
+
+    <div id="rating" data-novel-id="258"></div>
+    <div id="text__rating"></div>
+</div>
+<div class="small"><em>Rating: <strong><span>8.7</span></strong>/<span class="text-muted">10</span> from
+        <strong><span>1871</span> ratings</strong></em></div>
+
+                    <div class="desc-text">
+                        <p>Year 2035. The virtual reality game, Warlord, changed the world. An Jaehyun was one of the many who wished to change his life through the game. After dedicating his life to the game, he was met with a betrayal. A betrayal by his comrades. As a result, he lost everything. But a chance was given to him. A chance to redo everything again! “I won’t play with others ever again. Whatever the outcome, I’ll show that I can do it alone.” Others rolled a dice to split the spoils of victory. An Jaehyun ate it all by himself. It was the start of An Jaehyun’s solo game life.</p>Translator: NaughtyOtter                    </div>
+                    <div class="showmore"><a class="btn btn-default btn-xs">See more »</a></div>
+
+                    <div class="l-chapter">
+    <div class="l-title"><h3>Latest chapters</h3></div>
+    <ul class="l-chapters">
+                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-191-epilogue.html" title="Chapter 191 Epilogue"><span class="chapter-text">Chapter 191 Epilogue</span></a></li>
+                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-190-emperor-of-solo-play.html" title="Chapter 190 Emperor of Solo Play"><span class="chapter-text">Chapter 190 Emperor of Solo Play</span></a></li>
+                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-189-barbarian-king-6.html" title="Chapter 189 Barbarian King (6)"><span class="chapter-text">Chapter 189 Barbarian King (6)</span></a></li>
+                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-188-barbarian-king-5.html" title="Chapter 188 Barbarian King (5)"><span class="chapter-text">Chapter 188 Barbarian King (5)</span></a></li>
+                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-187-barbarian-king-4.html" title="Chapter 187 Barbarian King (4)"><span class="chapter-text">Chapter 187 Barbarian King (4)</span></a></li>
+            </ul>
+</div>
+                </div>
+            </div>
+
+            <div class="col-xs-12" id="list-chapter">
+                <div class="title-list"><h2>Chapter List</h2></div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                                    <ul class="list-chapter">
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-0-prologue.html" title="Chapter 0 - Prologue"><span class="chapter-text">Chapter 0 - Prologue</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-1-the-hero-slaughterer-1.html" title="Chapter 1 : The Hero Slaughterer (1)."><span class="chapter-text">Chapter 1 : The Hero Slaughterer (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-2-the-hero-slaughterer-2.html" title="Chapter 2 : The Hero Slaughterer (2)."><span class="chapter-text">Chapter 2 : The Hero Slaughterer (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-3-a-class-you-can-play-alone-1.html" title="Chapter 3 : A Class You Can Play Alone (1)."><span class="chapter-text">Chapter 3 : A Class You Can Play Alone (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-4-a-class-you-can-play-alone-2.html" title="Chapter 4 : A Class You Can Play Alone (2)."><span class="chapter-text">Chapter 4 : A Class You Can Play Alone (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-5-a-class-you-can-play-alone-3.html" title="Chapter 5 : A Class You Can Play Alone (3)."><span class="chapter-text">Chapter 5 : A Class You Can Play Alone (3).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-6-secret-of-the-expert-1.html" title="Chapter 6 : Secret of the Expert (1)."><span class="chapter-text">Chapter 6 : Secret of the Expert (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-7-secret-of-the-expert-2.html" title="Chapter 7 : Secret of the Expert (2)."><span class="chapter-text">Chapter 7 : Secret of the Expert (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-8-dancing-with-the-skeletons-1.html" title="Chapter 8 : Dancing with the Skeletons (1)."><span class="chapter-text">Chapter 8 : Dancing with the Skeletons (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-9-dancing-with-the-skeletons-2.html" title="Chapter 9 : Dancing with the Skeletons (2)."><span class="chapter-text">Chapter 9 : Dancing with the Skeletons (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-10-dancing-with-the-skeletons-3.html" title="Chapter 10 : Dancing with the Skeletons (3)."><span class="chapter-text">Chapter 10 : Dancing with the Skeletons (3).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-11-dancing-with-the-skeletons-4.html" title="Chapter 11 : Dancing with the Skeletons (4)."><span class="chapter-text">Chapter 11 : Dancing with the Skeletons (4).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-12-a-mess-of-a-character-to-others-1.html" title="Chapter 12 : A Mess of a Character to Others (1)."><span class="chapter-text">Chapter 12 : A Mess of a Character to Others (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-13-a-mess-of-a-character-to-others-2.html" title="Chapter 13 : A Mess of a Character to Others (2)."><span class="chapter-text">Chapter 13 : A Mess of a Character to Others (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-14-a-cave-in-mt-bima-1.html" title="Chapter 14 : A Cave in Mt. Bima (1)."><span class="chapter-text">Chapter 14 : A Cave in Mt. Bima (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-15-a-cave-in-mt-bima-2.html" title="Chapter 15 : A Cave in Mt. Bima (2)."><span class="chapter-text">Chapter 15 : A Cave in Mt. Bima (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-16-a-cave-in-mt-bima-3.html" title="Chapter 16 : A Cave in Mt. Bima (3)."><span class="chapter-text">Chapter 16 : A Cave in Mt. Bima (3).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-17-a-nail-in-a-pocket-1.html" title="Chapter 17 : A Nail in a Pocket (1)."><span class="chapter-text">Chapter 17 : A Nail in a Pocket (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-18-a-nail-in-a-pocket-2.html" title="Chapter 18 : A Nail in a Pocket (2)."><span class="chapter-text">Chapter 18 : A Nail in a Pocket (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-19-a-nail-in-a-pocket-3.html" title="Chapter 19 : A Nail in a Pocket (3)."><span class="chapter-text">Chapter 19 : A Nail in a Pocket (3).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-20-danger-and-chance-1.html" title="Chapter 20 : Danger and Chance (1)."><span class="chapter-text">Chapter 20 : Danger and Chance (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-21-danger-and-chance-2.html" title="Chapter 21 : Danger and Chance (2)."><span class="chapter-text">Chapter 21 : Danger and Chance (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-22-chance-and-danger-3.html" title="Chapter 22 : Chance and Danger (3)."><span class="chapter-text">Chapter 22 : Chance and Danger (3).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-23-70-luck-and-30-effort-1.html" title="Chapter 23 : 70% Luck and 30% Effort (1)."><span class="chapter-text">Chapter 23 : 70% Luck and 30% Effort (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-24-70-luck-30-effort-2.html" title="Chapter 24 : 70% Luck 30% Effort (2)."><span class="chapter-text">Chapter 24 : 70% Luck 30% Effort (2).</span></a></li>
+                                                            </ul>
+                                            </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                                    <ul class="list-chapter">
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-25-70-luck-30-effort-3.html" title="Chapter 25 : 70% Luck 30% Effort (3)."><span class="chapter-text">Chapter 25 : 70% Luck 30% Effort (3).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-26-ahimbree-1.html" title="Chapter 26 : Ahimbree (1)."><span class="chapter-text">Chapter 26 : Ahimbree (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-27-ahimbree-2.html" title="Chapter 27 : Ahimbree (2)."><span class="chapter-text">Chapter 27 : Ahimbree (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-28-ahimbree-3.html" title="Chapter 28 : Ahimbree (3)."><span class="chapter-text">Chapter 28 : Ahimbree (3).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-29-lizard-swamp-1.html" title="Chapter 29 : Lizard Swamp (1)."><span class="chapter-text">Chapter 29 : Lizard Swamp (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-30-lizard-swamp-2.html" title="Chapter 30 : Lizard Swamp (2)."><span class="chapter-text">Chapter 30 : Lizard Swamp (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-31-lizard-swamp-3.html" title="Chapter 31 : Lizard Swamp (3)."><span class="chapter-text">Chapter 31 : Lizard Swamp (3).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-32-corrupted-stone-1.html" title="Chapter 32 : Corrupted Stone (1)."><span class="chapter-text">Chapter 32 : Corrupted Stone (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-33-corrupted-stone-2.html" title="Chapter 33 : Corrupted Stone (2)."><span class="chapter-text">Chapter 33 : Corrupted Stone (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-34-corrupted-stone-3.html" title="Chapter 34 : Corrupted Stone (3)."><span class="chapter-text">Chapter 34 : Corrupted Stone (3).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-35-skeletons-hunting-skeletons-1.html" title="Chapter 35 : Skeletons Hunting Skeletons (1)."><span class="chapter-text">Chapter 35 : Skeletons Hunting Skeletons (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-36-skeletons-hunting-skeletons-2.html" title="Chapter 36 : Skeletons Hunting Skeletons (2)."><span class="chapter-text">Chapter 36 : Skeletons Hunting Skeletons (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-37-skeletons-hunting-skeletons-3.html" title="Chapter 37 : Skeletons Hunting Skeletons (3)."><span class="chapter-text">Chapter 37 : Skeletons Hunting Skeletons (3).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-38-golden-skeleton-1.html" title="Chapter 38 : Golden Skeleton (1)."><span class="chapter-text">Chapter 38 : Golden Skeleton (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-39-golden-skeleton-2.html" title="Chapter 39 : Golden Skeleton (2)."><span class="chapter-text">Chapter 39 : Golden Skeleton (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-40-golden-skeleton-3.html" title="Chapter 40 : Golden Skeleton (3)."><span class="chapter-text">Chapter 40 : Golden Skeleton (3).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-41-golden-skeleton-4.html" title="Chapter 41 : Golden Skeleton (4)."><span class="chapter-text">Chapter 41 : Golden Skeleton (4).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-42-searching-for-migi-1.html" title="Chapter 42 : Searching for Migi (1)."><span class="chapter-text">Chapter 42 : Searching for Migi (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-43-searching-for-migi-2.html" title="Chapter 43 : Searching for Migi (2)."><span class="chapter-text">Chapter 43 : Searching for Migi (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-44-searching-for-migi-3.html" title="Chapter 44 : Searching for Migi (3)."><span class="chapter-text">Chapter 44 : Searching for Migi (3).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-45-bad-move-1.html" title="Chapter 45 : Bad Move (1)."><span class="chapter-text">Chapter 45 : Bad Move (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-46-bad-move-2.html" title="Chapter 46 : Bad Move (2)."><span class="chapter-text">Chapter 46 : Bad Move (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-47-bulkas-mountain-range-1.html" title="Chapter 47 : Bulkas Mountain Range (1)."><span class="chapter-text">Chapter 47 : Bulkas Mountain Range (1).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-48-bulkas-mountain-range-2.html" title="Chapter 48 : Bulkas Mountain Range (2)."><span class="chapter-text">Chapter 48 : Bulkas Mountain Range (2).</span></a></li>
+                                                                    <li><span class="glyphicon glyphicon-certificate"></span> <a href="/emperor-of-solo-play/chapter-49-bulkas-mountain-range-3.html" title="Chapter 49 : Bulkas Mountain Range (3)."><span class="chapter-text">Chapter 49 : Bulkas Mountain Range (3).</span></a></li>
+                                                            </ul>
+                                            </div>
+                </div>
+
+                <ul class="pagination pagination-sm">
+    <li class="first disabled">
+        <span>&laquo; First</span>
+            </li>
+    <li class="prev disabled">
+        <span>&lt;</span>
+            </li>
+
+            <li class="active">
+            <a href="/emperor-of-solo-play.html">1</a>
+        </li>
+            <li class="">
+            <a href="/emperor-of-solo-play.html?page=2">2</a>
+        </li>
+            <li class="">
+            <a href="/emperor-of-solo-play.html?page=3">3</a>
+        </li>
+            <li class="">
+            <a href="/emperor-of-solo-play.html?page=4">4</a>
+        </li>
+    
+    <li class="next">
+        <a href="/emperor-of-solo-play.html?page=2">&gt;</a>    </li>
+    <li class="last">
+        <a href="/emperor-of-solo-play.html?page=4">Last &raquo;</a>    </li>
+</ul>
+
+                                    <ul class="pagination pagination-sm">
+                        <li class="dropup page-nav">
+                            <a href="javascript:void(0)" data-toggle="dropdown">Select page <span class="caret"></span></a>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <form action="/emperor-of-solo-play.html" name="page_jump" id="page_jump" method="get">
+                                    <div class="input-group">
+                                        <input class="form-control" name="page" type="number" min="1"
+                                               max="4" placeholder="Page..." value="">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">Go</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                
+                <input id="truyen-id" type="hidden" value="258">
+                <input id="total-page" type="hidden" value="4">
+                <input name="truyen" type="hidden" value="emperor-of-solo-play">
+            </div>
+
+            <div class="visible-md visible-lg">
+                <div class="col-xs-12 comment-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="visible-md-block visible-lg-block col-md-3 text-center col-truyen-side">
+        <div class="list list-truyen col-xs-12">
+    <div class="title-list"><h4>More From Author</h4></div>
+
+            <div class="row">
+            <div class="col-xs-12">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <h3>
+                    <a href="/the-first-hunter.html"
+                       title="The First Hunter">The First Hunter</a>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+        <div class="list list-truyen list-side col-xs-12">
+    <div class="title-list"><h4>Hot Sci-fi Novel</h4></div>
+
+                    <div class="row top-item">
+            <div class="col-xs-12">
+                <div class="top-num top-1">1</div>
+                <div class="s-title">
+                    <h3><a href="/super-gene.html" title="Super Gene">Super Gene</a></h3>
+                </div>
+                <div class="genre nowrap">
+                                        <a href="/genre/Sci-fi">Sci-fi</a>, <a href="/genre/Comedy">Comedy</a>, <a href="/genre/Martial+Arts">Martial Arts</a>, <a href="/genre/Action">Action</a>, <a href="/genre/Adventure">Adventure</a>, <a href="/genre/Mecha">Mecha</a>, <a href="/genre/Xuanhuan">Xuanhuan</a>                </div>
+            </div>
+        </div>
+                    <div class="row top-item">
+            <div class="col-xs-12">
+                <div class="top-num top-2">2</div>
+                <div class="s-title">
+                    <h3><a href="/the-mech-touch.html" title="The Mech Touch">The Mech Touch</a></h3>
+                </div>
+                <div class="genre nowrap">
+                                        <a href="/genre/Sci-fi">Sci-fi</a>, <a href="/genre/Fantasy">Fantasy</a>                </div>
+            </div>
+        </div>
+                    <div class="row top-item">
+            <div class="col-xs-12">
+                <div class="top-num top-3">3</div>
+                <div class="s-title">
+                    <h3><a href="/warlock-of-the-magus-world.html" title="Warlock of the Magus World">Warlock of the Magus World</a></h3>
+                </div>
+                <div class="genre nowrap">
+                                        <a href="/genre/Sci-fi">Sci-fi</a>, <a href="/genre/Mystery">Mystery</a>, <a href="/genre/Action">Action</a>, <a href="/genre/Adventure">Adventure</a>, <a href="/genre/Fantasy">Fantasy</a>, <a href="/genre/Harem">Harem</a>, <a href="/genre/Mature">Mature</a>, <a href="/genre/Psychological">Psychological</a>, <a href="/genre/Supernatural">Supernatural</a>                </div>
+            </div>
+        </div>
+                    <div class="row top-item">
+            <div class="col-xs-12">
+                <div class="top-num top-4">4</div>
+                <div class="s-title">
+                    <h3><a href="/swallowed-star.html" title="Swallowed Star">Swallowed Star</a></h3>
+                </div>
+                <div class="genre nowrap">
+                                        <a href="/genre/Sci-fi">Sci-fi</a>, <a href="/genre/Action">Action</a>, <a href="/genre/Adventure">Adventure</a>, <a href="/genre/Fantasy">Fantasy</a>, <a href="/genre/Martial+Arts">Martial Arts</a>, <a href="/genre/Romance">Romance</a>, <a href="/genre/Supernatural">Supernatural</a>, <a href="/genre/Xuanhuan">Xuanhuan</a>                </div>
+            </div>
+        </div>
+                    <div class="row top-item">
+            <div class="col-xs-12">
+                <div class="top-num top-5">5</div>
+                <div class="s-title">
+                    <h3><a href="/the-world-online.html" title="The World Online">The World Online</a></h3>
+                </div>
+                <div class="genre nowrap">
+                                        <a href="/genre/Harem">Harem</a>, <a href="/genre/Martial+Arts">Martial Arts</a>, <a href="/genre/Action">Action</a>, <a href="/genre/Adventure">Adventure</a>, <a href="/genre/Fantasy">Fantasy</a>, <a href="/genre/Mature">Mature</a>, <a href="/genre/Romance">Romance</a>, <a href="/genre/Sci-fi">Sci-fi</a>                </div>
+            </div>
+        </div>
+                    <div class="row top-item">
+            <div class="col-xs-12">
+                <div class="top-num top-6">6</div>
+                <div class="s-title">
+                    <h3><a href="/kumo-desu-ga-nani-ka.html" title="Kumo Desu ga, Nani ka?">Kumo Desu ga, Nani ka?</a></h3>
+                </div>
+                <div class="genre nowrap">
+                                        <a href="/genre/Sci-fi">Sci-fi</a>, <a href="/genre/Seinen">Seinen</a>, <a href="/genre/Action">Action</a>, <a href="/genre/Adventure">Adventure</a>, <a href="/genre/Comedy">Comedy</a>, <a href="/genre/Drama">Drama</a>, <a href="/genre/Fantasy">Fantasy</a>, <a href="/genre/Mystery">Mystery</a>                </div>
+            </div>
+        </div>
+                    <div class="row top-item">
+            <div class="col-xs-12">
+                <div class="top-num top-7">7</div>
+                <div class="s-title">
+                    <h3><a href="/the-bloodline-system.html" title="The Bloodline System">The Bloodline System</a></h3>
+                </div>
+                <div class="genre nowrap">
+                                        <a href="/genre/Fantasy">Fantasy</a>, <a href="/genre/Adventure">Adventure</a>, <a href="/genre/Action">Action</a>, <a href="/genre/Romance">Romance</a>, <a href="/genre/Sci-fi">Sci-fi</a>                </div>
+            </div>
+        </div>
+                    <div class="row top-item">
+            <div class="col-xs-12">
+                <div class="top-num top-8">8</div>
+                <div class="s-title">
+                    <h3><a href="/its-not-easy-to-be-a-man-after-travelling-to-the-future.html" title="It&apos;s Not Easy to Be a Man After Travelling to the Future">It&apos;s Not Easy to Be a Man After Travelling to the Future</a></h3>
+                </div>
+                <div class="genre nowrap">
+                                        <a href="/genre/Action">Action</a>, <a href="/genre/Adventure">Adventure</a>, <a href="/genre/Comedy">Comedy</a>, <a href="/genre/Gender+Bender">Gender Bender</a>, <a href="/genre/Josei">Josei</a>, <a href="/genre/Martial+Arts">Martial Arts</a>, <a href="/genre/Mecha">Mecha</a>, <a href="/genre/Sci-fi">Sci-fi</a>                </div>
+            </div>
+        </div>
+                    <div class="row top-item">
+            <div class="col-xs-12">
+                <div class="top-num top-9">9</div>
+                <div class="s-title">
+                    <h3><a href="/god-and-devil-world.html" title="God and Devil World">God and Devil World</a></h3>
+                </div>
+                <div class="genre nowrap">
+                                        <a href="/genre/Fantasy">Fantasy</a>, <a href="/genre/Lolicon">Lolicon</a>, <a href="/genre/Action">Action</a>, <a href="/genre/Adult">Adult</a>, <a href="/genre/Adventure">Adventure</a>, <a href="/genre/Drama">Drama</a>, <a href="/genre/Ecchi">Ecchi</a>, <a href="/genre/Harem">Harem</a>, <a href="/genre/Horror">Horror</a>, <a href="/genre/Martial+Arts">Martial Arts</a>, <a href="/genre/Mature">Mature</a>, <a href="/genre/Sci-fi">Sci-fi</a>, <a href="/genre/Seinen">Seinen</a>, <a href="/genre/Supernatural">Supernatural</a>, <a href="/genre/Tragedy">Tragedy</a>, <a href="/genre/Xuanhuan">Xuanhuan</a>                </div>
+            </div>
+        </div>
+                    <div class="row top-item">
+            <div class="col-xs-12">
+                <div class="top-num top-10">10</div>
+                <div class="s-title">
+                    <h3><a href="/battle-frenzy.html" title="Battle Frenzy">Battle Frenzy</a></h3>
+                </div>
+                <div class="genre nowrap">
+                                        <a href="/genre/Comedy">Comedy</a>, <a href="/genre/School+Life">School Life</a>, <a href="/genre/Action">Action</a>, <a href="/genre/Fantasy">Fantasy</a>, <a href="/genre/Martial+Arts">Martial Arts</a>, <a href="/genre/Mystery">Mystery</a>, <a href="/genre/Romance">Romance</a>, <a href="/genre/Sci-fi">Sci-fi</a>, <a href="/genre/Supernatural">Supernatural</a>, <a href="/genre/Xianxia">Xianxia</a>                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+                <div class="hidden-xs col-sm-5">
+            <p>
+	&copy; Copyright NovelFull&nbsp;. All Rights Reserved.</p>        </div>
+
+        <ul class="col-xs-12 col-sm-7 list-unstyled">
+            <li class="text-right pull-right">
+                <a href="/contact" title="Contact">Contact</a> -
+                <a href="/tos" title="ToS">ToS</a> -
+                <a href="/sitemap.xml" target="_blank">Sitemap</a>
+                                <a class="backtop" href="#wrapper" rel="nofollow" title="Back to top"><span class="glyphicon glyphicon-upload"></span></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+</div>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="c1799767e9a57912f16cc4e4-|49" defer></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"508faca3f3974153a297ef18831996b9","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

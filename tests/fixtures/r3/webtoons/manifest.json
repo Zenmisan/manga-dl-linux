@@ -1,0 +1,38 @@
+{
+    "chapter": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "detail": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://www.webtoons.com/en/search?keyword=tower",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fwww.webtoons.com%2Fen%2Fsearch%3Fkeyword%3Dtower",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "webtoons",
+    "novel": false,
+    "query": "tower",
+    "recordedAt": "2026-10-14T15:46:20Z",
+    "search": {
+        "count": 0,
+        "error": "no search results",
+        "id": "",
+        "ok": false,
+        "title": ""
+    }
+}

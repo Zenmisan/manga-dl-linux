@@ -1,0 +1,38 @@
+{
+    "chapter": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "detail": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://jumpg-webapi.tokyo-cdn.com/api/title_list/allV2?format=json",
+            "method": "GET",
+            "request": "/manga/proxy/json?url=https%3A%2F%2Fjumpg-webapi.tokyo-cdn.com%2Fapi%2Ftitle_list%2FallV2%3Fformat%3Djson",
+            "status": 403,
+            "transportError": ""
+        }
+    ],
+    "id": "mangaplus",
+    "novel": false,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:29:08Z",
+    "search": {
+        "count": 0,
+        "error": "no search results",
+        "id": "",
+        "ok": false,
+        "title": ""
+    }
+}

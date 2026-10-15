@@ -1,0 +1,65 @@
+{
+    "chapter": {
+        "count": 13,
+        "error": "",
+        "id": "one-piece/chapter-1194",
+        "ok": true,
+        "title": "https://cdn1.love4awalk.xyz/one-piece/1194/0.webp"
+    },
+    "detail": {
+        "count": 1310,
+        "error": "",
+        "id": "one-piece",
+        "ok": true,
+        "title": "One Piece"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://bato1.com/filter?keyword=one piece",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fbato1.com%2Ffilter%3Fkeyword%3Done%2520piece",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://bato1.com/manga/one-piece",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fbato1.com%2Fmanga%2Fone-piece",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://bato1.com/get-chapter-list?slug=one-piece",
+            "method": "GET",
+            "request": "/manga/proxy/json?url=https%3A%2F%2Fbato1.com%2Fget-chapter-list%3Fslug%3Done-piece",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0004.dat",
+            "finalUrl": "https://bato1.com/read/one-piece/chapter-1194",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fbato1.com%2Fread%2Fone-piece%2Fchapter-1194",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "bato",
+    "novel": false,
+    "query": "one piece",
+    "recordedAt": "2026-10-14T13:32:10Z",
+    "search": {
+        "count": 19,
+        "error": "",
+        "id": "one-piece",
+        "ok": true,
+        "title": "One Piece"
+    }
+}

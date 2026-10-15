@@ -1,0 +1,1958 @@
+<!doctype html>
+<html lang="en-US" class="scroll-smooth scroll-pt-12">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solo For Two &#8211; Readhive</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="stylesheet" href="/public/css/app.c45fbd.css"><link rel="canonical" href="https://readhive.org/series/64901/" />
+<meta property="og:title" name="og:title" content="Solo For Two" />
+<meta property="og:type" name="og:type" content="books.book" />
+<meta property="og:image" name="og:image" content="/public/images/2024/04/xxlarge.webp" />
+<meta property="og:url" name="og:url" content="https://readhive.org/series/64901/" />
+<meta property="og:description" name="og:description" content="&quot;I want to love again and be loved.&quot; &nbsp; Conservative and sincere youth Karel meets a man by chance on his journey. Sasha, a fugitive who couldn&#039;t hide his beautiful appearance even in the midst of desperation. Karel, who falls for him at first sight, pours out an unrequited love... &nbsp; Eight years later. The..." />
+<meta property="og:locale" name="og:locale" content="en_US" />
+<meta property="og:site_name" name="og:site_name" content="Readhive" />
+<meta property="twitter:card" name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="/public/images/2022/07/FO721D5FA0CC7-02-scaled-e1658075230203-150x150.jpg" sizes="32x32">
+<link rel="icon" href="/public/images/2022/07/FO721D5FA0CC7-02-1536x1536.jpg" sizes="192x192">
+<link rel="apple-touch-icon" href="/public/images/2022/07/FO721D5FA0CC7-02-1536x1536.jpg">
+<meta name="msapplication-TileImage" content="/public/images/2022/07/FO721D5FA0CC7-02-1536x1536.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+  </head>
+
+  <body
+    x-data="theme"
+    class="64901"  >
+        
+    <div
+      id="app"
+      up-main
+    >
+      <div x-data="{nav:false}" class="text-foreground bg-accent-2 w-full h-full">
+  <div class="flex flex-grow min-h-screen">
+    <aside
+      x-init="nav = ($screen('lg'))"
+      class="bg-accent fixed inset-y-0 z-30 lg:static shadow-lg"
+      :class="{'overlay': !$screen('lg')}"
+      x-transition:enter="transition-spacing ease-in-out"
+      x-transition:enter-start="-ml-60"
+      x-transition:enter-end="ml-0"
+      x-transition:leave="transition-spacing ease-in-out"
+      x-transition:leave-start="ml-0"
+      x-transition:leave-end="-ml-60"
+      @click.away="if (!$screen('lg')) nav = false"
+      x-show="nav"
+      x-cloak
+    >
+      <div class="sticky top-0 px-4 w-60">
+        <div class="py-2 text-2xl tracking-widest text-center uppercase">
+  <a aria-current="page" href="/" up-follow up-preload>Readhive</a>
+</div>
+
+<hr class="h-px mx-8 my-2 bg-accent-border">
+
+  <nav
+    :class="nav || 'collaped'"
+    class="text-sm mb-44">
+    <ul>
+              
+        
+                  <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+            <a class="flex items-center py-2" href="https://readhive.org/" up-follow up-preload>
+              <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home mr-2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              Home
+            </a>
+          </li>
+                        
+        
+                  <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+            <a class="flex items-center py-2" href="https://discord.gg/zzGdEQjS3U" up-follow up-preload>
+              <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users mr-2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              Discord
+            </a>
+          </li>
+                        
+        
+                  <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+            <a class="flex items-center py-2" href="https://readhive.org/updates/" up-follow up-preload>
+              <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss mr-2" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+              Updates
+            </a>
+          </li>
+                        
+        
+                  <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+            <a class="flex items-center py-2" href="https://readhive.org/reading-list/" up-follow up-preload>
+              <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark mr-2" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+              Reading List
+            </a>
+          </li>
+                        
+        
+                  <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+            <a class="flex items-center py-2" href="https://readhive.org/browse-series/" up-follow up-preload>
+              <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter mr-2" aria-hidden="true"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+              Browse Series
+            </a>
+          </li>
+                    </ul>
+  </nav>
+
+<div class="my-2">
+  <hr class="h-px mx-8 my-2 bg-accent-border">
+
+      <div
+      :class="nav || 'collaped'"
+      class="mb-4 text-sm">
+      <ul>
+                  
+          
+                      <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+              <a class="flex items-center py-2" href="https://readhive.org/dmca/" up-follow up-preload>
+                  
+                  DMCA
+              </a>
+            </li>
+                              
+          
+                      <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+              <a class="flex items-center py-2" href="https://readhive.org/copyright-faq/" up-follow up-preload>
+                  
+                  Copyright FAQ
+              </a>
+            </li>
+                              
+          
+                      <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+              <a class="flex items-center py-2" href="https://readhive.org/terms-of-service/" up-follow up-preload>
+                  
+                  Terms of Service
+              </a>
+            </li>
+                          </ul>
+    </div>
+  
+  <footer class="px-8 py-2 text-xs">
+    <div>© 2022 Readhive</div>
+  </footer>
+</div>
+
+<div class="py-3 overflow-hidden relative">
+  <div class="flex justify-center">
+    <div x-data="unit" data-fuse="22792698429"></div>
+  </div>
+</div>
+      </div>
+    </aside>
+
+    <div
+      x-init="$store.app.main = $el"
+      :class="{'pointer-events-none': nav && !$screen('lg')}"
+      class="flex flex-col min-w-0 w-full relative"
+    >
+      <header
+      class="sticky top-0 left-0 w-full h-0 z-20"
+  >
+  <div
+      x-data="{opacity: 0}"
+      class="relative flex justify-between w-full px-4 py-1 banner sm:px-8"
+  >
+          <div
+        @scroll.window="opacity = Math.min(1, Math.max(0, (scrollY - 20) / 20))"
+        :style="{ opacity: opacity }"
+        class="absolute top-0 left-0 w-full h-full bg-accent-2 border-b opacity-100 md:opacity-0 -z-10 border-b-red"
+      ></div>
+    
+    <div class="flex items-center justify-start">
+      <button @click.prevent="nav = !nav" class="p-2 transition rounded-full hover:bg-btn-hover hover:bg-opacity-30 active:bg-opacity-50">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="28"
+            height="28"
+            :class="opacity > 0.5 ? 'fill-header-menuflip' : 'fill-header-menu'"
+          >
+            <path d="M2 5.995c0-.55.446-.995.995-.995h8.01c.55 0 .995.446.995.995s-.446.995-.995.995h-8.01c-.55 0-.995-.446-.995-.995zM2 12c0-.55.446-.995.995-.995h18.01c.55 0 .995.446.995.995s-.446.995-.995.995H2.995C2.445 12.995 2 12.55 2 12zm.995 5.01c-.55 0-.995.446-.995.995s.446.995.995.995h12.01c.55 0 .995-.446.995-.995s-.446-.995-.995-.995H2.995z"/>
+          </svg>
+              </button>
+
+              <div
+          x-show="!nav"
+          :class="opacity > 0.5 ? 'text-header-menuflip' : 'text-header-menu'"
+          class="hidden text-2xl tracking-widest text-center uppercase truncated md:block"
+          x-cloak
+        >
+          <a aria-current="page" href="/" up-follow up-preload>Readhive</a>
+        </div>
+          </div>
+
+    <div class="flex items-center justify-end flex-grow">
+      <div
+  x-data="{focus:false}"
+  class="flex flex-grow max-w-xs mx-4 transition-width duration-500 rounded-md"
+  :class="{'max-w-full lg:max-w-md': focus, 'max-w-xs': !focus}"
+>
+  <form
+    x-data="search"
+    class="relative flex-grow opacity-80 transition z-30"
+    :style="focus && 'opacity: 100%'"
+  >
+    <div @click.outside="focus = false">
+      <div class="relative overflow-hidden rounded-md">
+        <input @click="focus = true" type="search" class="w-full px-4 py-2 pr-10 rounded-sm shadow-md bg-accent text-sm focus:outline-none placeholder:text-foreground" placeholder="Search Series…" x-model.debounce="value">
+        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+          <svg class="w-5 h-5 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </div>
+      </div>
+  
+      <div
+        class="absolute w-full mt-4 flex items-start justify-center overflow-hidden"
+        x-show="focus"
+        x-transition:enter="transform transition"
+        x-transition:enter-start="opacity-0 translate-y-4"
+        x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition transform"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 translate-y-4"
+        x-cloak
+      >
+        <div class="relative w-full max-w-2xl max-h-full overflow-auto bg-accent-2 rounded shadow-lg">
+          <div class="p-4">
+            <div x-show="!value || !results">Enter a search query…</div>
+            <div class="grid gap-2" x-show="value && results">
+              <template x-for="series in results">
+                <a :href="series.url" up-follow up-preload>
+                  <div class="flex gap-2 p-2 rounded bg-accent hover:bg-accent-hover">
+                    <div class="flex-shrink-0 h-16 w-14 cover">
+                      <img class="w-full h-full rounded shadow-md" :src="series.thumb" :alt="series.title + ' cover'">
+                    </div>
+  
+                    <div class="flex flex-col justify-between gap-2">
+                      <h4 class="font-bold break-all line-clamp-2 text-foreground" x-text="series.title"></h4>
+  
+                      <div class="flex flex-col sm:flex-row gap-x-4 gap-y-2">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </template>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div class="fixed inset-0 bg-black/50" x-show="focus" x-cloak></div>
+</div>
+      <div
+  x-data="{open:false}"
+  class="relative"
+  >
+  <button
+    class="flex items-center flex-shrink-0 space-x-2 focus:outline-none"
+    @click="open = !open"
+  >
+          <div class="flex items-center justify-center p-2 bg-header-profile border-2 border-accent-border rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+          <path opacity="0" d="M0 0h24v24H0z" />
+          <path d="M12 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm6 10a1 1 0 0 0 1-1 7 7 0 0 0-14 0 1 1 0 0 0 1 1z" />
+        </svg>
+      </div>
+      </button>
+
+  <div
+    class="bg-header-profilemenu absolute top-full right-0 mt-2 px-3 py-2 rounded-md shadow-lg min-w-64 overflow-hidden z-20"
+    @click.outside="open = false"
+    x-show="open"
+    x-transition:enter="transition ease-out transform"
+    x-transition:enter-start="opacity-0 -translate-y-2"
+    x-transition:enter-end="opacity-100 translate-y-0"
+    x-transition:leave="transition ease-in"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0"
+    x-cloak
+  >
+          <div
+        class="grid grid-cols-2 gap-2 px-3 py-2 mb-2 border-b border-accent-2-border"
+      >
+        <a href="/login" class="flex items-center justify-center w-full py-2 text-sm font-medium text-white rounded bg-red focus:outline-none sm:text-base hover:bg-red-700 active:bg-red-800" up-follow up-preload>Login</a>
+        <a href="/register" class="flex items-center justify-center w-full py-2 text-sm font-medium text-foreground rounded bg-btn focus:outline-none sm:text-base hover:bg-accent-hover active:bg-shade" up-follow up-preload>Register</a>
+      </div>
+    
+    <div x-data="theme" class="flex flex-wrap justify-center items-center border-b border-accent-2-border pb-2 mb-2">
+      <div @click="reset" :class="theme === 'light' && 'border-red'" class="bg-white rounded border mr-1 w-16 h-5"></div>
+      <div @click="update('dark')" :class="theme === 'dark' && 'border-red'" class="dark bg-accent-2 rounded border mr-1 w-16 h-5"></div>
+    </div>
+
+          <ul class="mb-2 pb-2 border-b border-accent-2-border">
+                  <li>
+            <a href="https://readhive.org/register/" class="flex items-center px-3 py-2 text-sm font-medium rounded hover:bg-shade" up-follow up-preload>
+              Register
+            </a>
+          </li>
+                  <li>
+            <a href="https://readhive.org/login/" class="flex items-center px-3 py-2 text-sm font-medium rounded hover:bg-shade" up-follow up-preload>
+              Login
+            </a>
+          </li>
+              </ul>
+    
+      </div>
+</div>
+    </div>
+  </div>
+</header>
+
+              <main class="min-h-screen pb-24">
+                     <section class="relative">
+  <div class="absolute w-full h-full clip">
+          <div class="fixed overflow-hidden w-full h-full bg-cover bg-blur" style="background-image: url(/public/images/2024/04/xxlarge.webp); background-position-y: 25%"></div>
+      </div>
+
+  <div class="relative grid grid-cols-1 lg:grid-areas-series__header lg:grid-cols-series gap-4 px-4 pb-2 pt-20 sm:px-8 min-h-72">
+    <div class="lg:grid-in-art lg:absolute w-full group">
+      <div x-data class="aspect-w-3 aspect-h-4 lg:aspect-w-4 lg:aspect-h-6 rounded overflow-hidden">
+                  <img x-ref="art" src="/public/images/2024/04/xxlarge.webp" alt="Solo For Two Cover" class="object-cover w-full rounded shadow-md">
+        
+        <div @click="$dispatch('enlarge', $refs.art)" class="absolute flex w-full h-full items-center justify-center opacity-0 transition duration-300 hover:bg-black/50 hover:opacity-100 cursor-pointer z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" viewBox="0 0 48 48"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m6 6 10 10M6 42l10-10M42 42 32 32M42 6 32 16M33 6h9v9M42 33v9h-9M15 42H6v-9M6 15V6h9"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:grid-in-info relative flex flex-col text-white">
+      <h1 class="flex-grow flex-shrink mb-1 text-2xl font-bold lg:text-3xl line-clamp-4">Solo For Two</h1>
+      <span class="leading-7 md:text-xl">
+        nicotine              </span>
+    </div>
+  </div>
+</section>
+
+<section class="relative grid grid-cols-1 lg:grid-areas-series__body lg:grid-cols-series gap-x-4 px-4 py-2 sm:px-8">
+  <div class="lg:grid-in-info">
+    <div class="flex flex-wrap">
+                      <a href="/genre/adult/" class="px-3 py-1 mb-1 mr-2 text-sm text-foreground bg-shade rounded shadow-md hover:bg-red hover:text-white" up-follow up-preload>Adult</a>
+                <a href="/genre/bl/" class="px-3 py-1 mb-1 mr-2 text-sm text-foreground bg-shade rounded shadow-md hover:bg-red hover:text-white" up-follow up-preload>BL</a>
+                <a href="/genre/boys-love/" class="px-3 py-1 mb-1 mr-2 text-sm text-foreground bg-shade rounded shadow-md hover:bg-red hover:text-white" up-follow up-preload>Boy&#039;s Love</a>
+                  </div>
+  </div>
+
+  <div class="lg:grid-in-content mt-4">
+    <div x-data="{tab:location.hash.substr(1) || 'about'}">
+      <div class="font-medium text-center text-fg-muted border-b border-accent-border mb-4">
+        <ul class="flex flex-wrap pb-2">
+          <li class="mr-2">
+            <a
+              href="#about"
+              :class="tab === 'about' ? 'text-white bg-red' : ''"
+              @click.prevent="tab = 'about'; location.hash = 'about'"
+              class="inline-block px-4 py-2 rounded-full"
+            >
+              About
+            </a>
+          </li>
+          <li class="mr-2">
+            <a
+              href="#releases"
+              :class="tab === 'releases' ? 'text-white bg-red' : ''"
+              @click.prevent="tab = 'releases'; location.hash = 'releases'"
+              class="inline-block px-4 py-2 rounded-full"
+            >
+              Releases | 76
+            </a>
+          </li>
+                  </ul>
+      </div>
+
+      <div
+        x-show="tab === 'about'"
+        x-cloak
+      >
+        <h2 class="text-lg font-medium mb-2">Synopsis</h2>
+        <div class="mb-4">
+          <div class='code-block code-block-7' style='margin: 8px 0; clear: both; width: 100%; overflow: hidden;'>
+<div x-data="unit" data-fuse="22793183150"></div></div>
+<p style="text-align: center"><em>&#8220;I want to love again and be loved.&#8221;</em></p>
+<p>&nbsp;</p>
+<p>Conservative and sincere youth Karel meets a man by chance on his journey. Sasha, a fugitive who couldn&#8217;t hide his beautiful appearance even in the midst of desperation. Karel, who falls for him at first sight, pours out an unrequited love&#8230;</p>
+<p>&nbsp;</p>
+<p>Eight years later. The once fugitive has become a successful dancer who captivates Paris. However, numerous rumors follow in his shadow. Rumors of drug abuse, performing in blue movies, bedding noble patrons for luxury&#8230; And some of these rumors are undoubtedly true.</p>
+<p>&nbsp;</p>
+<p>Yet, even for Sasha, there was a past where he received devoted love from someone. However, Sasha abandoned him for success, and he went missing shortly after the war.</p>
+<p>&nbsp;</p>
+<p>Then one day, his forgotten lover reappears before him. In a completely different guise from the past.</p>
+<div class='code-block code-block-10' style='margin: 8px 0; clear: both;'>
+<!-- 71161633/read_footer/read_footer -->
+<div x-data="unit" data-fuse="22797964181"></div></div>
+<!-- CONTENT END 10 -->
+        </div>
+
+        <h3 class="mb-2 text-lg font-medium">Tags</h3>
+        <div class="flex flex-wrap">
+                  </div>
+      </div>
+
+      <div
+        x-show="tab === 'releases'"
+        x-cloak
+      >
+        <h3 class="mb-2 text-lg font-medium">Table of Contents</h3>
+        <div class="p-2 overflow-hidden border border-accent-border rounded shadow">
+    <div class="grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <a href="https://readhive.org/series/64901/76" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03a49413a4', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 76 - Extra (14) (End)</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/75" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03a4941364', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 75 - Extra (13)</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/74" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03a4941334', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 74 - Extra (12)</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/73" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03a49403a4', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 73 - Extra (11)</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/72" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03a4940374', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 72 - Extra (10)</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/71" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03a4940344', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 71 - Extra (9)</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/70" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03a4940314', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 70 - Extra (8)</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/69" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03a494y234', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 69 - Extra (7)</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/68" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03a494x2a4', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 68 - Extra (6)</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/67" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03a494x234', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 67 - Extra (5)</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/66" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03a494w294', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 66 - Extra (4)</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/65" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03a494w264', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 65 - Extra (3)</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/64" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03a494w234', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 64 - Extra (2)</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/63" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03a494v284', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 63 - Extra (1)</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/62" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039484u264', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 62 - End</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/61" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039484u234', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 61</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/60" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039484t2a4', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 60</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/59" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039484t274', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 59</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/58" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039484t244', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 58</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/57" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039484t214', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 57</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/56" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039484s284', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 56</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/55" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039484s254', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 55</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/54" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039484s224', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 54</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/53" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '0394741394', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 53</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/52" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '0394741364', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 52</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/51" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '0394741334', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 51</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/50" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03947403a4', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 50</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/49" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039464u274', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 49</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/48" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039464u244', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 48</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/47" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039464t284', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 47</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/46" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039464t254', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 46</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/45" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039454w224', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 45</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/44" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '039454v294', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 44</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/43" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '038434s264', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 43</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/42" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '038434s234', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 42</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/41" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '03842413a4', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 41</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/40" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '037464v254', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 40</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/39" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '037464v224', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 39</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/38" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '037464u294', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 38</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/37" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '037464u234', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 37</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/36" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '037464t2a4', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 36</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/35" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '037464t274', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 35</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/34" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '0364640374', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 34</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/33" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '0364640344', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 33</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/32" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', '0364640314', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 32</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/31" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2e484x284', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 31</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/30" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2e484x254', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 30</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/29" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2e484x224', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 29</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/28" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2e4541334', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 28</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/27" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2e45403a4', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 27</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/26" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2e4540374', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 26</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/25" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2e4540344', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 25</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/24" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2e4240364', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 24</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/23" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2e4240334', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 23</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/22" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2e424z2a4', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 22</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/21" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2e424z274', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 21</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/20" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2d45403a4', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 20</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/19" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2d4540374', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 19</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/18" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2d4540344', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 18</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/17" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2d4540314', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 17</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/16" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2c4a4y294', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 16</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/15" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2c4a4y264', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 15</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/14" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2c4a4y234', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 14</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/13" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2c4a4x2a4', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 13</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/12" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2c4541394', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 12</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/11" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2c4541364', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 11</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/10" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2c4541334', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 10</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/9" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2b4a4u284', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 9</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/8" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2b4a4u254', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 8</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/7" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2b4a4u224', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 7</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/6" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2b444x214', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 6</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/5" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2b444w284', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 5</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/4" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2b444w254', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 4</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/3" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2b444w224', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 3</span>
+                          </div>
+
+            <span class="text-xs">2 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/2" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2a4b4s284', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 2</span>
+                          </div>
+
+            <span class="text-xs">3 years ago</span>
+          </div>
+        </a>
+              <a href="https://readhive.org/series/64901/1" class="flex items-center p-2 rounded bg-accent hover:bg-accent-hover" up-follow up-preload>
+                    <div class="grid w-full">
+            <div class="grid items-center" style="grid-template-columns: auto 1fr auto">
+              <div
+  x-ignore
+  ax-load
+  x-data="button('user_toggle_read', 'z2a4b4s254', 'd5cd9def72', false)"
+  @click.prevent="dispatch"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-fg-flip w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" opacity=".4" x-cloak x-show="state"><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.498 18.498 0 0 1-2.16 3.19m-6.72-1.07a3.001 3.001 0 1 1-4.24-4.24m8.06 8.06A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88zM1 1l22 22" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-12 h-6 -my-2 -mx-4 py-1 px-2" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!state"><circle cx="17" cy="15" r="1"></circle><circle cx="16" cy="16" r="6"></circle><path d="M2 16 C2 16 7 6 16 6 25 6 30 16 30 16 30 16 25 26 16 26 7 26 2 16 2 16 Z"></path></svg>
+</div>              <span class="ml-1">Chapter 1</span>
+                          </div>
+
+            <span class="text-xs">3 years ago</span>
+          </div>
+        </a>
+          </div>
+  </div>
+      </div>
+
+      <div
+        x-show="tab === 'gallery'"
+        x-cloak
+      >
+        <h3 class="mb-2 text-lg font-medium">Gallery</h3>
+        <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+  </div>
+      </div>
+
+      <div class="py-3 overflow-hidden relative">
+  <div class="flex justify-center">
+    <div x-data="unit" data-fuse="22792698408"></div>
+  </div>
+</div>
+    </div>
+
+    <div class="mb-4">
+      <h3 class="mb-2 text-lg font-medium">Related Series</h3>
+      <div
+  x-ignore
+  ax-load
+  x-data="slider"
+  class="swiper"
+>
+  <div class="swiper-wrapper">
+           <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/19889/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2022/07/FWJ-73PVEAI3c61.png" alt="A fortune-telling princess" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/19889/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">A fortune-telling princess</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/140/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2022/07/20211216_161507.jpg" alt="I Became the Despised Granddaughter of the Murim Clan" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/140/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">I Became the Despised Granddaughter of the Murim Clan</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/172/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2022/07/Harem-1.jpg" alt="I Will Avoid The Male Lead and Make My Harem" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/172/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">I Will Avoid The Male Lead and Make My Harem</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/83409/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2024/10/xxlarge-1.webp" alt="The Perfect" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/83409/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">The Perfect</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/72336/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2024/07/kidnap-ml.jpg" alt="Let&#8217;s Kidnap The Male Lead" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/72336/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">Let&#8217;s Kidnap The Male Lead</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/130642/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2025/09/xxlarge-13.webp" alt="Achromatic" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/130642/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">Achromatic</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/92818/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2024/12/hhh.webp" alt="Miracle Illusion" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/92818/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">Miracle Illusion</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/186310/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2026/07/resource.jpe" alt="Your Majesty, Dinner Is Ready." class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/186310/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">Your Majesty, Dinner Is Ready.</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/167/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2022/07/images.jpeg" alt="Duke, Please Let Go of My Ankle!" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/167/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">Duke, Please Let Go of My Ankle!</h6>
+        </a>
+      </div>
+       </div>
+</div>
+    </div>
+  </div>
+
+  <div class="lg:grid-in-buttons">
+    <div class="flex items-start pb-4 grid-in-tool relative">
+  <a
+    x-ignore
+    ax-load
+    x-data="button"
+    @click="toggle"
+    href="https://readhive.org/series/64901/76"
+    class="flex items-center justify-center flex-grow px-3 py-2 font-medium text-white transition transform bg-btn-normal rounded shadow hover:bg-btn-normal-hover active:scale-90"
+    up-follow
+    up-preload
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!loading"><path d="M16 7 C16 7 9 1 2 6 L2 28 C9 23 16 28 16 28 16 28 23 23 30 28 L30 6 C23 1 16 7 16 7 Z M16 7 L16 28" /></svg>
+    <template x-if="loading">
+      <svg class="animate-spin text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+</svg>    </template>
+    <span class="ml-1">Read</span>
+  </a>
+
+  <div
+    x-ignore
+    ax-load
+    x-data="button('user_reading', 64901, '1a99a4e98b')"
+    class="relative flex flex-grow"
+  >
+    <button
+      x-init="dispatch('', 'check', '2a1c0dbeba')"
+      @click.prevent="$dispatch('readinglist')"
+      class="flex items-center ml-2 flex-grow justify-center px-3 py-2 font-medium text-white transition transform bg-red-600 rounded shadow hover:bg-red-800 active:scale-90"
+    >
+      <svg :class="data.selected !== null && 'fill-white'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!loading"><path d="M4 16 C1 12 2 6 7 4 12 2 15 6 16 8 17 6 21 2 26 4 31 6 31 12 28 16 25 20 16 28 16 28 16 28 7 20 4 16 Z"></path></svg>
+      <template x-if="loading">
+        <svg class="animate-spin text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+</svg>      </template>
+      <span class="ml-1">Add to Library</span>
+    </button>
+    
+          <div
+  x-data
+  @readinglist.window="$toast('You must be logged in to perform this action.')"
+></div>
+      </div>
+</div>
+  </div>
+</section>
+
+<div
+  x-data="{show:false}"
+  @enlarge.window="show = true; src = $event.detail.src"
+  x-show="show"
+  x-cloak
+>
+  <template x-if="show">
+    <div class="w-full h-full p-8 grid fixed top-0 left-0 place-items-center z-20">
+      <div class="w-full max-w-[27rem] aspect-w-9 aspect-h-4">
+        <img @click.outside="show = false" :src="src" alt="Solo For Two enlarged cover" class="overlay">
+      </div>
+    </div>
+  </template>
+</div>
+        </main>
+
+      <div
+  x-ignore
+  ax-load="idle"
+  x-data="toast"
+  class="fixed right-0 z-10 flex flex-col top-16"
+  @toast.window="add($event.detail)"
+  >
+  <template x-for="toast of toasts" :key="toast.id">
+    <button
+      x-show="visibles.includes(toast)"
+      x-transition:enter="transition ease-in duration-200"
+			x-transition:enter-start="transform opacity-0 translate-y-2"
+			x-transition:enter-end="transform opacity-100"
+			x-transition:leave="transition ease-out duration-500"
+			x-transition:leave-start="transform translate-x-0 opacity-100"
+			x-transition:leave-end="transform translate-x-full opacity-0"
+      @click="remove(toast.id)"
+      type="button"
+      :class="toast.success ? 'bg-green-400 hover:bg-green-500' : 'bg-red-400 hover:bg-red-500'"
+      class="max-w-xs px-4 py-2 mx-4 mb-4 text-white transition rounded-md"
+      >
+      <div class="flex space-x-2">
+        <template x-if="toast.success">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="flex-shrink-0"><path d="M14 21.414l-5-5.001L10.413 15 14 18.586 21.585 11 23 12.415l-9 8.999zM16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2zm0 26a12 12 0 1 1 12-12 12 12 0 0 1-12 12z"/></svg>
+        </template>
+
+        <template x-if="!toast.success">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016zM12 9v2m0 4h.01"></path></svg>
+        </template>
+        <p class="font-medium text-left" x-text="toast.message"></p>
+      </div>
+    </button>
+  </template>
+</div>
+
+<div x-data="{fixed:true}" x-ref="bottom" class="fixed z-20 m-1 bottom-0 transform translate-x-1/2 right-1/2">
+  <div class="relative text-center">
+    
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+    </div>
+
+        <script defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5865C8H');</script><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5865C8H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script id='wpb_missed_scheduled_posts_publisher-js-after'>
+	(function( request ){
+		if ( ! window.fetch ) {
+			return;
+		}
+		request.args.body = new URLSearchParams( request.args.body );
+		fetch( request.url, request.args );
+	}( {"url":"https:\/\/readhive.org\/wp\/wp-admin\/admin-ajax.php?action=wpb_missed_scheduled_posts_publisher","args":{"method":"POST","body":"wpb_missed_scheduled_posts_publisher_nonce=c1afd32274"}} ));
+	
+</script>
+<script>
+(()=>{"use strict";var e,r,t,o={},a={};function n(e){var r=a[e];if(void 0!==r)return r.exports;var t=a[e]={exports:{}};return o[e].call(t.exports,t,t.exports,n),t.exports}n.m=o,e=[],n.O=(r,t,o,a)=>{if(!t){var i=1/0;for(u=0;u<e.length;u++){t=e[u][0],o=e[u][1],a=e[u][2];for(var s=!0,d=0;d<t.length;d++)(!1&a||i>=a)&&Object.keys(n.O).every((e=>n.O[e](t[d])))?t.splice(d--,1):(s=!1,a<i&&(i=a));if(s){e.splice(u--,1);var l=o();void 0!==l&&(r=l)}}return r}a=a||0;for(var u=e.length;u>0&&e[u-1][2]>a;u--)e[u]=e[u-1];e[u]=[t,o,a]},n.n=e=>{var r=e&&e.__esModule?()=>e.default:()=>e;return n.d(r,{a:r}),r},n.d=(e,r)=>{for(var t in r)n.o(r,t)&&!n.o(e,t)&&Object.defineProperty(e,t,{enumerable:!0,get:r[t]})},n.f={},n.e=e=>Promise.all(Object.keys(n.f).reduce(((r,t)=>(n.f[t](e,r),r)),[])),n.u=e=>772===e?"js/772.ba4d0e.js":"js/dynamic/"+e+"."+{32:"716a61",73:"d535b9",86:"5b2d4e",145:"3cc9da",246:"ce0b33",268:"991629",283:"aba12c",309:"e2be43",319:"16e296",443:"184eb6",596:"53c3b2",602:"c3199a",655:"3b83f1",699:"1b8347",733:"684600",738:"49b7c5",767:"095260",805:"c5b481",900:"612ec9",945:"2d137d",949:"5c2b6d"}[e]+".chunk.js",n.miniCssF=e=>{},n.o=(e,r)=>Object.prototype.hasOwnProperty.call(e,r),r={},t="@roots/bud/sage/nzoseries:",n.l=(e,o,a,i)=>{if(r[e])r[e].push(o);else{var s,d;if(void 0!==a)for(var l=document.getElementsByTagName("script"),u=0;u<l.length;u++){var c=l[u];if(c.getAttribute("src")==e||c.getAttribute("data-webpack")==t+a){s=c;break}}s||(d=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,n.nc&&s.setAttribute("nonce",n.nc),s.setAttribute("data-webpack",t+a),s.src=e),r[e]=[o];var f=(t,o)=>{s.onerror=s.onload=null,clearTimeout(p);var a=r[e];if(delete r[e],s.parentNode&&s.parentNode.removeChild(s),a&&a.forEach((e=>e(o))),t)return t(o)},p=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),d&&document.head.appendChild(s)}},n.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.p="/app/themes/nzoseries/public/",(()=>{var e={666:0};n.f.j=(r,t)=>{var o=n.o(e,r)?e[r]:void 0;if(0!==o)if(o)t.push(o[2]);else if(666!=r){var a=new Promise(((t,a)=>o=e[r]=[t,a]));t.push(o[2]=a);var i=n.p+n.u(r),s=new Error;n.l(i,(t=>{if(n.o(e,r)&&(0!==(o=e[r])&&(e[r]=void 0),o)){var a=t&&("load"===t.type?"missing":t.type),i=t&&t.target&&t.target.src;s.message="Loading chunk "+r+" failed.\n("+a+": "+i+")",s.name="ChunkLoadError",s.type=a,s.request=i,o[1](s)}}),"chunk-"+r,r)}else e[r]=0},n.O.j=r=>0===e[r];var r=(r,t)=>{var o,a,i=t[0],s=t[1],d=t[2],l=0;if(i.some((r=>0!==e[r]))){for(o in s)n.o(s,o)&&(n.m[o]=s[o]);if(d)var u=d(n)}for(r&&r(t);l<i.length;l++)a=i[l],n.o(e,a)&&e[a]&&e[a][0](),e[a]=0;return n.O(u)},t=self.webpackChunk_roots_bud_sage_nzoseries=self.webpackChunk_roots_bud_sage_nzoseries||[];t.forEach(r.bind(null,0)),t.push=r.bind(null,t.push.bind(t))})()})();
+</script><script src="/public/js/116.5674a7.js"></script><script src="/public/js/667.f6a505.js"></script><script src="/public/js/303.fa1d40.js"></script><script src="/public/js/app.be7c92.js"></script>  <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a491a65eed6abd87',t:'MTc5MTc2MTM5Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"822b83d555a84c2186985c90c52fcefc","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

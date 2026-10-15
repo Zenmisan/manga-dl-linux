@@ -1,0 +1,56 @@
+{
+    "chapter": {
+        "count": 30435,
+        "error": "",
+        "id": "195767/chapter/4042938",
+        "ok": true,
+        "title": "<p class=\"cnMxMzU0ZmM0Y2E1ZjQxZWViNTM4OTc5YzVhOGU2NWY2\">Eric wa"
+    },
+    "detail": {
+        "count": 14,
+        "error": "",
+        "id": "195767",
+        "ok": true,
+        "title": "Dungeon Expert Eric: Skipping the Tutorial to Solo the Dungeons [LitRPG, Mage, Weak to Strong]"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://www.royalroad.com/fictions/search?title=solo&page=1",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fwww.royalroad.com%2Ffictions%2Fsearch%3Ftitle%3Dsolo%26page%3D1",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://www.royalroad.com/fiction/195767/dungeon-expert-eric-skipping-the-tutorial-to-solo",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fwww.royalroad.com%2Ffiction%2F195767",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://www.royalroad.com/fiction/195767/dungeon-expert-eric-skipping-the-tutorial-to-solo/chapter/4042938/1-whered-everyone-go",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fwww.royalroad.com%2Ffiction%2F195767%2Fchapter%2F4042938",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "royalroad",
+    "novel": true,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:30:43Z",
+    "search": {
+        "count": 20,
+        "error": "",
+        "id": "195767",
+        "ok": true,
+        "title": "Dungeon Expert Eric: Skipping the Tutorial to Solo the Dungeons [LitRPG, Mage, Weak to Strong]"
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "chapter": {
+        "count": 24,
+        "error": "",
+        "id": "emperor-of-solo-play-bd5bdaf8/chapter/88",
+        "ok": true,
+        "title": "https://cdn.asurascans.com/asura-images/chapters/emperor-of-solo-play/88/c98b9c.webp?v=1791722277"
+    },
+    "detail": {
+        "count": 88,
+        "error": "",
+        "id": "emperor-of-solo-play-bd5bdaf8",
+        "ok": true,
+        "title": "Emperor of Solo Play"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://api.asurascans.com/api/series?search=solo&offset=0&limit=20",
+            "method": "GET",
+            "request": "/manga/proxy/json?url=https%3A%2F%2Fapi.asurascans.com%2Fapi%2Fseries%3Fsearch%3Dsolo%26offset%3D0%26limit%3D20",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://asurascans.com/comics/emperor-of-solo-play-bd5bdaf8",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fasurascans.com%2Fcomics%2Femperor-of-solo-play-bd5bdaf8",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://asurascans.com/comics/emperor-of-solo-play-bd5bdaf8/chapter/88",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fasurascans.com%2Fcomics%2Femperor-of-solo-play-bd5bdaf8%2Fchapter%2F88",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "asurascans",
+    "novel": false,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:26:58Z",
+    "search": {
+        "count": 11,
+        "error": "",
+        "id": "emperor-of-solo-play-bd5bdaf8",
+        "ok": true,
+        "title": "Emperor of Solo Play"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "chapter": {
+        "count": 2448,
+        "error": "",
+        "id": "emperor-of-solo-play/chapter-0-prologue",
+        "ok": true,
+        "title": "<div align=\"center\"></div> <p>"
+    },
+    "detail": {
+        "count": 192,
+        "error": "",
+        "id": "emperor-of-solo-play",
+        "ok": true,
+        "title": "Emperor of Solo Play"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://novelfull.com/search?keyword=solo",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelfull.com%2Fsearch%3Fkeyword%3Dsolo",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://novelfull.com/emperor-of-solo-play.html",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelfull.com%2Femperor-of-solo-play.html",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://novelfull.com/ajax-chapter-option?novelId=258",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelfull.com%2Fajax-chapter-option%3FnovelId%3D258",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0004.dat",
+            "finalUrl": "https://novelfull.com/emperor-of-solo-play/chapter-0-prologue.html",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelfull.com%2Femperor-of-solo-play%2Fchapter-0-prologue.html",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "novelfull",
+    "novel": true,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:29:18Z",
+    "search": {
+        "count": 2,
+        "error": "",
+        "id": "emperor-of-solo-play",
+        "ok": true,
+        "title": "Emperor of Solo Play"
+    }
+}

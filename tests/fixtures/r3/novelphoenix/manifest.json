@@ -1,0 +1,65 @@
+{
+    "chapter": {
+        "count": 13231,
+        "error": "",
+        "id": "solo-farming-in-the-tower/chapter-1",
+        "ok": true,
+        "title": "<p>Sigh… I’m exhausted… completely drained.”</p><p>Despite his monthly salary ba"
+    },
+    "detail": {
+        "count": 893,
+        "error": "",
+        "id": "solo-farming-in-the-tower",
+        "ok": true,
+        "title": "Solo Farming In The Tower"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://novelphoenix.com/search/?keyword=solo&page=1",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelphoenix.com%2Fsearch%2F%3Fkeyword%3Dsolo%26page%3D1",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://novelphoenix.com/novel/solo-farming-in-the-tower",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelphoenix.com%2Fnovel%2Fsolo-farming-in-the-tower",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://novelphoenix.com/ajax/listChapterDataAjax?draw=1&columns%5B0%5D%5Bdata%5D=n_sort&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=-1&search%5Bvalue%5D=&post_id=3979&only_bookmark=false",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelphoenix.com%2Fajax%2FlistChapterDataAjax%3Fdraw%3D1%26columns%255B0%255D%255Bdata%255D%3Dn_sort%26order%255B0%255D%255Bcolumn%255D%3D0%26order%255B0%255D%255Bdir%255D%3Dasc%26start%3D0%26length%3D-1%26search%255Bvalue%255D%3D%26post_id%3D3979%26only_bookmark%3Dfalse",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0004.dat",
+            "finalUrl": "https://novelphoenix.com/novel/solo-farming-in-the-tower/chapter-1",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelphoenix.com%2Fnovel%2Fsolo-farming-in-the-tower%2Fchapter-1",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "novelphoenix",
+    "novel": true,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:29:19Z",
+    "search": {
+        "count": 32,
+        "error": "",
+        "id": "solo-farming-in-the-tower",
+        "ok": true,
+        "title": "Solo Farming In The Tower"
+    }
+}

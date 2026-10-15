@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=manga-dl
+GenericName=Manga Reader
+Comment=Read, download and sync manga
+Exec=manga-dl
+Icon=io.github.zenmisan.MangaDl
+Terminal=false
+Categories=Graphics;Viewer;Qt;
+Keywords=manga;comics;reader;cbz;
+StartupWMClass=manga-dl

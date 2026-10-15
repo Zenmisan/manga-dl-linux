@@ -1,0 +1,38 @@
+{
+    "chapter": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "detail": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "fetches": [
+        {
+            "body": "q=solo",
+            "file": "0001.dat",
+            "finalUrl": "https://novelsonline.org/sResults.php",
+            "method": "POST",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fnovelsonline.net%2FsResults.php",
+            "status": 522,
+            "transportError": ""
+        }
+    ],
+    "id": "novelsonline",
+    "novel": true,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:29:21Z",
+    "search": {
+        "count": 0,
+        "error": "no search results",
+        "id": "",
+        "ok": false,
+        "title": ""
+    }
+}

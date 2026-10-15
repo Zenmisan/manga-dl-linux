@@ -1,0 +1,2156 @@
+
+    <!DOCTYPE html>
+    <html lang="en" prefix="og: http://ogp.me/ns#">
+      <head>
+        
+    
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3HS09P5JW"></script>
+        
+
+    <script>
+      window.gaConfig = {"measurementIds":["G-JGYKNNKYRB","G-K3HS09P5JW"],"data":{"user_signed_in":false,"user_premium":false},"userId":null,"isPremium":false,"events":[]};
+
+      
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+          ;
+
+      
+          gtag('js', new Date());
+
+          gaConfig.measurementIds.forEach(id => {
+            gtag('config', id, gaConfig.data);
+
+            if (gaConfig.userId) {
+              gtag('config', id, {
+                'user_id': gaConfig.userId
+              });
+            } else {
+              gtag('config', id, {
+                'user_id': null
+              });
+            }
+          });
+
+          gtag(
+            'set',
+            'user_properties',
+            {
+              is_premium: gaConfig.isPremium,
+            }
+          );
+
+          gtag('set', {
+            service_workers_supported: 'serviceWorker' in navigator,
+          });
+
+          gaConfig.events.forEach(event => gtag('event', event.name, event.params));
+        ;
+    </script>
+  
+         
+    <!-- Facebook Pixel Code -->
+    <script>
+      
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        
+
+      fbq('init', '4980218702039932');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4980218702039932&ev=PageView&noscript=1">
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+   
+    
+        <script>
+          <!-- Reddit Pixel -->
+          !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_iqkhjb80nkm1",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);
+
+          rdt('init', 'a2_iqkhjb80nkm1', {
+            email: null,
+            externalId: null
+          });
+          rdt('track', 'PageVisit');
+          </script>
+          <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+          <!-- End Reddit Pixel -->
+        </script>
+      
+   
+
+        <title>Discover Manga – Omoi</title>
+
+         <meta name="description" content="Browse thousands of high quality official manga chapters and read with a monthly subscription app"> 
+
+        <link rel="alternate" type="application/atom+xml" title="Omoi News Feed" href="/news/feed.xml">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+         <meta name="csrf-token" content="hyOYJhb6--Psas6rR5gmH9DkngLSt4Ss4dD0"> 
+
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://contextual.media.net" />
+        <link rel="preconnect" href="https://production.image.azuki.co">
+
+        <link
+          rel="icon"
+          href="/assets/images/favicon/icon.svg"
+          type="image/svg+xml"
+        />
+        <link
+          rel="icon"
+          href="/assets/images/favicon/favicon-48x48.png"
+          type="image/png"
+          sizes="48x48"
+        />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          href="/assets/images/favicon/apple-touch-icon.png"
+        /><!-- 180×180 -->
+        <link rel="manifest" href="/site.webmanifest">
+
+        
+      <link rel="preload" as="font" type="font/ttf" href="/assets/css/AlanSans-VariableFont_wght.1d178b3c.ttf">
+    
+      <link rel="preload" as="font" type="font/ttf" href="/assets/css/LilitaOne-Regular.e3f927bc.ttf">
+    
+      <link rel="preload" as="image" type="image/svg+xml" href="/assets/css/wave.591bc6bc.svg">
+    
+      <link rel="preload" as="image" type="image/svg+xml" href="/assets/css/wave-large.738e8195.svg">
+    
+      <link rel="preload" as="image" type="image/svg+xml" href="/assets/css/manga-collage.1cb0fc5b.svg">
+    
+
+        <link rel="stylesheet" href="/assets/css/main.a17848c6.css">
+
+        <script type="module">
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+          }
+        </script>
+        <script src="/assets/js/main.6adabed9.js" defer type="module"></script>
+
+        
+              <script
+                async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8631059226538067"
+                crossorigin="anonymous"
+              ></script>
+            
+        
+         <meta property="og:title" content="Discover Manga – Omoi">  <meta property="og:description" content="Browse thousands of high quality official manga chapters and read with a monthly subscription app">  <meta property="og:image" content="https://www.omoi.com/assets/images/opengraph/logo-only.png">  <meta property="og:image:secure_url" content="https://www.omoi.com/assets/images/opengraph/logo-only.png">  <meta property="og:site_name" content="Omoi">  <meta name="twitter:card" content="summary">  <meta name="twitter:site" content="@ReadOmoi"> 
+        
+    <script id="asset_manifest" type="application/json">
+      {"js":{"browser.js":"/assets/js/main.6adabed9.js","lib/auth/FirebaseApp.js":"/assets/js/FirebaseApp.a94051fb.js","services/DecryptedImage.js":"/assets/js/DecryptedImage.89dd4667.js"},"css":{"src/styles/main.scss":"/assets/css/main.a17848c6.css","src/fonts/AlanSans-VariableFont_wght.ttf":"/assets/css/AlanSans-VariableFont_wght.1d178b3c.ttf","src/fonts/LilitaOne-Regular.ttf":"/assets/css/LilitaOne-Regular.e3f927bc.ttf","src/images/wave.svg":"/assets/css/wave.591bc6bc.svg","src/images/wave-large.svg":"/assets/css/wave-large.738e8195.svg","src/images/manga-collage.svg":"/assets/css/manga-collage.1cb0fc5b.svg"}}
+    </script>
+   
+      </head>
+
+      <body class="p-series-index">
+        
+      <div class="site-wrapper">
+        
+    <a href="#main" class="u-focus-only a-skip-link">
+      Skip to main content
+    </a>
+  
+        
+      <header id="site_header" class="site-header">
+        <div class="l-box">
+          <div class="l-sidebar l-sidebar--center site-header__sidebar">
+            <div class="site-header__logo-wrapper l-sidebar__main">
+              <a class="site-header__logo-link" href="/">
+                
+    <svg
+      class="a-azuki-logo"
+      viewBox="0 0 302.55 87"
+      xmlns="http://www.w3.org/2000/svg"
+      height="32"
+      aria-label="Omoi"
+    >
+      <title>Omoi</title>
+      <path d="M28.86,25.44c-.88-3.29-3.32-2.2-5.47-.82-3.23,2.15-5.4,4.87-5.41,8.11.04.94.41,2.03,1.16,2.66,1.51,1.33,5.28,1.05,7.11.74,1.79-.29,2.43-1.55,2.56-3.23.17-2.32.54-5.03.06-7.44v-.03Z" fill="#D12E44"></path>
+      <path d="M44.4,59.23c-.31-3.89-1.93-4.99-5.64-5.06-3.26-.11-6.54-.13-9.81-.02-1.47.07-3.35.04-4.52.62-2.72,1.35-.65,5.34.61,7.14.85,1.17,1.97,2.13,3.25,2.82,2.27,1.21,4.89,1.69,7.4,2.23,2.87.64,6.76.87,8.27-2.19.82-1.69.61-3.66.45-5.52v-.03Z" fill="#D12E44"></path>
+      <path d="M43.78.5C19.9.5.54,19.75.54,43.5s19.36,43,43.24,43,43.24-19.25,43.24-43S67.66.5,43.78.5ZM22.74,16.98c5.01-3.21,10.71-5.76,12.77,1.92l.02.06c1.12,5.63.27,11.96-.14,17.37-.29,3.91-1.79,6.86-5.97,7.53-4.26.71-13.06,1.36-16.59-1.74-1.77-1.48-2.62-4.02-2.72-6.22.02-7.56,5.1-13.91,12.63-18.94ZM54.95,69.92c-3.19,6.45-11.39,5.96-17.44,4.62-5.28-1.16-10.82-2.17-15.61-4.72-2.69-1.45-5.06-3.49-6.85-5.96-2.67-3.79-7.02-12.22-1.29-15.07,2.48-1.23,6.45-1.17,9.54-1.32,6.89-.24,13.81-.19,20.69.05,7.82.15,11.24,2.46,11.91,10.67v.07c.35,3.92.78,8.07-.94,11.64ZM75.57,52.73c-.93,4.39-2.54,8.67-4.87,12.52-1.05,1.67-2.31,3.29-3.96,4.39-2.16,1.54-5.14,1.54-5.94-1.39-.51-1.73-.37-3.8-.41-5.64-.02-2.75-.04-5.51-.06-8.26-.1-3.66.36-6.69,4.4-7.22,1.41-.22,2.88-.28,4.32-.4,1.56-.12,3.19-.24,4.45.19l.05.02c2.45.78,2.48,3.65,2.02,5.79ZM73.86,42.4c-1,.05-2.08.2-3.08.04-1.59-.24-1.49-1.67-1.58-3.24-.09-.77.05-2.86-1.08-2.46-1.16.58-1.97,2.99-2.25,4.31-.29,1.44-.8,1.95-2.23,1.98-2.54.15-7.78.49-9.98.61-.42,0-.92.04-1.11-.3-.48-.87-.36-1.79-.6-2.82-.17-.89-.41-1.78-.78-2.61-.58-1.35-2.01-3.17-2.44-1.05-.2,1.49-.19,3.05-.3,4.55-.05.72-.09,1.54-.66,2.05-.84.71-2.15.75-3.21.75-3.66,0-5.48-1.27-5.42-4.69.28-6.17,1.1-16.29,1.77-20.48.13-.73.33-1.43.64-2.12,2.17-4.92,7.4-5.95,11.13-4.94,1.48.3,3.06.93,4.22,2.03,1.53,1.34,1.72,3.16,1.79,5.18.08,1.72.08,3.5.24,5.21,0,0,.32,3.39,1.52,3.7,1.09.28,1.33-3.19,1.34-3.67.07-2.09-.02-4.11.08-6.26.01-1.05.91-1.69,1.83-1.99,2.35-.53,5.8,1,9.03,7.13,2.21,4.37,3.18,7.86,4.34,13.06.2.97.43,1.99.37,2.97v.07c-.08,1.92-1.9,2.99-3.59,3Z" fill="#D12E44"></path>
+      <path d="M126.07,66.29c-4.46,0-8.49-1.02-12.07-3.06-3.58-2.04-6.42-4.81-8.53-8.31-2.11-3.5-3.17-7.41-3.17-11.73s1.04-8.2,3.12-11.63c2.08-3.44,4.92-6.18,8.53-8.21,3.61-2.04,7.62-3.06,12.02-3.06s8.58,1.02,12.16,3.06c3.58,2.04,6.41,4.78,8.49,8.21s3.12,7.31,3.12,11.63-1.04,8.23-3.12,11.73c-2.08,3.5-4.91,6.27-8.49,8.31-3.58,2.04-7.6,3.06-12.07,3.06ZM125.97,55.16c2.26,0,4.27-.5,6.01-1.51,1.75-1,3.09-2.4,4.04-4.2.95-1.79,1.42-3.85,1.42-6.16s-.49-4.35-1.47-6.11-2.33-3.15-4.04-4.15c-1.71-1-3.7-1.51-5.96-1.51s-4.16.5-5.87,1.51c-1.71,1-3.06,2.39-4.04,4.15-.98,1.76-1.47,3.8-1.47,6.11s.49,4.37,1.47,6.16c.98,1.79,2.33,3.19,4.04,4.2,1.71,1,3.67,1.51,5.87,1.51Z" fill="#323839"></path>
+      <path d="M157.45,65.38V21.31h12.02v44.07h-12.02ZM186.35,65.38v-26.01c0-2.56-.81-4.55-2.43-5.98-1.62-1.43-3.62-2.15-6.01-2.15-1.59,0-3.03.32-4.31.96-1.29.64-2.29,1.57-3.03,2.78s-1.1,2.68-1.1,4.38l-4.68-2.28c0-3.41.75-6.36,2.25-8.85s3.53-4.43,6.1-5.79c2.57-1.37,5.47-2.05,8.72-2.05,3.06,0,5.84.68,8.35,2.05,2.51,1.37,4.49,3.28,5.96,5.75,1.47,2.46,2.2,5.43,2.2,8.9v28.29h-12.02ZM215.26,65.38v-26.01c0-2.56-.81-4.55-2.43-5.98-1.62-1.43-3.62-2.15-6.01-2.15-1.53,0-2.95.32-4.27.96-1.32.64-2.34,1.57-3.07,2.78s-1.1,2.68-1.1,4.38l-6.88-1.64c.24-3.53,1.19-6.58,2.84-9.17,1.65-2.58,3.82-4.59,6.52-6.02,2.69-1.43,5.69-2.15,8.99-2.15s6.27.68,8.9,2.05c2.63,1.37,4.71,3.33,6.24,5.88,1.53,2.56,2.29,5.6,2.29,9.13v27.92h-12.02Z" fill="#323839"></path>
+      <path d="M257.83,66.29c-4.46,0-8.49-1.02-12.07-3.06-3.58-2.04-6.42-4.81-8.53-8.31-2.11-3.5-3.17-7.41-3.17-11.73s1.04-8.2,3.12-11.63,4.92-6.18,8.54-8.21c3.61-2.04,7.62-3.06,12.02-3.06s8.58,1.02,12.16,3.06c3.58,2.04,6.41,4.78,8.49,8.21,2.08,3.44,3.12,7.31,3.12,11.63s-1.04,8.23-3.12,11.73c-2.08,3.5-4.91,6.27-8.49,8.31s-7.6,3.06-12.07,3.06ZM257.74,55.16c2.26,0,4.27-.5,6.01-1.51,1.75-1,3.09-2.4,4.04-4.2.95-1.79,1.42-3.85,1.42-6.16s-.49-4.35-1.47-6.11-2.33-3.15-4.04-4.15c-1.71-1-3.7-1.51-5.96-1.51s-4.16.5-5.87,1.51c-1.71,1-3.06,2.39-4.04,4.15-.98,1.76-1.47,3.8-1.47,6.11s.49,4.37,1.47,6.16c.98,1.79,2.33,3.19,4.04,4.2,1.71,1,3.67,1.51,5.87,1.51Z" fill="#323839"></path>
+      <path d="M295.27,14.19c-1.96,0-3.58-.65-4.87-1.96-1.28-1.31-1.93-2.93-1.93-4.88s.64-3.5,1.93-4.84c1.29-1.34,2.91-2.01,4.87-2.01s3.65.67,4.91,2.01c1.25,1.34,1.88,2.95,1.88,4.84s-.63,3.57-1.88,4.88c-1.25,1.31-2.89,1.96-4.91,1.96ZM289.21,65.38V21.31h12.11v44.07h-12.11Z" fill="#323839"></path>
+    </svg>
+  
+              </a>
+            </div>
+
+            <div class="site-header__nav-and-search">
+              <div class="l-cluster">
+                
+    <form class="search-form" role="search" action="/discover">
+      
+
+      <div class="search-form__bar">
+        <div class="l-sidebar l-sidebar--center">
+          <input class="l-sidebar__main" type="search" name="q" value="" placeholder="Search" aria-labelledby="search_form_button_MaDtyd_-nS">
+
+          <button id="search_form_button_MaDtyd_-nS" class="a-text-button">
+            
+    <svg class=" a-svg-icon " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+      
+      <path d="M21 21L15 15L21 21ZM17 10C17 10.9193 16.8189 11.8295 16.4672 12.6788C16.1154 13.5281 15.5998 14.2997 14.9497 14.9497C14.2997 15.5998 13.5281 16.1154 12.6788 16.4672C11.8295 16.8189 10.9193 17 10 17C9.08075 17 8.1705 16.8189 7.32122 16.4672C6.47194 16.1154 5.70026 15.5998 5.05025 14.9497C4.40024 14.2997 3.88463 13.5281 3.53284 12.6788C3.18106 11.8295 3 10.9193 3 10C3 8.14348 3.7375 6.36301 5.05025 5.05025C6.36301 3.7375 8.14348 3 10 3C11.8565 3 13.637 3.7375 14.9497 5.05025C16.2625 6.36301 17 8.14348 17 10Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    </svg>
+  
+            <span class="u-visually-hidden">Search</span>
+          </button>
+
+          
+        </div>
+      </div>
+    </form>
+  
+                
+      <nav class="nav-bar">
+        <ul class="l-cluster">
+          
+      <li>
+         <a href="/discover" class="nav-bar__link">Discover</a> 
+      </li>
+    
+          
+      <li>
+         <a href="/news" class="nav-bar__link">News</a> 
+      </li>
+    
+          
+      <li>
+         <a href="/sign-in" class="nav-bar__link">Sign In</a> 
+      </li>
+    
+      <li>
+         <a href="/sign-up" class="nav-bar__link">Create Account</a> 
+      </li>
+    
+          
+      <li class="nav-bar__cta">
+        
+    <a id="header_premium_cta" class=" a-cta " href="/premium">
+      Premium
+    </a>
+  
+      </li>
+    
+        </ul>
+      </nav>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+    <azuki-dismissable id="premium_banner" class="m-top-banner " animation="slide-right" collapse hidden-cookie="azuki_premium_banner_2024_08_10" hydrate:defer>
+      <aside class="l-box m-card" collapse>
+        <div class="l-center">
+          <div class="m-top-banner__main-sidebar l-sidebar l-sidebar--center">
+            <div class="l-sidebar__main">
+              <div
+                class="m-top-banner__text l-sidebar l-sidebar--baseline l-sidebar__main"
+              >
+                
+        <h2 class=" a-heading "> 
+    <a class="a-card-link" href="/premium">
+      Try Omoi Premium!
+    </a>
+   </h2>
+      
+
+                <p class="l-sidebar__main">Unlock thousands of manga chapters</p>
+              </div>
+            </div>
+
+            <div class="l-cluster m-top-banner__right">
+              <div class="a-cta a-cta--ghost" aria-hidden="true">
+                Try Free 
+    <svg class=" a-svg-icon a-svg-icon--with-fill a-svg-icon--small " viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" height="20" width="20">
+      
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29279 14.707C7.10532 14.5195 7 14.2652 7 14C7 13.7349 7.10532 13.4806 7.29279 13.293L10.5858 10L7.29279 6.70704C7.11063 6.51844 7.00983 6.26584 7.01211 6.00364C7.01439 5.74144 7.11956 5.49063 7.30497 5.30522C7.49038 5.11981 7.74119 5.01465 8.00339 5.01237C8.26558 5.01009 8.51818 5.11088 8.70679 5.29304L12.7068 9.29304C12.8943 9.48057 12.9996 9.73488 12.9996 10C12.9996 10.2652 12.8943 10.5195 12.7068 10.707L8.70679 14.707C8.51926 14.8945 8.26495 14.9998 7.99979 14.9998C7.73462 14.9998 7.48031 14.8945 7.29279 14.707Z"/>
+      
+    </svg>
+  
+              </div>
+
+              <button class="a-text-button" type="button" aria-label="Close banner" aria-controls="premium_banner" data-dismissable-close>
+                
+    <svg class=" a-svg-icon " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+      
+      <path d="M6 6L18 18M6 18L18 6L6 18Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    </svg>
+  
+              </button>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </azuki-dismissable>
+  
+        
+    <div id="site_nav_tab_bar" class="o-nav-tab-bar">
+      <nav class="l-box">
+        <ul class="l-reel">
+           <li>
+      <a href="/">
+        
+    <span class="m-labeled-icon">
+      <div class=" m-labeled-icon__icon-wrapper ">
+        <div class="m-labeled-icon__icon">
+          
+    <svg class=" a-svg-icon " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+      
+      <path d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.2652 5.10536 20.5196 5.29289 20.7071C5.48043 20.8946 5.73478 21 6 21H9M19 10L21 12M19 10V20C19 20.2652 18.8946 20.5196 18.7071 20.7071C18.5196 20.8946 18.2652 21 18 21H15M9 21C9.26522 21 9.51957 20.8946 9.70711 20.7071C9.89464 20.5196 10 20.2652 10 20V16C10 15.7348 10.1054 15.4804 10.2929 15.2929C10.4804 15.1054 10.7348 15 11 15H13C13.2652 15 13.5196 15.1054 13.7071 15.2929C13.8946 15.4804 14 15.7348 14 16V20C14 20.2652 14.1054 20.5196 14.2929 20.7071C14.4804 20.8946 14.7348 21 15 21M9 21H15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    </svg>
+  
+          
+        </div>
+      </div>
+      Home
+    </span>
+  
+      </a>
+    </li>  <li>
+      <a href="/discover">
+        
+    <span class="m-labeled-icon">
+      <div class=" m-labeled-icon__icon-wrapper ">
+        <div class="m-labeled-icon__icon">
+          
+    <svg class=" a-svg-icon " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+      
+      <path d="M21 21L15 15L21 21ZM17 10C17 10.9193 16.8189 11.8295 16.4672 12.6788C16.1154 13.5281 15.5998 14.2997 14.9497 14.9497C14.2997 15.5998 13.5281 16.1154 12.6788 16.4672C11.8295 16.8189 10.9193 17 10 17C9.08075 17 8.1705 16.8189 7.32122 16.4672C6.47194 16.1154 5.70026 15.5998 5.05025 14.9497C4.40024 14.2997 3.88463 13.5281 3.53284 12.6788C3.18106 11.8295 3 10.9193 3 10C3 8.14348 3.7375 6.36301 5.05025 5.05025C6.36301 3.7375 8.14348 3 10 3C11.8565 3 13.637 3.7375 14.9497 5.05025C16.2625 6.36301 17 8.14348 17 10Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    </svg>
+  
+          
+        </div>
+      </div>
+      Discover
+    </span>
+  
+      </a>
+    </li>  <li>
+      <a href="/account">
+        
+    <span class="m-labeled-icon">
+      <div class=" m-labeled-icon__icon-wrapper ">
+        <div class="m-labeled-icon__icon">
+          
+    <svg class=" a-svg-icon " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+      
+      <path
+        d="M16 7C16 8.06087 15.5786 9.07828 14.8284 9.82843C14.0783 10.5786 13.0609 11 12 11C10.9391 11 9.92172 10.5786 9.17157 9.82843C8.42143 9.07828 8 8.06087 8 7C8 5.93913 8.42143 4.92172 9.17157 4.17157C9.92172 3.42143 10.9391 3 12 3C13.0609 3 14.0783 3.42143 14.8284 4.17157C15.5786 4.92172 16 5.93913 16 7V7ZM12 14C10.1435 14 8.36301 14.7375 7.05025 16.0503C5.7375 17.363 5 19.1435 5 21H19C19 19.1435 18.2625 17.363 16.9497 16.0503C15.637 14.7375 13.8565 14 12 14V14Z"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    
+    </svg>
+  
+          
+        </div>
+      </div>
+      Account
+    </span>
+  
+      </a>
+    </li> 
+        </ul>
+      </nav>
+    </div>
+  
+      </header>
+    
+        
+    <div class="m-sheet-stack l-stack l-stack--compact">
+      
+          <div class=" l-stack__fill m-sheet-stack__sheet " style="--sheet-stack__background:var(--color-white);">
+             <main id="main"> 
+      <div class="l-box">
+        <div class="l-sidebar l-sidebar--baseline">
+          <h1 class="l-sidebar__main">Discover Manga</h1>
+          <div>
+            <a href="/release-calendar" class="p-series-index__release-calendar-link">
+              Release Calendar (Beta)
+            </a>
+          </div>
+        </div>
+
+        <div class="p-series-index__controls-and-results">
+          
+    <form class="search-form" role="search" action="/discover">
+      
+
+      <div class="search-form__bar">
+        <div class="l-sidebar l-sidebar--center">
+          <input class="l-sidebar__main" type="search" name="q" value="solo" placeholder="Search" aria-labelledby="search_form_button_pPbSyYs6TP">
+
+          <button id="search_form_button_pPbSyYs6TP" class="a-text-button">
+            
+    <svg class=" a-svg-icon " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+      
+      <path d="M21 21L15 15L21 21ZM17 10C17 10.9193 16.8189 11.8295 16.4672 12.6788C16.1154 13.5281 15.5998 14.2997 14.9497 14.9497C14.2997 15.5998 13.5281 16.1154 12.6788 16.4672C11.8295 16.8189 10.9193 17 10 17C9.08075 17 8.1705 16.8189 7.32122 16.4672C6.47194 16.1154 5.70026 15.5998 5.05025 14.9497C4.40024 14.2997 3.88463 13.5281 3.53284 12.6788C3.18106 11.8295 3 10.9193 3 10C3 8.14348 3.7375 6.36301 5.05025 5.05025C6.36301 3.7375 8.14348 3 10 3C11.8565 3 13.637 3.7375 14.9497 5.05025C16.2625 6.36301 17 8.14348 17 10Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    </svg>
+  
+            <span class="u-visually-hidden">Search</span>
+          </button>
+
+          <input type="hidden" name="sort" value="popular">
+        </div>
+      </div>
+    </form>
+  
+          
+    <div class="o-filter-disclosure u-display-contents">
+      <azuki-disclosure-trigger class="u-display-contents" target="filter_disclosure" hydrate:defer>
+        <form class="u-display-contents">
+          <button class="o-filter-disclosure__toggle a-cta a-cta--text" name="filters" value="1">
+            
+    <svg class=" a-svg-icon " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+      
+      <path d="M12 6V4M12 6C11.4696 6 10.9609 6.21071 10.5858 6.58579C10.2107 6.96086 10 7.46957 10 8C10 8.53043 10.2107 9.03914 10.5858 9.41421C10.9609 9.78929 11.4696 10 12 10M12 6C12.5304 6 13.0391 6.21071 13.4142 6.58579C13.7893 6.96086 14 7.46957 14 8C14 8.53043 13.7893 9.03914 13.4142 9.41421C13.0391 9.78929 12.5304 10 12 10M12 10V20M6 18C6.53043 18 7.03914 17.7893 7.41421 17.4142C7.78929 17.0391 8 16.5304 8 16C8 15.4696 7.78929 14.9609 7.41421 14.5858C7.03914 14.2107 6.53043 14 6 14M6 18C5.46957 18 4.96086 17.7893 4.58579 17.4142C4.21071 17.0391 4 16.5304 4 16C4 15.4696 4.21071 14.9609 4.58579 14.5858C4.96086 14.2107 5.46957 14 6 14M6 18V20M6 14V4M18 18C18.5304 18 19.0391 17.7893 19.4142 17.4142C19.7893 17.0391 20 16.5304 20 16C20 15.4696 19.7893 14.9609 19.4142 14.5858C19.0391 14.2107 18.5304 14 18 14M18 18C17.4696 18 16.9609 17.7893 16.5858 17.4142C16.2107 17.0391 16 16.5304 16 16C16 15.4696 16.2107 14.9609 16.5858 14.5858C16.9609 14.2107 17.4696 14 18 14M18 18V20M18 14V4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    </svg>
+   Filters
+            
+          </button>
+
+          <input type="hidden" name="q" value="solo">
+        </form>
+      </azuki-disclosure-trigger>
+
+      <azuki-disclosure id="filter_disclosure" class="u-display-contents" hydrate:defer>
+        <form class="o-filter-disclosure__form">
+          <div>
+                
+        <h2 class=" a-heading a-heading--card "> Access Type </h2>
+      
+
+                <div class="o-filter-disclosure__checkboxes">
+                  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_bYJNPISUv2nOOINEptTQD_input" type="radio" name="access_type" value="" checked class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_bYJNPISUv2nOOINEptTQD_input" class="  ">Any</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_gJ9xergoPgu3OtkH57vqQ_input" type="radio" name="access_type" value="fully_premium" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_gJ9xergoPgu3OtkH57vqQ_input" class="  ">Premium</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_gYGIj_z-0DMgeP0PvrtmO_input" type="radio" name="access_type" value="premium_including_partial" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_gYGIj_z-0DMgeP0PvrtmO_input" class="  ">Partial Premium</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_lBbKk0VjUTAca9Fa12Gwy_input" type="radio" name="access_type" value="purchasable" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_lBbKk0VjUTAca9Fa12Gwy_input" class="  ">Ebook</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+                </div>
+              </div>
+          <input type="hidden" name="q" value="solo"><input type="hidden" name="sort" value="popular">
+
+          <div>
+            
+        <h2 class=" a-heading a-heading--card "> Genres </h2>
+      
+
+            <div class="o-filter-disclosure__checkboxes">
+              
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_lVC71b0lctZebXusG4YXM_input" type="checkbox" name="tags[]" value="action" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_lVC71b0lctZebXusG4YXM_input" class="  ">Action</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_ro9cQ-FMbD6D0xkZco5QW_input" type="checkbox" name="tags[]" value="adventure" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_ro9cQ-FMbD6D0xkZco5QW_input" class="  ">Adventure</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_gF6gur3Jj6HCZKGy49Vg__input" type="checkbox" name="tags[]" value="comedy" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_gF6gur3Jj6HCZKGy49Vg__input" class="  ">Comedy</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_O-gi1DHpCLym1t9ZPVW9T_input" type="checkbox" name="tags[]" value="drama" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_O-gi1DHpCLym1t9ZPVW9T_input" class="  ">Drama</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_H9RqgFF1hxbGl4zFJv2Gk_input" type="checkbox" name="tags[]" value="romance" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_H9RqgFF1hxbGl4zFJv2Gk_input" class="  ">Romance</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_u2O_D4QXfD3EutVks6QUB_input" type="checkbox" name="tags[]" value="fantasy" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_u2O_D4QXfD3EutVks6QUB_input" class="  ">Fantasy</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_mm-LWkssk2t2H45-TdGnI_input" type="checkbox" name="tags[]" value="scifi" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_mm-LWkssk2t2H45-TdGnI_input" class="  ">Sci-Fi</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_18yeQlL6MP7rhEkMWzz7q_input" type="checkbox" name="tags[]" value="sports" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_18yeQlL6MP7rhEkMWzz7q_input" class="  ">Sports</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_fGNzo43YRuB032GvynsR9_input" type="checkbox" name="tags[]" value="horror" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_fGNzo43YRuB032GvynsR9_input" class="  ">Horror</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_y8WWkEsvTX1jJvshi2Q18_input" type="checkbox" name="tags[]" value="mystery" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_y8WWkEsvTX1jJvshi2Q18_input" class="  ">Mystery</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_9pS1sMnOGSJBTXGd6zUvx_input" type="checkbox" name="tags[]" value="boys-love" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_9pS1sMnOGSJBTXGd6zUvx_input" class="  ">Boys Love</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_LVx3pbNfOMEx1zDSAcI1b_input" type="checkbox" name="tags[]" value="girls-love" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_LVx3pbNfOMEx1zDSAcI1b_input" class="  ">Girls Love/Yuri</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_k8Ir5ImjvswFXoN2qpera_input" type="checkbox" name="tags[]" value="tragedy" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_k8Ir5ImjvswFXoN2qpera_input" class="  ">Tragedy</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_umPgg3ond1_KQo017ZrW2_input" type="checkbox" name="tags[]" value="ecchi" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_umPgg3ond1_KQo017ZrW2_input" class="  ">Ecchi</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_1y2cA-mlb6MeSYPdnC6ox_input" type="checkbox" name="tags[]" value="slice-of-life" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_1y2cA-mlb6MeSYPdnC6ox_input" class="  ">Slice of Life</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_8yI7GFwUgD_kfQD_NCRHP_input" type="checkbox" name="tags[]" value="harem" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_8yI7GFwUgD_kfQD_NCRHP_input" class="  ">Harem</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_6s87u80god8jME0g2SpaD_input" type="checkbox" name="tags[]" value="psychological" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_6s87u80god8jME0g2SpaD_input" class="  ">Psychological</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_nPAHKzTeb64-qxnXvYLzO_input" type="checkbox" name="tags[]" value="supernatural" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_nPAHKzTeb64-qxnXvYLzO_input" class="  ">Supernatural</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_c_TEcwEFWCYzfcg6N6X_W_input" type="checkbox" name="tags[]" value="school-life" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_c_TEcwEFWCYzfcg6N6X_W_input" class="  ">School Life</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_AyUaHEqGjp6_ga9lAtsrH_input" type="checkbox" name="tags[]" value="martial-arts" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_AyUaHEqGjp6_ga9lAtsrH_input" class="  ">Martial Arts</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_zEEiJ-m6Zs5sSAiq7GopP_input" type="checkbox" name="tags[]" value="historical" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_zEEiJ-m6Zs5sSAiq7GopP_input" class="  ">Historical</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_nt-wOSfahi8atMvUXqIiW_input" type="checkbox" name="tags[]" value="mecha" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_nt-wOSfahi8atMvUXqIiW_input" class="  ">Mecha</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_42CyjCrqTiZFy-yUtBEXt_input" type="checkbox" name="tags[]" value="indie" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_42CyjCrqTiZFy-yUtBEXt_input" class="  ">Indie</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_jLaJF4AL2f0NwVjLISZBe_input" type="checkbox" name="tags[]" value="shounen" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_jLaJF4AL2f0NwVjLISZBe_input" class="  ">Shonen</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_vNc9ycwL35d8wKaJm71Vg_input" type="checkbox" name="tags[]" value="shoujo" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_vNc9ycwL35d8wKaJm71Vg_input" class="  ">Shojo</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_pFUGKLiFf5Khf8ECSQM0-_input" type="checkbox" name="tags[]" value="seinen" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_pFUGKLiFf5Khf8ECSQM0-_input" class="  ">Seinen</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_Z-GuzHlwwWCCFqID6eoz0_input" type="checkbox" name="tags[]" value="josei" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_Z-GuzHlwwWCCFqID6eoz0_input" class="  ">Josei</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_rjGUvY2jm_zJ6gQQXEhs0_input" type="checkbox" name="tags[]" value="mature" class="">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_rjGUvY2jm_zJ6gQQXEhs0_input" class="  ">Mature</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+            </div>
+          </div>
+
+          
+                <div>
+                  
+        <h2 class=" a-heading a-heading--card "> Sale Campaigns </h2>
+      
+
+                  <div class="o-filter-disclosure__checkboxes">
+                    
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span>
+        <span class="a-custom-checkbox">
+          
+      <input id="form_field_f5oYXbUbAuVMdtZ5GVhhL_input" type="checkbox" name="campaigns[]" value="october-2026-hiro-mashima-spotlight" class="" aria-describedby="form_field_f5oYXbUbAuVMdtZ5GVhhL_input_description">
+    
+          <span></span>
+        </span>
+      </span>
+                <span class="l-sidebar__main">
+    <label for="form_field_f5oYXbUbAuVMdtZ5GVhhL_input" class="  ">October 2026: Hiro Mashima Spotlight</label>
+  </span>
+              </span>
+            </span>
+          
+      
+            <span id="form_field_f5oYXbUbAuVMdtZ5GVhhL_input_description" class="m-form-field__description">
+              Sep 2 – Oct 13
+            </span>
+          
+    </p>
+  
+                  </div>
+                </div>
+              
+
+          <div>
+            
+        <h2 class=" a-heading a-heading--card "> Publishers </h2>
+      
+
+            <div class="o-filter-disclosure__checkboxes">
+              
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_bZBVS19kxNP_zn8gkvPQO_input" type="radio" name="publisher_slug" value="" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_bZBVS19kxNP_zn8gkvPQO_input" class="  ">Any</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_QmiY9dJKQJW1BDk_3I0Iv_input" type="radio" name="publisher_slug" value="ablaze" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_QmiY9dJKQJW1BDk_3I0Iv_input" class="  ">ABLAZE</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_iem8_2zh6HWPz6Y_wn6b1_input" type="radio" name="publisher_slug" value="cmoa-comics" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_iem8_2zh6HWPz6Y_wn6b1_input" class="  ">C&#x27;moA Comics</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_n8gvAmliD2tikqQO9l_XU_input" type="radio" name="publisher_slug" value="cllenn" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_n8gvAmliD2tikqQO9l_XU_input" class="  ">CLLENN</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field__qclRUwAudaBcR77vipSN_input" type="radio" name="publisher_slug" value="coamix" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field__qclRUwAudaBcR77vipSN_input" class="  ">Coamix Inc.</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_rrbcrNjk8FAHdZbOa5pTY_input" type="radio" name="publisher_slug" value="comic-room-co-ltd" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_rrbcrNjk8FAHdZbOa5pTY_input" class="  ">COMIC ROOM Co., Ltd.</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_HJipc2tCLvEdhGJOkH-0e_input" type="radio" name="publisher_slug" value="compass-inc" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_HJipc2tCLvEdhGJOkH-0e_input" class="  ">COMPASS Inc.</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_IwbLp2REYuzKbZRRFJePF_input" type="radio" name="publisher_slug" value="cork" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_IwbLp2REYuzKbZRRFJePF_input" class="  ">CORK</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_meUPFocTF6zTvJuKI7ggb_input" type="radio" name="publisher_slug" value="dpn-books" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_meUPFocTF6zTvJuKI7ggb_input" class="  ">DPN BOOKS</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_m8hTDnekI5ricAc5Ha2_P_input" type="radio" name="publisher_slug" value="frontier-works-inc" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_m8hTDnekI5ricAc5Ha2_P_input" class="  ">Frontier Works Inc.</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_jw_8BH1BiYDOBW8tf3NaU_input" type="radio" name="publisher_slug" value="funguild-mangaplaza" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_jw_8BH1BiYDOBW8tf3NaU_input" class="  ">FUNGUILD (MangaPlaza)</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_4c1s3T_XHw5JhveOziaBh_input" type="radio" name="publisher_slug" value="futabasha-publishers-ltd" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_4c1s3T_XHw5JhveOziaBh_input" class="  ">Futabasha Publishers Ltd.</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_0TGGBEg6wsaXEODracAlo_input" type="radio" name="publisher_slug" value="futabasha-publishers-ltd-mangaplaza" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_0TGGBEg6wsaXEODracAlo_input" class="  ">Futabasha Publishers LTD. (MangaPlaza)</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_jx9ciOxZUNUwqZeJVSDrW_input" type="radio" name="publisher_slug" value="glacier-bay-books" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_jx9ciOxZUNUwqZeJVSDrW_input" class="  ">Glacier Bay Books</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_-DjImmJK0Tt00PNz9j1BL_input" type="radio" name="publisher_slug" value="honcomi" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_-DjImmJK0Tt00PNz9j1BL_input" class="  ">honcomi</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_CcGtMPntsXuazvascAhI-_input" type="radio" name="publisher_slug" value="ima" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_CcGtMPntsXuazvascAhI-_input" class="  ">IMA</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_p4x24SndXftkjW_Umdmmx_input" type="radio" name="publisher_slug" value="j-novel-club" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_p4x24SndXftkjW_Umdmmx_input" class="  ">J-Novel Club</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_C9YAZSyE2oAzbJ9n2F1po_input" type="radio" name="publisher_slug" value="kadokawa" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_C9YAZSyE2oAzbJ9n2F1po_input" class="  ">KADOKAWA</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_cWCoiMgEdH6r9EZ4_Pelu_input" type="radio" name="publisher_slug" value="kaiten-books" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_cWCoiMgEdH6r9EZ4_Pelu_input" class="  ">Kaiten Books</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_WW9EOfjwngqQsxQc6e-Gh_input" type="radio" name="publisher_slug" value="kaoru-tada-mz-plan-minato-pro" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_WW9EOfjwngqQsxQc6e-Gh_input" class="  ">Kaoru Tada/M&#x27;z plan/Minato Pro</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_S1ET4dsLNklwhCe0l_ctr_input" type="radio" name="publisher_slug" value="kodansha" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_S1ET4dsLNklwhCe0l_ctr_input" class="  ">Kodansha</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_8aUXnCBOhgI8jFNGsG7ED_input" type="radio" name="publisher_slug" value="libre-inc" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_8aUXnCBOhgI8jFNGsG7ED_input" class="  ">Libre Inc.</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_JeIBbvDzfO96zfpIxTAwo_input" type="radio" name="publisher_slug" value="mahjong-pros" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_JeIBbvDzfO96zfpIxTAwo_input" class="  ">Mahjong Pros</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_gKEZpz5vv3N19E_fBWFOF_input" type="radio" name="publisher_slug" value="manga-box-co-ltd" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_gKEZpz5vv3N19E_fBWFOF_input" class="  ">Manga Box Co., Ltd.</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_FeFZR5nZq4CrNWtOnRc_I_input" type="radio" name="publisher_slug" value="manga-mavericks-books" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_FeFZR5nZq4CrNWtOnRc_I_input" class="  ">Manga Mavericks Books</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_csh4ksQ1F19ZXhsXb5-iZ_input" type="radio" name="publisher_slug" value="manga-up" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_csh4ksQ1F19ZXhsXb5-iZ_input" class="  ">Manga Up!</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_Lbat8mcTIpmwUuh6b6nhO_input" type="radio" name="publisher_slug" value="azuki" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_Lbat8mcTIpmwUuh6b6nhO_input" class="  ">Omoi</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_4Rg4xUAjOj0n3yXMso-6u_input" type="radio" name="publisher_slug" value="one-peace-books" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_4Rg4xUAjOj0n3yXMso-6u_input" class="  ">One Peace Books</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_pkW4MS4sZsmzWsnB0l9Mz_input" type="radio" name="publisher_slug" value="pick-up-press" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_pkW4MS4sZsmzWsnB0l9Mz_input" class="  ">PICK UP PRESS</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_Sf1-Bu_QOD_yGPpgASazh_input" type="radio" name="publisher_slug" value="red-string-translations" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_Sf1-Bu_QOD_yGPpgASazh_input" class="  ">Red String Translations</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_vVOlELoI0fZ7cgu-29ag8_input" type="radio" name="publisher_slug" value="rideon" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_vVOlELoI0fZ7cgu-29ag8_input" class="  ">RIDEON</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_pWmgFqkkxqMeWYLHVeivF_input" type="radio" name="publisher_slug" value="shodensha-publishing-co-ltd" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_pWmgFqkkxqMeWYLHVeivF_input" class="  ">SHODENSHA Publishing CO., LTD.</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_0fH5hPSXClldZZOPIAsU1_input" type="radio" name="publisher_slug" value="shufu-to-seikatsu-sha" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_0fH5hPSXClldZZOPIAsU1_input" class="  ">SHUFU TO SEIKATSU SHA</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field__ALnWRtdOI1_o33CuIahT_input" type="radio" name="publisher_slug" value="sozo-comics" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field__ALnWRtdOI1_o33CuIahT_input" class="  ">SOZO Comics</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_KidS1nuSKoXWocCmFmmLt_input" type="radio" name="publisher_slug" value="square-enix" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_KidS1nuSKoXWocCmFmmLt_input" class="  ">SQUARE ENIX</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_g-TOnoQ6RQn0-6yNedtUd_input" type="radio" name="publisher_slug" value="star-fruit-books" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_g-TOnoQ6RQn0-6yNedtUd_input" class="  ">Star Fruit Books</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_jkxOoNX7a-CcjeKSz4Qkt_input" type="radio" name="publisher_slug" value="starts-publishing-corporation-mp" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_jkxOoNX7a-CcjeKSz4Qkt_input" class="  ">Starts Publishing Corporation (MangaPlaza)</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_-Rw92Cy0DyRbWESutDM2q_input" type="radio" name="publisher_slug" value="taiyohtosho-co-ltd" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_-Rw92Cy0DyRbWESutDM2q_input" class="  ">TAIYOHTOSHO Co., Ltd.</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_4aNEkcA_zYmLwajY0lD9K_input" type="radio" name="publisher_slug" value="titan-manga" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_4aNEkcA_zYmLwajY0lD9K_input" class="  ">Titan Manga</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_OosWrndEzUpjDhhDi-Cbn_input" type="radio" name="publisher_slug" value="toii-games-medibang" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_OosWrndEzUpjDhhDi-Cbn_input" class="  ">Toii Games (MediBang!)</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_PKTrzO5KRHqf-uVWJhYsG_input" type="radio" name="publisher_slug" value="torico-medibang" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_PKTrzO5KRHqf-uVWJhYsG_input" class="  ">TORICO (MediBang!)</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_ggJ0hTOoPBPO-YZu9uHIy_input" type="radio" name="publisher_slug" value="unknown" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_ggJ0hTOoPBPO-YZu9uHIy_input" class="  ">Unknown</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_5uZsB1K8HxkU2kWXW8kQJ_input" type="radio" name="publisher_slug" value="vast-visual" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_5uZsB1K8HxkU2kWXW8kQJ_input" class="  ">VAST Visual</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_CA8ptK9ciTdIMLVmw9oGP_input" type="radio" name="publisher_slug" value="voltage" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_CA8ptK9ciTdIMLVmw9oGP_input" class="  ">Voltage Inc.</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+    <p class=" m-form-field m-form-field--checkbox-radio ">
+      
+            <span>
+              <span class="l-sidebar l-sidebar--center">
+                <span><span class="a-custom-radio">
+      <input id="form_field_TXVwNoWsg4HdwBxkV5Fsq_input" type="radio" name="publisher_slug" value="yuzu-comics" class="">
+    </span></span>
+                <span class="l-sidebar__main">
+    <label for="form_field_TXVwNoWsg4HdwBxkV5Fsq_input" class="  ">YUZU Comics</label>
+  </span>
+              </span>
+            </span>
+          
+      
+    </p>
+  
+            </div>
+          </div>
+
+          <div class="o-filter-disclosure__actions l-cluster l-cluster--end">
+            <button type="submit" class="a-cta">Apply Filters</button>
+          </div>
+        </form>
+      </azuki-disclosure>
+    </div>
+  
+
+          <div class="p-series-index__results-header l-sidebar">
+            <div class="l-sidebar__main">
+              
+            </div>
+            <div class="l-cluster l-cluster--end">
+                  
+    <details class="m-popup m-popup--has-default-icon">
+      <summary>
+        Sort: Popular 
+    <svg class=" a-svg-icon a-svg-icon--with-fill a-svg-icon--small " viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" height="20" width="20">
+      
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29279 7.29302C5.48031 7.10555 5.73462 7.00023 5.99979 7.00023C6.26495 7.00023 6.51926 7.10555 6.70679 7.29302L9.99979 10.586L13.2928 7.29302C13.385 7.19751 13.4954 7.12133 13.6174 7.06892C13.7394 7.01651 13.8706 6.98892 14.0034 6.98777C14.1362 6.98662 14.2678 7.01192 14.3907 7.0622C14.5136 7.11248 14.6253 7.18673 14.7192 7.28062C14.8131 7.37452 14.8873 7.48617 14.9376 7.60907C14.9879 7.73196 15.0132 7.86364 15.012 7.99642C15.0109 8.1292 14.9833 8.26042 14.9309 8.38242C14.8785 8.50443 14.8023 8.61477 14.7068 8.70702L10.7068 12.707C10.5193 12.8945 10.265 12.9998 9.99979 12.9998C9.73462 12.9998 9.48031 12.8945 9.29279 12.707L5.29279 8.70702C5.10532 8.51949 5 8.26518 5 8.00002C5 7.73486 5.10532 7.48055 5.29279 7.29302Z"/>
+    
+    </svg>
+  
+      </summary>
+
+      <details-menu-element class="l-box" role="list" hydrate:defer>
+         <div role="listitem"> 
+      <a class="a-menu-item" href="/discover?q=solo&amp;sort=alphabetical">
+        Alphabetical
+      </a>
+     </div>  <div role="listitem"> 
+      <a class="a-menu-item" href="/discover?q=solo&amp;sort=popular" aria-current="page">
+        Popular
+      </a>
+     </div>  <div role="listitem"> 
+      <a class="a-menu-item" href="/discover?q=solo&amp;sort=recent_series">
+        Recent Series
+      </a>
+     </div> 
+      </details-menu-element>
+    </details>
+  
+                </div>
+          </div>
+          <div class="p-series-index__results">
+             <p>No results! How about trying another filter?</p> 
+          </div>
+          
+        </div>
+      </div>
+     </main> 
+            <span class="m-sheet-stack__backdrop"></span>
+          </div>
+        
+          <div class=" m-sheet-stack__sheet " style="--sheet-stack__background:var(--color-navy-3);--sheet-stack__text-color:var(--color-white);">
+            
+    <footer class="o-site-footer l-box">
+      <div class="l-sidebar l-sidebar--end">
+        <div class="l-sidebar__main">
+          
+    <svg
+      class="a-azuki-logo"
+      viewBox="0 0 302.55 87"
+      xmlns="http://www.w3.org/2000/svg"
+      height="32"
+      aria-label="Omoi"
+    >
+      <title>Omoi</title>
+      <path d="M28.86,25.44c-.88-3.29-3.32-2.2-5.47-.82-3.23,2.15-5.4,4.87-5.41,8.11.04.94.41,2.03,1.16,2.66,1.51,1.33,5.28,1.05,7.11.74,1.79-.29,2.43-1.55,2.56-3.23.17-2.32.54-5.03.06-7.44v-.03Z" fill="#fff"></path>
+      <path d="M44.4,59.23c-.31-3.89-1.93-4.99-5.64-5.06-3.26-.11-6.54-.13-9.81-.02-1.47.07-3.35.04-4.52.62-2.72,1.35-.65,5.34.61,7.14.85,1.17,1.97,2.13,3.25,2.82,2.27,1.21,4.89,1.69,7.4,2.23,2.87.64,6.76.87,8.27-2.19.82-1.69.61-3.66.45-5.52v-.03Z" fill="#fff"></path>
+      <path d="M43.78.5C19.9.5.54,19.75.54,43.5s19.36,43,43.24,43,43.24-19.25,43.24-43S67.66.5,43.78.5ZM22.74,16.98c5.01-3.21,10.71-5.76,12.77,1.92l.02.06c1.12,5.63.27,11.96-.14,17.37-.29,3.91-1.79,6.86-5.97,7.53-4.26.71-13.06,1.36-16.59-1.74-1.77-1.48-2.62-4.02-2.72-6.22.02-7.56,5.1-13.91,12.63-18.94ZM54.95,69.92c-3.19,6.45-11.39,5.96-17.44,4.62-5.28-1.16-10.82-2.17-15.61-4.72-2.69-1.45-5.06-3.49-6.85-5.96-2.67-3.79-7.02-12.22-1.29-15.07,2.48-1.23,6.45-1.17,9.54-1.32,6.89-.24,13.81-.19,20.69.05,7.82.15,11.24,2.46,11.91,10.67v.07c.35,3.92.78,8.07-.94,11.64ZM75.57,52.73c-.93,4.39-2.54,8.67-4.87,12.52-1.05,1.67-2.31,3.29-3.96,4.39-2.16,1.54-5.14,1.54-5.94-1.39-.51-1.73-.37-3.8-.41-5.64-.02-2.75-.04-5.51-.06-8.26-.1-3.66.36-6.69,4.4-7.22,1.41-.22,2.88-.28,4.32-.4,1.56-.12,3.19-.24,4.45.19l.05.02c2.45.78,2.48,3.65,2.02,5.79ZM73.86,42.4c-1,.05-2.08.2-3.08.04-1.59-.24-1.49-1.67-1.58-3.24-.09-.77.05-2.86-1.08-2.46-1.16.58-1.97,2.99-2.25,4.31-.29,1.44-.8,1.95-2.23,1.98-2.54.15-7.78.49-9.98.61-.42,0-.92.04-1.11-.3-.48-.87-.36-1.79-.6-2.82-.17-.89-.41-1.78-.78-2.61-.58-1.35-2.01-3.17-2.44-1.05-.2,1.49-.19,3.05-.3,4.55-.05.72-.09,1.54-.66,2.05-.84.71-2.15.75-3.21.75-3.66,0-5.48-1.27-5.42-4.69.28-6.17,1.1-16.29,1.77-20.48.13-.73.33-1.43.64-2.12,2.17-4.92,7.4-5.95,11.13-4.94,1.48.3,3.06.93,4.22,2.03,1.53,1.34,1.72,3.16,1.79,5.18.08,1.72.08,3.5.24,5.21,0,0,.32,3.39,1.52,3.7,1.09.28,1.33-3.19,1.34-3.67.07-2.09-.02-4.11.08-6.26.01-1.05.91-1.69,1.83-1.99,2.35-.53,5.8,1,9.03,7.13,2.21,4.37,3.18,7.86,4.34,13.06.2.97.43,1.99.37,2.97v.07c-.08,1.92-1.9,2.99-3.59,3Z" fill="#fff"></path>
+      <path d="M126.07,66.29c-4.46,0-8.49-1.02-12.07-3.06-3.58-2.04-6.42-4.81-8.53-8.31-2.11-3.5-3.17-7.41-3.17-11.73s1.04-8.2,3.12-11.63c2.08-3.44,4.92-6.18,8.53-8.21,3.61-2.04,7.62-3.06,12.02-3.06s8.58,1.02,12.16,3.06c3.58,2.04,6.41,4.78,8.49,8.21s3.12,7.31,3.12,11.63-1.04,8.23-3.12,11.73c-2.08,3.5-4.91,6.27-8.49,8.31-3.58,2.04-7.6,3.06-12.07,3.06ZM125.97,55.16c2.26,0,4.27-.5,6.01-1.51,1.75-1,3.09-2.4,4.04-4.2.95-1.79,1.42-3.85,1.42-6.16s-.49-4.35-1.47-6.11-2.33-3.15-4.04-4.15c-1.71-1-3.7-1.51-5.96-1.51s-4.16.5-5.87,1.51c-1.71,1-3.06,2.39-4.04,4.15-.98,1.76-1.47,3.8-1.47,6.11s.49,4.37,1.47,6.16c.98,1.79,2.33,3.19,4.04,4.2,1.71,1,3.67,1.51,5.87,1.51Z" fill="#fff"></path>
+      <path d="M157.45,65.38V21.31h12.02v44.07h-12.02ZM186.35,65.38v-26.01c0-2.56-.81-4.55-2.43-5.98-1.62-1.43-3.62-2.15-6.01-2.15-1.59,0-3.03.32-4.31.96-1.29.64-2.29,1.57-3.03,2.78s-1.1,2.68-1.1,4.38l-4.68-2.28c0-3.41.75-6.36,2.25-8.85s3.53-4.43,6.1-5.79c2.57-1.37,5.47-2.05,8.72-2.05,3.06,0,5.84.68,8.35,2.05,2.51,1.37,4.49,3.28,5.96,5.75,1.47,2.46,2.2,5.43,2.2,8.9v28.29h-12.02ZM215.26,65.38v-26.01c0-2.56-.81-4.55-2.43-5.98-1.62-1.43-3.62-2.15-6.01-2.15-1.53,0-2.95.32-4.27.96-1.32.64-2.34,1.57-3.07,2.78s-1.1,2.68-1.1,4.38l-6.88-1.64c.24-3.53,1.19-6.58,2.84-9.17,1.65-2.58,3.82-4.59,6.52-6.02,2.69-1.43,5.69-2.15,8.99-2.15s6.27.68,8.9,2.05c2.63,1.37,4.71,3.33,6.24,5.88,1.53,2.56,2.29,5.6,2.29,9.13v27.92h-12.02Z" fill="#fff"></path>
+      <path d="M257.83,66.29c-4.46,0-8.49-1.02-12.07-3.06-3.58-2.04-6.42-4.81-8.53-8.31-2.11-3.5-3.17-7.41-3.17-11.73s1.04-8.2,3.12-11.63,4.92-6.18,8.54-8.21c3.61-2.04,7.62-3.06,12.02-3.06s8.58,1.02,12.16,3.06c3.58,2.04,6.41,4.78,8.49,8.21,2.08,3.44,3.12,7.31,3.12,11.63s-1.04,8.23-3.12,11.73c-2.08,3.5-4.91,6.27-8.49,8.31s-7.6,3.06-12.07,3.06ZM257.74,55.16c2.26,0,4.27-.5,6.01-1.51,1.75-1,3.09-2.4,4.04-4.2.95-1.79,1.42-3.85,1.42-6.16s-.49-4.35-1.47-6.11-2.33-3.15-4.04-4.15c-1.71-1-3.7-1.51-5.96-1.51s-4.16.5-5.87,1.51c-1.71,1-3.06,2.39-4.04,4.15-.98,1.76-1.47,3.8-1.47,6.11s.49,4.37,1.47,6.16c.98,1.79,2.33,3.19,4.04,4.2,1.71,1,3.67,1.51,5.87,1.51Z" fill="#fff"></path>
+      <path d="M295.27,14.19c-1.96,0-3.58-.65-4.87-1.96-1.28-1.31-1.93-2.93-1.93-4.88s.64-3.5,1.93-4.84c1.29-1.34,2.91-2.01,4.87-2.01s3.65.67,4.91,2.01c1.25,1.34,1.88,2.95,1.88,4.84s-.63,3.57-1.88,4.88c-1.25,1.31-2.89,1.96-4.91,1.96ZM289.21,65.38V21.31h12.11v44.07h-12.11Z" fill="#fff"></path>
+    </svg>
+  
+           <p>Your source for officially licensed manga</p> 
+          <div class="o-site-footer__social-icons">
+            
+    <ol class="m-social-icons l-cluster">
+      
+              <li>
+                <a href="https://www.instagram.com/readomoi/" aria-label="Omoi Instagram" class="m-social-icons__link">
+                  
+    <svg class=" a-svg-icon a-svg-icon--with-fill " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+      
+      <path d="M11.9998 5.44221C14.1354 5.44221 14.3881 5.45046 15.2315 5.48888C16.0112 5.52443 16.4347 5.65459 16.7166 5.76411C17.0644 5.89217 17.379 6.09667 17.6372 6.36252C17.9031 6.62074 18.1076 6.93535 18.2356 7.28315C18.3452 7.56505 18.4753 7.98854 18.5109 8.76821C18.5493 9.6117 18.5575 9.86439 18.5575 11.9999C18.5575 14.1355 18.5493 14.3882 18.5109 15.2316C18.4753 16.0113 18.3452 16.4348 18.2356 16.7167C18.1024 17.0615 17.8986 17.3747 17.6372 17.6361C17.3759 17.8975 17.0627 18.1013 16.7179 18.2345C16.436 18.344 16.0125 18.4742 15.2328 18.5097C14.3896 18.5481 14.1366 18.5564 12.0011 18.5564C9.86556 18.5564 9.61255 18.5481 8.76938 18.5097C7.98971 18.4742 7.56622 18.344 7.28432 18.2345C6.93652 18.1064 6.62191 17.9019 6.36369 17.6361C6.09784 17.3778 5.89334 17.0632 5.76528 16.7154C5.65576 16.4335 5.5256 16.0101 5.49005 15.2304C5.45163 14.3869 5.44338 14.1342 5.44338 11.9987C5.44338 9.86312 5.45163 9.61043 5.49005 8.76694C5.5256 7.98727 5.65576 7.56378 5.76528 7.28188C5.89334 6.93408 6.09784 6.61947 6.36369 6.36125C6.62191 6.0954 6.93652 5.8909 7.28432 5.76284C7.56622 5.65332 7.98971 5.52316 8.76938 5.48761C9.61287 5.44919 9.86556 5.44094 12.0011 5.44094L11.9998 5.44221ZM12.0011 4C9.82905 4 9.55668 4.00921 8.70367 4.04825C7.85066 4.0873 7.26971 4.22349 6.76178 4.42095C6.22801 4.62188 5.74442 4.93669 5.34465 5.34348C4.93786 5.74325 4.62305 6.22684 4.42212 6.76061C4.22466 7.26854 4.08942 7.85076 4.05069 8.70186C4.01197 9.55297 4.00244 9.82662 4.00244 11.9987C4.00244 14.1707 4.01165 14.4431 4.05069 15.2961C4.08974 16.1491 4.22466 16.7288 4.42212 17.2367C4.62314 17.7703 4.93794 18.2536 5.34465 18.6532C5.74428 19.0602 6.2279 19.3752 6.76178 19.5761C7.26971 19.7738 7.85193 19.9091 8.70303 19.9478C9.55414 19.9865 9.82842 19.996 12.0005 19.996C14.1725 19.996 14.4449 19.9868 15.2979 19.9478C16.1509 19.9087 16.7299 19.7738 17.2379 19.5761C17.7693 19.3707 18.252 19.0565 18.6548 18.6537C19.0577 18.2508 19.3719 17.7682 19.5772 17.2367C19.775 16.7288 19.9102 16.1466 19.949 15.2955C19.9877 14.4444 19.9972 14.1701 19.9972 11.998C19.9972 9.82598 19.988 9.5536 19.949 8.70059C19.9099 7.84759 19.775 7.26854 19.5772 6.76061C19.3764 6.22702 19.0617 5.74362 18.655 5.34412C18.2553 4.9371 17.7717 4.62207 17.2379 4.42095C16.7299 4.22349 16.1477 4.08825 15.2966 4.04952C14.4455 4.01079 14.1719 4.00127 11.9998 4.00127L12.0011 4Z" />
+      <path d="M11.9997 7.89258C11.1875 7.89258 10.3935 8.13343 9.71818 8.58467C9.04285 9.03591 8.51649 9.67728 8.20567 10.4277C7.89485 11.1781 7.81352 12.0038 7.97198 12.8004C8.13043 13.597 8.52155 14.3287 9.09587 14.903C9.6702 15.4774 10.4019 15.8685 11.1985 16.0269C11.9951 16.1854 12.8209 16.1041 13.5712 15.7932C14.3216 15.4824 14.963 14.9561 15.4142 14.2807C15.8655 13.6054 16.1063 12.8114 16.1063 11.9992C16.1064 11.4599 16.0002 10.9259 15.7938 10.4276C15.5875 9.92936 15.285 9.47663 14.9036 9.09529C14.5223 8.71395 14.0695 8.41145 13.5713 8.20509C13.073 7.99873 12.539 7.89254 11.9997 7.89258ZM11.9997 14.6659C11.4723 14.6659 10.9567 14.5095 10.5182 14.2164C10.0797 13.9234 9.73787 13.507 9.53604 13.0197C9.33421 12.5324 9.2814 11.9963 9.38429 11.479C9.48719 10.9617 9.74116 10.4865 10.1141 10.1136C10.487 9.74067 10.9622 9.4867 11.4795 9.3838C11.9967 9.28091 12.5329 9.33372 13.0202 9.53555C13.5074 9.73738 13.9239 10.0792 14.2169 10.5177C14.5099 10.9562 14.6663 11.4718 14.6663 11.9992C14.6663 12.7064 14.3854 13.3847 13.8853 13.8848C13.3852 14.3849 12.7069 14.6659 11.9997 14.6659Z" />
+      <path d="M16.2688 8.68985C16.7988 8.68985 17.2284 8.26019 17.2284 7.73018C17.2284 7.20017 16.7988 6.77051 16.2688 6.77051C15.7387 6.77051 15.3091 7.20017 15.3091 7.73018C15.3091 8.26019 15.7387 8.68985 16.2688 8.68985Z" />
+    
+    </svg>
+  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://bsky.app/profile/omoi.com" aria-label="Omoi BlueSky" class="m-social-icons__link">
+                  
+    <svg class=" a-svg-icon a-svg-icon--with-fill " viewBox="-100 -100 820 720" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+      
+      <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
+    
+    </svg>
+  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://x.com/ReadOmoi/" aria-label="Omoi X (formerly Twitter)" class="m-social-icons__link">
+                  
+    <svg class=" a-svg-icon a-svg-icon--with-fill " viewBox="-330 -440 1880 2027" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+      
+      <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" />
+    
+    </svg>
+  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://www.facebook.com/ReadAzuki/" aria-label="Omoi Facebook" class="m-social-icons__link">
+                  
+    <svg class=" a-svg-icon a-svg-icon--with-fill " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+      
+      <path d="M20 12.0489C20 7.60361 16.4183 4 12 4C7.58172 4 4 7.60361 4 12.0489C4 16.0663 6.92547 19.3962 10.75 20V14.3755H8.71875V12.0489H10.75V10.2756C10.75 8.25837 11.9444 7.1441 13.7717 7.1441C14.6467 7.1441 15.5625 7.3013 15.5625 7.3013V9.28208H14.5538C13.56 9.28208 13.25 9.90257 13.25 10.5397V12.0489H15.4688L15.1141 14.3755H13.25V20C17.0745 19.3962 20 16.0663 20 12.0489Z" />
+    
+    </svg>
+  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://discord.gg/omoi" aria-label="Omoi Discord" class="m-social-icons__link">
+                  
+    <svg class=" a-svg-icon a-svg-icon--with-fill " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+      
+      <path d="M18.9308 6.16052C17.6561 5.62337 16.2892 5.22761 14.8599 5.00095C14.8339 4.99658 14.8079 5.00751 14.7945 5.02937C14.6187 5.31653 14.4239 5.69115 14.2876 5.98559C12.7503 5.77424 11.221 5.77424 9.71527 5.98559C9.57887 5.6846 9.37707 5.31653 9.20048 5.02937C9.18707 5.00824 9.16107 4.99731 9.13504 5.00095C7.70659 5.22689 6.33963 5.62264 5.06411 6.16052C5.05307 6.1649 5.04361 6.17219 5.03732 6.18166C2.44449 9.73909 1.73421 13.2091 2.08265 16.636C2.08423 16.6528 2.09447 16.6688 2.10867 16.679C3.81934 17.8328 5.47642 18.5332 7.10273 18.9974C7.12876 19.0047 7.15634 18.996 7.1729 18.9763C7.55761 18.4938 7.90054 17.9851 8.19456 17.4501C8.21192 17.4188 8.19535 17.3816 8.15989 17.3692C7.61594 17.1797 7.098 16.9487 6.59977 16.6863C6.56037 16.6652 6.55721 16.6134 6.59347 16.5887C6.69831 16.5165 6.80318 16.4414 6.9033 16.3656C6.92141 16.3518 6.94665 16.3489 6.96794 16.3576C10.2411 17.73 13.7846 17.73 17.0191 16.3576C17.0404 16.3481 17.0657 16.3511 17.0846 16.3649C17.1847 16.4407 17.2895 16.5165 17.3952 16.5887C17.4314 16.6134 17.4291 16.6652 17.3897 16.6863C16.8914 16.9538 16.3735 17.1797 15.8288 17.3685C15.7933 17.3809 15.7775 17.4188 15.7949 17.4501C16.0952 17.9844 16.4381 18.4931 16.8157 18.9756C16.8315 18.996 16.8599 19.0047 16.8859 18.9974C18.5201 18.5332 20.1772 17.8328 21.8879 16.679C21.9028 16.6688 21.9123 16.6535 21.9139 16.6368C22.3309 12.6748 21.2154 9.23329 18.9568 6.18238C18.9513 6.17219 18.9419 6.1649 18.9308 6.16052ZM8.68335 14.5494C7.69792 14.5494 6.88594 13.7185 6.88594 12.6982C6.88594 11.6778 7.68217 10.8469 8.68335 10.8469C9.69239 10.8469 10.4965 11.6851 10.4807 12.6982C10.4807 13.7185 9.68451 14.5494 8.68335 14.5494ZM15.329 14.5494C14.3435 14.5494 13.5316 13.7185 13.5316 12.6982C13.5316 11.6778 14.3278 10.8469 15.329 10.8469C16.338 10.8469 17.1421 11.6851 17.1264 12.6982C17.1264 13.7185 16.338 14.5494 15.329 14.5494Z" />
+    
+    </svg>
+  
+                </a>
+              </li>
+            
+    </ol>
+  
+          </div>
+
+          <p><small>© 2026 KiraKira Media Inc.</small></p>
+        </div>
+
+        <div>
+          
+    <div class=" m-app-banners l-cluster ">
+      <a href="https://apps.apple.com/us/app/omoi-manga-reader-app/id1545075904" aria-label="Download on the iOS App Store">
+        <img src="/assets/images/app-banners/ios.svg" width="120" height="40" />
+      </a>
+
+      <a href="https://play.google.com/store/apps/details?id=co.azuki.app" aria-label="Get it on Google Play">
+        <img
+          src="/assets/images/app-banners/android.svg"
+          width="135"
+          height="40"
+        />
+      </a>
+    </div>
+  
+
+          <div class="l-sidebar l-sidebar--end">
+            <ul class="l-sidebar__main o-site-footer__link-list">
+              
+      <li>
+        <a href="/apps">Apps</a>
+      </li>
+    
+              
+      <li>
+        <a href="/news">News</a>
+      </li>
+    
+              
+      <li>
+        <a href="/about">About</a>
+      </li>
+     
+      <li>
+        <a href="/faq">FAQ</a>
+      </li>
+    
+              
+      <li>
+        <a href="/contact">Contact</a>
+      </li>
+    
+              
+      <li>
+        <a href="https://readomoi.freshdesk.com/support/tickets/new">Support</a>
+      </li>
+    
+              
+      <li>
+        <a href="/press">Press &amp; Influencers</a>
+      </li>
+    
+              
+      <li>
+        <a href="/feeds/recent-chapters.xml">Chapters Feed</a>
+      </li>
+    
+              
+      <li>
+        <a href="/terms">Terms of Use</a>
+      </li>
+    
+              
+      <li>
+        <a href="/privacy-policy">Privacy Policy</a>
+      </li>
+    
+              
+      <li>
+        <a href="/copyrights">Copyrights</a>
+      </li>
+    
+              
+      <li>
+        <a href="https://azuki.printify.me/">Omoi Merch</a>
+      </li>
+    
+              
+      <li>
+        <a href="/careers">Careers</a>
+      </li>
+    
+              
+      <li>
+        <a href="/azuki">About Azuki</a>
+      </li>
+    
+            </ul>
+
+            <img
+              class="o-site-footer__mascot-img"
+              src="/assets/images/mascot.png"
+              alt=""
+              width="164"
+              height="327"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+            <span class="m-sheet-stack__backdrop"></span>
+          </div>
+        
+    </div>
+  
+      </div>
+     
+      <script id="growthbook_tracking_calls" type="application/json">
+        []
+      </script>
+    
+      </body>
+    </html>
+  

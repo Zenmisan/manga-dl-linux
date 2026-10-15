@@ -1,0 +1,13 @@
+quickjs-ng (vendored, unmodified)
+=================================
+
+Upstream : https://github.com/quickjs-ng/quickjs
+Version  : v0.17.0 (tag archive https://github.com/quickjs-ng/quickjs/archive/refs/tags/v0.17.0.tar.gz)
+Licence  : MIT (see LICENSE)
+
+Only the files the engine needs are vendored: quickjs.c, dtoa.c, libregexp.c, libunicode.c and the
+headers they include. quickjs-libc (std/os modules), the qjs CLI, tests and fuzzers are intentionally
+NOT included: extensions must not get file or process access.
+
+To update: replace the files from a newer upstream tag, update the version above, rebuild and run
+`ctest` (tst_quickjs verifies async/await and promise jobs still work).

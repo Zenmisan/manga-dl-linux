@@ -1,0 +1,65 @@
+{
+    "chapter": {
+        "count": 31,
+        "error": "",
+        "id": "4fc4280a-2e58-40e1-898f-1a11893850f7",
+        "ok": true,
+        "title": "https://cmdxd98sb0x3yprd.mangadex.network/data/aac85b434c4c51fbb907d1433df4a557/1-066d1e163df71b30baf3a8371e89345f46aa33"
+    },
+    "detail": {
+        "count": 37,
+        "error": "",
+        "id": "68a946fc-7ff0-434e-a500-34b3207efd6f",
+        "ok": true,
+        "title": "Class no Bocchi Gyaru wo Omochikaeri Shite Seiso Kei Bijin ni Shiteyatta Hanashi"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://api.mangadex.org/manga?title=bocchi&limit=20&offset=0&includes[]=cover_art&availableTranslatedLanguage[]=en&contentRating[]=safe&contentRating[]=suggestive&contentRating[]=erotica&contentRating[]=pornographic",
+            "method": "GET",
+            "request": "/manga/proxy/json?url=https%3A%2F%2Fapi.mangadex.org%2Fmanga%3Ftitle%3Dbocchi%26limit%3D20%26offset%3D0%26includes%5B%5D%3Dcover_art%26availableTranslatedLanguage%5B%5D%3Den%26contentRating%5B%5D%3Dsafe%26contentRating%5B%5D%3Dsuggestive%26contentRating%5B%5D%3Derotica%26contentRating%5B%5D%3Dpornographic",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://api.mangadex.org/manga/68a946fc-7ff0-434e-a500-34b3207efd6f?includes[]=cover_art&includes[]=author&includes[]=artist",
+            "method": "GET",
+            "request": "/manga/proxy/json?url=https%3A%2F%2Fapi.mangadex.org%2Fmanga%2F68a946fc-7ff0-434e-a500-34b3207efd6f%3Fincludes%5B%5D%3Dcover_art%26includes%5B%5D%3Dauthor%26includes%5B%5D%3Dartist",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://api.mangadex.org/manga/68a946fc-7ff0-434e-a500-34b3207efd6f/feed?limit=500&offset=0&translatedLanguage[]=en&order[chapter]=asc&contentRating[]=safe&contentRating[]=suggestive&contentRating[]=erotica&contentRating[]=pornographic",
+            "method": "GET",
+            "request": "/manga/proxy/json?url=https%3A%2F%2Fapi.mangadex.org%2Fmanga%2F68a946fc-7ff0-434e-a500-34b3207efd6f%2Ffeed%3Flimit%3D500%26offset%3D0%26translatedLanguage%5B%5D%3Den%26order%5Bchapter%5D%3Dasc%26contentRating%5B%5D%3Dsafe%26contentRating%5B%5D%3Dsuggestive%26contentRating%5B%5D%3Derotica%26contentRating%5B%5D%3Dpornographic",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0004.dat",
+            "finalUrl": "https://api.mangadex.org/at-home/server/4fc4280a-2e58-40e1-898f-1a11893850f7",
+            "method": "GET",
+            "request": "/manga/proxy/json?url=https%3A%2F%2Fapi.mangadex.org%2Fat-home%2Fserver%2F4fc4280a-2e58-40e1-898f-1a11893850f7",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "mangadex",
+    "novel": false,
+    "query": "bocchi",
+    "recordedAt": "2026-10-14T13:29:50Z",
+    "search": {
+        "count": 20,
+        "error": "",
+        "id": "68a946fc-7ff0-434e-a500-34b3207efd6f",
+        "ok": true,
+        "title": "Class no Bocchi Gyaru wo Omochikaeri Shite Seiso Kei Bijin ni Shiteyatta Hanashi"
+    }
+}

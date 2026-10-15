@@ -1,0 +1,56 @@
+{
+    "chapter": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "detail": {
+        "count": 0,
+        "error": "detail has no chapters",
+        "id": "libread/weakest-beast-tamer-gets-all-sss-dragons-77937",
+        "ok": false,
+        "title": "Weakest Beast Tamer Gets All SSS Dragons"
+    },
+    "fetches": [
+        {
+            "body": "searchkey=dragon",
+            "file": "0001.dat",
+            "finalUrl": "https://libread.com/search",
+            "method": "POST",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Flibread.com%2Fsearch",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://libread.com/libread/weakest-beast-tamer-gets-all-sss-dragons-77937",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Flibread.com%2Flibread%2Fweakest-beast-tamer-gets-all-sss-dragons-77937",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "aid=5704&acode=libread%2Fweakest-beast-tamer-gets-all-sss-dragons&cid=1",
+            "file": "0003.dat",
+            "finalUrl": "https://libread.com/api/chapterlist.php",
+            "method": "POST",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Flibread.com%2Fapi%2Fchapterlist.php",
+            "status": 500,
+            "transportError": ""
+        }
+    ],
+    "id": "libread",
+    "novel": true,
+    "query": "dragon",
+    "recordedAt": "2026-10-14T15:45:46Z",
+    "search": {
+        "count": 50,
+        "error": "",
+        "id": "libread/weakest-beast-tamer-gets-all-sss-dragons-77937",
+        "ok": true,
+        "title": "Weakest Beast Tamer Gets All SSS Dragons"
+    }
+}

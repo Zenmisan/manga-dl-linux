@@ -1,0 +1,65 @@
+{
+    "chapter": {
+        "count": 18790,
+        "error": "",
+        "id": "i-married-the-dragon-i-killed/1-1",
+        "ok": true,
+        "title": "<h2>Chapter 01: Killing My Fiancée</h2><p>There once lived a singular man who be"
+    },
+    "detail": {
+        "count": 180,
+        "error": "",
+        "id": "i-married-the-dragon-i-killed",
+        "ok": true,
+        "title": "I Married the Dragon I Killed"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://brightnovels.com/api/search?query=dragon",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fbrightnovels.com%2Fapi%2Fsearch%3Fquery%3Ddragon",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://brightnovels.com/series/i-married-the-dragon-i-killed",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fbrightnovels.com%2Fseries%2Fi-married-the-dragon-i-killed",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://brightnovels.com/series/i-married-the-dragon-i-killed/chapters/free?loaded=0&sort_order=desc",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fbrightnovels.com%2Fseries%2Fi-married-the-dragon-i-killed%2Fchapters%2Ffree%3Floaded%3D0%26sort_order%3Ddesc",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0004.dat",
+            "finalUrl": "https://brightnovels.com/series/i-married-the-dragon-i-killed/1-1",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fbrightnovels.com%2Fseries%2Fi-married-the-dragon-i-killed%2F1-1",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "brightnovel",
+    "novel": true,
+    "query": "dragon",
+    "recordedAt": "2026-10-14T13:32:26Z",
+    "search": {
+        "count": 10,
+        "error": "",
+        "id": "i-married-the-dragon-i-killed",
+        "ok": true,
+        "title": "I Married the Dragon I Killed"
+    }
+}

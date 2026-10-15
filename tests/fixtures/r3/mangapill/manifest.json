@@ -1,0 +1,56 @@
+{
+    "chapter": {
+        "count": 57,
+        "error": "",
+        "id": "5121-10020000/ori-no-naka-no-soloist-chapter-20",
+        "ok": true,
+        "title": "https://cdn.readdetectiveconan.com/file/mangap/5121/10020000/1.jpeg"
+    },
+    "detail": {
+        "count": 20,
+        "error": "",
+        "id": "5121/ori-no-naka-no-soloist",
+        "ok": true,
+        "title": "Search\n                        New Mangas\n                        Recent Chapters\n                        Missing Manga\n                        Contact\n                        Privacy Policy\n                        My Anime Twin"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://mangapill.com/search?q=solo&page=1",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fmangapill.com%2Fsearch%3Fq%3Dsolo%26page%3D1",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://mangapill.com/manga/5121/ori-no-naka-no-soloist",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fmangapill.com%2Fmanga%2F5121%2Fori-no-naka-no-soloist",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://mangapill.com/chapters/5121-10020000/ori-no-naka-no-soloist-chapter-20",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fmangapill.com%2Fchapters%2F5121-10020000%2Fori-no-naka-no-soloist-chapter-20",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "mangapill",
+    "novel": false,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:29:02Z",
+    "search": {
+        "count": 16,
+        "error": "",
+        "id": "5121/ori-no-naka-no-soloist",
+        "ok": true,
+        "title": "5121/ori-no-naka-no-soloist"
+    }
+}

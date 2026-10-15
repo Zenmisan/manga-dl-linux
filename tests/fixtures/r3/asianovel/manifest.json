@@ -1,0 +1,56 @@
+{
+    "chapter": {
+        "count": 14125,
+        "error": "",
+        "id": "chapter/chapter-861266",
+        "ok": true,
+        "title": "<div class=\"resize-font chapter-formatting chapter-font-color chapter-font-famil"
+    },
+    "detail": {
+        "count": 208,
+        "error": "",
+        "id": "story/3661",
+        "ok": true,
+        "title": "Good Girl Walks Away, Leaving the Capital#*#s Playboy Seeing Red"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://www.asianovel.net/?s=solo&post_type=any",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fwww.asianovel.net%2F%3Fs%3Dsolo%26post_type%3Dany",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://www.asianovel.net/story/3661/",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fwww.asianovel.net%2Fstory%2F3661%2F",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://www.asianovel.net/chapter/chapter-861266/",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fwww.asianovel.net%2Fchapter%2Fchapter-861266%2F",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "asianovel",
+    "novel": true,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:26:53Z",
+    "search": {
+        "count": 10,
+        "error": "",
+        "id": "story/3661",
+        "ok": true,
+        "title": "Chapter 56 Master Jue’s Solo Reconciliation Drama"
+    }
+}

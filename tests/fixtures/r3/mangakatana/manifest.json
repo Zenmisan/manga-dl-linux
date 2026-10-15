@@ -1,0 +1,56 @@
+{
+    "chapter": {
+        "count": 9,
+        "error": "",
+        "id": "solo-sex.14082/c5.5",
+        "ok": true,
+        "title": "https://i1.mangakatana.com/token/d13d660d0010927719032%3At%3A322.7ssr1s-0c220w%3A9%3A430%3A4qpp8r4oqr0/0.jpg"
+    },
+    "detail": {
+        "count": 6,
+        "error": "",
+        "id": "solo-sex.14082",
+        "ok": true,
+        "title": "Solo Sex"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://mangakatana.com?search=solo&search_by=m_name",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fmangakatana.com%3Fsearch%3Dsolo%26search_by%3Dm_name",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://mangakatana.com/manga/solo-sex.14082",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fmangakatana.com%2Fmanga%2Fsolo-sex.14082",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://mangakatana.com/manga/solo-sex.14082/c5.5",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fmangakatana.com%2Fmanga%2Fsolo-sex.14082%2Fc5.5",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "mangakatana",
+    "novel": false,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:28:58Z",
+    "search": {
+        "count": 54,
+        "error": "",
+        "id": "solo-sex.14082",
+        "ok": true,
+        "title": "Solo Sex"
+    }
+}

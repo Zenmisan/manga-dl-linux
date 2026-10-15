@@ -1,0 +1,991 @@
+<!doctype html>
+<html lang="en-US" class="scroll-smooth scroll-pt-12">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solo For Two &#8211; Chapter 1 &#8211; Readhive</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="stylesheet" href="/public/css/app.c45fbd.css"><link rel="canonical" href="https://readhive.org/series/64901/1" />
+<meta property="og:title" name="og:title" content="Solo For Two &#8211; Chapter 1" />
+<meta property="og:type" name="og:type" content="website" />
+<meta property="og:image" name="og:image" content="/public/images/2022/07/FO721D5FA0CC7-02-scaled-e1658075230203.jpg" />
+<meta property="og:image" name="og:image" content="/public/images/2024/04/xxlarge.webp" />
+<meta property="og:url" name="og:url" content="https://readhive.org/series/64901/1" />
+<meta property="og:description" name="og:description" content="In 1911, at the northern border of the Austro-Hungarian Empire. &quot;Karel, look over there,&quot; Julian, a young man with impressive blond hair close to silver, pointed to a table with rare enthusiasm. &quot;He looks completely destitute,&quot; the ground floor of the small and modest inn was slightly noisy, with every table occupied. Thanks to this,..." />
+<meta property="og:locale" name="og:locale" content="en_US" />
+<meta property="og:site_name" name="og:site_name" content="Readhive" />
+<meta property="twitter:card" name="twitter:card" content="summary" />
+<link rel="icon" href="/public/images/2022/07/FO721D5FA0CC7-02-scaled-e1658075230203-150x150.jpg" sizes="32x32">
+<link rel="icon" href="/public/images/2022/07/FO721D5FA0CC7-02-1536x1536.jpg" sizes="192x192">
+<link rel="apple-touch-icon" href="/public/images/2022/07/FO721D5FA0CC7-02-1536x1536.jpg">
+<meta name="msapplication-TileImage" content="/public/images/2022/07/FO721D5FA0CC7-02-1536x1536.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+  </head>
+
+  <body
+    x-data="theme"
+    class="1"  >
+        
+    <div
+      id="app"
+      up-main
+    >
+      <div x-data="{nav:false}" class="text-foreground bg-accent-2 w-full h-full">
+  <div class="flex flex-grow min-h-screen">
+    <aside
+      x-init="nav = ($screen('lg'))"
+      class="bg-accent fixed inset-y-0 z-30 lg:static shadow-lg"
+      :class="{'overlay': !$screen('lg')}"
+      x-transition:enter="transition-spacing ease-in-out"
+      x-transition:enter-start="-ml-60"
+      x-transition:enter-end="ml-0"
+      x-transition:leave="transition-spacing ease-in-out"
+      x-transition:leave-start="ml-0"
+      x-transition:leave-end="-ml-60"
+      @click.away="if (!$screen('lg')) nav = false"
+      x-show="nav"
+      x-cloak
+    >
+      <div class="sticky top-0 px-4 w-60">
+        <div class="py-2 text-2xl tracking-widest text-center uppercase">
+  <a aria-current="page" href="/" up-follow up-preload>Readhive</a>
+</div>
+
+<hr class="h-px mx-8 my-2 bg-accent-border">
+
+  <nav
+    :class="nav || 'collaped'"
+    class="text-sm mb-44">
+    <ul>
+              
+        
+                  <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+            <a class="flex items-center py-2" href="https://readhive.org/" up-follow up-preload>
+              <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home mr-2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              Home
+            </a>
+          </li>
+                        
+        
+                  <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+            <a class="flex items-center py-2" href="https://discord.gg/zzGdEQjS3U" up-follow up-preload>
+              <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users mr-2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              Discord
+            </a>
+          </li>
+                        
+        
+                  <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+            <a class="flex items-center py-2" href="https://readhive.org/updates/" up-follow up-preload>
+              <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss mr-2" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+              Updates
+            </a>
+          </li>
+                        
+        
+                  <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+            <a class="flex items-center py-2" href="https://readhive.org/reading-list/" up-follow up-preload>
+              <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark mr-2" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+              Reading List
+            </a>
+          </li>
+                        
+        
+                  <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+            <a class="flex items-center py-2" href="https://readhive.org/browse-series/" up-follow up-preload>
+              <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter mr-2" aria-hidden="true"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+              Browse Series
+            </a>
+          </li>
+                    </ul>
+  </nav>
+
+<div class="my-2">
+  <hr class="h-px mx-8 my-2 bg-accent-border">
+
+      <div
+      :class="nav || 'collaped'"
+      class="mb-4 text-sm">
+      <ul>
+                  
+          
+                      <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+              <a class="flex items-center py-2" href="https://readhive.org/dmca/" up-follow up-preload>
+                  
+                  DMCA
+              </a>
+            </li>
+                              
+          
+                      <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+              <a class="flex items-center py-2" href="https://readhive.org/copyright-faq/" up-follow up-preload>
+                  
+                  Copyright FAQ
+              </a>
+            </li>
+                              
+          
+                      <li class="relative px-4 rounded cursor-pointer font-medium hover:bg-accent-hover">
+              <a class="flex items-center py-2" href="https://readhive.org/terms-of-service/" up-follow up-preload>
+                  
+                  Terms of Service
+              </a>
+            </li>
+                          </ul>
+    </div>
+  
+  <footer class="px-8 py-2 text-xs">
+    <div>© 2022 Readhive</div>
+  </footer>
+</div>
+
+<div class="py-3 overflow-hidden relative">
+  <div class="flex justify-center">
+    <div x-data="unit" data-fuse="22792698429"></div>
+  </div>
+</div>
+      </div>
+    </aside>
+
+    <div
+      x-init="$store.app.main = $el"
+      :class="{'pointer-events-none': nav && !$screen('lg')}"
+      class="flex flex-col min-w-0 w-full relative"
+    >
+      <header
+      class="relative w-full z-20"
+  >
+  <div
+      x-data="{opacity: 0}"
+      class="relative flex justify-between w-full px-4 py-1 banner sm:px-8"
+  >
+    
+    <div class="flex items-center justify-start">
+      <button @click.prevent="nav = !nav" class="p-2 transition rounded-full hover:bg-btn-hover hover:bg-opacity-30 active:bg-opacity-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" class="fill-foreground"><path d="M2 5.995c0-.55.446-.995.995-.995h8.01c.55 0 .995.446.995.995s-.446.995-.995.995h-8.01c-.55 0-.995-.446-.995-.995zM2 12c0-.55.446-.995.995-.995h18.01c.55 0 .995.446.995.995s-.446.995-.995.995H2.995C2.445 12.995 2 12.55 2 12zm.995 5.01c-.55 0-.995.446-.995.995s.446.995.995.995h12.01c.55 0 .995-.446.995-.995s-.446-.995-.995-.995H2.995z"/></svg>
+              </button>
+
+              <div
+          x-show="!nav"
+          class="hidden text-2xl tracking-widest text-center uppercase truncated md:block"
+          x-cloak
+        >
+          <a aria-current="page" href="/" up-follow up-preload>Readhive</a>
+        </div>
+          </div>
+
+    <div class="flex items-center justify-end flex-grow">
+      <div
+  x-data="{focus:false}"
+  class="flex flex-grow max-w-xs mx-4 transition-width duration-500 rounded-md"
+  :class="{'max-w-full lg:max-w-md': focus, 'max-w-xs': !focus}"
+>
+  <form
+    x-data="search"
+    class="relative flex-grow opacity-80 transition z-30"
+    :style="focus && 'opacity: 100%'"
+  >
+    <div @click.outside="focus = false">
+      <div class="relative overflow-hidden rounded-md">
+        <input @click="focus = true" type="search" class="w-full px-4 py-2 pr-10 rounded-sm shadow-md bg-accent text-sm focus:outline-none placeholder:text-foreground" placeholder="Search Series…" x-model.debounce="value">
+        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+          <svg class="w-5 h-5 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </div>
+      </div>
+  
+      <div
+        class="absolute w-full mt-4 flex items-start justify-center overflow-hidden"
+        x-show="focus"
+        x-transition:enter="transform transition"
+        x-transition:enter-start="opacity-0 translate-y-4"
+        x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition transform"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 translate-y-4"
+        x-cloak
+      >
+        <div class="relative w-full max-w-2xl max-h-full overflow-auto bg-accent-2 rounded shadow-lg">
+          <div class="p-4">
+            <div x-show="!value || !results">Enter a search query…</div>
+            <div class="grid gap-2" x-show="value && results">
+              <template x-for="series in results">
+                <a :href="series.url" up-follow up-preload>
+                  <div class="flex gap-2 p-2 rounded bg-accent hover:bg-accent-hover">
+                    <div class="flex-shrink-0 h-16 w-14 cover">
+                      <img class="w-full h-full rounded shadow-md" :src="series.thumb" :alt="series.title + ' cover'">
+                    </div>
+  
+                    <div class="flex flex-col justify-between gap-2">
+                      <h4 class="font-bold break-all line-clamp-2 text-foreground" x-text="series.title"></h4>
+  
+                      <div class="flex flex-col sm:flex-row gap-x-4 gap-y-2">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </template>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div class="fixed inset-0 bg-black/50" x-show="focus" x-cloak></div>
+</div>
+      <div
+  x-data="{open:false}"
+  class="relative"
+  >
+  <button
+    class="flex items-center flex-shrink-0 space-x-2 focus:outline-none"
+    @click="open = !open"
+  >
+          <div class="flex items-center justify-center p-2 bg-header-profile border-2 border-accent-border rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+          <path opacity="0" d="M0 0h24v24H0z" />
+          <path d="M12 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm6 10a1 1 0 0 0 1-1 7 7 0 0 0-14 0 1 1 0 0 0 1 1z" />
+        </svg>
+      </div>
+      </button>
+
+  <div
+    class="bg-header-profilemenu absolute top-full right-0 mt-2 px-3 py-2 rounded-md shadow-lg min-w-64 overflow-hidden z-20"
+    @click.outside="open = false"
+    x-show="open"
+    x-transition:enter="transition ease-out transform"
+    x-transition:enter-start="opacity-0 -translate-y-2"
+    x-transition:enter-end="opacity-100 translate-y-0"
+    x-transition:leave="transition ease-in"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0"
+    x-cloak
+  >
+          <div
+        class="grid grid-cols-2 gap-2 px-3 py-2 mb-2 border-b border-accent-2-border"
+      >
+        <a href="/login" class="flex items-center justify-center w-full py-2 text-sm font-medium text-white rounded bg-red focus:outline-none sm:text-base hover:bg-red-700 active:bg-red-800" up-follow up-preload>Login</a>
+        <a href="/register" class="flex items-center justify-center w-full py-2 text-sm font-medium text-foreground rounded bg-btn focus:outline-none sm:text-base hover:bg-accent-hover active:bg-shade" up-follow up-preload>Register</a>
+      </div>
+    
+    <div x-data="theme" class="flex flex-wrap justify-center items-center border-b border-accent-2-border pb-2 mb-2">
+      <div @click="reset" :class="theme === 'light' && 'border-red'" class="bg-white rounded border mr-1 w-16 h-5"></div>
+      <div @click="update('dark')" :class="theme === 'dark' && 'border-red'" class="dark bg-accent-2 rounded border mr-1 w-16 h-5"></div>
+    </div>
+
+          <ul class="mb-2 pb-2 border-b border-accent-2-border">
+                  <li>
+            <a href="https://readhive.org/register/" class="flex items-center px-3 py-2 text-sm font-medium rounded hover:bg-shade" up-follow up-preload>
+              Register
+            </a>
+          </li>
+                  <li>
+            <a href="https://readhive.org/login/" class="flex items-center px-3 py-2 text-sm font-medium rounded hover:bg-shade" up-follow up-preload>
+              Login
+            </a>
+          </li>
+              </ul>
+    
+      </div>
+</div>
+    </div>
+  </div>
+</header>
+
+              <main class="min-h-screen pb-24 px-4 py-2 sm:px-8">
+                     <div
+    x-data="{toc:false}"
+    class="relative flex flex-col items-center justify-center flex-grow py-2 mx-auto mt-2 md:max-w-4xl"
+  >
+    <h1 class="font-semibold text-center">
+      <a href="https://readhive.org/series/64901/" class="flex flex-col lg:flex-row items-center justify-center text-center text-xl " up-follow up-preload>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M16 7 C16 7 9 1 2 6 L2 28 C9 23 16 28 16 28 16 28 23 23 30 28 L30 6 C23 1 16 7 16 7 Z M16 7 L16 28" />
+        </svg>
+        <span class="ml-2">Solo For Two</span>
+      </a>
+      <strong class="text-lg">Chapter 1</strong>
+    </h1>
+      </div>
+
+  <div class="flex justify-between py-2 mb-4 border-t border-b border-accent-border">
+  <div class="flex justify-between flex-grow mx-auto md:max-w-4xl">
+          <span class="flex items-center justify-center px-3 py-2 font-medium text-white bg-red-600 rounded shadow opacity-50">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5">
+          <path d="M15 6L9.21261 11.7874V11.7874C9.09519 11.9048 9.09519 12.0952 9.21261 12.2126V12.2126L15 18" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <small class="text-sm leading-none">Previous</small>
+      </span>
+    
+          <a href="https://readhive.org/series/64901/2" class="flex items-center justify-center px-3 py-2 font-medium text-white bg-red-600 rounded shadow hover:bg-red-800" up-follow up-preload>
+          <small class="text-sm leading-none">Next</small>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5">
+            <path d="M9 18L14.7874 12.2126V12.2126C14.9048 12.0952 14.9048 11.9048 14.7874 11.7874V11.7874L9 6" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </a>
+      </div>
+</div>
+
+  <div class="justify-center flex-grow mx-auto prose md:max-w-4xl lg:relative">
+    <div @click="$dispatch('tools')" class="mb-4"  style="font-size: var(--font-size); line-height: var(--line-height); font-family: var(--font-family)">
+              <div class="flex flex-col text-xs">
+  <span>Author: nicotine</span>
+  </div>
+<div class='code-block code-block-1' style='margin: 8px 0; clear: both; width: 100%; overflow: hidden;'>
+<div x-data="unit" data-fuse="22792698414"></div></div>
+<p>In 1911, at the northern border of the Austro-Hungarian Empire.</p>
+<p>&#8220;Karel, look over there,&#8221; Julian, a young man with impressive blond hair close to silver, pointed to a table with rare enthusiasm.</p>
+<p>&#8220;He looks completely destitute,&#8221; the ground floor of the small and modest inn was slightly noisy, with every table occupied. Thanks to this, Karel pretended not to hear Julian&#8217;s words as an excuse and focused on his meal.</p>
+<p>&#8220;Quickly, look behind you,&#8221; but Julian&#8217;s insistence persisted.</p>
+<p>Annoyed, Karel reluctantly turned to discreetly glance at the &#8216;beggar&#8217; Julian mentioned. There sat a man with a somewhat frail appearance, head bowed.</p>
+<p>Unable to understand why Julian was so fixated on the man, Karel casually replied, &#8220;Looks like you&#8217;re overreacting. Maybe the owner allowed him to sit there.&#8221;</p>
+<p>&#8220;Is that so? And since a while ago&#8230; he keeps glancing at our table,&#8221; unlike Karel, who observed the man from behind, Julian could directly observe the &#8216;beggar&#8217; in front of him.</p>
+<p>&#8220;Why?&#8221;</p>
+<p>&#8220;Why wouldn&#8217;t he? He might be holding a grudge against the food we left.&#8221;</p>
+<p>Indeed, Karel briefly glanced at their lavish table compared to the two portions they ordered. Whether dining at a fancy restaurant or a dimly lit pub, Julian never skimped on food expenses. He always generously paid for the meal for one person but ordered a variety of dishes confidently, even if the innkeeper trembled a bit when accepting the payment, claiming they didn&#8217;t usually serve such expensive dishes.</p>
+<p>Regardless of how the innkeeper managed it in the kitchen, soon the two of them could taste a variety of dishes from the regions bordering Russia. Even after their hunger had been sated, food kept coming, making it difficult for them. Thanks to this, there were still many untouched plates on their table.</p><div class='code-block code-block-9' style='margin: 8px auto; text-align: center; display: block; clear: both;'>
+<div x-data="unit" data-fuse="22792697793"></div></div>
+
+<p>&#8220;So, what do you think? Should we share some with that man?&#8221; Julian asked, as Karel silently poured wine.</p>
+<p>In front of the beggar lay only a suspicious-looking tomato soup, seemingly devoid of even a single piece of meat. Seeing the slow, cautious way the beggar ate made Karel uncomfortable. Karel had a particular vulnerability to actions that seemed like charity. He didn&#8217;t even realize it might stem from his own background.</p>
+<p>&#8220;Hm? What do you think?&#8221; Julian asked.</p>
+<p>&#8220;Whatever you think is best,&#8221; Karel shrugged.</p>
+<p>In response, Julian chuckled, enjoying Karel&#8217;s use of the term &#8216;brother.&#8217; Whenever Karel used such phrases, Julian seemed to take it as an opportunity for amusing banter.</p>
+<p>After stopping his laughter, Julian whispered softly, &#8220;Go offer him some of ours.&#8221;</p>
+<p>&#8220;&#8230;.&#8221;</p>
+<p>Karel raised an eyebrow. Julian, still smiling, poured more wine into his empty glass.</p>
+<p>&#8220;Go on, also give him some wine. Hurry up.&#8221;</p>
+<p>&#8220;Alright, alright.&#8221;</p>
+<p>&#8220;And if that guy seems grateful, tell him it&#8217;s from our gentleman over here,&#8221; Julian added with a smirk.</p><div class='code-block code-block-3' style='margin: 8px 0; clear: both;'>
+<div x-data="unit" data-fuse="22792698441"></div></div>
+
+<p>&#8220;Leave the flattery to the ladies,&#8221; Karel remarked.</p>
+<p>&#8220;You don&#8217;t know. Offering a helping hand to someone in need can be quite thrilling.&#8221;</p>
+<p>The Ludwig family, acclaimed for various philanthropic activities and charity, sometimes seemed to Karel to indulge in a slightly perverse self-satisfaction. Especially with Julian&#8217;s fervor apparent in such moments.</p>
+<p>Reluctantly, Karel picked up an untouched plate of shashlik. As he rose from his seat, Julian urgently tapped the table, beckoning him over.</p>
+<p>&#8220;What now?&#8221; Karel asked, annoyed.</p>
+<p>&#8220;Just take some wine over there,&#8221; Julian whispered urgently.</p>
+<p>Karel accepted the glass, though begrudgingly. It took him only four steps to reach the man&#8217;s table. The man, with his thin neck visible even as he bowed his head deeply, didn&#8217;t raise his gaze until much later.</p>
+<p>&#8220;I&#8217;ll leave this here for you,&#8221; Karel said as he placed the plate on the table. Finally, the man raised his head, glancing between Karel and the plate. His Adam&#8217;s apple visibly moved as he swallowed.</p>
+<p>&#8220;Pardon me,&#8221; Karel continued, &#8220;but we couldn&#8217;t finish everything, so&#8230;&#8221;</p>
+<p>Even as he spoke, Karel noticed something. Turning abruptly to Julian, he found Julian lightly waving his hand. It was a rather comical gesture, as if he were truly trying to flirt with a lady.</p>
+<p>Karel turned back to the beggar, or rather, the man. Despite Julian&#8217;s hand waving, the man still looked up at Karel with a slightly frightened expression.</p><div class='code-block code-block-4' style='margin: 8px 0; clear: both;'>
+<div x-data="unit" data-fuse="22792698426"></div></div>
+
+<p>Karel furrowed his brow. This person&#8230;</p>
+<p>&#8220;Perhaps he doesn&#8217;t understand what we&#8217;re saying? Is he a foreigner?&#8221; Karel asked the man again.</p>
+<p>&#8220;A foreigner?&#8221;</p>
+<p>Karel inquired once more.</p>
+<p>&#8220;Where are you from?&#8221;</p>
+<p>The man still wore a fearful expression. Karel scrutinized his face under the light. Despite his shabby appearance, he was young and had delicate features. Even with his hair messily tied and lips cracked from the cold, his inherent beauty shone through. Perhaps he was still in his teens.</p>
+<p>His skin, almost cream-like in tone, contrasting sharply with his jet-black hair&#8230; and the shading created by his long eyelashes under his eyes was distinct.</p>
+<p>Karel tried to guess the man&#8217;s origin. Although the region was very close to Russia, the man didn&#8217;t appear Slavic. Perhaps he belonged to a minority group.</p>
+<p>How could such a beauty end up wandering like this? Once Karel glimpsed the real face beyond the destitute appearance, it was hard to look away. Trying not to stare rudely, Karel returned to his seat, feeling awkward.</p>
+<p>&#8220;Ah&#8230; He&#8217;s eating, he&#8217;s eating,&#8221; Julian murmured, glancing behind Karel. It seemed the man from earlier was indeed eating. Julian wore a satisfied smile on his face as if enjoying seeing a cautious cat finally accepting a human&#8217;s touch.</p>
+<p>Karel silently poured more wine, pondering. Was the man still bowing his head and eating? Or was he now happily appeasing his hunger? And how would it be if the wine touched his lips&#8230; Karel didn&#8217;t bother to turn around; he just imagined.</p><div class='code-block code-block-5' style='margin: 8px 0; clear: both;'>
+<div x-data="unit" data-fuse="22792698432"></div></div>
+
+<p>By the time the two headed upstairs to their lodging, the innkeeper was already shooing away the beggar with a fuss. When Karel, feeling somewhat uneasy, looked beyond the railing upon hearing the commotion, the man had vanished.</p>
+<p>&#8220;Let&#8217;s leave late tomorrow. I plan to sleep in, so don&#8217;t wake me until I&#8217;m up,&#8221; Julian said.</p>
+<p>&#8220;Got it.&#8221;</p>
+<p>&#8220;And let&#8217;s skip breakfast and have lunch instead.&#8221;</p>
+<p>As Julian yawned and entered his room, Karel was left alone in the corridor.</p>
+<p>When Julian first entered the inn, he had asked for the most expensive room. Despite being somewhat cheap, the waxed wooden floor and the carpet adorning the front of the room had a certain charm. Although Julian liked to mockingly enjoy the tastes of the common people, he was picky when it came to sharing his bed with bugs or disease.</p>
+<p>&#8220;Even though he talks about traveling like a commoner, he still spends money recklessly.&#8221;</p>
+<p>Yet Karel thought this was much better. If Franz Ludwig, Julian&#8217;s father, had accompanied them, they wouldn&#8217;t have stayed in such an inn. They would have stayed in the finest hotels, with a butler, networking with nobles or military officers during the day and attending opera or ballet performances in the evening.</p>
+<p>So, if asked which side he preferred, Karel would undoubtedly side with Julian.</p>
+<p>&#8220;Well, it&#8217;s in my blood after all.&#8221;</p>
+<p>Thanks to Julian, he enjoyed luxury, but Karel was well aware of the place he would have to return to.</p><div class='code-block code-block-6' style='margin: 8px 0; clear: both;'>
+<div x-data="unit" data-fuse="22792698423"></div>
+</div>
+
+<p>The Ludwig family had amassed immense wealth through steel production and were bourgeois, whereas Karel&#8217;s father was a butcher attached to the Ludwig mansion.</p>
+<p>Karel occasionally felt the difference in their origins.</p>
+<p>When Karel was born, Franz Ludwig, concerned about Julian, took him in as his foster brother. Thanks to this, Karel grew up under the same nursemaid as Julian, learned from the same tutors, and later followed Julian to Eton College.</p>
+<p>Because of this, Karel began to resemble Franz Ludwig more and more.</p>
+<p>But this was only superficial, Karel always tried to be aware of his own position.</p>
+<p>This trip had started at Julian&#8217;s insistence to enjoy their last moments of freedom before he graduated from university. Throughout the journey, Julian had enjoyed taking care of Karel like any other brother, but Karel knew he wasn&#8217;t just Julian&#8217;s lackey.</p>
+<p>Eventually, Julian would inherit the estate and business, and Karel would inherit his father&#8217;s business.</p>
+<p>Someday, they would each return to their rightful place.</p>
+<p>For Karel, it was all very natural and inevitable.</p>
+<p>The night air rushed in through the open window. The wind was fierce, and the streets were deserted. Breathing in the damp night air, Karel had a feeling it would rain tonight.</p>
+<p>He paced the room, lost in thought. The decision had been made, but he was pondering how to execute it.</p><div class='code-block code-block-2' style='margin: 8px 0; clear: both; width: 100%; overflow: hidden;'>
+<div x-data="unit" data-fuse="22792697793"></div></div>
+
+<p>As the raindrops began to hit the window, Karel finally grabbed a small basket of snacks and left the room again.</p>
+<p>When Karel reached the ground floor, he immediately approached the innkeeper and inquired about the whereabouts of the beggar.</p>
+<p>&#8220;He&#8217;s staying in the barn.&#8221;</p>
+<p>&#8220;The barn?&#8221;</p>
+<p>&#8220;Yes, next to the stables. He didn&#8217;t pay for accommodation.&#8221;</p>
+<p>The owner grumbled. Karel clicked his tongue and stepped outside toward the barn.</p>
+<p>&#8220;He really was a beggar, wasn&#8217;t he?&#8221;</p>
+<p>As they rounded the building, they saw a rudimentary space built next to the barn. It seemed the innkeeper had shoved the beggar into the barn storage. Karel momentarily thought it was a bit too much, but it meant even the innkeeper wouldn&#8217;t treat a destitute person harshly. Well, usually, it should be like that. Karel quietly agreed. The man looked so pitiful, like a deer, so it made sense that the owner reluctantly gave him the barn. After all, Karel was approaching the man with a basket of snacks that even children would enjoy.</p>
+<p>Still, a place like this&#8230;</p>
+<p>Approaching closer, Karel involuntarily furrowed his brow. The wooden planks serving as the ceiling were rotten in places. It was obvious that rain would seep through.</p>
+<p>&#8220;On a night like this, you could die from exposure in no time.&#8221;</p><div class='code-block code-block-2' style='margin: 8px 0; clear: both; width: 100%; overflow: hidden;'>
+<div x-data="unit" data-fuse="22792697793"></div></div>
+
+<p>As Karel approached, he heard rustling from inside. Feeling relieved at the sound of movement, Karel called out.</p>
+<p>&#8220;Are you in there?&#8221;</p>
+<p>For a moment, there was a big sigh from inside. Karel listened intently.</p>
+<p>&#8220;Ugh, ugh&#8230;.&#8221;</p>
+<p>It was the sound of someone retching. Karel stopped in surprise. It could be that the tomato soup he had earlier had gone bad or the meat he hadn&#8217;t eaten in a while disagreed with him. There were several possibilities.</p>
+<p>As Karel opened the door, the smell of sour vomit wafted out. Frowning momentarily, the light from outside illuminated one side of the man&#8217;s face. Drenched in cold sweat, the man slowly raised his head. With dilated pupils full of fear, he stared at Karel.</p>
+<p>The eyes, which Karel thought were black, were actually a bright amber when they caught the light.</p>
+<p>For some reason, Karel stood there staring at the man, speechless.</p>
+<p>&#8220;&#8230; Come out.&#8221;</p>
+<p>After a while, when the man&#8217;s retching subsided, Karel spoke. The man merely looked at Karel with eyes full of questions.</p>
+<p>&#8220;Oh! You can&#8217;t understand, huh&#8230; &#8221;</p><div class='code-block code-block-2' style='margin: 8px 0; clear: both; width: 100%; overflow: hidden;'>
+<div x-data="unit" data-fuse="22792697793"></div></div>
+
+<p>As Karel scratched his head, the man, with wary eyes, cautiously stepped outside. His hair was plastered to his cheeks with sweat, and he breathed shallowly, as if exhausted.</p>
+<p>Considering how much of a mess the barn was, it would be quite a struggle to sleep there tonight.</p>
+<p>Karel handed the basket he was holding to the man. Hesitating for a moment, the man took the basket and looked back and forth between it and Karel&#8217;s face.</p>
+<p>&#8220;Don&#8217;t you want to wash up with warm water?&#8221;</p>
+<p>&#8220;&#8230;&#8230;&#8221;</p>
+<p>&#8220;Come with me.&#8221;</p>
+<p>Karel slipped his hand into his pocket and turned away, walking slowly. There was no guarantee that the man understood, but somehow Karel felt he would follow.</p>
+<p>Sure enough, cautious footsteps followed Karel. When Karel re-entered the inn and met the owner standing guard in the lobby, their eyes met. The man seemed to think the beggar might return, so he stood close behind Karel. Karel felt a strange satisfaction in the small gesture of dependence.</p>
+<p>&#8220;It seems Julian has a penchant for stray causes.&#8221;</p>
+<p>At the same time, Karel reproached himself. As Franz Ludwig had said, one should not expect payment for charity or good deeds. The act of giving should be its own reward&#8230; But Karel knew he wasn&#8217;t such a saint.</p>
+<p>Fortunately, the innkeeper, who had received a hefty sum from Karel (or rather, Julian), didn&#8217;t say anything rude and pretended not to see the military guest accompanying Karel. Climbing the creaking wooden stairs and entering the room, Karel tried his best to ignore the man. Somehow, he felt the man would relax if he did so.</p><div class='code-block code-block-2' style='margin: 8px 0; clear: both; width: 100%; overflow: hidden;'>
+<div x-data="unit" data-fuse="22792697793"></div></div>
+
+<p>When Karel emerged after washing his hands, face, and combing his hair, the man was still standing in the middle of the room.</p>
+<p>&#8220;You&#8217;ll freeze to death sleeping in a barn on a night like this. The owner probably didn&#8217;t want to deal with a corpse.&#8221;</p>
+<p>&#8220;&#8230;&#8230;&#8221;</p>
+<p>&#8220;If you want to sleep in this bed, wash up and come back.&#8221;</p>
+<p>Though he didn&#8217;t understand the exact words, the man seemed to grasp it from Karel&#8217;s tone and headed to the bathroom. From inside came the careful sound of clothes being removed.</p>
+<p>!</p>
+<p>Karel sat down on the chair and vividly imagined the man slipping out of his clothes. Who could scrutinize the sins of imagination? As the man neatly folded the clothes he had just taken off and placed them outside the door, Karel observed the long, smooth arms.</p>
+<p>With an apparently indifferent expression, Karel stared at the discarded garments for a while. The clothes were disgustingly dirty from long periods of homelessness.</p>
+<p>&#8220;&#8230;It would be&#8230; good to wash them&#8230;.&#8221;</p>
+<p>Soon, Karel called someone over. He didn&#8217;t forget to ask for a gown made of cotton.</p>
+<p>While listening to the sound of water pouring in the bathroom for a while, Karel patiently stared at the wallpaper on the ceiling. Occasionally, he tried to make rational and productive thoughts, but he couldn&#8217;t think of anything other than the man in the bathroom.</p><div class='code-block code-block-2' style='margin: 8px 0; clear: both; width: 100%; overflow: hidden;'>
+<div x-data="unit" data-fuse="22792697793"></div></div>
+
+<p>Why did I bring the man into the room?</p>
+<p>Karel reproached himself. However, thinking that he would have done the same thing just a moment ago, he quickly dismissed any unnecessary regrets.</p>
+<p>The man&#8217;s bath was long.</p>
+<p>&#8220;Enjoying warm water after a long time, huh.&#8221;</p>
+<p>Sitting quietly on the chair, Karel, who had been waiting for the man to come out for some time now, blinked sleepily.</p>
+<p>When he opened his eyes again, the bathroom door was halfway open. Karel sat up abruptly.</p>
+<p>Unfortunately, the man seemed to have lost his clothes and appeared to be unable to come out of the bathroom. With his hair still wet and unable to gauge how long he had slept or how long the man had been enduring inside, Karel approached the bathroom with the gown in hand.</p>
+<p>And as he handed the gown through the slightly open door, Karel inadvertently glimpsed the man&#8217;s naked body.</p>
+<p>&#8220;&#8230;&#8230;&#8221;</p>
+<p>It was even sleeker than he had imagined.</p>
+<p>While he appeared thin when clothed, well-defined muscles now occupied his frame. Karel realized in an instant that this man likely had a physically demanding profession.</p><div class='code-block code-block-2' style='margin: 8px 0; clear: both; width: 100%; overflow: hidden;'>
+<div x-data="unit" data-fuse="22792697793"></div></div>
+
+<p>Water dripped from the man&#8217;s hair down his chest.</p>
+<p>Turning away casually, Karel handed over the gown once more. Though he averted his gaze, the image of water droplets falling from the man&#8217;s nipples remained vividly in his mind.</p>
+<p>The man accepted the gown with trembling hands.</p>
+<p>Leaving him in the bathroom, Karel extinguished the light. It was both consideration for the man and for himself.</p>
+<p>After deliberately leaving enough space for a person to lie down and turning his back to sleep, Karel felt the man approach and carefully lay down on the bed after a while. Even lying down, the man remained tense, his body stiff.</p>
+<p>Underneath the covers, Karel muttered.</p>
+<p>&#8220;Sleep comfortably.&#8221;</p>
+<p>Though his mind might be filled with images of the man&#8217;s naked body, Karel spoke as politely as possible.</p>
+<p>And as he lay down, annoyed at the overly vivid imagery in his mind, Karel drifted off to sleep. Wet breath and clinging flesh, tangled hair swaying with pleasure&#8230; In his imagination, the man didn&#8217;t reject Karel&#8217;s outstretched hand but opened up his body as if offering gratitude for being sheltered in a warm place.</p>
+<p>&#8220;That man is trembling with fear, yet he&#8217;s here in bed, not even touching me.&#8221;</p>
+<p>Karel was tormented by self-reproach.</p><div class='code-block code-block-2' style='margin: 8px 0; clear: both; width: 100%; overflow: hidden;'>
+<div x-data="unit" data-fuse="22792697793"></div></div>
+
+<p>But the man lying next to him was no ordinary man. With smooth skin now cleaned, long neck, and elegant limbs, he seemed like a tangible manifestation of the ideal beauty Karel had fantasized about since childhood. For Karel, who had preferred male bodies over female bodies since childhood, it was a torturous time.</p>
+<p>Moreover, this man was a penniless wanderer. There would likely be no repercussions even if Karel touched him.</p>
+<p>Nevertheless, the man lying on the bed, turning his back to Karel instead of reaching out to a beauty like him, left Karel dumbfounded.</p>
+<p>But it was at this moment, after countless internal conflicts, that the man murmured something to Karel&#8217;s back. A foreign language unfamiliar to Karel, uttered in a soft and calm voice.</p>
+<p>It was only a brief utterance.</p>
+<div class='code-block code-block-10' style='margin: 8px 0; clear: both;'>
+<!-- 71161633/read_footer/read_footer -->
+<div x-data="unit" data-fuse="22797964181"></div></div>
+<!-- CONTENT END 10 -->
+          </div>
+
+    
+    <div
+  x-data="{open:false}"
+  class="fixed lg:absolute top-0 right-0 lg:-right-10 lg:h-full w-full lg:w-10 z-10 p-2 lg:p-0 not-prose"
+  x-show="open"
+  @tools.window="open = !open"
+  x-transition.opacity.duration.300ms
+  x-cloak
+>
+  <div class="sticky top-0 lg:top-10">
+    <div class="flex lg:flex-col justify-between items-center bg-accent rounded-md shadow-md overflow-hidden">
+      <button
+        @click.prevent="$dispatch('toc')"
+        class="flex items-center justify-center py-3 w-full hover:bg-accent-hover"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+          <path d="M4 8 L24 8 M4 16 L28 16 M4 24 L28 24" />
+        </svg>
+      </button>
+
+      <button
+        @click.prevent="$dispatch('fonts')"
+        class="flex items-center justify-center py-3 w-full hover:bg-accent-hover"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+          <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
+          <circle cx="16" cy="16" r="4" />
+        </svg>
+      </button>
+
+      <button
+        @click.prevent="$dispatch('donate')"
+        class="flex items-center justify-center py-3 w-full hover:bg-accent-hover"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M4 16 C1 12 2 6 7 4 12 2 15 6 16 8 17 6 21 2 26 4 31 6 31 12 28 16 25 20 16 28 16 28 16 28 7 20 4 16 Z" />
+        </svg>
+      </button>
+
+      <a href="#comments" class="flex items-center justify-center py-3 w-full hover:bg-accent-hover">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="18" height="18" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+          <path d="M2 4 L30 4 30 22 16 22 8 29 8 22 2 22 Z" />
+        </svg>
+      </a>
+
+              <span class="flex items-center justify-center py-3 w-full opacity-80">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="18" height="18" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+            <path d="M10 6 L4 16 10 26 M2 16 L30 16" />
+          </svg>
+        </span>
+      
+              <a href="https://readhive.org/series/64901/2" class="flex items-center justify-center py-3 w-full hover:bg-accent-hover" up-follow up-preload>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="18" height="18" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+            <path d="M22 6 L30 16 22 26 M30 16 L4 16" />
+          </svg>
+        </a>
+          </div>
+
+    <div
+  x-data="{open:false}"
+  @toc.window="open = !open"
+  @click.outside="open = false"
+  class="absolute top-10 mt-4 right-0 bg-accent flex flex-col rounded-md w-full shadow-md md:w-96 lg:mt-0 lg:right-12 lg:top-0"
+  x-transition:enter="transition ease-out duration-200"
+  x-transition:enter-start="opacity-0 transform translate-y-1"
+  x-transition:enter-end="opacity-100 transform translate-y-0"
+  x-transition:leave="transition ease-in duration-150"
+  x-transition:leave-start="opacity-100 transform translate-y-0"
+  x-transition:leave-end="opacity-0 transform translate-y-1"
+  x-show="open"
+  x-cloak
+>
+  <div class="justify-center py-2 font-medium text-center border-b-2">Table of Contents</div>
+  <div
+    x-ignore
+    ax-load="idle"
+    x-data="toc(64901)"
+    class="max-h-80 overflow-auto"
+    >
+    <ol class="list-none m-0 p-0">
+      <template x-for="item in items">
+        <li class="p-0 m-0">
+          <a
+            :href="item.url"
+            :class="item.url != window.location.href.slice(0, -1) && 'no-underline'"
+            class="p-2 px-3 hover:underline hover:bg-accent-hover flex flex-grow"
+            x-text="item.title"
+          ></a>
+        </li>
+      </template>
+      <template x-if="loading">
+        <svg class="animate-spin text-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+</svg>      </template>
+    </ol>
+  </div>
+</div>
+    <div
+  x-data="{open:false}"
+  @fonts.window="open = !open"
+  @click.outside="open = false"
+  class="absolute top-10 mt-4 right-0 bg-accent flex flex-col rounded-md w-full shadow-md md:w-96 lg:mt-0 lg:right-12 lg:top-0"
+  x-transition:enter="transition ease-out duration-200"
+  x-transition:enter-start="opacity-0 transform translate-y-1"
+  x-transition:enter-end="opacity-100 transform translate-y-0"
+  x-transition:leave="transition ease-in duration-150"
+  x-transition:leave-start="opacity-100 transform translate-y-0"
+  x-transition:leave-end="opacity-0 transform translate-y-1"
+  x-show="open"
+  x-cloak
+>
+  <div class="justify-center py-2 font-medium text-center border-b-2">Reader Settings</div>
+  <div
+    x-ignore
+    ax-load="idle"
+    x-data="fonts"
+    x-init="loadAllFonts()"
+    class="p-2"
+  >
+    <div class="mb-1">
+      <span class="block leading-tight">Font Size</span>
+      <div class="flex">
+        <input type="range" x-model="size" min="12" max="36" class="w-full flex-grow">
+        <input type="number" min="12" max="36" x-model="size" class="bg-accent-2 ml-1 text-xs w-11 p-1 rounded outline-0">
+      </div>
+    </div>
+
+    <div class="mb-1">
+      <span class="block leading-tight">Line Height</span>
+      <div class="flex">
+        <input type="range" x-model="height" min=".9" max="2" step=".1" class="w-full flex-grow">
+        <input type="number" x-model="height" min=".9" max="2" step=".1" class="bg-accent-2 ml-1 text-xs w-11 p-1 rounded outline-0">
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <span class="block">Font</span>
+      <div class="flex flex-wrap gap-2">
+        <template x-for="family in families">
+          <button
+            @click="font = family"
+            :class="family === font && 'bg-red text-white'"
+            :style="'font-family: ' + family"
+            type="button"
+            class="px-2 py-1 text-sm text-foreground bg-btn rounded shadow hover:bg-red hover:text-white"
+          >
+            <span x-text="family"></span>
+          </button>
+        </template>
+      </div>
+    </div>
+
+    <button @click.prevent="reset" class="px-2 py-1 text-sm text-foreground bg-btn rounded shadow hover:bg-btn-hover">Reset</button>
+  </div>
+</div>
+    <div
+  x-data="{open:false}"
+  @donate.window="open = !open"
+  @click.outside="open = false"
+  class="absolute top-10 mt-4 right-0 bg-accent flex flex-col rounded-md w-full shadow-md md:w-96 lg:mt-0 lg:right-12 lg:top-0"
+  x-transition:enter="transition ease-out duration-200"
+  x-transition:enter-start="opacity-0 transform translate-y-1"
+  x-transition:enter-end="opacity-100 transform translate-y-0"
+  x-transition:leave="transition ease-in duration-150"
+  x-transition:leave-start="opacity-100 transform translate-y-0"
+  x-transition:leave-end="opacity-0 transform translate-y-1"
+  x-show="open"
+  x-cloak
+>
+  <div class="justify-center py-2 font-medium text-center border-b-2">Donation</div>
+  <div
+    x-ignore
+    ax-load="visible"
+    x-data="donate('x2b4a4z2', '64aa3fa728')"
+    class="p-2"
+  >
+    <div class="mb-2">
+      <span class="block leading-tight">Amount</span>
+      <div class="flex mb-2">
+        <input type="range" x-model="amount" min="1" max="300" class="w-full flex-grow">
+        <input type="number" min="1" max="300" x-model="amount" class="bg-accent-2 ml-1 text-xs w-11 p-1 rounded outline-0">
+      </div>
+    </div>
+
+    <div class="mb-2">
+      <ul class="list-none m-0 p-0 grid grid-cols-3 gap-2">
+        <template x-for="item in items">
+          <li class="p-0 m-0">
+            <button @click.prevent="amount = item" type="button" class="flex items-center justify-center w-full px-3 py-1 font-medium text-white transition transform bg-red-600 rounded shadow hover:bg-red-800 active:scale-90">
+              <span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><title>Hive</title><path d="M20.895 7.553l-2-4A1.001 1.001 0 0 0 18 3h-5a1 1 0 0 0-.895.553L10.382 7H6a1 1 0 0 0-.895.553l-2 4a1 1 0 0 0 0 .895l2 4A1 1 0 0 0 6 17h4.382l1.724 3.447A.998.998 0 0 0 13 21h5a1 1 0 0 0 .895-.553l2-4a1 1 0 0 0 0-.895L19.118 12l1.776-3.553a1 1 0 0 0 .001-.894zM13.618 5h3.764l1.5 3-1.5 3h-3.764l-1.5-3 1.5-3zm-8.5 7l1.5-3h3.764l1.5 3-1.5 3H6.618l-1.5-3zm12.264 7h-3.764l-1.5-3 1.5-3h3.764l1.5 3-1.5 3z"></path></svg>
+              </span>
+              <span x-text="item"></span>
+            </button>
+          </li>
+        </template>
+      </ul>
+    </div>
+
+    <button type="button" @click.prevent="send" class="px-2 py-1 text-sm text-foreground bg-btn rounded shadow hover:bg-btn-hover">Donate</button>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+
+  <div class="relative py-2 mt-4 border-t border-accent-border">
+  <div class="flex flex-col mx-auto md:flex-row md:max-w-4xl">
+    <img src="https://secure.gravatar.com/avatar/5992093330f8a7636c2b146c7b8b265c?s=96&amp;d=mm&amp;r=g" class="flex-shrink-0 w-20 h-20 mb-2 object-cover mx-auto rounded-full overflow-hidden">
+    <div class="flex-grow text-center px-4 md:text-left">
+      <strong>nicotine</strong>
+      <p class="text-sm">Please DM me on my Discord server if you have any concern. The comments are not automatically pinged to me so I miss them. Please not share the novels on SNS, you will risk them being taken down. For alternative payment, please contact me on my Discord server so I can direct you to the website! For novel&#039;s list, updates, request, and to report mistakes, join here: https://discord.gg/XgDhgMqyTn</p>
+      <div class="flex justify-center mt-2 space-x-2 md:justify-start">
+  
+  
+  <button type="button" class="flex items-center justify-center px-2 py-1 text-sm text-white bg-red rounded shadow hover:bg-red-800 hover:shadow-lg" @click.prevent="$dispatch('tools'), $dispatch('donate')">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><title>Hive</title><path d="M20.895 7.553l-2-4A1.001 1.001 0 0 0 18 3h-5a1 1 0 0 0-.895.553L10.382 7H6a1 1 0 0 0-.895.553l-2 4a1 1 0 0 0 0 .895l2 4A1 1 0 0 0 6 17h4.382l1.724 3.447A.998.998 0 0 0 13 21h5a1 1 0 0 0 .895-.553l2-4a1 1 0 0 0 0-.895L19.118 12l1.776-3.553a1 1 0 0 0 .001-.894zM13.618 5h3.764l1.5 3-1.5 3h-3.764l-1.5-3 1.5-3zm-8.5 7l1.5-3h3.764l1.5 3-1.5 3H6.618l-1.5-3zm12.264 7h-3.764l-1.5-3 1.5-3h3.764l1.5 3-1.5 3z"></path></svg>
+    <span class="ml-1">Hive</span>
+  </button>
+
+  </div>
+    </div>
+  </div>
+</div>
+  <div class="flex justify-between py-2 mb-4 border-t border-b border-accent-border">
+  <div class="flex justify-between flex-grow mx-auto md:max-w-4xl">
+          <span class="flex items-center justify-center px-3 py-2 font-medium text-white bg-red-600 rounded shadow opacity-50">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5">
+          <path d="M15 6L9.21261 11.7874V11.7874C9.09519 11.9048 9.09519 12.0952 9.21261 12.2126V12.2126L15 18" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <small class="text-sm leading-none">Previous</small>
+      </span>
+    
+          <a href="https://readhive.org/series/64901/2" class="flex items-center justify-center px-3 py-2 font-medium text-white bg-red-600 rounded shadow hover:bg-red-800" up-follow up-preload>
+          <small class="text-sm leading-none">Next</small>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5">
+            <path d="M9 18L14.7874 12.2126V12.2126C14.9048 12.0952 14.9048 11.9048 14.7874 11.7874V11.7874L9 6" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </a>
+      </div>
+</div>
+
+  <div class="mb-2 mx-auto md:max-w-4xl">
+    <h3 class="mb-2 text-xl font-medium">Related Series</h3>
+    <div
+  x-ignore
+  ax-load
+  x-data="slider"
+  class="swiper"
+>
+  <div class="swiper-wrapper">
+           <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/80930/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2024/09/Screenshot-2024-09-29-092606.jpg" alt="Let&#8217;s Block the Ruined Route in Advance" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/80930/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">Let&#8217;s Block the Ruined Route in Advance</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/78827/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2024/09/The-Sweet-Alpha-Crown-Prince-Loves-Me-So-Much.webp" alt="The Sweet Alpha Crown Prince Loves Me So Much" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/78827/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">The Sweet Alpha Crown Prince Loves Me So Much</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/184/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2022/07/갠소공금♭000.jpg" alt="Duke, I’m Going To live As A Sheep!" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/184/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">Duke, I’m Going To live As A Sheep!</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/107496/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2025/04/xxlarge-2.webp" alt="Love Born of Pity" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/107496/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">Love Born of Pity</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/156874/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2026/02/BTS.webp" alt="Be the Sacrifice" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/156874/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">Be the Sacrifice</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/122241/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2025/07/xxlarge-4-1.webp" alt="Resurrection" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/122241/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">Resurrection</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/22925/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2022/10/xxlarge.webp" alt="In The Depths Of Shame, Love Exists" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/22925/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">In The Depths Of Shame, Love Exists</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/99728/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2025/02/mmm.webp" alt="Underpainting" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/99728/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">Underpainting</h6>
+        </a>
+      </div>
+          <div class="swiper-slide w-32 flex-shrink-0 group">
+        <a href="https://readhive.org/series/103/" up-follow up-preload>
+          <div class="aspect-w-3 aspect-h-4">
+            <img src="/public/images/2022/07/00a56f101aadc62b1e5db695ff942737.jpg" alt="The Trashy PD Has To Survive as an Idol" class="object-cover rounded shadow-lg">
+          </div>
+        </a>
+        
+        <a href="https://readhive.org/series/103/" up-follow up-preload>
+          <h6 class="mt-2 text-sm font-medium line-clamp-2 text-center group-hover:text-red">The Trashy PD Has To Survive as an Idol</h6>
+        </a>
+      </div>
+       </div>
+</div>
+  </div>
+
+  <div id="comments" class="flex-grow py-2 mx-auto comments md:max-w-4xl">
+    <h3 class="mb-4 text-xl font-medium">
+      Comments (2)
+    </h3>
+
+    
+    <div x-ignore ax-load x-data="recaptcha('', false)">
+          <div id="respond" class="flex flex-col comment-form relative">
+        <div id="reply-title" class="absolute bottom-0 flex order-2 w-full mb-2 font-medium comment-reply-title mr-14"><div></div><small class="ml-auto mr-14"><a rel="nofollow" id="cancel-comment-reply-link" href="/series/64901/1/#respond" style="display:none;" up-follow><button class="px-2 py-1 text-sm font-medium bg-btn hover:bg-btn-hover rounded shadow">Cancel reply</button></a></small></div><p class="mb-4 must-log-in">You must be logged in to post a comment.</p>    </div><!-- #respond -->
+        </div>
+
+    <ol class="comment-list">
+      <li id="comment-2" class="relative mb-4 comment">
+	<article id="div-comment-2" class="ml-10 comment-body">
+		<footer class="flex text-sm comment-meta">
+            <img alt="jintrost profile picture" src="https://blobcdn.com/blob.svg?seed=60537" class="rounded-full object-cover absolute left-0" height="32" width="32" loading="lazy">
+
+            <div class="flex items-center">
+                <span class="font-medium">jintrost</span>
+                <a href="/series/64901/1/#comment-35659" class="ml-2 text-xs text-fg-muted hover:text-red">
+                    January 19, 2025
+                </a>
+
+                
+            </div>
+		</footer>
+
+		<div class="py-2 comment-content">
+			<p>Torturing myself by reading the novel after the manhwa ended😭</p>
+
+		</div>
+
+        
+	</article>
+</li></li><!-- #comment-## -->
+<li id="comment-2" class="relative mb-4 comment">
+	<article id="div-comment-2" class="ml-10 comment-body">
+		<footer class="flex text-sm comment-meta">
+            <img alt="Ufukbatu profile picture" src="https://blobcdn.com/blob.svg?seed=85062" class="rounded-full object-cover absolute left-0" height="32" width="32" loading="lazy">
+
+            <div class="flex items-center">
+                <span class="font-medium">Ufukbatu</span>
+                <a href="/series/64901/1/#comment-63285" class="ml-2 text-xs text-fg-muted hover:text-red">
+                    March 20, 2026
+                </a>
+
+                
+            </div>
+		</footer>
+
+		<div class="py-2 comment-content">
+			<p>Hadi bakalım başlayalımd</p>
+
+		</div>
+
+        
+	</article>
+</li></li><!-- #comment-## -->
+
+    </ol>
+  </div>
+
+  <div x-data>
+    <script async>(function(){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'chapter_view',author:'mimiwriterr',series:'Solo For Two',cid:'64904',sid:'64901',aid:'4587',});})();</script>
+    <div x-init="() => { fetch(window.location.href + 'track') }; $el.remove()"></div>
+  </div>
+        </main>
+
+      <div
+  x-ignore
+  ax-load="idle"
+  x-data="toast"
+  class="fixed right-0 z-10 flex flex-col top-16"
+  @toast.window="add($event.detail)"
+  >
+  <template x-for="toast of toasts" :key="toast.id">
+    <button
+      x-show="visibles.includes(toast)"
+      x-transition:enter="transition ease-in duration-200"
+			x-transition:enter-start="transform opacity-0 translate-y-2"
+			x-transition:enter-end="transform opacity-100"
+			x-transition:leave="transition ease-out duration-500"
+			x-transition:leave-start="transform translate-x-0 opacity-100"
+			x-transition:leave-end="transform translate-x-full opacity-0"
+      @click="remove(toast.id)"
+      type="button"
+      :class="toast.success ? 'bg-green-400 hover:bg-green-500' : 'bg-red-400 hover:bg-red-500'"
+      class="max-w-xs px-4 py-2 mx-4 mb-4 text-white transition rounded-md"
+      >
+      <div class="flex space-x-2">
+        <template x-if="toast.success">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="flex-shrink-0"><path d="M14 21.414l-5-5.001L10.413 15 14 18.586 21.585 11 23 12.415l-9 8.999zM16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2zm0 26a12 12 0 1 1 12-12 12 12 0 0 1-12 12z"/></svg>
+        </template>
+
+        <template x-if="!toast.success">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016zM12 9v2m0 4h.01"></path></svg>
+        </template>
+        <p class="font-medium text-left" x-text="toast.message"></p>
+      </div>
+    </button>
+  </template>
+</div>
+
+<div x-data="{fixed:true}" x-ref="bottom" class="fixed z-20 m-1 bottom-0 transform translate-x-1/2 right-1/2">
+  <div class="relative text-center">
+    
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+    </div>
+
+        <script defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5865C8H');</script><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5865C8H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script id='wpb_missed_scheduled_posts_publisher-js-after'>
+	(function( request ){
+		if ( ! window.fetch ) {
+			return;
+		}
+		request.args.body = new URLSearchParams( request.args.body );
+		fetch( request.url, request.args );
+	}( {"url":"https:\/\/readhive.org\/wp\/wp-admin\/admin-ajax.php?action=wpb_missed_scheduled_posts_publisher","args":{"method":"POST","body":"wpb_missed_scheduled_posts_publisher_nonce=c1afd32274"}} ));
+	
+</script>
+<script>
+(()=>{"use strict";var e,r,t,o={},a={};function n(e){var r=a[e];if(void 0!==r)return r.exports;var t=a[e]={exports:{}};return o[e].call(t.exports,t,t.exports,n),t.exports}n.m=o,e=[],n.O=(r,t,o,a)=>{if(!t){var i=1/0;for(u=0;u<e.length;u++){t=e[u][0],o=e[u][1],a=e[u][2];for(var s=!0,d=0;d<t.length;d++)(!1&a||i>=a)&&Object.keys(n.O).every((e=>n.O[e](t[d])))?t.splice(d--,1):(s=!1,a<i&&(i=a));if(s){e.splice(u--,1);var l=o();void 0!==l&&(r=l)}}return r}a=a||0;for(var u=e.length;u>0&&e[u-1][2]>a;u--)e[u]=e[u-1];e[u]=[t,o,a]},n.n=e=>{var r=e&&e.__esModule?()=>e.default:()=>e;return n.d(r,{a:r}),r},n.d=(e,r)=>{for(var t in r)n.o(r,t)&&!n.o(e,t)&&Object.defineProperty(e,t,{enumerable:!0,get:r[t]})},n.f={},n.e=e=>Promise.all(Object.keys(n.f).reduce(((r,t)=>(n.f[t](e,r),r)),[])),n.u=e=>772===e?"js/772.ba4d0e.js":"js/dynamic/"+e+"."+{32:"716a61",73:"d535b9",86:"5b2d4e",145:"3cc9da",246:"ce0b33",268:"991629",283:"aba12c",309:"e2be43",319:"16e296",443:"184eb6",596:"53c3b2",602:"c3199a",655:"3b83f1",699:"1b8347",733:"684600",738:"49b7c5",767:"095260",805:"c5b481",900:"612ec9",945:"2d137d",949:"5c2b6d"}[e]+".chunk.js",n.miniCssF=e=>{},n.o=(e,r)=>Object.prototype.hasOwnProperty.call(e,r),r={},t="@roots/bud/sage/nzoseries:",n.l=(e,o,a,i)=>{if(r[e])r[e].push(o);else{var s,d;if(void 0!==a)for(var l=document.getElementsByTagName("script"),u=0;u<l.length;u++){var c=l[u];if(c.getAttribute("src")==e||c.getAttribute("data-webpack")==t+a){s=c;break}}s||(d=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,n.nc&&s.setAttribute("nonce",n.nc),s.setAttribute("data-webpack",t+a),s.src=e),r[e]=[o];var f=(t,o)=>{s.onerror=s.onload=null,clearTimeout(p);var a=r[e];if(delete r[e],s.parentNode&&s.parentNode.removeChild(s),a&&a.forEach((e=>e(o))),t)return t(o)},p=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),d&&document.head.appendChild(s)}},n.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.p="/app/themes/nzoseries/public/",(()=>{var e={666:0};n.f.j=(r,t)=>{var o=n.o(e,r)?e[r]:void 0;if(0!==o)if(o)t.push(o[2]);else if(666!=r){var a=new Promise(((t,a)=>o=e[r]=[t,a]));t.push(o[2]=a);var i=n.p+n.u(r),s=new Error;n.l(i,(t=>{if(n.o(e,r)&&(0!==(o=e[r])&&(e[r]=void 0),o)){var a=t&&("load"===t.type?"missing":t.type),i=t&&t.target&&t.target.src;s.message="Loading chunk "+r+" failed.\n("+a+": "+i+")",s.name="ChunkLoadError",s.type=a,s.request=i,o[1](s)}}),"chunk-"+r,r)}else e[r]=0},n.O.j=r=>0===e[r];var r=(r,t)=>{var o,a,i=t[0],s=t[1],d=t[2],l=0;if(i.some((r=>0!==e[r]))){for(o in s)n.o(s,o)&&(n.m[o]=s[o]);if(d)var u=d(n)}for(r&&r(t);l<i.length;l++)a=i[l],n.o(e,a)&&e[a]&&e[a][0](),e[a]=0;return n.O(u)},t=self.webpackChunk_roots_bud_sage_nzoseries=self.webpackChunk_roots_bud_sage_nzoseries||[];t.forEach(r.bind(null,0)),t.push=r.bind(null,t.push.bind(t))})()})();
+</script><script src="/public/js/116.5674a7.js"></script><script src="/public/js/667.f6a505.js"></script><script src="/public/js/303.fa1d40.js"></script><script src="/public/js/app.be7c92.js"></script>  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"822b83d555a84c2186985c90c52fcefc","r":1,"spa":2}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a491a666bac3bd87',t:'MTc5MTc2MTM5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

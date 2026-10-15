@@ -1,0 +1,629 @@
+
+==== files ====
+40
+
+==== selector strings passed to querySelector / querySelectorAll / closest / matches (count, selector) ====
+     34 img
+     31 a
+      6 h1
+      4 div.pic img
+      4 div#app
+      3 .series-genres a
+      3 script, style, .ads
+      3 p
+      3 h3.novel-title > a
+      3 > div > div
+      3 div.danh_sach > div.list_category
+      3 > a
+      2 td:first-child a
+      2 span.chapter-title
+      2 span
+      2 #rating
+      2 picture source, div.pic img
+      2 picture source
+      2 option
+      2 .novel-info
+      2 meta[property="og:image"]
+      2 meta[itemprop="description"]
+      2 #list-page > .archive > .list > .row, div.list > div.row
+      2 img[src*="disable-blocker"]
+      2 #image
+      2 h3.title, h1.title
+      2 h3.tit > a
+      2 h2.novel-title > a
+      2 h1.tit
+      2 h1.novel-title
+      2 figure.cover img, .cover img
+      2 div.ul-list1 > div.li-row, div.li-row
+      2 div.novel-info div.author a, div.author a
+      2 div.novel-cover > img
+      2 div.list-novel > div.row
+      2 div.inner
+      2 div.info > div, ul.info > li
+      2 div > div > h3.truyen-title > a, div > div > h3.novel-title > a
+      2 div.desc-text, .description-text
+      2 div.categories ul li, div.tags ul li
+      2 div.book img, .books img
+      2 .chapternum
+      2 #chapter-content, #chr-content
+      2 a.set-case.add
+      2 article
+      2 a#novel-report
+      2 a[href*="/series/
+      2 a[href*="/manga/"]
+      1 .wrap_warpper img[data-src], #img_list img, .rd-content img
+      1 .wp-manga-chapter a
+      1 .wi_fic_genre a, .fic_genre a
+      1 .wi_fic_desc, .description
+      1 .update_time, time, td:last-child
+      1 ul.widget_fic_similar > li:last-child span
+      1 ul.truyen_info_right > li
+      1 ul.pagination a, .pagination a
+      1 ul.list-chapter li a, ul.list > li > a
+      1 ul.info-meta > li
+      1 ul.chapters-scroll-list li a, a.chapter-item
+      1 ul.chapter-list li a, .chapters-list li a, .list-chapter li a, a[href*="/chapter-"]
+      1 ul.chapter-chs > li > a, div.tab-content a
+      1 .tt, h4, .title
+      1 .tt a, h4 a, .title a, a
+      1 .truyen-list .list-truyen-item-wrap, .panel_story_list .story_item, .list-manga-wraper .story_item, .search-story-item
+      1 .title, span
+      1 .title, h2, h3
+      1 .title3
+      1 .title2
+      1 time, [class*="date"]
+      1 time.chapter-update
+      1 time
+      1 .thumb img, .info-image img
+      1 .text-sm, p, .line-clamp-2
+      1 .text-right span
+      1 table#main_releases tr, table#main_releases > tbody > tr
+      1 .summary p, .summary, .description
+      1 .summary p, .grade_area p, .detail_summary
+      1 .summary_image img
+      1 .subj, .title, p.subj, .info_area strong
+      1 .subj span, .episode_num
+      1 .subj, h1.subj, .title
+      1 [style*="width:0"], [style*="width: 0"]
+      1 [style*="visibility:hidden"], [style*="visibility: hidden"]
+      1 [style*="font-size:0"], [style*="font-size: 0"]
+      1 [style*="display:none"], [style*="display: none"]
+      1 style
+      1 strong.chapter-title
+      1 strong
+      1 .story-info-right h1, .manga-info-text h1
+      1 .story-info-left img, .manga-info-pic img
+      1 span[title], .chapter-time
+      1 span.tags > a, .fiction-tag
+      1 span.status-badge, .header-stats .active, .novel-status
+      1 span.s1.s3 > a, span.s1.s2 > a
+      1 span, p
+      1 span.leading-7, .author, span:contains("Author")
+      1 span.info_image > img
+      1 span.glyphicon-user
+      1 span.glyphicon-th-list
+      1 > span
+      1 .slot-frame, div.reader-ad-skip, script, style
+      1 #show, .fullcontent
+      1 .series-card, .grid > div, div[class*="grid"] > div, .card, div
+      1 select > option, li[data-chapter-item] > a
+      1 select > option, li > a
+      1 section.story__summary
+      1 section.search-results__content > ul > li.card, li.card
+      1 section#chapter-content > div, section#chapter-content
+      1 .search_title a, h3 a, .title a
+      1 .search_main_box, .sb_box, .novel_main
+      1 script, style, iframe, button, noscript, .advertisement, [class*="ad-"]
+      1 script, style, iframe, .ads, .blocker, div.alert, #podium-spot, small.ads-title, p.hid, .hidden
+      1 script, style, iframe, .ads, .adv-block, div.alert, #podium-spot
+      1 script, style, .ads, .chapter-warning
+      1 script, style, .ads, .adsbygoogle
+      1 script, style, .ads, .ad, .advertisement, .chapter-nav, [class*="ad-"]
+      1 script#__NEXT_DATA__
+      1 script#initial-data
+      1 .row-content-chapter li, .chapter-list .row
+      1 #readerarea img
+      1 p, span, .text-sm
+      1 .prose, [class*="description"]
+      1 [props]
+      1 .post-title, h3.h4, h3, h5
+      1 .post-title h1, h1
+      1 .post-title a, h3.h4 a, h3 a, h5 a, a[href*="/manga/"], a[href*="/series/"], a[href*="/webtoon/"], a[href*="/serie/"]
+      1 .poster img, [class*="poster"] img, .detail-set img, img[alt]
+      1 p.novel-author > a, .author a, .novel-author a
+      1 picture img, .image-container img, .reader img
+      1 #panel-story-info-description, #noidungm
+      1 .pages .page:not(.notice-page) img, .page:not(.notice-page) img, .viewer img
+      1 .pager-list-left option
+      1 .page-break img, img.wp-manga-chapter-img
+      1 .original.card-lg .unit, #most-viewed .swiper-slide.unit, .unit, div.unit, a[href*="/manga/"], a[href*="/title/"], a[href*="/series/"]
+      1 ol.toc_ol > li, .toc_ol li
+      1 ol.o-series-card-list li, [class*="series"] a[href*="/series/"], a[data-ga-item-id*="series-"]
+      1 .novel-raw-title
+      1 .novel-item, .book-item, .fiction-item, article
+      1 .novel-desc, .description, .summary
+      1 .novel-cover img, .novel-main-img img
+      1 .novel-cover img, .book-cover img, img.thumbnail
+      1 .novel-cover img, .book-cover img
+      1 .novel-cover img
+      1 #novel-content
+      1 .novel-body .novel-right, div.novel-detail-body
+      1 .notice-text, .slot-frame, script, style
+      1 .notice-text
+      1 #noidungm, .panel-story-info-description
+      1 #mobile-cover-img
+      1 .min-w-0.flex-1
+      1 .mgen a, a[href*="manga-genre"]
+      1 meta[name="og:novel:status"]
+      1 meta[name="description"]
+      1 meta[name="category"], a[href*="/genre/"]
+      1 meta[name="author"]
+      1 .meta div:has(span) a, [class*="author"] a
+      1 .meta div a[href*="/genre/"], [class*="genre"] a, [class*="tag"] a
+      1 .media .wrap_img img, img
+      1 #mc-fs-genre a, a[href*="/tags/genre/"]
+      1 .manga-list-1-list li, .manga-list-4-list li, .result-list li
+      1 .manga-list-1-item-title a, a[title]
+      1 .manga-info-text h1, .story-info-right h1
+      1 .manga-info-pic img, .story-info-left img
+      1 main > div.prose, main div[class*="prose"], div.prose, #chapter-content, .entry-content
+      1 main
+      1 li[title*="Original status"] span, li[title*="original"] span
+      1 #_listUl li, .detail_lst li
+      1 li.novel-item, .novel-item
+      1 li.novel-item
+      1 li, div.top-novel-block
+      1 li,div
+      1 li[data-num]
+      1 li.chapter-item.unlock
+      1 .item_thumb img
+      1 .item_thumb a
+      1 input[name="newsid"]
+      1 .info > a, [class*="title"], h3, p, span
+      1 img.wp-post-image, .story__identity-thumbnail img
+      1 img[src*="cover"], .rounded img
+      1 img[src*="asura"], img[data-src*="asura"]
+      1 img[src*='/asura-images/covers/']
+      1 img[src*='/asura-images/chapters/']
+      1 img.object-cover, .poster img, img[alt*="thumbnail"]
+      1 img.manga-list-1-cover
+      1 img[class*="page"], [data-index] img
+      1 img[class*="cover"], [class*="hero"] img
+      1 #_imageList img, .viewer_img img, ._images img
+      1 h4.novel-title, h5.novel-title, .novel-title
+      1 h4.novel-title, h5
+      1 h4.novel-title a, h5 a, a[title], a
+      1 h4.font-white span a, .fic-title h4 a, [property="author"] a
+      1 h3.title a, .text h3 a, .title a, .text .title a, .info .title a, h3 a
+      1 h3, .novel-title, .title
+      1 h3, h2, .title
+      1 h3, h2, .novel-title, .title
+      1 h3, [class*="title"], span[class*="font-semibold"]
+      1 h3, [class*="title"], a[class*="line-clamp"], span[class*="font-semibold"]
+      1 h3, .chapter-title, span
+      1 h3 a, .story_name a, a[href*="/manga/"]
+      1 h3 a, .genres-item-name
+      1 h3 a, a.genres-item-img, a[href*="readmanganato"], a[href*="chapmanganato"]
+      1 h3
+      1 h2.title > a
+      1 h2 a, h3 a, .fiction-title a
+      1 h1.title span, #fs-info li[title*="Author"] span
+      1 h1.title
+      1 h1, .text-4xl, .font-bold
+      1 h1.story__identity-title, h1
+      1 h1.novel-title, .novel-info h1, meta[property="og:title"]
+      1 h1.novel-title, h1, .novel-title h1
+      1 h1, .novel-title
+      1 h1[itemprop="name"], h1, h3.item-title, [class*="title"]
+      1 h1.heading, .info .heading, .heading, h1, .info h1
+      1 h1, h3.title, .novel-title h1
+      1 h1, h2.chapter-title, .entry-title
+      1 h1.font-white
+      1 h1.font-extrabold, h1.title, h1
+      1 h1, .font-bold
+      1 h1.entry-title, h1
+      1 h1, .entry-title
+      1 h1, [class*="series-title"]
+      1 .grid a[href*="/manga/"]
+      1 .genre, .sub_genre
+      1 .genres-content a, a[href*="manga-genre"]
+      1 .genres a, .genre a
+      1 .genre a, .tag a, .categories a
+      1 .free-support-top, .free-support, script, style, iframe, #podium-spot, [id*="pubadx"], [id*="ssp"], .adv-block, div.alert
+      1 .flex-shrink-0 span
+      1 .flex img, [class*="cover"] img
+      1 .fic_title, h1.title
+      1 .fiction-list-item, .row.fiction-item
+      1 .fic_image img
+      1 .entry-content, .synopsis, [itemprop="description"]
+      1 .entry-content p
+      1 div.wd-full p
+      1 div.vung_doc
+      1 div.txt, div.text-left
+      1 div.txt
+      1 div.top-novel-header > h2 > a
+      1 div.top-novel-block
+      1 div.thumb > img
+      1 div.text_story
+      1 div.summary-content, .summary .content, .novel-summary, .description
+      1 div.story__identity-meta > a.author, a.author
+      1 div.short-cont
+      1 div.recommendation-card, .novel-item, .book-item, li.novel
+      1 div.read_list-story-item
+      1 div[readability]
+      1 div#rating
+      1 div.prose
+      1 div.poster img, .r-fullstory-poster img
+      1 div.poster img, img
+      1 div.portlet-body table tbody tr, #chapters tr.chapter-row, table#chapters tbody tr
+      1 div.panel-collapse a, ul.chapter-chs > li > a
+      1 div.novel-tts-content, div.chapter-content, .content, #content
+      1 div.novel_title h3
+      1 div.novel_synopsis p, div.description p
+      1 div.novel_status
+      1 div.novel-right > div > div:first-child > div.novel-detail-body, .desc-text, .description
+      1 div.novel-info h1.novel-title, h1.novel-title, h1
+      1 div.novel-image img
+      1 div.novel-details > div:nth-child(5) > div.novel-detail-body li, a[href*="/author/"]
+      1 div.novel-details > div:nth-child(2) > div.novel-detail-body li, a[href*="/genre/"]
+      1 div.novel-detail-item a.novel-detail-body-link-a
+      1 div.novel_detail_info li
+      1 div.novel-cover img, div.novel-left img, img
+      1 div.moreless, #fs-info div.text
+      1 div.mb-4 > p, section div.mb-4 p, .description p
+      1 div.infox .wd-full
+      1 div.header-stats span
+      1 div.genre-tags span.genre-tag, .categories a, .genre-item a, .tag
+      1 div.entry-header > div
+      1 div#edit-genre > a, a.genre
+      1 div > div > span, span
+      1 div.desc-text, div.description-text
+      1 div.cont.showcont figure, figure[style*="background-image"]
+      1 div#content, .chapter-content, #chr-content
+      1 div#content
+      1 div.col-novel-main > div.list-novel > div.row
+      1 div.col-md-8 span.label-default, div.col-md-8 span.label-success, div.col-md-8 span.label
+      1 div#chr-content
+      1 div.chapter-text, #chapter-container, .chapter-content, .text-left
+      1 div.chapters-grid > div.chapter-card, #chapter-list li, .chapter-list li
+      1 div.chapter-list > div
+      1 div.chapter-group > ol > li a.chapter-group__list-item-link, a.chapter-group__list-item-link
+      1 div.chapter-content3 > div.desc, div.chapter-content, .chapter-body
+      1 div.books img
+      1 div.books > div.desc > h3.title, h3.title
+      1 div.ads_content, script, style
+      1 div
+      1 .detail-main-list li a
+      1 .detail-info-right-title-font, h1.detail-info-right-title
+      1 .detail-info-right-tag-list a
+      1 .detail-info-right-say a
+      1 .detail-info-cover img
+      1 .description-summary, .summary-content, .manga-excerpt, .post-content_item p
+      1 .description .hidden-content, .description
+      1 .description, [class*="summary"], [class*="description"], .limit-html
+      1 .date, .col_date
+      1 .cover img, .media .wrap_img img
+      1 .cover-art-container img, .cover-art img, .fic-header img
+      1 #content img.detail_thumbnail, .detail_info img
+      1 .content-genres-item, .story_item, .list-story-item
+      1 #contentall, #chapter-content, div.chapter-content
+      1 .container-chapter-reader img, .reading-content img
+      1 .container-chapter-reader img
+      1 .clcontent a, #chapterlist a, .eplister a
+      1 [class*="title"], p, span
+      1 [class*="title"], h3, .o-series-card__title
+      1 [class*="description"], .prose
+      1 [class*="description"], [class*="synopsis"]
+      1 .chrys-ads, .announcement, .entry-content_content, script, style, .jum
+      1 #chr-content, .chr-content, #chapter-content, article
+      1 #chp_raw, .chapter-content, .wi_fic_story
+      1 .chapter-time, p.chapter-time, time
+      1 .chapters tr, .chapter_list tr
+      1 #chapters a[href*="/chapters/"]
+      1 chapter-page img[data-src], .reading-content img
+      1 .chapter-list .row, .row-content-chapter li
+      1 .chapter-item a, .chapter-list a
+      1 .chapter-item a
+      1 .chapter-inner, .prose
+      1 .chapter-content, .fr-view, #chapter-output, .content-text
+      1 .chapter-content
+      1 .card_item, .info_area, li[class*="card"]
+      1 .bs
+      1 #book_list .item, .manga_list-sbs .item, .item
+      1 .bg-\\[\\#1C1924\\]
+      1 .author, .translator
+      1 .author a, .authors a
+      1 .auth_name_fic, span.auth_name_fic
+      1 a[title], a
+      1 a, span
+      1 #arrticle, div.text#arrticle, article.story
+      1 a.poster, a[href*="/manga/"], a[href*="/title/"], a[href*="/series/"]
+      1 a.peer, a.col-span-2, a[href*="/series/"]
+      1 a.manga-list-1-cover, a[href*="/manga/"], p.manga-list-1-item-title a
+      1 a[href*="/title/"]
+      1 a[href*="/story/"]
+      1 a[href*="/series/"]
+      1 a[href*="/novel/"]
+      1 a[href*="/mangas/"]
+      1 a[href*="manga-genre"]
+      1 a[href*="list?title_no="], a[href*="/en/"]
+      1 a[href*='genres=']
+      1 a[href*="/genre"], a[href*="/genres"]
+      1 a[href*="/genre/"]
+      1 a[href*='/comics/']
+      1 a[href*="/chapters/"]
+      1 a[href*="/chapter"], a[href*="/read/"]
+      1 a[href*='/chapter/']
+      1 a.fp_title
+
+==== pseudo-classes / pseudo-elements appearing inside those selectors (count) - attribute values like og:title are noise ====
+      3 :first-child
+      2 :not(.notice-page)
+      2 :last-child
+      2 :image
+      1 :title
+      1 :status
+      1 :nth-child(5)
+      1 :nth-child(2)
+      1 :novel
+      1 :none
+      1 :hidden
+      1 :has(span)
+      1 :contains("Author")
+
+==== selector attribute operators used ([a=b] [a^=b] [a$=b] [a*=b] [a~=b] [a|=b], plus case flag) ====
+    101 *=
+     13 =
+
+==== DOM-ish members used (count). .href/.src are noisy: they also match plain objects. ====
+    304 .getAttribute
+    250 .trim
+    230 .textContent
+     26 .remove
+     24 .innerHTML
+     12 .attributes
+      3 .href
+      2 .setAttribute
+      2 .createElement
+      2 .closest
+      1 .tagName
+      1 .src
+      1 .parentElement
+      1 .outerHTML
+      1 .nextElementSibling
+      1 .naturalWidth
+      1 .contains
+      1 .classList
+      1 .childNodes
+
+==== host globals / browser-only APIs (count). Engine builtins like Math, JSON, Date are not listed. ====
+    135 DOMParser
+      8 URL
+      7 fetch
+      4 window
+      3 Uint8Array
+      3 Image
+      3 console
+      2 require
+      2 document
+      2 Blob
+      1 XMLHttpRequest
+
+==== lines that touch document. or window. (file:line:text) ====
+comixto.js:124:        var canvas = document.createElement('canvas');
+comixto.js:131:        var out = document.createElement('canvas');
+ranobes.js:108:        if (tocHtml.indexOf('window.__DATA__ =') !== -1) {
+ranobes.js:109:          var after = tocHtml.split('window.__DATA__ =')[1];
+ranobes.js:137:              if (p2Html.indexOf('window.__DATA__ =') !== -1) {
+ranobes.js:138:                var p2After = p2Html.split('window.__DATA__ =')[1];
+
+==== apiFetch first-argument literal prefixes before any '?' (count, prefix) ====
+    155 /manga/proxy/html
+     11 /manga/proxy/json
+
+==== apiFetch calls whose first argument is NOT a string literal (count, first token) ====
+
+==== relative (backend) endpoints mentioned anywhere: strings starting with /manga/ /sources/ /api/ /proxy/ /image (count) ====
+    155 '/manga/proxy/html
+     29 '/manga/
+     26 '/novel/
+     11 '/manga/proxy/json
+      8 "/manga/
+      6 '/api/series
+      4 '/mangas/
+      4 '/manga
+      3 '/api-web/novels
+      2 '/novels/
+      2 '/novels
+      2 '/manga/page/
+      2 '/manga_list
+      2 '/manga-
+      2 '/api-web/novels/
+      2 '/api/chapterlist.php
+      2 '/api/category
+      1 '/novels/page/
+      1 '/novel-list/search
+      1 "/novel/
+      1 '/manga_viewer
+      1 '/manga/slug/
+      1 "/mangas/
+      1 '/manga/page/1/
+      1 '/manga-genre/
+      1 '/manga/chapter/
+      1 '/manga/asura-descramble
+      1 '/api/v1/manga/
+      1 '/api/v1/chapters/
+      1 '/api/search/
+      1 '/api/search
+      1 '/api/manga/
+
+==== apiFetch options: methods used ====
+      9 method: 'POST'
+
+==== request header names set by extensions (count) ====
+      9 'Content-Type':
+      1 'X-Requested-With':
+      1 'Referer':
+
+==== request bodies: files that pass body: ====
+freewebnovel.js
+libread.js
+lightnoveltranslations.js
+novelsonline.js
+ranobes.js
+readhive.js
+readlightnovel.js
+scribblehub.js
+
+==== methods defined directly on the extension object (count of files) ====
+     40 search
+     40 getPopular
+     40 getMangaDetail
+     40 getLatest
+     23 getChapterText
+     21 getPages
+
+==== files NOT using the 'var/const/let extension = {' form (other export styles) ====
+
+==== which files mention each optional extension method (names as text) ====
+search           40
+getMangaDetail   40
+getPages         21
+getChapterText   23
+getPopular       40
+getLatest        40
+getGenres        0
+getFilters       0
+browse           2
+getChapters      0
+getHome          0
+
+==== result field names: number of files with  name:  as an object key ====
+id             40
+title          40
+cover_url      40
+cover          0
+url            40
+status         40
+provider       40
+description    40
+genres         40
+chapters       40
+author         1
+authors        40
+artist         0
+artists        0
+number         40
+date           0
+released       0
+published_at   40
+scanlator      0
+language       0
+type           2
+tags           1
+rating         0
+
+==== script size (bytes), largest first ====
+236550 total
+ 14485 comixto.js
+ 11591 asurascans.js
+ 10051 ranobes.js
+  8990 novelfire.js
+  8751 lightnovelworld.js
+  6814 readnovelfull.js
+  6743 madara.template.js
+  6697 readhive.js
+  6696 novelfull.js
+  6663 freewebnovel.js
+  6638 novelbin.js
+
+==== EXACT LINES: rare DOM members (file:line:text) ====
+asurascans.js:133:    if (!a.classList.contains('group') && !a.getAttribute('href').includes('/chapter/')) return;
+bato.js:12:    var a = item.tagName === 'A' ? item : (item.querySelector('a.poster, a[href*="/manga/"], a[href*="/title/"], a[href*="/series/"]') || item.querySelector('a'));
+chrysanthemumgarden.js:43:    var infoHtml = doc.querySelector('.novel-info') ? doc.querySelector('.novel-info').outerHTML : '';
+comixto.js:124:        var canvas = document.createElement('canvas');
+comixto.js:131:        var out = document.createElement('canvas');
+freewebnovel.js:78:      var tagsParent = tagsEl.parentElement;
+freewebnovel.js:87:      var authorText = authorEl.nextElementSibling;
+mangadex.js:12:    if (r.type === 'cover_art' && r.attributes && r.attributes.fileName) {
+mangadex.js:13:      return _CDN + '/covers/' + data.id + '/' + r.attributes.fileName;
+mangadex.js:25:  var attr = item.attributes || {};
+mangadex.js:50:    var attr = det.attributes || {};
+mangadex.js:53:      .map(function(t) { return t.attributes && t.attributes.name && t.attributes.name.en; })
+mangadex.js:58:      if ((r.type === 'author' || r.type === 'artist') && r.attributes && r.attributes.name) {
+mangadex.js:59:        authorMap[r.attributes.name] = true;
+mangadex.js:79:      var a = item.attributes || {};
+novelsonline.js:129:        img.setAttribute('src', _BASE + src);
+ranobes.js:70:    var title = titleEl ? titleEl.childNodes[0].textContent.trim() : slug;
+ranobes.js:221:        img.setAttribute('src', _BASE + src);
+
+==== EXACT LINES: rare globals (URL, fetch, XMLHttpRequest, require, Blob, Image, Uint8Array) ====
+asurascans.js:190:      // Direct fetch failed (e.g. 502/404 on partial slug without hash)
+azuki.js:102:    // Azuki serves pages via API; subscription chapters require auth
+azuki.js:108:      throw new Error('This chapter may require an Azuki subscription.');
+comixto.js:57:  var result = new Uint8Array(bytes);
+comixto.js:69:  var result = new Uint8Array(bytes);
+comixto.js:92:    var bytes = new Uint8Array(arrayBuffer);
+comixto.js:116:      var blob = new Blob([bytes], { type: 'image/jpeg' });
+comixto.js:117:      var url = URL.createObjectURL(blob);
+comixto.js:118:      var img = new Image();
+comixto.js:143:        URL.revokeObjectURL(url);
+comixto.js:150:      img.onerror = function() { URL.revokeObjectURL(url); reject(new Error('Image decode failed')); };
+comixto.js:153:      // No grid scramble, just return decoded bytes as data URL
+comixto.js:154:      var blob2 = new Blob([bytes], { type: 'image/jpeg' });
+comixto.js:162:// ── Page URL wrapper — encodes DRM params so reader can call descrambler ──────
+comixto.js:323:    // Fallback: fetch chapter HTML page and parse SSR
+freewebnovel.js:99:      // Fallback: extract from image URL pattern like "12345s.jpg"
+madara.template.js:77:    // If sorted page returns nothing, fall through to genre fetch below
+mangahere.js:100:      // Actually we need direct image URLs. Re-fetch each page is too slow.
+novelbin.js:89:      console.warn('[NovelBin] Failed to fetch chapters:', e);
+novelfull.js:13:// Image URL fix: QuickNovel replaces certain hash segments to get full-size covers
+ranobes.js:130:          // If multi-page TOC exists (pages_count > 1), fetch page 2 to load more chapters
+ranobes.js:161:        console.warn('[Ranobes] TOC fetch error:', e);
+readhive.js:2:// Base URL: https://readhive.org
+readlightnovel.js:33:      headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'X-Requested-With': 'XMLHttpRequest' },
+
+==== EXACT LINES: .src / .href property reads (not getAttribute) ====
+comixto.js:151:      img.src = url;
+lightnovelworld.js:36:// Extract chapters from a single page; supports onClick='location.href=...' pattern
+lightnovelworld.js:40:    // .org: chapter-card has onClick="location.href='...'"
+lightnovelworld.js:42:    var hrefFromClick = onClick.match(/location\.href=['"]([^'"]+)['"]/);
+
+==== EXACT LINES: non-standard selectors (leading combinator, :contains, :has) ====
+bato.js:53:    doc.querySelectorAll('.meta div:has(span) a, [class*="author"] a').forEach(function(a) {
+bestlightnovel.js:21:      var a = item.querySelector('> a');
+bestlightnovel.js:69:      var spans = div.querySelectorAll('> span');
+bestlightnovel.js:100:      var a = item.querySelector('> a');
+bestlightnovel.js:117:      var a = item.querySelector('> a');
+readhive.js:92:    var authorEl = doc.querySelector('span.leading-7, .author, span:contains("Author")');
+readnovelfull.js:19:      var divs = h.querySelectorAll('> div > div');
+readnovelfull.js:114:      var divs = h.querySelectorAll('> div > div');
+readnovelfull.js:133:      var divs = h.querySelectorAll('> div > div');
+
+==== EXACT LINES: .remove( calls (first 30) ====
+allnovel.js:108:      contentEl.querySelectorAll('script, style, .ads').forEach(function(el) { el.remove(); });
+asianovel.js:110:      contentEl.querySelectorAll('script, style, .ads, .chapter-warning').forEach(function(el) { el.remove(); });
+chrysanthemumgarden.js:33:    doc.querySelectorAll('.novel-raw-title').forEach(function(el) { el.remove(); });
+chrysanthemumgarden.js:71:      contentEl.querySelectorAll('[style*="display:none"], [style*="display: none"]').forEach(function(el) { el.remove(); });
+chrysanthemumgarden.js:72:      contentEl.querySelectorAll('[style*="visibility:hidden"], [style*="visibility: hidden"]').forEach(function(el) { el.remove(); });
+chrysanthemumgarden.js:73:      contentEl.querySelectorAll('[style*="font-size:0"], [style*="font-size: 0"]').forEach(function(el) { el.remove(); });
+chrysanthemumgarden.js:74:      contentEl.querySelectorAll('[style*="width:0"], [style*="width: 0"]').forEach(function(el) { el.remove(); });
+chrysanthemumgarden.js:75:      contentEl.querySelectorAll('.chrys-ads, .announcement, .entry-content_content, script, style, .jum').forEach(function(el) { el.remove(); });
+chrysanthemumgarden.js:77:      cgSpam.forEach(function(p) { if (p.textContent.toLowerCase().includes('chrysanthemumgarden')) p.remove(); });
+freewebnovel.js:141:      contentEl.querySelector('.notice-text')?.remove();
+freewebnovel.js:142:      contentEl.querySelectorAll('.slot-frame, div.reader-ad-skip, script, style').forEach(function(el) { el.remove(); });
+libread.js:114:      contentEl.querySelectorAll('.notice-text, .slot-frame, script, style').forEach(function(el) { el.remove(); });
+lightnoveltranslations.js:86:      contentEl.querySelectorAll('div.ads_content, script, style').forEach(function(el) { el.remove(); });
+lightnovelworld.js:151:          contentEl.querySelectorAll('script, style, .ads, .ad, .advertisement, .chapter-nav, [class*="ad-"]').forEach(function(el) { el.remove(); });
+novelbuddy.js:107:      contentEl.querySelectorAll('script, style, .ads, .adsbygoogle').forEach(function(el) { el.remove(); });
+novelfire.js:189:        firstP.remove();
+novelfire.js:191:      contentEl.querySelectorAll('img[src*="disable-blocker"]').forEach(function(el) { el.remove(); });
+novelfull.js:117:      contentEl.querySelectorAll('script, style, .ads').forEach(function(el) { el.remove(); });
+novelphoenix.js:92:        firstP.remove();
+novelphoenix.js:94:      contentEl.querySelectorAll('img[src*="disable-blocker"]').forEach(function(el) { el.remove(); });
+novelsonline.js:123:      el.remove();
+ranobes.js:214:      el.remove();
+readhive.js:162:      el.remove();
+readlightnovel.js:90:      contentEl.querySelectorAll('script, style, iframe, .ads, .blocker, div.alert, #podium-spot, small.ads-title, p.hid, .hidden').forEach(function(el) { el.remove(); });
+readnovelfull.js:103:      contentEl.querySelectorAll('script, style, .ads').forEach(function(el) { el.remove(); });
+royalroad.js:24:        contentEl.querySelectorAll(selector).forEach(function(el) { el.remove(); });

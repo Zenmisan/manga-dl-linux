@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="robots" content="index,follow">
+
+    <link rel="canonical" href="https://spinzywheel.com/">
+
+<title>Spin the Wheel Online - Free Random Wheel Generator | SpinzyWheel</title>
+<meta name="description" content="Spin the wheel online for free—fair random picks for classrooms, giveaways, and games. Customize colors &amp; sounds, share your wheel. Runs in your browser, no download.">
+<meta name="copyright" content="Copyright © 2025 SpinzyWheel.com">
+<meta name="Author" content="SpinzyWheel.com">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="https://spinzywheel.com/">
+<meta name="twitter:title" content="Spin the Wheel Online - Free Random Wheel Generator | SpinzyWheel">
+<meta name="twitter:description" content="Spin the wheel online for free—fair random picks for classrooms, giveaways, and games. Customize colors &amp; sounds, share your wheel. Runs in your browser, no download.">
+<meta name="twitter:image" content="https://spinzywheel.com/assets/hm/img/large_image.webp">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Spin the Wheel Online - Free Random Wheel Generator | SpinzyWheel">
+<meta property="og:url" content="https://spinzywheel.com/">
+<meta property="og:image" content="https://spinzywheel.com/assets/hm/img/large_image.webp">
+<meta property="og:description" content="Spin the wheel online for free—fair random picks for classrooms, giveaways, and games. Customize colors &amp; sounds, share your wheel. Runs in your browser, no download.">
+<meta property="og:site_name" content="https://spinzywheel.com/">
+<meta property="fb:app_id" content="">
+
+<link rel="shortcut icon" href="https://spinzywheel.com/favicon.ico">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;display=swap">
+
+<script>
+    window.url_homepage = 'https\x3A\x2F\x2Fspinzywheel.com\x2F';
+    window.url_base = 'https\x3A\x2F\x2Fspinzywheel.com\x2F';
+    window.userInfoToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.WasJWdwJyei4WZr9GdfNOiJvayJ9.VpJy8yneBHRnjFJOfLLrYr15TuVHwALkFgowUJzMxak";
+</script>
+
+<link rel="stylesheet" href="https://spinzywheel.com/assets/hm/css/quill.snow.css" />
+<link rel="stylesheet" href="https://spinzywheel.com/assets/hm/css/my-main.css?v=0104062026" />
+
+<script src="https://spinzywheel.com/assets/hm/js/hm-dialogfactory.js?v=0104062026"></script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2789589216956247" crossorigin="anonymous"></script></head>
+
+<body>
+    <nav class="pn-navbar" aria-label="Main navigation">
+    <h2 class="sr-only">Main Menu</h2>
+    <div class="pn-nb-logo">
+        <a href="https://spinzywheel.com/" title="Home"><img src="https://spinzywheel.com/assets/hm/img/logo_100.webp" title="Spin The Wheel | spinzywheel.com" alt="Spin The Wheel | spinzywheel.com">SpinzyWheel.com</a>
+    </div>
+
+    <div class="pn-nb-burger" id="pn-nb-burger" title="Open menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+    </div>
+
+    <div class="pn-navbar-menu" id="pn-navbar-menu">
+                    <button type="button" class="pn-navbar-menu-btn" onclick="typeof func_wheel_creartenew_default === 'function' && func_wheel_creartenew_default();" title="Create new wheel">
+                <span class="svg-load svg-style" data-mode="inner" data-id="wheel-new" style="font-size: 20px;"></span>
+                <span>New</span>
+            </button>
+
+            <button type="button" class="pn-navbar-menu-btn" id="pnBtnWheelTemplates" onclick="typeof myHmWheelTemplatesDialog === 'function' ? myHmWheelTemplatesDialog() : (typeof func_wheel_creartemplates_default === 'function' && func_wheel_creartemplates_default());" title="Browse wheel templates" aria-haspopup="dialog">
+                <span class="svg-load svg-style" data-mode="inner" data-id="layer-group" style="font-size: 20px;"></span>
+                <span>Templates</span>
+            </button>
+        
+                    <script>
+                url_wheel_save_share = 'https\x3A\x2F\x2Fspinzywheel.com\x2Fwheel\x2Dsave\x2Dshare';
+                url_terms_of_service = 'https\x3A\x2F\x2Fspinzywheel.com\x2Fterms\x2Dof\x2Dservice';
+                url_disclaimer = 'https\x3A\x2F\x2Fspinzywheel.com\x2Fdisclaimer';
+            </script>
+            <button type="button" class="pn-navbar-menu-btn" data-action="wheel-save-share" title="Save wheel" aria-label="Save and share wheel">
+                <span class="svg-load svg-style" data-mode="inner" data-id="save" style="font-size: 20px;"></span>
+                <span>Save & Share</span>
+            </button>
+        
+        <script>
+            url_library_detail_mywheel = 'https\x3A\x2F\x2Fspinzywheel.com\x2Fmy\x2Dwheel';
+        </script>
+
+        <a href="https://spinzywheel.com/library-list" title="Library">
+            <span class="svg-load svg-style" data-mode="inner" data-id="wheel" style="font-size: 20px;"></span>
+            <span>Library</span>
+        </a>
+
+                    <script>
+                flag_u_login = false;
+            </script>
+            <div class="pn-nb-dropdown pn-dropdown-mode">
+                <div class="pn-nb-dropdown-toggle" title="User menu">
+                    <span class="svg-load svg-style" data-mode="inner" data-id="c-user" style="font-size: 20px;"></span>
+                    <span>User</span>
+                </div>
+                <div class="pn-nb-dropdown-menu">
+                    <button type="button" class="pn-navbar-menu-btn" data-action="wheel-mywheel-guest" title="My Wheel" aria-label="My Wheel">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="wheels" style="font-size: 20px;"></span>
+                        <span>My Wheel</span>
+                    </button>
+                    <a href="https://spinzywheel.com/user-login" rel="nofollow" title="Login">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="c-user-login" style="font-size: 20px;"></span>
+                        <span>Login</span>
+                    </a>
+                    <a href="https://spinzywheel.com/user-sign-up" rel="nofollow" title="Sign Up">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="c-user-add" style="font-size: 20px;"></span>
+                        <span>Sign Up</span>
+                    </a>
+                </div>
+            </div>
+        
+                <div class="pn-nb-dropdown pn-dropdown-mode" data-default-closed="false">
+            <div class="pn-nb-dropdown-toggle" title="Backup">
+                <span class="svg-load svg-style" data-mode="inner" data-id="database" style="font-size: 20px;"></span>
+                <span>Backup</span>
+            </div>
+            <div class="pn-nb-dropdown-menu">
+                <button type="button" class="pn-navbar-menu-btn" data-action="wheel-backup-export" title="Export Backup" aria-label="Export wheel backup as JSON">
+                    <span class="svg-load svg-style" data-mode="inner" data-id="cloud-arrow-down" style="font-size: 20px;"></span>
+                    <span>Export Backup</span>
+                </button>
+                <button type="button" class="pn-navbar-menu-btn" data-action="wheel-backup-import" title="Import Backup" aria-label="Import wheel backup from JSON file">
+                    <span class="svg-load svg-style" data-mode="inner" data-id="cloud-arrow-up" style="font-size: 20px;"></span>
+                    <span>Import Backup</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="pn-nb-dropdown pn-dropdown-mode" data-default-closed="false">
+            <div class="pn-nb-dropdown-toggle" title="Play more games">
+                <span class="svg-load svg-style" data-mode="inner" data-id="game" style="font-size: 20px;"></span>
+                <span>More</span>
+            </div>
+            <div class="pn-nb-dropdown-menu">
+                <a href="https://spinzywheel.com/flip-coin-tool" title="Flip a Coin">
+                    <span class="svg-load svg-style" data-mode="inner" data-id="coin" style="font-size: 20px;"></span>
+                    <span>Flip a Coin</span>
+                </a>
+                <a href="https://spinzywheel.com/dice-roller" title="Dice Roller">
+                    <span class="svg-load svg-style" data-mode="inner" data-id="dice" style="font-size: 20px;"></span>
+                    <span>Dice Roller</span>
+                </a>
+            </div>
+        </div>
+
+                    <button type="button" class="pn-navbar-menu-btn pn-fullscreen-btn" id="pnBtnFullscreen" data-action="pn-fullscreen-enter" title="Fullscreen wheel" aria-label="Fullscreen wheel">
+                <span class="svg-load svg-style" data-mode="inner" data-id="expand" style="font-size: 20px;"></span>
+                <span class="pn-fullscreen-btn-text">Fullscreen</span>
+            </button>
+            </div>
+</nav>
+
+<script>
+window.HM_WHEEL_TEMPLATES_LIBRARY_URL = 'https\x3A\x2F\x2Fspinzywheel.com\x2Fwheel\x2Dtemplates';
+</script>
+    <div class="pn-content-container pn-ctc-pagebackground" id="pnCtcPageBackground">
+        <div id="cWheelPanelTitle" class="pn-ctc-title flex-shrink-fix">
+    <p id="cWheelName" class="pn-ctc-title row-one">Spin The Wheel</p>
+    <p id="cWheelShortDescription" class="pn-ctc-title-shortdescription row-one"></p>
+</div>
+        <div class="pn-content flex-content">
+            <div class="pn-ctn-center">
+    <div class="pn-ctc-content">
+        <div id="cWheelSectionContainer" class="c-wheel-section-container" >
+            <section id="cWheelSection" class="c-wheel-section">
+                <img id="cWheelRim" class="c-wheel-rim" alt="Wheel Rim" aria-hidden="true" />
+                <div id="cWheelContainer" class="c-wheel-container">
+                    <canvas id="cWheelCanvas" class="c-wheel-canvas"></canvas>
+                    <div id="cWheelCenterLogo" class="c-wheel-center-logo" aria-hidden="true"></div>
+                </div>
+
+                <span id="cWheelPointer" class="c-wheel-pointer" aria-hidden="true"></span>
+
+                <div id="cWheelContainerExtraLayout" class="c-wheel-container-extra-layout" aria-hidden="true"></div>
+            </section>
+        </div>
+
+        <div id="cWheelControlExtLayout" class="wheel-control-ext-layout"></div>
+    </div>
+
+    <div class="pn-ctc-logo-plus">
+        <img src="https://spinzywheel.com/assets/hm/img/logo_100.webp" alt="SpinzyWheel logo" title="Spin The Wheel | spinzywheel.com">
+        <span>Powered by SpinzyWheel.com</span>
+    </div>
+
+    <div class="pn-ctc-toolbar d-none">
+        <button id="btnCwWheelInit" class="btn-cw-spin d-none" type="button" title="Initialize wheel">Init Wheel</button>
+        <button id="btnCwSpin" class="btn-cw-spin" type="button" title="Start spinning the wheel">Start Spinning</button>
+    </div>
+
+        <div class="pn-wheel-settings" id="pnWheelSettings">
+        <button type="button" class="pn-fullscreen-settings-btn" aria-label="Settings" title="Settings" aria-haspopup="true" aria-expanded="false"><span class="svg-load svg-style" data-mode="inner" data-id="gear" style="font-size:22px"></span></button>
+        <div class="pn-fullscreen-settings-menu" role="menu">
+            <button type="button" role="menuitem" data-action="pn-fullscreen-toggle"><span class="svg-load svg-style" data-mode="inner" data-id="expand" style="font-size:18px"></span><span>Fullscreen</span></button>
+            <button type="button" role="menuitem" data-action="pn-ctn-right-toggle-visibility"><span class="svg-load svg-style" data-mode="inner" data-id="angle-right" style="font-size:18px"></span><span>Hide sidebar</span></button>
+            <button type="button" role="menuitem" data-action="pn-sound-toggle"><span class="svg-load svg-style" data-mode="inner" data-id="volume" style="font-size:18px"></span><span>Sound on</span></button>
+        </div>
+    </div>
+</div>
+
+            <div class="pn-ctn-right" id="pnCtnRight" role="complementary">
+    <button type="button" class="pn-ctn-right-toggle" id="pnCtnRightToggle" aria-label="Toggle sidebar" aria-expanded="true" title="Collapse sidebar">
+        <span id="pnCtnRightToggleIcon" class="svg-load svg-style" data-mode="inner" data-id="angle-right" style="font-size: 20px;"></span>
+    </button>
+    <div class="pn-ctn-right-inner">
+        <div id="pnCtrWheelCustom" class="pn-ctr-wheel-custom flex-content">
+            <div class="pn-ctr-tabs flex-shrink-fix">
+                <p id="pnCtrTabItems" class="pn-ctr-tab active" data-sub-container="pnCtrSubTabsItems" data-default-content="pnCtrContentModText" title="Items">
+                    <span class="svg-load svg-style" data-mode="inner" data-id="list-check" style="font-size: 18px;"></span>
+                    <span>Items</span>
+                    <span id="pnCtrTabItemsCount">(5)</span>
+                </p>
+                <p id="pnCtrTabCustomize" class="pn-ctr-tab" data-sub-container="pnCtrSubTabsCustomize" data-default-content="pnCtrContentDesign" title="Customize">
+                    <span class="svg-load svg-style" data-mode="inner" data-id="wheel-custom" style="font-size: 18px;"></span>
+                    <span>Customize</span>
+                </p>
+                <p id="pnCtrTabResults" class="pn-ctr-tab" data-sub-container="pnCtrSubTabsResults" data-default-content="pnCtrContentResults" title="Results">
+                    <span class="svg-load svg-style" data-mode="inner" data-id="trophy" style="font-size: 18px;"></span>
+                    <span>Results</span>
+                    <span id="pnCtrTabResultsCount">(0)</span>
+                </p>
+            </div>
+
+            <div class="pn-ctr-sub-tabs-container flex-shrink-fix">
+                <div id="pnCtrSubTabsItems" class="pn-ctr-sub-tabs">
+                    <p class="pn-ctr-sub-tab active" data-target="pnCtrContentModText" title="Text mode">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="chart-bar" style="font-size: 16px;"></span>
+                    </p>
+                    <p class="pn-ctr-sub-tab" data-target="pnCtrContentModAdv" title="Advanced list">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="list-check" style="font-size: 16px;"></span>
+                    </p>
+                    <p class="pn-ctr-sub-tab" data-action="add-image-items" title="Select multiple images to add items (up to limit)">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="image" style="font-size: 14px;"></span>
+                        <span>Add Images</span>
+                    </p>
+                    <p class="pn-ctr-sub-tab" data-action="shuffle-items" title="Shuffle items">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="shuffle" style="font-size: 14px;"></span>
+                        <span>Shuffle</span>
+                    </p>
+                    <p class="pn-ctr-sub-tab" data-action="sort-items" title="Sort items">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="arrow-a-z" style="font-size: 14px;"></span>
+                        <span>Sort</span>
+                    </p>
+                    <p class="pn-ctr-sub-tab" data-action="clear-items" title="Clear all items">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="xmath" style="font-size: 12px;"></span>
+                        <span>Clear</span>
+                    </p>
+                </div>
+
+                <div id="pnCtrSubTabsCustomize" class="pn-ctr-sub-tabs pn-ctr-sub-tabs-hidden">
+                    <p class="pn-ctr-sub-tab" data-target="pnCtrContentDesign" title="Design">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="palette" style="font-size: 12px;"></span>
+                        <span>Design</span>
+                    </p>
+                    <p class="pn-ctr-sub-tab" data-target="pnCtrContentObjects" title="Objects">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="shapes" style="font-size: 12px;"></span>
+                        <span>Objects</span>
+                    </p>
+                    <p class="pn-ctr-sub-tab" data-target="pnCtrContentEffects" title="Effects">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="effects" style="font-size: 12px;"></span>
+                        <span>Effects</span>
+                    </p>
+                    <p class="pn-ctr-sub-tab" data-target="pnCtrContentSettings" title="Wheel info and settings">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="gear" style="font-size: 12px;"></span>
+                        <span>Info</span>
+                    </p>
+                </div>
+
+                <div id="pnCtrSubTabsResults" class="pn-ctr-sub-tabs pn-ctr-sub-tabs-hidden">
+                    <p class="pn-ctr-sub-tab" data-target="pnCtrContentResults" title="Results">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="trophy" style="font-size: 16px;"></span>
+                    </p>
+                    <p class="pn-ctr-sub-tab" data-action="sort-results" title="Sort results">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="arrow-a-z" style="font-size: 14px;"></span>
+                        <span>Sort</span>
+                    </p>
+                    <p class="pn-ctr-sub-tab" data-action="clear-all-results" title="Clear all results">
+                        <span class="svg-load svg-style" data-mode="inner" data-id="xmath" style="font-size: 12px;"></span>
+                        <span>Clear All</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="pn-ctr-content-container flex-content">
+                <div id="pnCtrContentTrack" class="pn-ctr-content-track flex-content">
+                    <div id="pnCtrContentModText" class="pn-ctr-content" data-content-index="0">
+                        <div id="inpCwcItemsModText" class="inp-quill-editor"></div>
+                    </div>
+                    <div id="pnCtrContentModAdv" class="pn-ctr-content" data-content-index="1">
+                        <div id="pnCtrimalList" class="pn-ctrimal-list"></div>
+                        <button type="button" id="btnCtrimalAddRow" class="pn-ctrimal-add-row" title="Add item">
+                            <span class="svg-load svg-style" data-mode="inner" data-id="plus" style="font-size: 14px;"></span>
+                            Add row
+                        </button>
+                    </div>
+                    <div id="pnCtrContentDesign" class="pn-ctr-content" data-content-index="2">
+
+                        <div class="pn-ctrct-group flex-10">
+                            <p class="pn-ctrct-group-title">Settings</p>
+                            <div class="pn-ctrct-group-content flex-20">
+                                <label class="pn-ctrct-group-checkbox">
+                                    <input type="checkbox" id="chkCwcWheelShadow">
+                                    <span>Wheel Shadow</span>
+                                </label>
+
+                                <label class="pn-ctrct-group-checkbox">
+                                    <input type="checkbox" id="chkCwcWheelDivider">
+                                    <span>Wheel Divider</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="pn-ctrct-group flex-10 mg-t-20">
+                            <p class="pn-ctrct-group-title">Wheel Background</p>
+                            <div class="pn-ctrct-group-content flex-20">
+                                <div class="pn-ctrct-group-cbbox">
+                                    <span class="flex-shrink-fix">Surface:</span>
+                                    <div class="cc-select-basic" id="chkCwcWheelSurface"></div>
+                                </div>
+
+                                <div class="pn-ctrct-group-url">
+                                    <span class="flex-shrink-fix">Background:</span>
+                                    <div class="pn-ctrct-group-url-content">
+                                        <span id="txtCwcWheelBackground" class="pn-ctrct-group-url-text row-one"></span>
+                                        <span id="btnCwcWheelBackgroundRemove" class="svg-load svg-style pn-ctrct-group-url-remove" data-mode="inner" data-id="circle-x" style="font-size: 22px;" title="Remove wheel background"></span>
+                                    </div>
+
+                                    <div class="pn-ctrct-group-actions">
+                                        <button id="btnCwcWheelBackgroundUpload" type="button" class="pn-ctrct-action row-one" data-mode="upload" title="Upload wheel background"><span class="svg-load svg-style" data-mode="inner" data-id="upload" style="font-size: 14px;"></span>Upload</button>
+                                        <button id="btnCwcWheelBackgroundGallery" type="button" class="pn-ctrct-action row-one" data-mode="library" title="Gallery"><span class="svg-load svg-style" data-mode="inner" data-id="object-group" style="font-size: 14px;"></span>Gallery</button>
+                                        <button id="btnCwcWheelBackgroundSearch" type="button" class="pn-ctrct-action row-one" data-mode="search" title="Search Unsplash">
+                                            <span class="svg-load svg-style flex-shrink-fix" data-mode="inner" data-id="search" style="font-size: 14px;"></span>
+                                            <span class="row-one">Search Unsplash</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pn-ctrct-group flex-10 mg-t-20">
+                            <p class="pn-ctrct-group-title">Your Themes</p>
+                            <div id="pnCtrThemeColorsList" class="pn-ctrct-group-content flex-20">
+                                <div id="pnCtrThemeColorsAdd" class="pn-ctrct-customtheme-chir-more" role="button" tabindex="0" title="Add color">
+                                    <span class="svg-load svg-style" data-mode="inner" data-id="plus" style="font-size: 26px;"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pn-ctrct-group flex-10 mg-t-20">
+                            <p class="pn-ctrct-group-title">Theme Library</p>
+                            <div id="pnCtrThemeLibrary" class="pn-ctrct-theme-library">
+                                <div class="pn-ctrct-theme-chir-more" role="button" tabindex="0" title="Add theme from library">
+                                    <span class="svg-load svg-style" data-mode="inner" data-id="plus" style="font-size: 26px;"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pn-ctrct-group flex-10 mg-t-20">
+                            <p class="pn-ctrct-group-title">Page Background</p>
+                            <div class="pn-ctrct-group-content flex-20">
+                                <div class="pn-ctrct-group-url">
+                                    <span class="flex-shrink-fix">Background:</span>
+                                    <div class="pn-ctrct-group-url-content">
+                                        <span id="txtCwcPageBackground" class="pn-ctrct-group-url-text row-one"></span>
+                                        <span id="btnCwcPageBackgroundRemove" class="svg-load svg-style pn-ctrct-group-url-remove" data-mode="inner" data-id="circle-x" style="font-size: 22px;" title="Remove page background"></span>
+                                    </div>
+                                    <div class="pn-ctrct-group-actions">
+                                        <button id="btnCwcPageBackgroundUpload" type="button" class="pn-ctrct-action row-one" data-mode="upload" title="Upload page background"><span class="svg-load svg-style" data-mode="inner" data-id="upload" style="font-size: 14px;"></span>Upload</button>
+                                        <button id="btnCwcPageBackgroundSearch" type="button" class="pn-ctrct-action row-one" data-mode="search" title="Search Unsplash">
+                                            <span class="svg-load svg-style flex-shrink-fix" data-mode="inner" data-id="search" style="font-size: 14px;"></span>
+                                            <span class="row-one">Search Unsplash</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pn-ctrct-group-cbbox">
+                                    <span class="flex-shrink-fix">Page Effect:</span>
+                                    <div class="cc-select-basic scrollinto-top" id="chkCwcPageEffect">
+                                        <div class="cc-select-basic-option" value="null">None</div>
+                                        <div class="cc-select-basic-option" value="snow">Snow</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pn-ctrct-group flex-10 mg-t-20">
+                            <p class="pn-ctrct-group-title">Spin settings</p>
+                            <div class="pn-ctrct-group-content flex-20">
+
+                                <div class="pn-ctrct-group-cbbox">
+                                    <span class="flex-shrink-fix">Spin Style:</span>
+                                    <div class="cc-select-basic scrollinto-top" id="chkCwcSpinStyle">
+                                        <div class="cc-select-basic-option" value="style1">Auto Stop (Default)</div>
+                                        <div class="cc-select-basic-option" value="style2">Manual Stop</div>
+                                    </div>
+                                </div>
+
+                                <div class="pn-ctrct-group-range pn-ctrct-spin-style1" data-spin-style="style1">
+                                    <span class="flex-shrink-fix">Duration:</span>
+                                    <input type="range" id="rangeCwcStyle1SpinDuration" min="1" max="60" value="6" step="1">
+                                    <span><span id="txtCwcStyle1SpinDuration" class="pn-ctrct-range-value">6</span> s</span>
+                                </div>
+
+                                <div class="pn-ctrct-group-range pn-ctrct-spin-style2" data-spin-style="style2" style="display:none">
+                                    <span class="flex-shrink-fix">Spin Strength:</span>
+                                    <input type="range" id="rangeCwcStyle2StopStrength" min="0" max="5" value="0" step="1">
+                                    <span><span id="txtCwcStyle2StopStrength" class="pn-ctrct-range-value">0</span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pnCtrContentObjects" class="pn-ctr-content" data-content-index="3">
+                        <div class="pn-ctrct-group flex-10">
+                            <p class="pn-ctrct-group-title">Center</p>
+                            <div class="pn-ctrct-group-content flex-20">
+                                <div class="pn-ctrct-group-url">
+                                    <span class="flex-shrink-fix">Image:</span>
+                                    <div class="pn-ctrct-group-url-content">
+                                        <span id="txtCwcCenterImageUrl" class="pn-ctrct-group-url-text row-one"></span>
+                                        <span id="btnCwcCenterImageRemove" class="svg-load svg-style pn-ctrct-group-url-remove" data-mode="inner" data-id="circle-x" style="font-size: 22px;" title="Remove center image"></span>
+                                    </div>
+
+                                    <div class="pn-ctrct-group-actions">
+                                        <button id="btnCwcCenterImageUpload" type="button" class="pn-ctrct-action row-one" data-mode="upload" title="Upload center image"><span class="svg-load svg-style" data-mode="inner" data-id="upload" style="font-size: 14px;"></span>Upload</button>
+                                        <button id="btnCwcCenterImageGallery" type="button" class="pn-ctrct-action row-one" data-mode="library" title="Gallery"><span class="svg-load svg-style" data-mode="inner" data-id="object-group" style="font-size: 14px;"></span>Gallery</button>
+                                        <button id="btnCwcCenterImageSearch" type="button" class="pn-ctrct-action row-one" data-mode="search" title="Search Unsplash">
+                                            <span class="svg-load svg-style flex-shrink-fix" data-mode="inner" data-id="search" style="font-size: 14px;"></span>
+                                            <span class="row-one">Search Unsplash</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pn-ctrct-group-cbbox">
+                                    <span class="flex-shrink-fix">Background:</span>
+                                    <input id="inpCwcCenterBackground" type="color" value="#000000">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pn-ctrct-group flex-10 mg-t-20">
+                            <p class="pn-ctrct-group-title">Rim</p>
+                            <div class="pn-ctrct-group-content flex-20">
+
+                                <div class="pn-ctrct-group-cbbox">
+                                    <span class="flex-shrink-fix">Rim Type:</span>
+                                    <div class="cc-select-basic" id="chkCwcRimType">
+                                        <div class="cc-select-basic-option" value="null">None</div>
+                                        <div class="cc-select-basic-option" value="color">Color</div>
+                                        <div class="cc-select-basic-option" value="src">Image</div>
+                                    </div>
+                                </div>
+
+                                <div id="pnCtrRimColorBlock" class="pn-ctrct-rim-color" style="display:none">
+                                    <p>Border color:</p>
+                                    <div id="pnCtrRimColorBorder" class="pn-ctrct-rim-color-border flex-20 mg-t-10">
+                                        <div id="btnCwcRimColorAdd" class="pn-ctrct-rimcolorborder-chir-more" role="button" tabindex="0" title="Add color">
+                                            <span class="svg-load svg-style" data-mode="inner" data-id="plus"></span>
+                                        </div>
+                                    </div>
+
+                                    <p class="mg-t-20">Dot color:</p>
+                                    <div class="pn-ctrct-rim-color-border flex-20 mg-t-10">
+                                        <div class="pn-ctrct-rimcolorborder-chir">
+                                            <input id="inpCwcRimDotColor" type="color">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="pnCtrRimGalleryTabs" class="pn-ctrct-group-actions" style="display:none">
+                                    <button id="btnCwcRimGallery" type="button" class="pn-ctrct-action row-one" data-mode="library" title="Rim gallery"><span class="svg-load svg-style" data-mode="inner" data-id="object-group" style="font-size: 14px;"></span>Gallery</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pn-ctrct-group flex-10 mg-t-20">
+                            <p class="pn-ctrct-group-title">Pointer</p>
+                            <div class="pn-ctrct-group-content flex-20">
+                                <div class="pn-ctrct-group-cbbox">
+                                    <span class="flex-shrink-fix">Pointer Image:</span>
+                                    <div class="pn-ctrct-group-actions">
+                                        <button id="btnCwcPointerGallery" type="button" class="pn-ctrct-action row-one" data-mode="library" title="Pointer gallery"><span class="svg-load svg-style" data-mode="inner" data-id="object-group" style="font-size: 14px;"></span>Gallery</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pn-ctrct-group flex-10 mg-t-20">
+                            <p class="pn-ctrct-group-title">Decorations</p>
+                            <div class="pn-ctrct-group-content flex-20">
+                                <div id="pnCtrDecorationsList" class="pn-ctrct-decoration-list" aria-live="polite"></div>
+                                <p id="txtCwcDecorationsLimit" class="pn-ctrct-decoration-limit" hidden>** Maximum 6 items reached.</p>
+
+                                <div id="pnCtrDecorationsActions" class="pn-ctrct-group-actions">
+                                    <button id="btnCwcDecorationsUpload" type="button" class="pn-ctrct-action row-one" data-mode="upload" title="Upload decoration"><span class="svg-load svg-style" data-mode="inner" data-id="upload" style="font-size: 14px;"></span>Upload</button>
+                                    <button id="btnCwcDecorationsGallery" type="button" class="pn-ctrct-action row-one" data-mode="library" title="Decorations gallery">
+                                        <span class="svg-load svg-style" data-mode="inner" data-id="object-group" style="font-size: 14px;"></span>
+                                        <span>Gallery</span>
+                                    </button>
+                                </div>
+
+                                <div class="pn-ctrct-group-actions">
+                                    <button id="btnCwInteractMode" type="button" class="pn-ctrct-action row-one" title="Interactive decorations mode">
+                                        <span class="svg-load svg-style" data-mode="inner" data-id="palette" style="font-size: 14px;"></span>
+                                        <span class="js-interact-label row-one">Interactive Elements</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pn-ctrct-group flex-10 mg-t-20">
+                            <p class="pn-ctrct-group-title">Layers</p>
+                            <div class="pn-ctrct-group-content flex-20">
+                                <div class="pn-ctrct-group-actions">
+                                    <button id="btnCwcLayersStack" type="button" class="pn-ctrct-action row-one" title="Layer stack editor">
+                                        <span class="svg-load svg-style" data-mode="inner" data-id="shapes" style="font-size: 14px;"></span>
+                                        <span class="js-layerstack-label row-one">Layer Stack</span>
+                                    </button>
+                                </div>
+                                <div id="pnCtrLayersEditorHost" class="pn-ctrct-layer-host"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pnCtrContentEffects" class="pn-ctr-content" data-content-index="4">
+                        <div class="pn-ctrct-group flex-10">
+                            <p class="pn-ctrct-group-title">Spin Sound</p>
+                            <div class="pn-ctrct-group-content flex-20">
+                                <div class="pn-ctrct-group-cbbox">
+                                    <span class="flex-shrink-fix">Sound:</span>
+                                    <div class="cc-select-basic cc-select-basic--fixed" id="chkCwcSpinSound"></div>
+                                    <div class="pn-ctrct-sound-actions flex-shrink-fix">
+                                        <button id="btnCwcSpinSoundPlay" type="button" class="btn-resize btn-resize-primary pn-ctrct-sound-icon" title="Play test sound" aria-label="Play test sound">
+                                            <span class="svg-load svg-style" data-mode="inner" data-id="play" style="font-size: 18px;"></span>
+                                        </button>
+                                        <button id="btnCwcSpinSoundStop" type="button" class="btn-resize pn-ctrct-sound-icon" title="Stop test sound" aria-label="Stop test sound" disabled>
+                                            <span class="svg-load svg-style" data-mode="inner" data-id="stop" style="font-size: 18px;"></span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pn-ctrct-sound-volume">
+                                    <div class="pn-ctrct-group-range">
+                                        <span class="flex-shrink-fix">Volume:</span>
+                                        <input type="range" id="rangeCwcSpinSoundVolume" min="0" max="100" value="50" step="1">
+                                        <span><span id="txtCwcSpinSoundVolume" class="pn-ctrct-range-value">50</span>%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pn-ctrct-group flex-10 mg-t-20">
+                            <p class="pn-ctrct-group-title">Winner Sound</p>
+                            <div class="pn-ctrct-group-content flex-20">
+                                <div class="pn-ctrct-group-cbbox">
+                                    <span class="flex-shrink-fix">Sound:</span>
+                                    <div class="cc-select-basic cc-select-basic--fixed" id="chkCwcWinnerSound"></div>
+                                    <div class="pn-ctrct-sound-actions flex-shrink-fix">
+                                        <button id="btnCwcWinnerSoundPlay" type="button" class="btn-resize btn-resize-primary pn-ctrct-sound-icon" title="Play winner sound" aria-label="Play winner sound">
+                                            <span class="svg-load svg-style" data-mode="inner" data-id="play" style="font-size: 18px;"></span>
+                                        </button>
+                                        <button id="btnCwcWinnerSoundStop" type="button" class="btn-resize pn-ctrct-sound-icon" title="Stop winner sound" aria-label="Stop winner sound" disabled>
+                                            <span class="svg-load svg-style" data-mode="inner" data-id="stop" style="font-size: 18px;"></span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pn-ctrct-sound-volume">
+                                    <div class="pn-ctrct-group-range">
+                                        <span class="flex-shrink-fix">Volume:</span>
+                                        <input type="range" id="rangeCwcWinnerSoundVolume" min="0" max="100" value="50" step="1">
+                                        <span><span id="txtCwcWinnerSoundVolume" class="pn-ctrct-range-value">50</span>%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pn-ctrct-group flex-10 mg-t-20">
+                            <p class="pn-ctrct-group-title">Winner Result</p>
+                            <div class="pn-ctrct-group-content flex-20">
+                                <label class="pn-ctrct-group-checkbox">
+                                    <input type="checkbox" id="chkCwcWinnerHighlight">
+                                    <span>Highlight winning slice</span>
+                                </label>
+
+                                <label class="pn-ctrct-group-checkbox">
+                                    <input type="checkbox" id="chkCwcWinnerAutoRemove">
+                                    <span>Auto remove winner</span>
+                                </label>
+
+                                <div class="pn-ctrct-group-cbbox">
+                                    <span class="flex-shrink-fix">Winner Effect:</span>
+                                    <div class="cc-select-basic" id="chkCwcWinnerEffects">
+                                        <div class="cc-select-basic-option" value="null">None</div>
+                                        <div class="cc-select-basic-option" value="triggerConfetti">Confetti</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-10">
+                                    <label class="pn-ctrct-group-checkbox width-100">
+                                        <input type="checkbox" id="chkCwcWinnerPopup">
+                                        <span>Show result popup</span>
+                                    </label>
+
+                                    <div id="pnCtrWinnerPopupOptions" class="pn-ctrct-subcontrols">
+                                        <div class="pn-ctrct-group-input">
+                                            <span class="flex-shrink-fix mg-l-30">Popup message:</span>
+                                            <input id="inpCwcWinnerTitle" type="text" placeholder="Enter popup message...">
+                                        </div>
+
+                                        <label class="pn-ctrct-group-checkbox mg-l-30">
+                                            <input type="checkbox" id="chkCwcWinnerPopupRemoveBtn">
+                                            <span>Display the "Remove" button</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pnCtrContentSettings" class="pn-ctr-content" data-content-index="5">
+                        <div class="pn-ctrct-group flex-10">
+                            <p class="pn-ctrct-group-title">Wheel Info</p>
+                            <div class="pn-ctrct-group-content flex-10 flex-align-start">
+                                <div class="pn-ctrct-group-input">
+                                    <span class="flex-shrink-fix">Wheel title:</span>
+                                    <input id="inpCwcInfoName" type="text" maxlength="200" placeholder="Enter page title...">
+                                </div>
+
+                                <div class="pn-ctrct-group-input">
+                                    <span class="flex-shrink-fix">Wheel description:</span>
+                                    <input id="inpCwcInfoShortDescription" type="text" maxlength="200" placeholder="Enter page description...">
+                                </div>
+
+                                <div class="pn-ctrct-group-input">
+                                    <span class="flex-shrink-fix width-100">Page description:</span>
+                                    <div id="inpCwcInfoDescription" class="inp-quill-editor" data-info-description-max="6000"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pnCtrContentResults" class="pn-ctr-content" data-content-index="6">
+                        <div id="inpCwcResults" class="p-ctrct-results-editor"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        </div>
+    </div>
+
+    <div id="cWheelDescription" class="pn-ctc-description d-none"></div>
+
+    <script type="text/javascript">
+        window.wheel_data_mode = 'localStorage'; // 'object' | 'localStorage' | 'wait' — nguồn / thời điểm load wheel data
+        window.wheel_items_object = [];
+        window.wheel_custom_object = {};
+
+        window.wheel_init_object = {
+            stateIdle: true,
+            soundEnabled: true
+        };
+    </script>
+
+    <article class="pn-ctc-description pn-homepage-content">
+
+        <h1>Spin the Wheel Online – Free Random Wheel Generator</h1>
+
+        <p>
+            Welcome to <strong>SpinzyWheel</strong> – a completely free, easy-to-use online spin wheel tool that helps you make fair and fun random decisions in seconds.
+        </p>
+
+        <p>
+            Whether you're organizing a party game, running a classroom activity, hosting a giveaway, doing a lucky draw, or simply can't decide what to eat tonight, SpinzyWheel turns every decision into an exciting spinning experience.
+        </p>
+
+        <p>
+            Create your own custom spin wheel, add as many options as you want, customize colors and images, then spin instantly. No signup, no download, no limits — just pure random fun.
+        </p>
+
+        <h2>Why People Love Using SpinzyWheel</h2>
+
+        <ul>
+            <li>Truly random and fair results every single time</li>
+            <li>Extremely fast and works perfectly on mobile & desktop</li>
+            <li>Full customization: text, colors, images, probabilities</li>
+            <li>Save and share your wheels with a simple link</li>
+            <li>Thousands of wheels already created by our community</li>
+        </ul>
+
+        <p>
+            Start exploring ready-made ideas in our
+            <a href="https://spinzywheel.com/wheel-templates">Wheel Templates</a>,
+            or browse <a href="https://spinzywheel.com/library-list">thousands of user-created wheels</a> in the Library.
+        </p>
+
+        <h2>What Can You Use SpinzyWheel For?</h2>
+
+        <p>
+            The possibilities are almost endless:
+        </p>
+        <ul>
+            <li>Party games, Truth or Dare, Drinking games, Ice breakers</li>
+            <li>Classroom random picker, group divider, quiz selector</li>
+            <li>Giveaways, prize wheels, lucky draws, winner announcements</li>
+            <li>Daily decisions: what to eat, what to watch, who goes first</li>
+            <li>Team building, responsibility rotation, meeting games</li>
+            <li>Live stream engagement and viewer rewards</li>
+        </ul>
+
+        <h2>How It Works</h2>
+        <ol>
+            <li>Enter your options (or choose a template)</li>
+            <li>Customize the wheel design</li>
+            <li>Press Spin and watch the magic happen</li>
+            <li>Save or share the wheel for later use</li>
+        </ol>
+
+        <p style="margin-top: 40px; font-style: italic;">
+            Ready to make your next decision more fun and fair?
+            <strong>Start spinning now</strong> — it's 100% free!
+        </p>
+
+    </article>
+
+    <section class="pn-wheel-lists" aria-labelledby="pnWheelListsTitle">
+    <h2 class="sr-only">Popular Spin the Wheel Games</h2>
+
+    <div class="pn-wheel-lists-grid">
+        <div class="pn-wheel-list-card pn-wheel-list-games">
+            <h3 class="pn-wheel-list-title">🔥 Newest Spin-the-Wheel Games</h3>
+            <ul class="pn-wheel-list">
+                                                            <li><a href="https://spinzywheel.com/library/the-golden-ticket-i2sgr" title="THE GOLDEN TICKET">THE GOLDEN TICKET</a></li>
+                                            <li><a href="https://spinzywheel.com/library/random-choice-mewoq" title="🎲 Random Choice">🎲 Random Choice</a></li>
+                                            <li><a href="https://spinzywheel.com/library/lucky-draw-spinzywheel-qx5wi" title="Lucky Draw – SpinzyWheel">Lucky Draw – SpinzyWheel</a></li>
+                                            <li><a href="https://spinzywheel.com/library/kandydat-do-wyjebania-97p6e" title="Kandydat do wyjebania">Kandydat do wyjebania</a></li>
+                                            <li><a href="https://spinzywheel.com/library/vong-quay-chon-ten-daniel-maziarka-piotr-ryndak-michał-krasowski-cyf2-y2bd4" title="Vòng quay chọn tên: daniel maziarka, piotr ryndak, michał krasowski cyf2">Vòng quay chọn tên: daniel maziarka, piotr ryndak, michał krasowski cyf2</a></li>
+                                                </ul>
+        </div>
+
+        <div class="pn-wheel-list-card pn-wheel-list-lucky">
+            <h3 class="pn-wheel-list-title">🌟 Today's 5 Lucky Wheels</h3>
+            <ul class="pn-wheel-list">
+                                                            <li><a href="https://spinzywheel.com/library/random-name-picker-tell-me-who-i-am-marshland-uc0q-29gez" title="Random Name Picker: tell me who i am, marshland uc0q">Random Name Picker: tell me who i am, marshland uc0q</a></li>
+                                            <li><a href="https://spinzywheel.com/library/the-quiet-before-a-name-is-called-4p9a386dzg" title="The quiet before a name is called">The quiet before a name is called</a></li>
+                                            <li><a href="https://spinzywheel.com/library/what-helps-you-stay-patient-in-arguments-spinzywheel-1981764763912" title="🌀 What Helps You Stay Patient in Arguments? – SpinzyWheel🌀">🌀 What Helps You Stay Patient in Arguments? – SpinzyWheel🌀</a></li>
+                                            <li><a href="https://spinzywheel.com/library/charades-act-amp-guess-spinzywheel-1691758148387" title="🌀 Charades (Act &amp; Guess) SpinzyWheel 🌀">🌀 Charades (Act &amp; Guess) SpinzyWheel 🌀</a></li>
+                                            <li><a href="https://spinzywheel.com/library/who-presents-next-2nuj01z5my" title="Who presents next">Who presents next</a></li>
+                                                </ul>
+        </div>
+    </div>
+</section>
+    <section id="faq" class="pn-ctc-description pn-faq" aria-labelledby="pnFaqTitle">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="pn-faq-list">
+            <div class="pn-faq-col">
+                <details class="pn-faq-card">
+                    <summary class="pn-faq-summary">
+                        <span class="pn-faq-num">1</span>
+                        <span class="pn-faq-icon pn-faq-icon-1"><span class="svg-load svg-style" data-mode="inner" data-id="refesh" style="font-size:20px"></span></span>
+                        <span class="pn-faq-question-text">How Is SpinzyWheel Different from Other Spin the Wheel Tools?</span>
+                        <span class="pn-faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="pn-faq-answer">
+                        <p>SpinzyWheel focuses on simplicity, fairness, and customization. Unlike basic wheel spinners, it allows you to fully customize visuals, sounds, and spin behavior while keeping the experience fast and intuitive. Everything runs directly in your browser with no setup required.</p>
+                    </div>
+                </details>
+
+                <details class="pn-faq-card">
+                    <summary class="pn-faq-summary">
+                        <span class="pn-faq-num">2</span>
+                        <span class="pn-faq-icon pn-faq-icon-2"><span class="svg-load svg-style" data-mode="inner" data-id="palette" style="font-size:20px"></span></span>
+                        <span class="pn-faq-question-text">What Can I Customize on a SpinzyWheel?</span>
+                        <span class="pn-faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="pn-faq-answer">
+                        <p>You can customize almost every part of your wheel, including item names, colors, fonts, background images, spin duration, and sound effects. You can also control whether results are removed after each spin, making it ideal for games, raffles, or task rotation.</p>
+                    </div>
+                </details>
+
+                <details class="pn-faq-card">
+                    <summary class="pn-faq-summary">
+                        <span class="pn-faq-num">3</span>
+                        <span class="pn-faq-icon pn-faq-icon-3"><span class="svg-load svg-style" data-mode="inner" data-id="chart-bar" style="font-size:20px"></span></span>
+                        <span class="pn-faq-question-text">When Should I Use a Spin the Wheel Tool?</span>
+                        <span class="pn-faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="pn-faq-answer">
+                        <p>A spin the wheel tool is useful whenever you need a fair and unbiased choice. It is commonly used for classroom activities, team decisions, giveaways, challenges, live streams, and casual games with friends or family.</p>
+                    </div>
+                </details>
+            </div>
+            <div class="pn-faq-col">
+                <details class="pn-faq-card">
+                    <summary class="pn-faq-summary">
+                        <span class="pn-faq-num">4</span>
+                        <span class="pn-faq-icon pn-faq-icon-4"><span class="svg-load svg-style" data-mode="inner" data-id="share" style="font-size:20px"></span></span>
+                        <span class="pn-faq-question-text">Can I Save or Share My Custom Wheel?</span>
+                        <span class="pn-faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="pn-faq-answer">
+                        <p>Yes. SpinzyWheel allows you to save your custom wheels for later use and generate a shareable link that others can access instantly. This makes it easy to reuse wheels or share them with groups, teams, or event participants.</p>
+                    </div>
+                </details>
+
+                <details class="pn-faq-card">
+                    <summary class="pn-faq-summary">
+                        <span class="pn-faq-num">5</span>
+                        <span class="pn-faq-icon pn-faq-icon-5"><span class="svg-load svg-style" data-mode="inner" data-id="private" style="font-size:20px"></span></span>
+                        <span class="pn-faq-question-text">Is SpinzyWheel Truly Random and Safe to Use?</span>
+                        <span class="pn-faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="pn-faq-answer">
+                        <p>Each spin is generated using a random selection process designed to prevent bias or predictable patterns. SpinzyWheel does not track your wheel entries without permission, ensuring both fairness and privacy while you use the tool.</p>
+                    </div>
+                </details>
+
+                <details class="pn-faq-card">
+                    <summary class="pn-faq-summary">
+                        <span class="pn-faq-num">6</span>
+                        <span class="pn-faq-icon pn-faq-icon-6"><span class="svg-load svg-style" data-mode="inner" data-id="circle-check" style="font-size:20px"></span></span>
+                        <span class="pn-faq-question-text">Do I Need to Sign Up or Pay to Use SpinzyWheel?</span>
+                        <span class="pn-faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="pn-faq-answer">
+                        <p>No registration or payment is required. SpinzyWheel is completely free to use and works instantly in your browser. You can start spinning right away without downloads, subscriptions, or hidden limitations.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "@id": "https://spinzywheel.com/#faq",
+            "inLanguage": "en",
+            "mainEntity": [{
+                    "@type": "Question",
+                    "name": "How Is SpinzyWheel Different from Other Spin the Wheel Tools?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "SpinzyWheel focuses on simplicity, fairness, and customization. Unlike basic wheel spinners, it allows you to fully customize visuals, sounds, and spin behavior while keeping the experience fast and intuitive. Everything runs directly in your browser with no setup required."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What Can I Customize on a SpinzyWheel?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "You can customize almost every part of your wheel, including item names, colors, fonts, background images, spin duration, and sound effects. You can also control whether results are removed after each spin, making it ideal for games, raffles, or task rotation."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "When Should I Use a Spin the Wheel Tool?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A spin the wheel tool is useful whenever you need a fair and unbiased choice. It is commonly used for classroom activities, team decisions, giveaways, challenges, live streams, and casual games with friends or family."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I Save or Share My Custom Wheel?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. SpinzyWheel allows you to save your custom wheels for later use and generate a shareable link that others can access instantly. This makes it easy to reuse wheels or share them with groups, teams, or event participants."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is SpinzyWheel Truly Random and Safe to Use?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Each spin is generated using a random selection process designed to prevent bias or predictable patterns. SpinzyWheel does not track your wheel entries without permission, ensuring both fairness and privacy while you use the tool."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do I Need to Sign Up or Pay to Use SpinzyWheel?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No registration or payment is required. SpinzyWheel is completely free to use and works instantly in your browser. You can start spinning right away without downloads, subscriptions, or hidden limitations."
+                    }
+                }
+            ]
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "@id": "https://spinzywheel.com/#app",
+            "name": "SpinzyWheel",
+            "url": "https://spinzywheel.com/",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Web",
+            "browserRequirements": "Requires JavaScript",
+            "description": "Spin the wheel online for free with a customizable random wheel generator.",
+            "inLanguage": "en",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "publisher": {
+                "@id": "https://spinzywheel.com/#org"
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://spinzywheel.com/#org",
+            "name": "SpinzyWheel",
+            "url": "https://spinzywheel.com/",
+            "logo": "https://spinzywheel.com/assets/hm/img/logo_100.webp"
+        }
+    </script>
+
+    <footer class="pn-footer">
+    <div class="pn-footer-nav">
+        <a href="https://spinzywheel.com/privacy-policy">Privacy Policy</a>
+        <a href="https://spinzywheel.com/terms-of-service">Terms of Service</a>
+        <a href="https://spinzywheel.com/cookie-policy">Cookie Policy</a>
+        <a href="https://spinzywheel.com/about-us">About Us</a>
+        <a href="https://spinzywheel.com/disclaimer">Disclaimer</a>
+        <a href="https://spinzywheel.com/terms-of-use">Terms Of Use</a>
+        <a href="https://spinzywheel.com/contact">Contact</a>
+    </div>
+    <div class="pn-footer-link">
+        <a href="https://spinzywheel.com/">Spin The Wheel - Random Picker</a>
+    </div>
+    <div class="pn-footer-link">
+        <a href="https://spinzywheel.com/wheel-templates">Wheel Templates</a>
+        <a href="https://spinzywheel.com/flip-coin-tool">Flip a Coin Online</a>
+    </div>
+    <p class="pn-footer-cookie">This website uses cookies to enhance your experience, personalize content and ads, and analyze our traffic.</p>
+    <p class="pn-footer-copy">©2025 Design by SpinzyWheel.com</p>
+</footer>
+
+<div id="root-svg" style="display: none;"></div>
+
+<div id="pnDialogBoxArea" class="pn-dialogbox-area"></div>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3B1VXSGNG"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-C3B1VXSGNG');
+</script>
+    <script src="https://spinzywheel.com/assets/hm/js/quill.min.js"></script>
+    <script src="https://spinzywheel.com/assets/hm/js/iconsystem.js"></script>
+    <script src="https://spinzywheel.com/assets/hm/js/my-style.js?v=0104062026"></script>
+
+        <script>
+        window.__wheelAssetsPathRel = "assets\/wheel-0104062026";
+    </script>
+    <script type="module" src="https://spinzywheel.com/assets/wheel-0104062026/js/app/wheelInit.js?v=0104062026"></script>
+    <script src="https://spinzywheel.com/assets/hm/js/hm-wheel-template-presets.js?v=0104062026"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"9d98fb6388dd401ca99ab33ed30432e4","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+
+</html>

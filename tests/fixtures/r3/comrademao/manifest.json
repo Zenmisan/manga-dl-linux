@@ -1,0 +1,38 @@
+{
+    "chapter": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "detail": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fcomrademao.com%2F%3Fs%3Dsolo%26post_type%3Dnovel",
+            "status": 0,
+            "transportError": "[timeout] Operation timed out"
+        }
+    ],
+    "id": "comrademao",
+    "novel": true,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:28:09Z",
+    "search": {
+        "count": 0,
+        "error": "Operation timed out",
+        "id": "",
+        "ok": false,
+        "title": ""
+    }
+}

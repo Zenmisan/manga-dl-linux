@@ -1,0 +1,38 @@
+{
+    "chapter": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "detail": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://spinzywheel.com/",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fmanganato.com%2Fsearch%2Fstory%2Fdragon",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "manganato",
+    "novel": false,
+    "query": "dragon",
+    "recordedAt": "2026-10-14T13:34:09Z",
+    "search": {
+        "count": 0,
+        "error": "no search results",
+        "id": "",
+        "ok": false,
+        "title": ""
+    }
+}

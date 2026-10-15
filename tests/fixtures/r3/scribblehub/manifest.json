@@ -1,0 +1,38 @@
+{
+    "chapter": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "detail": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://www.scribblehub.com/series-finder/?sf=1&sh=system&pg=1",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fwww.scribblehub.com%2Fseries-finder%2F%3Fsf%3D1%26sh%3Dsystem%26pg%3D1",
+            "status": 403,
+            "transportError": ""
+        }
+    ],
+    "id": "scribblehub",
+    "novel": true,
+    "query": "system",
+    "recordedAt": "2026-10-14T13:29:13Z",
+    "search": {
+        "count": 0,
+        "error": "no search results",
+        "id": "",
+        "ok": false,
+        "title": ""
+    }
+}

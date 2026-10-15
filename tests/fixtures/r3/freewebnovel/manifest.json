@@ -1,0 +1,56 @@
+{
+    "chapter": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "detail": {
+        "count": 0,
+        "error": "detail has no chapters",
+        "id": "novel/dragon-genesis-i-can-create-dragons",
+        "ok": false,
+        "title": "Dragon Genesis: I Can Create Dragons"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://freewebnovel.com/search?keyword=dragon",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Ffreewebnovel.com%2Fsearch%3Fkeyword%3Ddragon",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://freewebnovel.com/novel/dragon-genesis-i-can-create-dragons",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Ffreewebnovel.com%2Fnovel%2Fdragon-genesis-i-can-create-dragons",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "aid=6067&acode=novel%2Fdragon-genesis-i-can-create-dragons&cid=1",
+            "file": "0003.dat",
+            "finalUrl": "https://freewebnovel.com/api/chapterlist.php",
+            "method": "POST",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Ffreewebnovel.com%2Fapi%2Fchapterlist.php",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "freewebnovel",
+    "novel": true,
+    "query": "dragon",
+    "recordedAt": "2026-10-14T13:30:10Z",
+    "search": {
+        "count": 20,
+        "error": "",
+        "id": "novel/dragon-genesis-i-can-create-dragons",
+        "ok": true,
+        "title": "Dragon Genesis: I Can Create Dragons"
+    }
+}

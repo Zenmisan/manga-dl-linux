@@ -1,0 +1,38 @@
+{
+    "chapter": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "detail": {
+        "count": 0,
+        "error": "",
+        "id": "",
+        "ok": false,
+        "title": ""
+    },
+    "fetches": [
+        {
+            "body": "field-search=solo",
+            "file": "0001.dat",
+            "finalUrl": "https://lightnovelstranslations.com/browse/?field-search=solo",
+            "method": "POST",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Flightnovelstranslations.com%2Fread",
+            "status": 200,
+            "transportError": ""
+        }
+    ],
+    "id": "lightnoveltranslations",
+    "novel": true,
+    "query": "solo",
+    "recordedAt": "2026-10-11T23:28:44Z",
+    "search": {
+        "count": 0,
+        "error": "no search results",
+        "id": "",
+        "ok": false,
+        "title": ""
+    }
+}

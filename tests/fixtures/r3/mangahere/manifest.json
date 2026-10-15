@@ -1,0 +1,56 @@
+{
+    "chapter": {
+        "count": 0,
+        "error": "no pages",
+        "id": "apotheosis/c999/1.html",
+        "ok": false,
+        "title": ""
+    },
+    "detail": {
+        "count": 1385,
+        "error": "",
+        "id": "apotheosis",
+        "ok": true,
+        "title": "Apotheosis"
+    },
+    "fetches": [
+        {
+            "body": "",
+            "file": "0001.dat",
+            "finalUrl": "https://www.mangahere.cc/search?title=apotheosis&page=1",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fwww.mangahere.cc%2Fsearch%3Ftitle%3Dapotheosis%26page%3D1",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0002.dat",
+            "finalUrl": "https://www.mangahere.cc/manga/apotheosis/",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fwww.mangahere.cc%2Fmanga%2Fapotheosis",
+            "status": 200,
+            "transportError": ""
+        },
+        {
+            "body": "",
+            "file": "0003.dat",
+            "finalUrl": "https://www.mangahere.cc/manga/apotheosis/c999/1.html/1.html",
+            "method": "GET",
+            "request": "/manga/proxy/html?url=https%3A%2F%2Fwww.mangahere.cc%2Fmanga%2Fapotheosis%2Fc999%2F1.html%2F1.html",
+            "status": 404,
+            "transportError": ""
+        }
+    ],
+    "id": "mangahere",
+    "novel": false,
+    "query": "apotheosis",
+    "recordedAt": "2026-10-14T13:33:47Z",
+    "search": {
+        "count": 2,
+        "error": "",
+        "id": "apotheosis",
+        "ok": true,
+        "title": "Apotheosis"
+    }
+}
