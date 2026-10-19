@@ -27,6 +27,7 @@ public:
 
     // Async REST requests
     void signInWithPassword(const QString &email, const QString &password);
+    void signInWithIdToken(const QString &idToken, const QString &provider = QStringLiteral("google"));
     void signUp(const QString &username, const QString &email, const QString &password);
     void requestPasswordReset(const QString &email);
     void signOut(const QString &accessToken);
@@ -35,6 +36,7 @@ public:
 
     // Synchronous convenience helpers for testing / blocking worker contexts
     std::optional<AuthSession> signInWithPasswordSync(const QString &email, const QString &password, QString *errorOut = nullptr, int timeoutMs = 10000);
+    std::optional<AuthSession> signInWithIdTokenSync(const QString &idToken, const QString &provider = QStringLiteral("google"), QString *errorOut = nullptr, int timeoutMs = 10000);
     AuthSignUpResult signUpSync(const QString &username, const QString &email, const QString &password, QString *errorOut = nullptr, int timeoutMs = 10000);
     bool requestPasswordResetSync(const QString &email, QString *errorOut = nullptr, int timeoutMs = 10000);
     std::optional<AuthSession> exchangeOAuthCodeSync(const QString &code, const QString &codeVerifier, QString *errorOut = nullptr, int timeoutMs = 10000);

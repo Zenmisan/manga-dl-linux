@@ -18,6 +18,7 @@ AuthLayout {
     Connections {
         target: AccountController
         function onAuthSuccess(action) {
+            AppSettings.onboardingCompleted = true
             Nav.toast("Account created for " + (AccountController.email || username.text))
             Nav.home()
         }
@@ -28,13 +29,42 @@ AuthLayout {
         }
     }
 
-    LabeledField { id: username; label: "Username"; placeholderText: "Choose a username" }
-    LabeledField { id: email; label: "Email"; placeholderText: "you@example.com" }
+    LabeledField {
+        id: username
+        label: "Username"
+        placeholderText: "Choose a username"
+        onAccepted: email.forceActiveFocus()
+    }
+    LabeledField {
+        id: email
+        label: "Email"
+        placeholderText: "you@example.com"
+        onAccepted: password.forceActiveFocus()
+    }
     RowLayout {
         Layout.fillWidth: true
         spacing: 12
-        LabeledField { id: password; label: "Password"; placeholderText: "Password"; password: true; Layout.preferredWidth: 1 }
-        LabeledField { id: confirm; label: "Confirm"; placeholderText: "Confirm"; password: true; error: !page.matches; Layout.preferredWidth: 1 }
+        LabeledField {
+            id: password
+            label: "Password"
+            placeholderText: "Password"
+            password: true
+            Layout.preferredWidth: 1
+            onAccepted: confirm.forceActiveFocus()
+        }
+        LabeledField {
+            id: confirm
+            label: "Confirm"
+            placeholderText: "Confirm"
+            password: true
+            error: !page.matches
+            Layout.preferredWidth: 1
+            onAccepted: {
+                if (!AccountController.isBusy && terms.checked && page.matches && page.pw.length > 0 && username.text.length > 0 && email.text.length > 0) {
+                    AccountController.signUp(username.text, email.text, password.text)
+                }
+            }
+        }
     }
     ColumnLayout {
         Layout.fillWidth: true

@@ -45,12 +45,26 @@ Rectangle {
 
     Component.onCompleted: {
         forceActiveFocus()
-        if (page.manga && page.chapterId) {
-            const prov = page.manga.provider || page.manga.source || ""
-            const mId = page.manga.id || page.manga.mangaId || ""
-            const mTitle = page.manga.title || ""
-            const mCover = page.manga.cover || page.manga.coverUrl || ""
-            controller.loadChapter(prov, mId, page.chapterId, mTitle, mCover, page.chapterTitle, page.chapterNumber)
+        if (page.manga) {
+            let chId = page.chapterId
+            let chTitle = page.chapterTitle
+            let chNum = page.chapterNumber
+            if ((!chId || chId.length === 0) && page.manga.chapters && page.manga.chapters.length > 0) {
+                const firstCh = page.manga.chapters[0]
+                chId = firstCh.id || ""
+                chTitle = firstCh.title || ""
+                chNum = firstCh.rawNumber || firstCh.number || 0
+                page.chapterId = chId
+                page.chapterTitle = chTitle
+                page.chapterNumber = chNum
+            }
+            if (chId && chId.length > 0) {
+                const prov = page.manga.provider || page.manga.source || ""
+                const mId = page.manga.id || page.manga.mangaId || ""
+                const mTitle = page.manga.title || ""
+                const mCover = page.manga.cover || page.manga.coverUrl || ""
+                controller.loadChapter(prov, mId, chId, mTitle, mCover, chTitle, chNum)
+            }
         }
     }
 

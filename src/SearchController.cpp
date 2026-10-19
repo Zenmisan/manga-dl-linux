@@ -145,7 +145,34 @@ void SearchController::search(const QString &queryText)
     emit groupsChanged();
 
     // Determine candidate extensions
-    const auto allExts = ExtensionManager::instance().extensions();
+    auto allExts = ExtensionManager::instance().extensions();
+    static const QStringList popularOrder = {
+        QStringLiteral("mangadex"),
+        QStringLiteral("asurascans"),
+        QStringLiteral("flamecomics"),
+        QStringLiteral("mangakakalot"),
+        QStringLiteral("manganato"),
+        QStringLiteral("mangakatana"),
+        QStringLiteral("novelbin"),
+        QStringLiteral("freewebnovel"),
+        QStringLiteral("novelfull"),
+        QStringLiteral("lightnovelworld"),
+        QStringLiteral("bato"),
+        QStringLiteral("webtoons"),
+        QStringLiteral("royalroad"),
+        QStringLiteral("comixto"),
+        QStringLiteral("mangapill"),
+        QStringLiteral("wuxiaworld")
+    };
+
+    std::stable_sort(allExts.begin(), allExts.end(), [](const ExtensionInfo &a, const ExtensionInfo &b) {
+        int idxA = popularOrder.indexOf(a.id.toLower());
+        int idxB = popularOrder.indexOf(b.id.toLower());
+        if (idxA < 0) idxA = 999;
+        if (idxB < 0) idxB = 999;
+        return idxA < idxB;
+    });
+
     QList<ExtensionInfo> candidates;
 
     for (const auto &ext : allExts) {
@@ -161,9 +188,9 @@ void SearchController::search(const QString &queryText)
                 candidates.append(ext);
             }
         } else {
-            // Default: pick top sources (up to 8)
+            // Default: pick top sources (up to 12)
             candidates.append(ext);
-            if (candidates.size() >= 8)
+            if (candidates.size() >= 12)
                 break;
         }
     }

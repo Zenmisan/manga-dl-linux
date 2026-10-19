@@ -125,6 +125,24 @@ void LibraryModel::setSearchFilter(const QString &filter)
     }
 }
 
+void LibraryModel::setContentType(const QString &type)
+{
+    if (m_contentType != type) {
+        m_contentType = type;
+        reload();
+        emit filterChanged();
+    }
+}
+
+void LibraryModel::setFilterMode(const QString &mode)
+{
+    if (m_filterMode != mode) {
+        m_filterMode = mode;
+        reload();
+        emit filterChanged();
+    }
+}
+
 void LibraryModel::setSortMode(int mode)
 {
     if (m_sortMode != mode) {
@@ -160,17 +178,27 @@ QVariantList LibraryModel::continueReading() const
             {QStringLiteral("inLibrary"), true}
         };
 
-        QString where = h.chapterTitle.isEmpty()
-            ? (QStringLiteral("Ch. ") + h.chapterId)
-            : (QStringLiteral("Ch. ") + h.chapterId + QStringLiteral(" · ") + h.chapterTitle);
+        QString chapterLabel = h.chapterTitle.trimmed();
+        if (chapterLabel.isEmpty()) {
+            QString raw = h.chapterId;
+            const int slashIdx = raw.lastIndexOf(QLatin1Char('/'));
+            if (slashIdx >= 0) raw = raw.mid(slashIdx + 1);
+            chapterLabel = raw.startsWith(QLatin1String("c"), Qt::CaseInsensitive)
+                ? (QStringLiteral("Ch. ") + raw.mid(1))
+                : (QStringLiteral("Ch. ") + raw);
+        } else if (!chapterLabel.startsWith(QLatin1String("Ch"), Qt::CaseInsensitive) &&
+                   !chapterLabel.startsWith(QLatin1String("Ep"), Qt::CaseInsensitive)) {
+            chapterLabel = QStringLiteral("Ch. ") + chapterLabel;
+        }
 
+        QString where = chapterLabel;
         double progressFraction = 0.5;
         auto p = m_db->getProgress(h.provider, h.mangaId, h.chapterId);
         if (p && p->completed == 1) {
             progressFraction = 1.0;
-            where = QStringLiteral("Ch. ") + h.chapterId + QStringLiteral(" · finished");
+            where = chapterLabel + QStringLiteral(" · finished");
         } else if (p && p->page > 0) {
-            where = QStringLiteral("Ch. ") + h.chapterId + QStringLiteral(" · page ") + QString::number(p->page);
+            where = chapterLabel + QStringLiteral(" · page ") + QString::number(p->page);
         }
 
         list.append(QVariantMap{
@@ -254,6 +282,15 @@ void LibraryModel::reload()
     }
 
     for (const auto &item : all) {
+        // Content type filter: "all", "manga", "novel"
+        if (!m_contentType.isEmpty() && m_contentType != QLatin1String("all")) {
+            if (m_contentType == QLatin1String("novel") && item.type != QLatin1String("novel")) {
+                continue;
+            } else if (m_contentType == QLatin1String("manga") && item.type == QLatin1String("novel")) {
+                continue;
+            }
+        }
+
         // Search filter
         if (!m_searchFilter.isEmpty() &&
             !item.title.contains(m_searchFilter, Qt::CaseInsensitive)) {
@@ -285,6 +322,25 @@ void LibraryModel::reload()
             if (d.provider == item.provider && d.mangaId == item.mangaId && d.status == QStringLiteral("completed")) {
                 row.downloaded = true;
                 break;
+            }
+        }
+
+        // Filter Mode: "all", "unread", "downloaded", "started", "completed"
+        if (m_filterMode == QLatin1String("unread") && row.unread <= 0) {
+            continue;
+        }
+        if (m_filterMode == QLatin1String("downloaded") && !row.downloaded) {
+            continue;
+        }
+        if (m_filterMode == QLatin1String("started")) {
+            auto prog = m_db->getMangaProgress(item.provider, item.mangaId);
+            if (prog.isEmpty()) {
+                continue;
+            }
+        }
+        if (m_filterMode == QLatin1String("completed")) {
+            if (row.unread > 0 || item.totalChapters <= 0) {
+                continue;
             }
         }
 

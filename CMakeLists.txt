@@ -47,6 +47,7 @@ add_library(mangadl_core STATIC
     src/core/settings/AppSettings.h src/core/settings/AppSettings.cpp
     src/core/sync/AuthModels.h
     src/core/sync/SupabaseAuthService.h src/core/sync/SupabaseAuthService.cpp
+    src/core/sync/FirebaseAuthService.h src/core/sync/FirebaseAuthService.cpp
     src/core/sync/SupabaseSyncModels.h
     src/core/sync/SupabaseSyncService.h src/core/sync/SupabaseSyncService.cpp
     src/core/sync/SecretStorage.h src/core/sync/SecretStorage.cpp

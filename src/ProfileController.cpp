@@ -9,8 +9,13 @@
 
 namespace mangadl {
 
+static ProfileController *s_profileInstance = nullptr;
+
 ProfileController &ProfileController::instance()
 {
+    if (s_profileInstance) {
+        return *s_profileInstance;
+    }
     static ProfileController s_instance;
     return s_instance;
 }
@@ -24,6 +29,7 @@ ProfileController::ProfileController(MangaDatabase *db, QObject *parent)
     : QObject(parent)
     , m_db(db ? db : MangaDatabase::instance())
 {
+    s_profileInstance = this;
     if (m_db) {
         connect(m_db, &MangaDatabase::historyChanged, this, &ProfileController::refresh);
         connect(m_db, &MangaDatabase::progressChanged, this, &ProfileController::refresh);

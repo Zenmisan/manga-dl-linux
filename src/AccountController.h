@@ -7,6 +7,7 @@
 #include <memory>
 #include "src/core/sync/SupabaseAuthService.h"
 #include "src/core/sync/SupabaseSyncService.h"
+#include "src/core/sync/FirebaseAuthService.h"
 #include "src/core/tracking/OAuthLoopbackListener.h"
 
 namespace mangadl {
@@ -71,6 +72,7 @@ private:
     void handleAuthSuccess(const AuthSession &session);
 
     std::unique_ptr<SupabaseAuthService> m_authService;
+    std::unique_ptr<FirebaseAuthService> m_firebaseAuth;
     std::unique_ptr<SupabaseSyncService> m_syncService;
     std::unique_ptr<OAuthLoopbackListener> m_loopback;
 

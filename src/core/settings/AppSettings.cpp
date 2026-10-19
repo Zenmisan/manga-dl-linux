@@ -131,6 +131,33 @@ void AppSettings::resetToDefaults()
     emit markTrackerReadingOnFirstChapterChanged();
     emit markTrackerCompletedOnFinishChanged();
     emit pullProgressFromTrackersChanged();
+    emit libraryViewModeChanged();
+    emit libraryDensityChanged();
+    emit libraryContentTypeChanged();
+    emit libraryFilterModeChanged();
+    emit librarySortModeChanged();
+    emit kitsuTokenChanged();
+    emit mangaUpdatesTokenChanged();
+    emit shikimoriTokenChanged();
+    emit bangumiTokenChanged();
+    emit pinnedBadgesChanged();
+    emit monthlyChapterGoalChanged();
+    emit yearlyMangaGoalChanged();
+    emit enabledSearchSourcesChanged();
+    emit disabledExtensionsChanged();
+    emit customExtensionReposChanged();
+    emit appLockEnabledChanged();
+    emit appLockPinChanged();
+    emit komgaEnabledChanged();
+    emit komgaUrlChanged();
+    emit komgaUsernameChanged();
+    emit komgaPasswordChanged();
+    emit suwayomiEnabledChanged();
+    emit suwayomiUrlChanged();
+    emit suwayomiApiKeyChanged();
+    emit onboardingCompletedChanged();
+    emit libraryTourCompletedChanged();
+    emit settingsTourCompletedChanged();
 }
 
 void AppSettings::sync()
@@ -171,12 +198,24 @@ void AppSettings::setApiKey(const QString &val) {
     if (apiKey() != val) { m_settings->setValue(QStringLiteral("connection/apiKey"), val); emit apiKeyChanged(); emit settingsChanged(); }
 }
 
-QString AppSettings::supabaseUrl() const { return m_settings->value(QStringLiteral("connection/supabaseUrl"), QString::fromUtf8(kDefaultSupabaseUrl)).toString(); }
+QString AppSettings::supabaseUrl() const {
+    const QString envUrl = QString::fromLocal8Bit(qgetenv("SUPABASE_URL"));
+    if (!envUrl.trimmed().isEmpty()) return envUrl.trimmed();
+    const QString nextEnv = QString::fromLocal8Bit(qgetenv("NEXT_PUBLIC_SUPABASE_URL"));
+    if (!nextEnv.trimmed().isEmpty()) return nextEnv.trimmed();
+    return m_settings->value(QStringLiteral("connection/supabaseUrl"), QString::fromUtf8(kDefaultSupabaseUrl)).toString();
+}
 void AppSettings::setSupabaseUrl(const QString &val) {
     if (supabaseUrl() != val) { m_settings->setValue(QStringLiteral("connection/supabaseUrl"), val); emit supabaseUrlChanged(); emit settingsChanged(); }
 }
 
-QString AppSettings::supabaseAnonKey() const { return m_settings->value(QStringLiteral("connection/supabaseAnonKey"), QString::fromUtf8(kDefaultSupabaseAnonKey)).toString(); }
+QString AppSettings::supabaseAnonKey() const {
+    const QString envKey = QString::fromLocal8Bit(qgetenv("SUPABASE_ANON_KEY"));
+    if (!envKey.trimmed().isEmpty()) return envKey.trimmed();
+    const QString nextKey = QString::fromLocal8Bit(qgetenv("NEXT_PUBLIC_SUPABASE_ANON_KEY"));
+    if (!nextKey.trimmed().isEmpty()) return nextKey.trimmed();
+    return m_settings->value(QStringLiteral("connection/supabaseAnonKey"), QString::fromUtf8(kDefaultSupabaseAnonKey)).toString();
+}
 void AppSettings::setSupabaseAnonKey(const QString &val) {
     if (supabaseAnonKey() != val) { m_settings->setValue(QStringLiteral("connection/supabaseAnonKey"), val); emit supabaseAnonKeyChanged(); emit settingsChanged(); }
 }
@@ -369,6 +408,31 @@ void AppSettings::setGridColumns(const QString &val) {
     if (gridColumns() != val) { m_settings->setValue(QStringLiteral("library/gridColumns"), val); emit gridColumnsChanged(); emit settingsChanged(); }
 }
 
+QString AppSettings::libraryViewMode() const { return m_settings->value(QStringLiteral("library/viewMode"), QStringLiteral("grid")).toString(); }
+void AppSettings::setLibraryViewMode(const QString &val) {
+    if (libraryViewMode() != val) { m_settings->setValue(QStringLiteral("library/viewMode"), val); emit libraryViewModeChanged(); emit settingsChanged(); }
+}
+
+QString AppSettings::libraryDensity() const { return m_settings->value(QStringLiteral("library/density"), QStringLiteral("normal")).toString(); }
+void AppSettings::setLibraryDensity(const QString &val) {
+    if (libraryDensity() != val) { m_settings->setValue(QStringLiteral("library/density"), val); emit libraryDensityChanged(); emit settingsChanged(); }
+}
+
+QString AppSettings::libraryContentType() const { return m_settings->value(QStringLiteral("library/contentType"), QStringLiteral("all")).toString(); }
+void AppSettings::setLibraryContentType(const QString &val) {
+    if (libraryContentType() != val) { m_settings->setValue(QStringLiteral("library/contentType"), val); emit libraryContentTypeChanged(); emit settingsChanged(); }
+}
+
+QString AppSettings::libraryFilterMode() const { return m_settings->value(QStringLiteral("library/filterMode"), QStringLiteral("all")).toString(); }
+void AppSettings::setLibraryFilterMode(const QString &val) {
+    if (libraryFilterMode() != val) { m_settings->setValue(QStringLiteral("library/filterMode"), val); emit libraryFilterModeChanged(); emit settingsChanged(); }
+}
+
+QString AppSettings::librarySortMode() const { return m_settings->value(QStringLiteral("library/sortMode"), QStringLiteral("lastRead")).toString(); }
+void AppSettings::setLibrarySortMode(const QString &val) {
+    if (librarySortMode() != val) { m_settings->setValue(QStringLiteral("library/sortMode"), val); emit librarySortModeChanged(); emit settingsChanged(); }
+}
+
 bool AppSettings::unreadBadges() const { return m_settings->value(QStringLiteral("library/unreadBadges"), true).toBool(); }
 void AppSettings::setUnreadBadges(bool val) {
     if (unreadBadges() != val) { m_settings->setValue(QStringLiteral("library/unreadBadges"), val); emit unreadBadgesChanged(); emit settingsChanged(); }
@@ -547,6 +611,121 @@ void AppSettings::setMarkTrackerCompletedOnFinish(bool val) {
 bool AppSettings::pullProgressFromTrackers() const { return m_settings->value(QStringLiteral("trackers/pullProgressFromTrackers"), false).toBool(); }
 void AppSettings::setPullProgressFromTrackers(bool val) {
     if (pullProgressFromTrackers() != val) { m_settings->setValue(QStringLiteral("trackers/pullProgressFromTrackers"), val); emit pullProgressFromTrackersChanged(); emit settingsChanged(); }
+}
+
+QString AppSettings::kitsuToken() const { return m_settings->value(QStringLiteral("trackers/kitsuToken"), QString()).toString(); }
+void AppSettings::setKitsuToken(const QString &val) {
+    if (kitsuToken() != val) { m_settings->setValue(QStringLiteral("trackers/kitsuToken"), val); emit kitsuTokenChanged(); emit settingsChanged(); }
+}
+
+QString AppSettings::mangaUpdatesToken() const { return m_settings->value(QStringLiteral("trackers/mangaUpdatesToken"), QString()).toString(); }
+void AppSettings::setMangaUpdatesToken(const QString &val) {
+    if (mangaUpdatesToken() != val) { m_settings->setValue(QStringLiteral("trackers/mangaUpdatesToken"), val); emit mangaUpdatesTokenChanged(); emit settingsChanged(); }
+}
+
+QString AppSettings::shikimoriToken() const { return m_settings->value(QStringLiteral("trackers/shikimoriToken"), QString()).toString(); }
+void AppSettings::setShikimoriToken(const QString &val) {
+    if (shikimoriToken() != val) { m_settings->setValue(QStringLiteral("trackers/shikimoriToken"), val); emit shikimoriTokenChanged(); emit settingsChanged(); }
+}
+
+QString AppSettings::bangumiToken() const { return m_settings->value(QStringLiteral("trackers/bangumiToken"), QString()).toString(); }
+void AppSettings::setBangumiToken(const QString &val) {
+    if (bangumiToken() != val) { m_settings->setValue(QStringLiteral("trackers/bangumiToken"), val); emit bangumiTokenChanged(); emit settingsChanged(); }
+}
+
+// Profile & Gamification Goals
+QStringList AppSettings::pinnedBadges() const { return m_settings->value(QStringLiteral("profile/pinnedBadges"), QStringList()).toStringList(); }
+void AppSettings::setPinnedBadges(const QStringList &val) {
+    if (pinnedBadges() != val) { m_settings->setValue(QStringLiteral("profile/pinnedBadges"), val); emit pinnedBadgesChanged(); emit settingsChanged(); }
+}
+
+int AppSettings::monthlyChapterGoal() const { return m_settings->value(QStringLiteral("profile/monthlyChapterGoal"), 40).toInt(); }
+void AppSettings::setMonthlyChapterGoal(int val) {
+    if (monthlyChapterGoal() != val) { m_settings->setValue(QStringLiteral("profile/monthlyChapterGoal"), val); emit monthlyChapterGoalChanged(); emit settingsChanged(); }
+}
+
+int AppSettings::yearlyMangaGoal() const { return m_settings->value(QStringLiteral("profile/yearlyMangaGoal"), 25).toInt(); }
+void AppSettings::setYearlyMangaGoal(int val) {
+    if (yearlyMangaGoal() != val) { m_settings->setValue(QStringLiteral("profile/yearlyMangaGoal"), val); emit yearlyMangaGoalChanged(); emit settingsChanged(); }
+}
+
+// Sources & Search Filter
+QStringList AppSettings::enabledSearchSources() const { return m_settings->value(QStringLiteral("sources/enabledSearchSources"), QStringList()).toStringList(); }
+void AppSettings::setEnabledSearchSources(const QStringList &val) {
+    if (enabledSearchSources() != val) { m_settings->setValue(QStringLiteral("sources/enabledSearchSources"), val); emit enabledSearchSourcesChanged(); emit settingsChanged(); }
+}
+
+QStringList AppSettings::disabledExtensions() const { return m_settings->value(QStringLiteral("sources/disabledExtensions"), QStringList()).toStringList(); }
+void AppSettings::setDisabledExtensions(const QStringList &val) {
+    if (disabledExtensions() != val) { m_settings->setValue(QStringLiteral("sources/disabledExtensions"), val); emit disabledExtensionsChanged(); emit settingsChanged(); }
+}
+
+QStringList AppSettings::customExtensionRepos() const { return m_settings->value(QStringLiteral("sources/customExtensionRepos"), QStringList()).toStringList(); }
+void AppSettings::setCustomExtensionRepos(const QStringList &val) {
+    if (customExtensionRepos() != val) { m_settings->setValue(QStringLiteral("sources/customExtensionRepos"), val); emit customExtensionReposChanged(); emit settingsChanged(); }
+}
+
+// Security & App Lock
+bool AppSettings::appLockEnabled() const { return m_settings->value(QStringLiteral("security/appLockEnabled"), false).toBool(); }
+void AppSettings::setAppLockEnabled(bool val) {
+    if (appLockEnabled() != val) { m_settings->setValue(QStringLiteral("security/appLockEnabled"), val); emit appLockEnabledChanged(); emit settingsChanged(); }
+}
+
+QString AppSettings::appLockPin() const { return m_settings->value(QStringLiteral("security/appLockPin"), QString()).toString(); }
+void AppSettings::setAppLockPin(const QString &val) {
+    if (appLockPin() != val) { m_settings->setValue(QStringLiteral("security/appLockPin"), val); emit appLockPinChanged(); emit settingsChanged(); }
+}
+
+// Media Servers (Komga & Suwayomi)
+bool AppSettings::komgaEnabled() const { return m_settings->value(QStringLiteral("servers/komgaEnabled"), false).toBool(); }
+void AppSettings::setKomgaEnabled(bool val) {
+    if (komgaEnabled() != val) { m_settings->setValue(QStringLiteral("servers/komgaEnabled"), val); emit komgaEnabledChanged(); emit settingsChanged(); }
+}
+
+QString AppSettings::komgaUrl() const { return m_settings->value(QStringLiteral("servers/komgaUrl"), QString()).toString(); }
+void AppSettings::setKomgaUrl(const QString &val) {
+    if (komgaUrl() != val) { m_settings->setValue(QStringLiteral("servers/komgaUrl"), val); emit komgaUrlChanged(); emit settingsChanged(); }
+}
+
+QString AppSettings::komgaUsername() const { return m_settings->value(QStringLiteral("servers/komgaUsername"), QString()).toString(); }
+void AppSettings::setKomgaUsername(const QString &val) {
+    if (komgaUsername() != val) { m_settings->setValue(QStringLiteral("servers/komgaUsername"), val); emit komgaUsernameChanged(); emit settingsChanged(); }
+}
+
+QString AppSettings::komgaPassword() const { return m_settings->value(QStringLiteral("servers/komgaPassword"), QString()).toString(); }
+void AppSettings::setKomgaPassword(const QString &val) {
+    if (komgaPassword() != val) { m_settings->setValue(QStringLiteral("servers/komgaPassword"), val); emit komgaPasswordChanged(); emit settingsChanged(); }
+}
+
+bool AppSettings::suwayomiEnabled() const { return m_settings->value(QStringLiteral("servers/suwayomiEnabled"), false).toBool(); }
+void AppSettings::setSuwayomiEnabled(bool val) {
+    if (suwayomiEnabled() != val) { m_settings->setValue(QStringLiteral("servers/suwayomiEnabled"), val); emit suwayomiEnabledChanged(); emit settingsChanged(); }
+}
+
+QString AppSettings::suwayomiUrl() const { return m_settings->value(QStringLiteral("servers/suwayomiUrl"), QString()).toString(); }
+void AppSettings::setSuwayomiUrl(const QString &val) {
+    if (suwayomiUrl() != val) { m_settings->setValue(QStringLiteral("servers/suwayomiUrl"), val); emit suwayomiUrlChanged(); emit settingsChanged(); }
+}
+
+QString AppSettings::suwayomiApiKey() const { return m_settings->value(QStringLiteral("servers/suwayomiApiKey"), QString()).toString(); }
+void AppSettings::setSuwayomiApiKey(const QString &val) {
+    if (suwayomiApiKey() != val) { m_settings->setValue(QStringLiteral("servers/suwayomiApiKey"), val); emit suwayomiApiKeyChanged(); emit settingsChanged(); }
+}
+
+// Onboarding & Tours
+bool AppSettings::onboardingCompleted() const { return m_settings->value(QStringLiteral("app/onboardingCompleted"), false).toBool(); }
+void AppSettings::setOnboardingCompleted(bool val) {
+    if (onboardingCompleted() != val) { m_settings->setValue(QStringLiteral("app/onboardingCompleted"), val); emit onboardingCompletedChanged(); emit settingsChanged(); }
+}
+
+bool AppSettings::libraryTourCompleted() const { return m_settings->value(QStringLiteral("app/libraryTourCompleted"), false).toBool(); }
+void AppSettings::setLibraryTourCompleted(bool val) {
+    if (libraryTourCompleted() != val) { m_settings->setValue(QStringLiteral("app/libraryTourCompleted"), val); emit libraryTourCompletedChanged(); emit settingsChanged(); }
+}
+
+bool AppSettings::settingsTourCompleted() const { return m_settings->value(QStringLiteral("app/settingsTourCompleted"), false).toBool(); }
+void AppSettings::setSettingsTourCompleted(bool val) {
+    if (settingsTourCompleted() != val) { m_settings->setValue(QStringLiteral("app/settingsTourCompleted"), val); emit settingsTourCompletedChanged(); emit settingsChanged(); }
 }
 
 QString AppSettings::authSecret(const QString &key) const

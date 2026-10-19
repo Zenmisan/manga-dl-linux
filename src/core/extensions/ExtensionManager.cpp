@@ -169,7 +169,10 @@ QList<ExtensionInfo> ExtensionManager::extensions() const
 
 const ExtensionInfo *ExtensionManager::findById(const QString &id) const
 {
-    const auto it = m_idIndex.constFind(id);
+    auto it = m_idIndex.constFind(id);
+    if (it == m_idIndex.constEnd()) {
+        it = m_idIndex.constFind(id.toLower());
+    }
     return it == m_idIndex.constEnd() ? nullptr : &m_extensions[it.value()];
 }
 

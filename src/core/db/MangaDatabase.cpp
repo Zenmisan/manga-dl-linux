@@ -162,6 +162,12 @@ bool MangaDatabase::runMigrations(QSqlDatabase &db)
         }
     }
 
+    if (currentVersion < 2) {
+        if (!applyMigration2(db)) {
+            return false;
+        }
+    }
+
     return true;
 }
 
@@ -324,6 +330,124 @@ bool MangaDatabase::applyMigration1(QSqlDatabase &db)
     return true;
 }
 
+bool MangaDatabase::applyMigration2(QSqlDatabase &db)
+{
+    db.transaction();
+    QSqlQuery q(db);
+
+    const char *alterStatements[] = {
+        "ALTER TABLE library ADD COLUMN pinned INTEGER NOT NULL DEFAULT 0;",
+        "ALTER TABLE library ADD COLUMN muted INTEGER NOT NULL DEFAULT 0;",
+        "ALTER TABLE tracker_binds ADD COLUMN status TEXT NOT NULL DEFAULT 'CURRENT';",
+        "ALTER TABLE tracker_binds ADD COLUMN score REAL NOT NULL DEFAULT 0.0;",
+        "ALTER TABLE tracker_binds ADD COLUMN start_date TEXT;",
+        "ALTER TABLE tracker_binds ADD COLUMN end_date TEXT;",
+        nullptr
+    };
+
+    for (int i = 0; alterStatements[i] != nullptr; ++i) {
+        q.exec(QString::fromUtf8(alterStatements[i]));
+    }
+
+    const char *ddlStatements[] = {
+        // 9. manga_notes
+        "CREATE TABLE IF NOT EXISTS manga_notes ("
+        "  id TEXT PRIMARY KEY,"
+        "  provider TEXT NOT NULL,"
+        "  manga_id TEXT NOT NULL,"
+        "  note TEXT NOT NULL DEFAULT '',"
+        "  rating INTEGER NOT NULL DEFAULT 0,"
+        "  updated_at INTEGER NOT NULL DEFAULT 0"
+        ");",
+        "CREATE INDEX IF NOT EXISTS idx_manga_notes_lookup ON manga_notes(provider, manga_id);",
+
+        // 10. manga_overrides
+        "CREATE TABLE IF NOT EXISTS manga_overrides ("
+        "  id TEXT PRIMARY KEY,"
+        "  provider TEXT NOT NULL,"
+        "  manga_id TEXT NOT NULL,"
+        "  custom_title TEXT,"
+        "  custom_cover_url TEXT,"
+        "  custom_description TEXT,"
+        "  updated_at INTEGER NOT NULL DEFAULT 0"
+        ");",
+        "CREATE INDEX IF NOT EXISTS idx_manga_overrides_lookup ON manga_overrides(provider, manga_id);",
+
+        // 11. chapter_bookmarks
+        "CREATE TABLE IF NOT EXISTS chapter_bookmarks ("
+        "  id TEXT PRIMARY KEY,"
+        "  provider TEXT NOT NULL,"
+        "  manga_id TEXT NOT NULL,"
+        "  chapter_id TEXT NOT NULL,"
+        "  created_at INTEGER NOT NULL DEFAULT 0"
+        ");",
+        "CREATE INDEX IF NOT EXISTS idx_bookmarks_manga ON chapter_bookmarks(provider, manga_id);",
+
+        // 12. hidden_chapters
+        "CREATE TABLE IF NOT EXISTS hidden_chapters ("
+        "  id TEXT PRIMARY KEY,"
+        "  provider TEXT NOT NULL,"
+        "  manga_id TEXT NOT NULL,"
+        "  chapter_id TEXT NOT NULL"
+        ");",
+        "CREATE INDEX IF NOT EXISTS idx_hidden_chapters_manga ON hidden_chapters(provider, manga_id);",
+
+        // 13. reading_sessions
+        "CREATE TABLE IF NOT EXISTS reading_sessions ("
+        "  id TEXT PRIMARY KEY,"
+        "  provider TEXT NOT NULL,"
+        "  manga_id TEXT NOT NULL,"
+        "  chapter_id TEXT NOT NULL,"
+        "  manga_title TEXT NOT NULL DEFAULT '',"
+        "  started_at INTEGER NOT NULL DEFAULT 0,"
+        "  ended_at INTEGER NOT NULL DEFAULT 0,"
+        "  duration_secs INTEGER NOT NULL DEFAULT 0,"
+        "  pages_read INTEGER NOT NULL DEFAULT 0"
+        ");",
+        "CREATE INDEX IF NOT EXISTS idx_sessions_started ON reading_sessions(started_at DESC);",
+
+        // 14. comments
+        "CREATE TABLE IF NOT EXISTS comments ("
+        "  id TEXT PRIMARY KEY,"
+        "  provider TEXT NOT NULL,"
+        "  manga_id TEXT NOT NULL,"
+        "  chapter_id TEXT NOT NULL DEFAULT '',"
+        "  manga_title TEXT NOT NULL DEFAULT '',"
+        "  user_id TEXT NOT NULL DEFAULT '',"
+        "  username TEXT NOT NULL DEFAULT 'Reader',"
+        "  avatar_url TEXT,"
+        "  parent_id TEXT NOT NULL DEFAULT '',"
+        "  text TEXT NOT NULL,"
+        "  likes_count INTEGER NOT NULL DEFAULT 0,"
+        "  liked_by_me INTEGER NOT NULL DEFAULT 0,"
+        "  created_at INTEGER NOT NULL DEFAULT 0"
+        ");",
+        "CREATE INDEX IF NOT EXISTS idx_comments_manga ON comments(provider, manga_id, chapter_id, created_at DESC);",
+        nullptr
+    };
+
+    for (int i = 0; ddlStatements[i] != nullptr; ++i) {
+        if (!q.exec(QString::fromUtf8(ddlStatements[i]))) {
+            qCritical().noquote() << QStringLiteral("MangaDatabase: Migration 2 DDL failed: %1 -> %2")
+                .arg(ddlStatements[i], q.lastError().text());
+            db.rollback();
+            return false;
+        }
+    }
+
+    q.prepare(QStringLiteral("INSERT INTO schema_migrations (version, applied_at) VALUES (2, ?);"));
+    q.addBindValue(QDateTime::currentMSecsSinceEpoch());
+    if (!q.exec()) {
+        qCritical().noquote() << QStringLiteral("MangaDatabase: failed to record migration 2: %1").arg(q.lastError().text());
+        db.rollback();
+        return false;
+    }
+
+    db.commit();
+    qInfo().noquote() << QStringLiteral("MangaDatabase: Migration 2 applied successfully.");
+    return true;
+}
+
 // -----------------------------------------------------------------------------
 // Library
 // -----------------------------------------------------------------------------
@@ -333,8 +457,8 @@ QList<LibraryEntity> MangaDatabase::getLibrary() const
     auto db = getThreadConnection();
     QSqlQuery q(db);
     q.exec(QStringLiteral(
-        "SELECT id, provider, manga_id, title, cover_url, url, type, total_chapters, added_at, updated_at "
-        "FROM library ORDER BY updated_at DESC;"));
+        "SELECT id, provider, manga_id, title, cover_url, url, type, total_chapters, added_at, updated_at, pinned, muted "
+        "FROM library ORDER BY pinned DESC, updated_at DESC;"));
 
     QList<LibraryEntity> list;
     while (q.next()) {
@@ -349,6 +473,8 @@ QList<LibraryEntity> MangaDatabase::getLibrary() const
         e.totalChapters = q.value(7).toInt();
         e.addedAt = q.value(8).toLongLong();
         e.updatedAt = q.value(9).toLongLong();
+        e.pinned = q.value(10).toInt();
+        e.muted = q.value(11).toInt();
         list.append(e);
     }
     return list;
@@ -359,7 +485,7 @@ std::optional<LibraryEntity> MangaDatabase::getLibraryItem(const QString &provid
     auto db = getThreadConnection();
     QSqlQuery q(db);
     q.prepare(QStringLiteral(
-        "SELECT id, provider, manga_id, title, cover_url, url, type, total_chapters, added_at, updated_at "
+        "SELECT id, provider, manga_id, title, cover_url, url, type, total_chapters, added_at, updated_at, pinned, muted "
         "FROM library WHERE provider = ? AND manga_id = ?;"));
     q.addBindValue(provider);
     q.addBindValue(mangaId);
@@ -376,6 +502,8 @@ std::optional<LibraryEntity> MangaDatabase::getLibraryItem(const QString &provid
         e.totalChapters = q.value(7).toInt();
         e.addedAt = q.value(8).toLongLong();
         e.updatedAt = q.value(9).toLongLong();
+        e.pinned = q.value(10).toInt();
+        e.muted = q.value(11).toInt();
         return e;
     }
     return std::nullopt;
@@ -403,8 +531,8 @@ bool MangaDatabase::addToLibrary(const LibraryEntity &item)
 
     QSqlQuery q(db);
     q.prepare(QStringLiteral(
-        "INSERT INTO library (id, provider, manga_id, title, cover_url, url, type, total_chapters, added_at, updated_at) "
-        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) "
+        "INSERT INTO library (id, provider, manga_id, title, cover_url, url, type, total_chapters, added_at, updated_at, pinned, muted) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) "
         "ON CONFLICT(id) DO UPDATE SET "
         "  provider = excluded.provider, "
         "  manga_id = excluded.manga_id, "
@@ -413,7 +541,9 @@ bool MangaDatabase::addToLibrary(const LibraryEntity &item)
         "  url = excluded.url, "
         "  type = excluded.type, "
         "  total_chapters = excluded.total_chapters, "
-        "  updated_at = excluded.updated_at;"));
+        "  updated_at = excluded.updated_at, "
+        "  pinned = excluded.pinned, "
+        "  muted = excluded.muted;"));
 
     q.addBindValue(id);
     q.addBindValue(item.provider);
@@ -425,6 +555,8 @@ bool MangaDatabase::addToLibrary(const LibraryEntity &item)
     q.addBindValue(item.totalChapters);
     q.addBindValue(addedAt);
     q.addBindValue(updatedAt);
+    q.addBindValue(item.pinned);
+    q.addBindValue(item.muted);
 
     if (!q.exec()) {
         qCritical().noquote() << QStringLiteral("MangaDatabase: addToLibrary error: %1").arg(q.lastError().text());
@@ -484,6 +616,52 @@ bool MangaDatabase::updateTotalChapters(const QString &provider, const QString &
     return true;
 }
 
+bool MangaDatabase::setMangaPinned(const QString &provider, const QString &mangaId, bool pinned)
+{
+    QMutexLocker locker(&m_writeLock);
+    auto db = getThreadConnection();
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral("UPDATE library SET pinned = ? WHERE provider = ? AND manga_id = ?;"));
+    q.addBindValue(pinned ? 1 : 0);
+    q.addBindValue(provider);
+    q.addBindValue(mangaId);
+    if (!q.exec()) {
+        return false;
+    }
+    emit libraryChanged();
+    emit libraryItemChanged(provider, mangaId);
+    return true;
+}
+
+bool MangaDatabase::isMangaPinned(const QString &provider, const QString &mangaId) const
+{
+    auto item = getLibraryItem(provider, mangaId);
+    return item.has_value() && item->pinned != 0;
+}
+
+bool MangaDatabase::setMangaMuted(const QString &provider, const QString &mangaId, bool muted)
+{
+    QMutexLocker locker(&m_writeLock);
+    auto db = getThreadConnection();
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral("UPDATE library SET muted = ? WHERE provider = ? AND manga_id = ?;"));
+    q.addBindValue(muted ? 1 : 0);
+    q.addBindValue(provider);
+    q.addBindValue(mangaId);
+    if (!q.exec()) {
+        return false;
+    }
+    emit libraryChanged();
+    emit libraryItemChanged(provider, mangaId);
+    return true;
+}
+
+bool MangaDatabase::isMangaMuted(const QString &provider, const QString &mangaId) const
+{
+    auto item = getLibraryItem(provider, mangaId);
+    return item.has_value() && item->muted != 0;
+}
+
 int MangaDatabase::getCompletedChaptersCount(const QString &provider, const QString &mangaId) const
 {
     auto db = getThreadConnection();
@@ -520,6 +698,8 @@ bool MangaDatabase::migrateManga(const QString &oldProvider, const QString &oldM
     const QStringList cats = getMangaCategories(oldProvider, oldMangaId);
     const QList<ProgressEntity> progress = getMangaProgress(oldProvider, oldMangaId);
     const QList<TrackerBindEntity> binds = getTrackerBinds(oldProvider, oldMangaId);
+    const auto oldNote = getMangaNote(oldProvider, oldMangaId);
+    const auto oldOverride = getMangaOverride(oldProvider, oldMangaId);
 
     LibraryEntity newEntry;
     newEntry.provider = newProvider;
@@ -531,6 +711,8 @@ bool MangaDatabase::migrateManga(const QString &oldProvider, const QString &oldM
     newEntry.totalChapters = oldItem->totalChapters;
     newEntry.addedAt = oldItem->addedAt;
     newEntry.updatedAt = QDateTime::currentMSecsSinceEpoch();
+    newEntry.pinned = oldItem->pinned;
+    newEntry.muted = oldItem->muted;
 
     if (!addToLibrary(newEntry)) {
         return false;
@@ -538,6 +720,19 @@ bool MangaDatabase::migrateManga(const QString &oldProvider, const QString &oldM
 
     if (!cats.isEmpty()) {
         setMangaCategories(newProvider, newMangaId, cats);
+    }
+
+    if (oldNote.has_value()) {
+        saveMangaNote(newProvider, newMangaId, oldNote->note, oldNote->rating, oldNote->updatedAt);
+    }
+
+    if (oldOverride.has_value()) {
+        MangaOverrideEntity ov = *oldOverride;
+        ov.id.clear();
+        ov.provider = newProvider;
+        ov.mangaId = newMangaId;
+        saveMangaOverride(ov);
+        deleteMangaOverride(oldProvider, oldMangaId);
     }
 
     for (const auto &p : progress) {
@@ -1178,7 +1373,7 @@ QList<TrackerBindEntity> MangaDatabase::getTrackerBinds(const QString &provider,
     auto db = getThreadConnection();
     QSqlQuery q(db);
     q.prepare(QStringLiteral(
-        "SELECT id, provider, manga_id, tracker, remote_id, remote_title, last_chapter_read, updated_at "
+        "SELECT id, provider, manga_id, tracker, remote_id, remote_title, last_chapter_read, status, score, start_date, end_date, updated_at "
         "FROM tracker_binds WHERE provider = ? AND manga_id = ?;"));
     q.addBindValue(provider);
     q.addBindValue(mangaId);
@@ -1194,7 +1389,11 @@ QList<TrackerBindEntity> MangaDatabase::getTrackerBinds(const QString &provider,
             e.remoteId = q.value(4).toInt();
             e.remoteTitle = q.value(5).toString();
             e.lastChapterRead = q.value(6).toDouble();
-            e.updatedAt = q.value(7).toLongLong();
+            e.status = q.value(7).toString().isEmpty() ? QStringLiteral("CURRENT") : q.value(7).toString();
+            e.score = q.value(8).toDouble();
+            e.startDate = q.value(9).toString();
+            e.endDate = q.value(10).toString();
+            e.updatedAt = q.value(11).toLongLong();
             list.append(e);
         }
     }
@@ -1207,7 +1406,7 @@ std::optional<TrackerBindEntity> MangaDatabase::getTrackerBind(const QString &pr
     QSqlQuery q(db);
     const QString id = QStringLiteral("%1/%2/%3").arg(provider, mangaId, tracker);
     q.prepare(QStringLiteral(
-        "SELECT id, provider, manga_id, tracker, remote_id, remote_title, last_chapter_read, updated_at "
+        "SELECT id, provider, manga_id, tracker, remote_id, remote_title, last_chapter_read, status, score, start_date, end_date, updated_at "
         "FROM tracker_binds WHERE id = ?;"));
     q.addBindValue(id);
 
@@ -1220,7 +1419,11 @@ std::optional<TrackerBindEntity> MangaDatabase::getTrackerBind(const QString &pr
         e.remoteId = q.value(4).toInt();
         e.remoteTitle = q.value(5).toString();
         e.lastChapterRead = q.value(6).toDouble();
-        e.updatedAt = q.value(7).toLongLong();
+        e.status = q.value(7).toString().isEmpty() ? QStringLiteral("CURRENT") : q.value(7).toString();
+        e.score = q.value(8).toDouble();
+        e.startDate = q.value(9).toString();
+        e.endDate = q.value(10).toString();
+        e.updatedAt = q.value(11).toLongLong();
         return e;
     }
     return std::nullopt;
@@ -1235,12 +1438,16 @@ bool MangaDatabase::saveTrackerBind(const TrackerBindEntity &bind)
 
     QSqlQuery q(db);
     q.prepare(QStringLiteral(
-        "INSERT INTO tracker_binds (id, provider, manga_id, tracker, remote_id, remote_title, last_chapter_read, updated_at) "
-        "VALUES (?, ?, ?, ?, ?, ?, ?, ?) "
+        "INSERT INTO tracker_binds (id, provider, manga_id, tracker, remote_id, remote_title, last_chapter_read, status, score, start_date, end_date, updated_at) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) "
         "ON CONFLICT(id) DO UPDATE SET "
         "  remote_id = excluded.remote_id, "
         "  remote_title = excluded.remote_title, "
         "  last_chapter_read = excluded.last_chapter_read, "
+        "  status = excluded.status, "
+        "  score = excluded.score, "
+        "  start_date = excluded.start_date, "
+        "  end_date = excluded.end_date, "
         "  updated_at = excluded.updated_at;"));
 
     q.addBindValue(id);
@@ -1250,6 +1457,10 @@ bool MangaDatabase::saveTrackerBind(const TrackerBindEntity &bind)
     q.addBindValue(bind.remoteId);
     q.addBindValue(bind.remoteTitle.isEmpty() ? QVariant(QMetaType(QMetaType::QString)) : bind.remoteTitle);
     q.addBindValue(bind.lastChapterRead);
+    q.addBindValue(bind.status.isEmpty() ? QStringLiteral("CURRENT") : bind.status);
+    q.addBindValue(bind.score);
+    q.addBindValue(bind.startDate.isEmpty() ? QVariant(QMetaType(QMetaType::QString)) : bind.startDate);
+    q.addBindValue(bind.endDate.isEmpty() ? QVariant(QMetaType(QMetaType::QString)) : bind.endDate);
     q.addBindValue(now);
 
     if (!q.exec()) {
@@ -1280,7 +1491,7 @@ QList<TrackerBindEntity> MangaDatabase::getAllTrackerBinds() const
 {
     auto db = getThreadConnection();
     QSqlQuery q(db);
-    q.exec(QStringLiteral("SELECT id, provider, manga_id, tracker, remote_id, remote_title, last_chapter_read, updated_at FROM tracker_binds;"));
+    q.exec(QStringLiteral("SELECT id, provider, manga_id, tracker, remote_id, remote_title, last_chapter_read, status, score, start_date, end_date, updated_at FROM tracker_binds;"));
 
     QList<TrackerBindEntity> list;
     while (q.next()) {
@@ -1292,7 +1503,11 @@ QList<TrackerBindEntity> MangaDatabase::getAllTrackerBinds() const
         e.remoteId = q.value(4).toInt();
         e.remoteTitle = q.value(5).toString();
         e.lastChapterRead = q.value(6).toDouble();
-        e.updatedAt = q.value(7).toLongLong();
+        e.status = q.value(7).toString().isEmpty() ? QStringLiteral("CURRENT") : q.value(7).toString();
+        e.score = q.value(8).toDouble();
+        e.startDate = q.value(9).toString();
+        e.endDate = q.value(10).toString();
+        e.updatedAt = q.value(11).toLongLong();
         list.append(e);
     }
     return list;
@@ -1401,6 +1616,540 @@ bool MangaDatabase::clearNewChapters()
     }
     emit newChaptersChanged();
     return true;
+}
+
+// -----------------------------------------------------------------------------
+// Manga Notes & Ratings
+// -----------------------------------------------------------------------------
+
+std::optional<MangaNoteEntity> MangaDatabase::getMangaNote(const QString &provider, const QString &mangaId) const
+{
+    auto db = getThreadConnection();
+    QSqlQuery q(db);
+    const QString id = QStringLiteral("%1/%2").arg(provider, mangaId);
+    q.prepare(QStringLiteral(
+        "SELECT id, provider, manga_id, note, rating, updated_at FROM manga_notes WHERE id = ?;"));
+    q.addBindValue(id);
+
+    if (q.exec() && q.next()) {
+        MangaNoteEntity e;
+        e.id = q.value(0).toString();
+        e.provider = q.value(1).toString();
+        e.mangaId = q.value(2).toString();
+        e.note = q.value(3).toString();
+        e.rating = q.value(4).toInt();
+        e.updatedAt = q.value(5).toLongLong();
+        return e;
+    }
+    return std::nullopt;
+}
+
+bool MangaDatabase::saveMangaNote(const QString &provider, const QString &mangaId, const QString &note, int rating, qint64 updatedAt)
+{
+    QMutexLocker locker(&m_writeLock);
+    auto db = getThreadConnection();
+    const QString id = QStringLiteral("%1/%2").arg(provider, mangaId);
+    const qint64 ts = updatedAt > 0 ? updatedAt : QDateTime::currentMSecsSinceEpoch();
+    const int clampedRating = std::clamp(rating, 0, 5);
+
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral(
+        "INSERT INTO manga_notes (id, provider, manga_id, note, rating, updated_at) "
+        "VALUES (?, ?, ?, ?, ?, ?) "
+        "ON CONFLICT(id) DO UPDATE SET "
+        "  note = excluded.note, "
+        "  rating = excluded.rating, "
+        "  updated_at = excluded.updated_at;"));
+    q.addBindValue(id);
+    q.addBindValue(provider);
+    q.addBindValue(mangaId);
+    q.addBindValue(note);
+    q.addBindValue(clampedRating);
+    q.addBindValue(ts);
+
+    if (!q.exec()) {
+        qCritical().noquote() << QStringLiteral("MangaDatabase: saveMangaNote error: %1").arg(q.lastError().text());
+        return false;
+    }
+    emit mangaNotesChanged(provider, mangaId);
+    return true;
+}
+
+QList<MangaNoteEntity> MangaDatabase::getAllMangaNotes() const
+{
+    auto db = getThreadConnection();
+    QSqlQuery q(db);
+    q.exec(QStringLiteral("SELECT id, provider, manga_id, note, rating, updated_at FROM manga_notes;"));
+
+    QList<MangaNoteEntity> list;
+    while (q.next()) {
+        MangaNoteEntity e;
+        e.id = q.value(0).toString();
+        e.provider = q.value(1).toString();
+        e.mangaId = q.value(2).toString();
+        e.note = q.value(3).toString();
+        e.rating = q.value(4).toInt();
+        e.updatedAt = q.value(5).toLongLong();
+        list.append(e);
+    }
+    return list;
+}
+
+// -----------------------------------------------------------------------------
+// Manga Metadata Overrides
+// -----------------------------------------------------------------------------
+
+std::optional<MangaOverrideEntity> MangaDatabase::getMangaOverride(const QString &provider, const QString &mangaId) const
+{
+    auto db = getThreadConnection();
+    QSqlQuery q(db);
+    const QString id = QStringLiteral("%1/%2").arg(provider, mangaId);
+    q.prepare(QStringLiteral(
+        "SELECT id, provider, manga_id, custom_title, custom_cover_url, custom_description, updated_at "
+        "FROM manga_overrides WHERE id = ?;"));
+    q.addBindValue(id);
+
+    if (q.exec() && q.next()) {
+        MangaOverrideEntity e;
+        e.id = q.value(0).toString();
+        e.provider = q.value(1).toString();
+        e.mangaId = q.value(2).toString();
+        e.customTitle = q.value(3).toString();
+        e.customCoverUrl = q.value(4).toString();
+        e.customDescription = q.value(5).toString();
+        e.updatedAt = q.value(6).toLongLong();
+        return e;
+    }
+    return std::nullopt;
+}
+
+bool MangaDatabase::saveMangaOverride(const MangaOverrideEntity &ov)
+{
+    QMutexLocker locker(&m_writeLock);
+    auto db = getThreadConnection();
+    const QString id = ov.id.isEmpty() ? QStringLiteral("%1/%2").arg(ov.provider, ov.mangaId) : ov.id;
+    const qint64 ts = ov.updatedAt > 0 ? ov.updatedAt : QDateTime::currentMSecsSinceEpoch();
+
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral(
+        "INSERT INTO manga_overrides (id, provider, manga_id, custom_title, custom_cover_url, custom_description, updated_at) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?) "
+        "ON CONFLICT(id) DO UPDATE SET "
+        "  custom_title = excluded.custom_title, "
+        "  custom_cover_url = excluded.custom_cover_url, "
+        "  custom_description = excluded.custom_description, "
+        "  updated_at = excluded.updated_at;"));
+    q.addBindValue(id);
+    q.addBindValue(ov.provider);
+    q.addBindValue(ov.mangaId);
+    q.addBindValue(ov.customTitle.isEmpty() ? QVariant(QMetaType(QMetaType::QString)) : ov.customTitle);
+    q.addBindValue(ov.customCoverUrl.isEmpty() ? QVariant(QMetaType(QMetaType::QString)) : ov.customCoverUrl);
+    q.addBindValue(ov.customDescription.isEmpty() ? QVariant(QMetaType(QMetaType::QString)) : ov.customDescription);
+    q.addBindValue(ts);
+
+    if (!q.exec()) {
+        return false;
+    }
+
+    // If in library, also update library title/cover if overridden
+    if (!ov.customTitle.isEmpty()) {
+        QSqlQuery uq(db);
+        uq.prepare(QStringLiteral("UPDATE library SET title = ? WHERE provider = ? AND manga_id = ?;"));
+        uq.addBindValue(ov.customTitle);
+        uq.addBindValue(ov.provider);
+        uq.addBindValue(ov.mangaId);
+        uq.exec();
+    }
+    if (!ov.customCoverUrl.isEmpty()) {
+        QSqlQuery uq(db);
+        uq.prepare(QStringLiteral("UPDATE library SET cover_url = ? WHERE provider = ? AND manga_id = ?;"));
+        uq.addBindValue(ov.customCoverUrl);
+        uq.addBindValue(ov.provider);
+        uq.addBindValue(ov.mangaId);
+        uq.exec();
+    }
+
+    emit mangaOverridesChanged(ov.provider, ov.mangaId);
+    emit libraryChanged();
+    emit libraryItemChanged(ov.provider, ov.mangaId);
+    return true;
+}
+
+bool MangaDatabase::deleteMangaOverride(const QString &provider, const QString &mangaId)
+{
+    QMutexLocker locker(&m_writeLock);
+    auto db = getThreadConnection();
+    const QString id = QStringLiteral("%1/%2").arg(provider, mangaId);
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral("DELETE FROM manga_overrides WHERE id = ?;"));
+    q.addBindValue(id);
+    if (!q.exec()) {
+        return false;
+    }
+    emit mangaOverridesChanged(provider, mangaId);
+    return true;
+}
+
+// -----------------------------------------------------------------------------
+// Chapter Bookmarks & Hidden Chapters
+// -----------------------------------------------------------------------------
+
+QStringList MangaDatabase::getBookmarkedChapters(const QString &provider, const QString &mangaId) const
+{
+    auto db = getThreadConnection();
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral("SELECT chapter_id FROM chapter_bookmarks WHERE provider = ? AND manga_id = ?;"));
+    q.addBindValue(provider);
+    q.addBindValue(mangaId);
+
+    QStringList list;
+    if (q.exec()) {
+        while (q.next()) {
+            list.append(q.value(0).toString());
+        }
+    }
+    return list;
+}
+
+bool MangaDatabase::isChapterBookmarked(const QString &provider, const QString &mangaId, const QString &chapterId) const
+{
+    auto db = getThreadConnection();
+    const QString id = QStringLiteral("%1/%2/%3").arg(provider, mangaId, chapterId);
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral("SELECT 1 FROM chapter_bookmarks WHERE id = ? LIMIT 1;"));
+    q.addBindValue(id);
+    return q.exec() && q.next();
+}
+
+bool MangaDatabase::setChapterBookmarked(const QString &provider, const QString &mangaId, const QString &chapterId, bool bookmarked)
+{
+    QMutexLocker locker(&m_writeLock);
+    auto db = getThreadConnection();
+    const QString id = QStringLiteral("%1/%2/%3").arg(provider, mangaId, chapterId);
+    QSqlQuery q(db);
+    if (bookmarked) {
+        q.prepare(QStringLiteral(
+            "INSERT INTO chapter_bookmarks (id, provider, manga_id, chapter_id, created_at) "
+            "VALUES (?, ?, ?, ?, ?) ON CONFLICT(id) DO NOTHING;"));
+        q.addBindValue(id);
+        q.addBindValue(provider);
+        q.addBindValue(mangaId);
+        q.addBindValue(chapterId);
+        q.addBindValue(QDateTime::currentMSecsSinceEpoch());
+    } else {
+        q.prepare(QStringLiteral("DELETE FROM chapter_bookmarks WHERE id = ?;"));
+        q.addBindValue(id);
+    }
+    if (!q.exec()) {
+        return false;
+    }
+    emit bookmarksChanged(provider, mangaId);
+    return true;
+}
+
+QStringList MangaDatabase::getHiddenChapters(const QString &provider, const QString &mangaId) const
+{
+    auto db = getThreadConnection();
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral("SELECT chapter_id FROM hidden_chapters WHERE provider = ? AND manga_id = ?;"));
+    q.addBindValue(provider);
+    q.addBindValue(mangaId);
+
+    QStringList list;
+    if (q.exec()) {
+        while (q.next()) {
+            list.append(q.value(0).toString());
+        }
+    }
+    return list;
+}
+
+bool MangaDatabase::isChapterHidden(const QString &provider, const QString &mangaId, const QString &chapterId) const
+{
+    auto db = getThreadConnection();
+    const QString id = QStringLiteral("%1/%2/%3").arg(provider, mangaId, chapterId);
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral("SELECT 1 FROM hidden_chapters WHERE id = ? LIMIT 1;"));
+    q.addBindValue(id);
+    return q.exec() && q.next();
+}
+
+bool MangaDatabase::setChapterHidden(const QString &provider, const QString &mangaId, const QString &chapterId, bool hidden)
+{
+    QMutexLocker locker(&m_writeLock);
+    auto db = getThreadConnection();
+    const QString id = QStringLiteral("%1/%2/%3").arg(provider, mangaId, chapterId);
+    QSqlQuery q(db);
+    if (hidden) {
+        q.prepare(QStringLiteral(
+            "INSERT INTO hidden_chapters (id, provider, manga_id, chapter_id) "
+            "VALUES (?, ?, ?, ?) ON CONFLICT(id) DO NOTHING;"));
+        q.addBindValue(id);
+        q.addBindValue(provider);
+        q.addBindValue(mangaId);
+        q.addBindValue(chapterId);
+    } else {
+        q.prepare(QStringLiteral("DELETE FROM hidden_chapters WHERE id = ?;"));
+        q.addBindValue(id);
+    }
+    if (!q.exec()) {
+        return false;
+    }
+    emit hiddenChaptersChanged(provider, mangaId);
+    return true;
+}
+
+bool MangaDatabase::clearHiddenChapters(const QString &provider, const QString &mangaId)
+{
+    QMutexLocker locker(&m_writeLock);
+    auto db = getThreadConnection();
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral("DELETE FROM hidden_chapters WHERE provider = ? AND manga_id = ?;"));
+    q.addBindValue(provider);
+    q.addBindValue(mangaId);
+    if (!q.exec()) {
+        return false;
+    }
+    emit hiddenChaptersChanged(provider, mangaId);
+    return true;
+}
+
+// -----------------------------------------------------------------------------
+// Reading Sessions
+// -----------------------------------------------------------------------------
+
+bool MangaDatabase::recordReadingSession(const ReadingSessionEntity &session)
+{
+    if (session.durationSecs < 5) {
+        return true; // Ignore sessions shorter than 5 seconds (matching Web readingSession.ts)
+    }
+
+    QMutexLocker locker(&m_writeLock);
+    auto db = getThreadConnection();
+    const qint64 startedAt = session.startedAt > 0 ? session.startedAt : QDateTime::currentMSecsSinceEpoch();
+    const qint64 endedAt = session.endedAt > 0 ? session.endedAt : QDateTime::currentMSecsSinceEpoch();
+    const QString id = session.id.isEmpty()
+        ? QStringLiteral("%1/%2/%3/%4").arg(session.provider, session.mangaId, session.chapterId, QString::number(startedAt))
+        : session.id;
+
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral(
+        "INSERT INTO reading_sessions (id, provider, manga_id, chapter_id, manga_title, started_at, ended_at, duration_secs, pages_read) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) "
+        "ON CONFLICT(id) DO UPDATE SET "
+        "  ended_at = excluded.ended_at, "
+        "  duration_secs = excluded.duration_secs, "
+        "  pages_read = excluded.pages_read;"));
+    q.addBindValue(id);
+    q.addBindValue(session.provider);
+    q.addBindValue(session.mangaId);
+    q.addBindValue(session.chapterId);
+    q.addBindValue(session.mangaTitle);
+    q.addBindValue(startedAt);
+    q.addBindValue(endedAt);
+    q.addBindValue(session.durationSecs);
+    q.addBindValue(session.pagesRead);
+
+    if (!q.exec()) {
+        return false;
+    }
+    emit readingSessionsChanged();
+    return true;
+}
+
+QList<ReadingSessionEntity> MangaDatabase::getReadingSessions(int limit) const
+{
+    auto db = getThreadConnection();
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral(
+        "SELECT id, provider, manga_id, chapter_id, manga_title, started_at, ended_at, duration_secs, pages_read "
+        "FROM reading_sessions ORDER BY started_at DESC LIMIT ?;"));
+    q.addBindValue(limit);
+
+    QList<ReadingSessionEntity> list;
+    if (q.exec()) {
+        while (q.next()) {
+            ReadingSessionEntity e;
+            e.id = q.value(0).toString();
+            e.provider = q.value(1).toString();
+            e.mangaId = q.value(2).toString();
+            e.chapterId = q.value(3).toString();
+            e.mangaTitle = q.value(4).toString();
+            e.startedAt = q.value(5).toLongLong();
+            e.endedAt = q.value(6).toLongLong();
+            e.durationSecs = q.value(7).toInt();
+            e.pagesRead = q.value(8).toInt();
+            list.append(e);
+        }
+    }
+    return list;
+}
+
+// -----------------------------------------------------------------------------
+// Comments (Local + Offline Cache)
+// -----------------------------------------------------------------------------
+
+QList<CommentEntity> MangaDatabase::getComments(const QString &provider, const QString &mangaId, const QString &chapterId) const
+{
+    auto db = getThreadConnection();
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral(
+        "SELECT id, provider, manga_id, chapter_id, manga_title, user_id, username, avatar_url, parent_id, text, likes_count, liked_by_me, created_at "
+        "FROM comments WHERE provider = ? AND manga_id = ? AND chapter_id = ? ORDER BY created_at DESC;"));
+    q.addBindValue(provider);
+    q.addBindValue(mangaId);
+    q.addBindValue(chapterId);
+
+    QList<CommentEntity> list;
+    if (q.exec()) {
+        while (q.next()) {
+            CommentEntity e;
+            e.id = q.value(0).toString();
+            e.provider = q.value(1).toString();
+            e.mangaId = q.value(2).toString();
+            e.chapterId = q.value(3).toString();
+            e.mangaTitle = q.value(4).toString();
+            e.userId = q.value(5).toString();
+            e.username = q.value(6).toString();
+            e.avatarUrl = q.value(7).toString();
+            e.parentId = q.value(8).toString();
+            e.text = q.value(9).toString();
+            e.likesCount = q.value(10).toInt();
+            e.likedByMe = q.value(11).toInt() != 0;
+            e.createdAt = q.value(12).toLongLong();
+            list.append(e);
+        }
+    }
+    return list;
+}
+
+bool MangaDatabase::saveComment(const CommentEntity &c)
+{
+    QMutexLocker locker(&m_writeLock);
+    auto db = getThreadConnection();
+    const qint64 ts = c.createdAt > 0 ? c.createdAt : QDateTime::currentMSecsSinceEpoch();
+    const QString id = c.id.isEmpty() ? QStringLiteral("c_%1").arg(ts) : c.id;
+
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral(
+        "INSERT INTO comments (id, provider, manga_id, chapter_id, manga_title, user_id, username, avatar_url, parent_id, text, likes_count, liked_by_me, created_at) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) "
+        "ON CONFLICT(id) DO UPDATE SET "
+        "  text = excluded.text, "
+        "  likes_count = excluded.likes_count, "
+        "  liked_by_me = excluded.liked_by_me;"));
+    q.addBindValue(id);
+    q.addBindValue(c.provider);
+    q.addBindValue(c.mangaId);
+    q.addBindValue(c.chapterId);
+    q.addBindValue(c.mangaTitle);
+    q.addBindValue(c.userId);
+    q.addBindValue(c.username.isEmpty() ? QStringLiteral("Reader") : c.username);
+    q.addBindValue(c.avatarUrl);
+    q.addBindValue(c.parentId);
+    q.addBindValue(c.text);
+    q.addBindValue(c.likesCount);
+    q.addBindValue(c.likedByMe ? 1 : 0);
+    q.addBindValue(ts);
+
+    if (!q.exec()) {
+        return false;
+    }
+    emit commentsChanged(c.provider, c.mangaId);
+    return true;
+}
+
+bool MangaDatabase::toggleCommentLike(const QString &commentId)
+{
+    QMutexLocker locker(&m_writeLock);
+    auto db = getThreadConnection();
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral("SELECT provider, manga_id, likes_count, liked_by_me FROM comments WHERE id = ?;"));
+    q.addBindValue(commentId);
+    if (!q.exec() || !q.next()) {
+        return false;
+    }
+    const QString provider = q.value(0).toString();
+    const QString mangaId = q.value(1).toString();
+    const int likes = q.value(2).toInt();
+    const bool liked = q.value(3).toInt() != 0;
+
+    const bool newLiked = !liked;
+    const int newLikes = std::max(0, likes + (newLiked ? 1 : -1));
+
+    QSqlQuery uq(db);
+    uq.prepare(QStringLiteral("UPDATE comments SET likes_count = ?, liked_by_me = ? WHERE id = ?;"));
+    uq.addBindValue(newLikes);
+    uq.addBindValue(newLiked ? 1 : 0);
+    uq.addBindValue(commentId);
+    if (!uq.exec()) {
+        return false;
+    }
+    emit commentsChanged(provider, mangaId);
+    return true;
+}
+
+bool MangaDatabase::deleteComment(const QString &commentId)
+{
+    QMutexLocker locker(&m_writeLock);
+    auto db = getThreadConnection();
+    QSqlQuery q(db);
+    q.prepare(QStringLiteral("SELECT provider, manga_id FROM comments WHERE id = ?;"));
+    q.addBindValue(commentId);
+    QString provider, mangaId;
+    if (q.exec() && q.next()) {
+        provider = q.value(0).toString();
+        mangaId = q.value(1).toString();
+    }
+
+    QSqlQuery dq(db);
+    dq.prepare(QStringLiteral("DELETE FROM comments WHERE id = ? OR parent_id = ?;"));
+    dq.addBindValue(commentId);
+    dq.addBindValue(commentId);
+    if (!dq.exec()) {
+        return false;
+    }
+    if (!provider.isEmpty()) {
+        emit commentsChanged(provider, mangaId);
+    }
+    return true;
+}
+
+QList<CommentEntity> MangaDatabase::getUserComments(const QString &userId) const
+{
+    auto db = getThreadConnection();
+    QSqlQuery q(db);
+    if (userId.isEmpty()) {
+        q.exec(QStringLiteral(
+            "SELECT id, provider, manga_id, chapter_id, manga_title, user_id, username, avatar_url, parent_id, text, likes_count, liked_by_me, created_at "
+            "FROM comments ORDER BY created_at DESC LIMIT 50;"));
+    } else {
+        q.prepare(QStringLiteral(
+            "SELECT id, provider, manga_id, chapter_id, manga_title, user_id, username, avatar_url, parent_id, text, likes_count, liked_by_me, created_at "
+            "FROM comments WHERE user_id = ? ORDER BY created_at DESC LIMIT 50;"));
+        q.addBindValue(userId);
+        q.exec();
+    }
+
+    QList<CommentEntity> list;
+    while (q.next()) {
+        CommentEntity e;
+        e.id = q.value(0).toString();
+        e.provider = q.value(1).toString();
+        e.mangaId = q.value(2).toString();
+        e.chapterId = q.value(3).toString();
+        e.mangaTitle = q.value(4).toString();
+        e.userId = q.value(5).toString();
+        e.username = q.value(6).toString();
+        e.avatarUrl = q.value(7).toString();
+        e.parentId = q.value(8).toString();
+        e.text = q.value(9).toString();
+        e.likesCount = q.value(10).toInt();
+        e.likedByMe = q.value(11).toInt() != 0;
+        e.createdAt = q.value(12).toLongLong();
+        list.append(e);
+    }
+    return list;
 }
 
 } // namespace mangadl

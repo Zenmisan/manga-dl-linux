@@ -65,6 +65,11 @@ class AppSettings : public QObject {
 
     // Library
     Q_PROPERTY(QString gridColumns READ gridColumns WRITE setGridColumns NOTIFY gridColumnsChanged)
+    Q_PROPERTY(QString libraryViewMode READ libraryViewMode WRITE setLibraryViewMode NOTIFY libraryViewModeChanged)
+    Q_PROPERTY(QString libraryDensity READ libraryDensity WRITE setLibraryDensity NOTIFY libraryDensityChanged)
+    Q_PROPERTY(QString libraryContentType READ libraryContentType WRITE setLibraryContentType NOTIFY libraryContentTypeChanged)
+    Q_PROPERTY(QString libraryFilterMode READ libraryFilterMode WRITE setLibraryFilterMode NOTIFY libraryFilterModeChanged)
+    Q_PROPERTY(QString librarySortMode READ librarySortMode WRITE setLibrarySortMode NOTIFY librarySortModeChanged)
     Q_PROPERTY(bool unreadBadges READ unreadBadges WRITE setUnreadBadges NOTIFY unreadBadgesChanged)
     Q_PROPERTY(bool downloadedBadges READ downloadedBadges WRITE setDownloadedBadges NOTIFY downloadedBadgesChanged)
     Q_PROPERTY(bool continueReadingRow READ continueReadingRow WRITE setContinueReadingRow NOTIFY continueReadingRowChanged)
@@ -92,7 +97,7 @@ class AppSettings : public QObject {
     Q_PROPERTY(qint64 lastUpdateCheck READ lastUpdateCheck WRITE setLastUpdateCheck NOTIFY lastUpdateCheckChanged)
     Q_PROPERTY(bool installUpdatesAutomatically READ installUpdatesAutomatically WRITE setInstallUpdatesAutomatically NOTIFY installUpdatesAutomaticallyChanged)
 
-    // Trackers
+    // Trackers & Integrations
     Q_PROPERTY(QString anilistClientId READ anilistClientId WRITE setAnilistClientId NOTIFY anilistClientIdChanged)
     Q_PROPERTY(QString anilistClientSecret READ anilistClientSecret WRITE setAnilistClientSecret NOTIFY anilistClientSecretChanged)
     Q_PROPERTY(QString anilistRedirectUri READ anilistRedirectUri WRITE setAnilistRedirectUri NOTIFY anilistRedirectUriChanged)
@@ -103,10 +108,42 @@ class AppSettings : public QObject {
     Q_PROPERTY(QString malUsername READ malUsername WRITE setMalUsername NOTIFY malUsernameChanged)
     Q_PROPERTY(bool malConnected READ malConnected WRITE setMalConnected NOTIFY malConnectedChanged)
     Q_PROPERTY(QString googleRedirectUri READ googleRedirectUri WRITE setGoogleRedirectUri NOTIFY googleRedirectUriChanged)
+    Q_PROPERTY(QString kitsuToken READ kitsuToken WRITE setKitsuToken NOTIFY kitsuTokenChanged)
+    Q_PROPERTY(QString mangaUpdatesToken READ mangaUpdatesToken WRITE setMangaUpdatesToken NOTIFY mangaUpdatesTokenChanged)
+    Q_PROPERTY(QString shikimoriToken READ shikimoriToken WRITE setShikimoriToken NOTIFY shikimoriTokenChanged)
+    Q_PROPERTY(QString bangumiToken READ bangumiToken WRITE setBangumiToken NOTIFY bangumiTokenChanged)
     Q_PROPERTY(bool autoSyncTrackers READ autoSyncTrackers WRITE setAutoSyncTrackers NOTIFY autoSyncTrackersChanged)
     Q_PROPERTY(bool markTrackerReadingOnFirstChapter READ markTrackerReadingOnFirstChapter WRITE setMarkTrackerReadingOnFirstChapter NOTIFY markTrackerReadingOnFirstChapterChanged)
     Q_PROPERTY(bool markTrackerCompletedOnFinish READ markTrackerCompletedOnFinish WRITE setMarkTrackerCompletedOnFinish NOTIFY markTrackerCompletedOnFinishChanged)
     Q_PROPERTY(bool pullProgressFromTrackers READ pullProgressFromTrackers WRITE setPullProgressFromTrackers NOTIFY pullProgressFromTrackersChanged)
+
+    // Profile & Gamification Goals
+    Q_PROPERTY(QStringList pinnedBadges READ pinnedBadges WRITE setPinnedBadges NOTIFY pinnedBadgesChanged)
+    Q_PROPERTY(int monthlyChapterGoal READ monthlyChapterGoal WRITE setMonthlyChapterGoal NOTIFY monthlyChapterGoalChanged)
+    Q_PROPERTY(int yearlyMangaGoal READ yearlyMangaGoal WRITE setYearlyMangaGoal NOTIFY yearlyMangaGoalChanged)
+
+    // Sources & Search Filter
+    Q_PROPERTY(QStringList enabledSearchSources READ enabledSearchSources WRITE setEnabledSearchSources NOTIFY enabledSearchSourcesChanged)
+    Q_PROPERTY(QStringList disabledExtensions READ disabledExtensions WRITE setDisabledExtensions NOTIFY disabledExtensionsChanged)
+    Q_PROPERTY(QStringList customExtensionRepos READ customExtensionRepos WRITE setCustomExtensionRepos NOTIFY customExtensionReposChanged)
+
+    // Security & App Lock
+    Q_PROPERTY(bool appLockEnabled READ appLockEnabled WRITE setAppLockEnabled NOTIFY appLockEnabledChanged)
+    Q_PROPERTY(QString appLockPin READ appLockPin WRITE setAppLockPin NOTIFY appLockPinChanged)
+
+    // Media Servers (Komga & Suwayomi)
+    Q_PROPERTY(bool komgaEnabled READ komgaEnabled WRITE setKomgaEnabled NOTIFY komgaEnabledChanged)
+    Q_PROPERTY(QString komgaUrl READ komgaUrl WRITE setKomgaUrl NOTIFY komgaUrlChanged)
+    Q_PROPERTY(QString komgaUsername READ komgaUsername WRITE setKomgaUsername NOTIFY komgaUsernameChanged)
+    Q_PROPERTY(QString komgaPassword READ komgaPassword WRITE setKomgaPassword NOTIFY komgaPasswordChanged)
+    Q_PROPERTY(bool suwayomiEnabled READ suwayomiEnabled WRITE setSuwayomiEnabled NOTIFY suwayomiEnabledChanged)
+    Q_PROPERTY(QString suwayomiUrl READ suwayomiUrl WRITE setSuwayomiUrl NOTIFY suwayomiUrlChanged)
+    Q_PROPERTY(QString suwayomiApiKey READ suwayomiApiKey WRITE setSuwayomiApiKey NOTIFY suwayomiApiKeyChanged)
+
+    // Onboarding & Quick Tours
+    Q_PROPERTY(bool onboardingCompleted READ onboardingCompleted WRITE setOnboardingCompleted NOTIFY onboardingCompletedChanged)
+    Q_PROPERTY(bool libraryTourCompleted READ libraryTourCompleted WRITE setLibraryTourCompleted NOTIFY libraryTourCompletedChanged)
+    Q_PROPERTY(bool settingsTourCompleted READ settingsTourCompleted WRITE setSettingsTourCompleted NOTIFY settingsTourCompletedChanged)
 
 public:
     explicit AppSettings(const QString &configFilePath = QString(), QObject *parent = nullptr);
@@ -209,6 +246,16 @@ public:
     // Library
     QString gridColumns() const;
     void setGridColumns(const QString &val);
+    QString libraryViewMode() const;
+    void setLibraryViewMode(const QString &val);
+    QString libraryDensity() const;
+    void setLibraryDensity(const QString &val);
+    QString libraryContentType() const;
+    void setLibraryContentType(const QString &val);
+    QString libraryFilterMode() const;
+    void setLibraryFilterMode(const QString &val);
+    QString librarySortMode() const;
+    void setLibrarySortMode(const QString &val);
     bool unreadBadges() const;
     void setUnreadBadges(bool val);
     bool downloadedBadges() const;
@@ -278,6 +325,15 @@ public:
     QString googleRedirectUri() const;
     void setGoogleRedirectUri(const QString &val);
 
+    QString kitsuToken() const;
+    void setKitsuToken(const QString &val);
+    QString mangaUpdatesToken() const;
+    void setMangaUpdatesToken(const QString &val);
+    QString shikimoriToken() const;
+    void setShikimoriToken(const QString &val);
+    QString bangumiToken() const;
+    void setBangumiToken(const QString &val);
+
     bool autoSyncTrackers() const;
     void setAutoSyncTrackers(bool val);
     bool markTrackerReadingOnFirstChapter() const;
@@ -286,6 +342,52 @@ public:
     void setMarkTrackerCompletedOnFinish(bool val);
     bool pullProgressFromTrackers() const;
     void setPullProgressFromTrackers(bool val);
+
+    // Profile & Gamification Goals
+    QStringList pinnedBadges() const;
+    void setPinnedBadges(const QStringList &val);
+    int monthlyChapterGoal() const;
+    void setMonthlyChapterGoal(int val);
+    int yearlyMangaGoal() const;
+    void setYearlyMangaGoal(int val);
+
+    // Sources & Extensions
+    QStringList enabledSearchSources() const;
+    void setEnabledSearchSources(const QStringList &val);
+    QStringList disabledExtensions() const;
+    void setDisabledExtensions(const QStringList &val);
+    QStringList customExtensionRepos() const;
+    void setCustomExtensionRepos(const QStringList &val);
+
+    // Security & App Lock
+    bool appLockEnabled() const;
+    void setAppLockEnabled(bool val);
+    QString appLockPin() const;
+    void setAppLockPin(const QString &val);
+
+    // Media Servers
+    bool komgaEnabled() const;
+    void setKomgaEnabled(bool val);
+    QString komgaUrl() const;
+    void setKomgaUrl(const QString &val);
+    QString komgaUsername() const;
+    void setKomgaUsername(const QString &val);
+    QString komgaPassword() const;
+    void setKomgaPassword(const QString &val);
+    bool suwayomiEnabled() const;
+    void setSuwayomiEnabled(bool val);
+    QString suwayomiUrl() const;
+    void setSuwayomiUrl(const QString &val);
+    QString suwayomiApiKey() const;
+    void setSuwayomiApiKey(const QString &val);
+
+    // Onboarding & Tours
+    bool onboardingCompleted() const;
+    void setOnboardingCompleted(bool val);
+    bool libraryTourCompleted() const;
+    void setLibraryTourCompleted(bool val);
+    bool settingsTourCompleted() const;
+    void setSettingsTourCompleted(bool val);
 
     Q_INVOKABLE void resetToDefaults();
     Q_INVOKABLE void sync();
@@ -335,6 +437,11 @@ signals:
     void novelLineHeightChanged();
     void novelThemeChanged();
     void gridColumnsChanged();
+    void libraryViewModeChanged();
+    void libraryDensityChanged();
+    void libraryContentTypeChanged();
+    void libraryFilterModeChanged();
+    void librarySortModeChanged();
     void unreadBadgesChanged();
     void downloadedBadgesChanged();
     void continueReadingRowChanged();
@@ -363,10 +470,32 @@ signals:
     void malUsernameChanged();
     void malConnectedChanged();
     void googleRedirectUriChanged();
+    void kitsuTokenChanged();
+    void mangaUpdatesTokenChanged();
+    void shikimoriTokenChanged();
+    void bangumiTokenChanged();
     void autoSyncTrackersChanged();
     void markTrackerReadingOnFirstChapterChanged();
     void markTrackerCompletedOnFinishChanged();
     void pullProgressFromTrackersChanged();
+    void pinnedBadgesChanged();
+    void monthlyChapterGoalChanged();
+    void yearlyMangaGoalChanged();
+    void enabledSearchSourcesChanged();
+    void disabledExtensionsChanged();
+    void customExtensionReposChanged();
+    void appLockEnabledChanged();
+    void appLockPinChanged();
+    void komgaEnabledChanged();
+    void komgaUrlChanged();
+    void komgaUsernameChanged();
+    void komgaPasswordChanged();
+    void suwayomiEnabledChanged();
+    void suwayomiUrlChanged();
+    void suwayomiApiKeyChanged();
+    void onboardingCompletedChanged();
+    void libraryTourCompletedChanged();
+    void settingsTourCompletedChanged();
 
 private:
     std::unique_ptr<QSettings> m_settings;

@@ -395,6 +395,332 @@ int SupabaseSyncService::pushAllReadTracking(const QString &userId, const QStrin
     return count;
 }
 
+int SupabaseSyncService::pullUserCategories(const QString &userId, const QString &accessToken)
+{
+    if (!m_db || !isConfigured()) return 0;
+
+    const QString path = QStringLiteral("/rest/v1/user_categories?user_id=eq.%1&select=*")
+        .arg(QString::fromLatin1(QUrl::toPercentEncoding(userId)));
+
+    bool ok = false;
+    const QByteArray data = executeGet(path, accessToken, &ok);
+    if (!ok) return 0;
+
+    QJsonParseError err;
+    const QJsonDocument doc = QJsonDocument::fromJson(data, &err);
+    if (err.error != QJsonParseError::NoError || !doc.isArray()) return 0;
+
+    const QJsonArray arr = doc.array();
+    if (arr.isEmpty() || !arr[0].isObject()) return 0;
+
+    const auto rec = SupabaseUserCategoriesRecord::fromJson(arr[0].toObject());
+    int count = 0;
+
+    // 1. Custom categories
+    int sortOrder = 10;
+    for (const auto &catVal : rec.customCategories) {
+        if (catVal.isObject()) {
+            const QJsonObject catObj = catVal.toObject();
+            const QString id = catObj.value(QStringLiteral("id")).toString();
+            const QString name = catObj.value(QStringLiteral("name")).toString(id);
+            if (!id.isEmpty()) {
+                m_db->addCategory(id, name, sortOrder++);
+                count++;
+            }
+        } else if (catVal.isString()) {
+            const QString id = catVal.toString();
+            if (!id.isEmpty()) {
+                m_db->addCategory(id, id, sortOrder++);
+                count++;
+            }
+        }
+    }
+
+    // 2. Manga assignments (supports both "{provider}/{mangaId}" and normalized title keys from Web)
+    const auto library = m_db->getLibrary();
+    QMap<QString, QPair<QString, QString>> titleToManga;
+    for (const auto &item : library) {
+        titleToManga.insert(item.title.trimmed().toLower(), qMakePair(item.provider, item.mangaId));
+        titleToManga.insert(QStringLiteral("%1/%2").arg(item.provider, item.mangaId), qMakePair(item.provider, item.mangaId));
+    }
+
+    for (auto it = rec.mangaAssignments.begin(); it != rec.mangaAssignments.end(); ++it) {
+        const QString key = it.key();
+        QString provider, mangaId;
+        if (titleToManga.contains(key)) {
+            provider = titleToManga[key].first;
+            mangaId = titleToManga[key].second;
+        } else if (titleToManga.contains(key.trimmed().toLower())) {
+            provider = titleToManga[key.trimmed().toLower()].first;
+            mangaId = titleToManga[key.trimmed().toLower()].second;
+        } else if (key.contains(QLatin1Char('/'))) {
+            const int slashIdx = key.indexOf(QLatin1Char('/'));
+            provider = key.left(slashIdx);
+            mangaId = key.mid(slashIdx + 1);
+        }
+
+        if (provider.isEmpty() || mangaId.isEmpty()) continue;
+
+        QStringList catIds;
+        if (it.value().isArray()) {
+            for (const auto &v : it.value().toArray()) {
+                const QString cid = v.toString();
+                if (!cid.isEmpty()) catIds.append(cid);
+            }
+        } else if (it.value().isString()) {
+            const QString cid = it.value().toString();
+            if (!cid.isEmpty()) catIds.append(cid);
+        }
+
+        if (!catIds.isEmpty()) {
+            QStringList merged = m_db->getMangaCategories(provider, mangaId);
+            for (const QString &cid : catIds) {
+                if (!merged.contains(cid)) merged.append(cid);
+            }
+            m_db->setMangaCategories(provider, mangaId, merged);
+            count++;
+        }
+    }
+
+    return count;
+}
+
+bool SupabaseSyncService::pushUserCategories(const QString &userId, const QString &accessToken)
+{
+    if (!m_db || !isConfigured()) return false;
+
+    const auto categories = m_db->getCategories();
+    QJsonArray customCats;
+    for (const auto &cat : categories) {
+        if (cat.id == QStringLiteral("reading") ||
+            cat.id == QStringLiteral("plan_to_read") ||
+            cat.id == QStringLiteral("completed") ||
+            cat.id == QStringLiteral("local_files")) {
+            continue;
+        }
+        QJsonObject cObj;
+        cObj[QStringLiteral("id")] = cat.id;
+        cObj[QStringLiteral("name")] = cat.name;
+        customCats.append(cObj);
+    }
+
+    QJsonObject assignments;
+    const auto library = m_db->getLibrary();
+    for (const auto &item : library) {
+        const QStringList cats = m_db->getMangaCategories(item.provider, item.mangaId);
+        if (cats.isEmpty()) continue;
+        // Store under normalized title (Web compatibility) and composite id
+        const QString normTitle = item.title.trimmed().toLower();
+        if (!normTitle.isEmpty()) {
+            assignments[normTitle] = cats.first();
+        }
+        assignments[QStringLiteral("%1/%2").arg(item.provider, item.mangaId)] = cats.first();
+    }
+
+    SupabaseUserCategoriesRecord rec;
+    rec.userId = userId;
+    rec.customCategories = customCats;
+    rec.mangaAssignments = assignments;
+    rec.updatedAt = QDateTime::currentDateTimeUtc().toString(Qt::ISODate);
+
+    const QByteArray body = QJsonDocument(rec.toJson()).toJson(QJsonDocument::Compact);
+    bool ok = false;
+    executePostUpsert(QStringLiteral("/rest/v1/user_categories?on_conflict=user_id"), body, accessToken, &ok);
+    return ok;
+}
+
+int SupabaseSyncService::pullMangaNotes(const QString &userId, const QString &accessToken)
+{
+    if (!m_db || !isConfigured()) return 0;
+
+    const QString path = QStringLiteral("/rest/v1/manga_notes?user_id=eq.%1&select=*")
+        .arg(QString::fromLatin1(QUrl::toPercentEncoding(userId)));
+
+    bool ok = false;
+    const QByteArray data = executeGet(path, accessToken, &ok);
+    if (!ok) return 0;
+
+    QJsonParseError err;
+    const QJsonDocument doc = QJsonDocument::fromJson(data, &err);
+    if (err.error != QJsonParseError::NoError || !doc.isArray()) return 0;
+
+    const QJsonArray arr = doc.array();
+    int count = 0;
+    for (const auto &val : arr) {
+        if (!val.isObject()) continue;
+        const auto rec = SupabaseMangaNoteRecord::fromJson(val.toObject());
+        if (rec.provider.isEmpty() || rec.mangaId.isEmpty()) continue;
+
+        qint64 remoteTs = 0;
+        if (!rec.updatedAt.isEmpty()) {
+            remoteTs = QDateTime::fromString(rec.updatedAt, Qt::ISODate).toMSecsSinceEpoch();
+        }
+        const auto existing = m_db->getMangaNote(rec.provider, rec.mangaId);
+        if (!existing.has_value() || remoteTs >= existing->updatedAt) {
+            m_db->saveMangaNote(rec.provider, rec.mangaId, rec.note, rec.rating, remoteTs);
+            count++;
+        }
+    }
+    return count;
+}
+
+bool SupabaseSyncService::pushMangaNote(const QString &userId, const QString &accessToken,
+                                        const QString &provider, const QString &mangaId,
+                                        const QString &note, int rating)
+{
+    if (!isConfigured()) return false;
+
+    SupabaseMangaNoteRecord rec;
+    rec.userId = userId;
+    rec.provider = provider;
+    rec.mangaId = mangaId;
+    rec.note = note;
+    rec.rating = rating;
+    rec.updatedAt = QDateTime::currentDateTimeUtc().toString(Qt::ISODate);
+
+    const QByteArray body = QJsonDocument(rec.toJson()).toJson(QJsonDocument::Compact);
+    bool ok = false;
+    executePostUpsert(QStringLiteral("/rest/v1/manga_notes?on_conflict=user_id,provider,manga_id"), body, accessToken, &ok);
+    return ok;
+}
+
+int SupabaseSyncService::pushAllMangaNotes(const QString &userId, const QString &accessToken)
+{
+    if (!m_db || !isConfigured()) return 0;
+    const auto notes = m_db->getAllMangaNotes();
+    int count = 0;
+    for (const auto &n : notes) {
+        if (pushMangaNote(userId, accessToken, n.provider, n.mangaId, n.note, n.rating)) {
+            count++;
+        }
+    }
+    return count;
+}
+
+bool SupabaseSyncService::uploadCloudBackup(const QString &userId, const QString &accessToken,
+                                            const QByteArray &backupJson, QString *outFileName, QString *outError)
+{
+    if (!isConfigured() || userId.isEmpty() || accessToken.isEmpty()) {
+        if (outError) *outError = QStringLiteral("Cloud account not authenticated.");
+        return false;
+    }
+
+    const qint64 ts = QDateTime::currentMSecsSinceEpoch();
+    const QString fileName = QStringLiteral("backup-%1.json").arg(ts);
+    if (outFileName) *outFileName = fileName;
+
+    const QString path = QStringLiteral("/storage/v1/object/manga-backups/backups/%1/%2")
+        .arg(QString::fromLatin1(QUrl::toPercentEncoding(userId)), fileName);
+
+    const QUrl url(m_url + path);
+    QNetworkRequest req(url);
+    req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
+    req.setRawHeader("apikey", m_anonKey.toUtf8());
+    req.setRawHeader("Authorization", ("Bearer " + accessToken).toUtf8());
+    req.setRawHeader("x-upsert", "true");
+
+    QNetworkReply *reply = m_net.post(req, backupJson);
+
+    QEventLoop loop;
+    QTimer timer;
+    timer.setSingleShot(true);
+    connect(&timer, &QTimer::timeout, &loop, &QEventLoop::quit);
+    connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+    timer.start(20000);
+    loop.exec();
+
+    if (!reply->isFinished()) {
+        reply->abort();
+        reply->deleteLater();
+        if (outError) *outError = QStringLiteral("Cloud backup upload timed out.");
+        return false;
+    }
+
+    const bool ok = (reply->error() == QNetworkReply::NoError);
+    if (!ok && outError) {
+        *outError = QString::fromUtf8(reply->readAll());
+        if (outError->isEmpty()) *outError = reply->errorString();
+    }
+    reply->deleteLater();
+    return ok;
+}
+
+QByteArray SupabaseSyncService::downloadLatestCloudBackup(const QString &userId, const QString &accessToken,
+                                                          QString *outFileName, QString *outError)
+{
+    if (!isConfigured() || userId.isEmpty() || accessToken.isEmpty()) {
+        if (outError) *outError = QStringLiteral("Cloud account not authenticated.");
+        return QByteArray();
+    }
+
+    // 1. List backups/{userId} in manga-backups bucket
+    QJsonObject listReqObj;
+    listReqObj[QStringLiteral("prefix")] = QStringLiteral("backups/%1").arg(userId);
+    listReqObj[QStringLiteral("limit")] = 20;
+    QJsonObject sortBy;
+    sortBy[QStringLiteral("column")] = QStringLiteral("created_at");
+    sortBy[QStringLiteral("order")] = QStringLiteral("desc");
+    listReqObj[QStringLiteral("sortBy")] = sortBy;
+
+    const QUrl listUrl(m_url + QStringLiteral("/storage/v1/object/list/manga-backups"));
+    QNetworkRequest listReq(listUrl);
+    listReq.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
+    listReq.setRawHeader("apikey", m_anonKey.toUtf8());
+    listReq.setRawHeader("Authorization", ("Bearer " + accessToken).toUtf8());
+
+    QNetworkReply *listReply = m_net.post(listReq, QJsonDocument(listReqObj).toJson(QJsonDocument::Compact));
+    QEventLoop listLoop;
+    QTimer listTimer;
+    listTimer.setSingleShot(true);
+    connect(&listTimer, &QTimer::timeout, &listLoop, &QEventLoop::quit);
+    connect(listReply, &QNetworkReply::finished, &listLoop, &QEventLoop::quit);
+    listTimer.start(15000);
+    listLoop.exec();
+
+    if (!listReply->isFinished() || listReply->error() != QNetworkReply::NoError) {
+        if (outError) *outError = QStringLiteral("Failed to list cloud backups.");
+        listReply->deleteLater();
+        return QByteArray();
+    }
+
+    const QByteArray listData = listReply->readAll();
+    listReply->deleteLater();
+
+    const QJsonDocument doc = QJsonDocument::fromJson(listData);
+    if (!doc.isArray() || doc.array().isEmpty()) {
+        if (outError) *outError = QStringLiteral("No cloud backups found for this account.");
+        return QByteArray();
+    }
+
+    QString latestName;
+    for (const auto &v : doc.array()) {
+        const QString name = v.toObject().value(QStringLiteral("name")).toString();
+        if (name.endsWith(QStringLiteral(".json")) || name.endsWith(QStringLiteral(".mangadl"))) {
+            latestName = name;
+            break;
+        }
+    }
+
+    if (latestName.isEmpty()) {
+        if (outError) *outError = QStringLiteral("No valid backup file found in cloud storage.");
+        return QByteArray();
+    }
+
+    if (outFileName) *outFileName = latestName;
+
+    // 2. Download the file
+    const QString dlPath = QStringLiteral("/storage/v1/object/manga-backups/backups/%1/%2")
+        .arg(QString::fromLatin1(QUrl::toPercentEncoding(userId)),
+             QString::fromLatin1(QUrl::toPercentEncoding(latestName)));
+    bool dlOk = false;
+    const QByteArray payload = executeGet(dlPath, accessToken, &dlOk, 20000);
+    if (!dlOk || payload.isEmpty()) {
+        if (outError) *outError = QStringLiteral("Failed to download cloud backup file.");
+        return QByteArray();
+    }
+    return payload;
+}
+
 void SupabaseSyncService::queueChapterSync(const QString &userId, const QString &accessToken,
                                            const QString &provider, const QString &mangaId,
                                            const QString &chapterId, int page,
@@ -418,19 +744,23 @@ SyncResult SupabaseSyncService::syncAll(const QString &userId, const QString &ac
     }
 
     emit syncStarted();
-    emit syncProgress(QStringLiteral("Pulling library and tracking from cloud..."));
+    emit syncProgress(QStringLiteral("Pulling library, categories, notes, and tracking from cloud..."));
 
     const int pulledLib = pullLibrary(userId, accessToken);
+    const int pulledCats = pullUserCategories(userId, accessToken);
+    const int pulledNotes = pullMangaNotes(userId, accessToken);
     const int pulledTracking = pullReadTracking(userId, accessToken);
     const int pulledProgress = pullReadingProgressAndHistory(userId, accessToken);
 
-    emit syncProgress(QStringLiteral("Pushing local library and progress to cloud..."));
+    emit syncProgress(QStringLiteral("Pushing local library, categories, notes, and progress to cloud..."));
     const int pushedLib = pushAllLibrary(userId, accessToken);
+    pushUserCategories(userId, accessToken);
+    pushAllMangaNotes(userId, accessToken);
     const int pushedProgress = pushAllReadTracking(userId, accessToken);
 
     SyncResult result;
     result.success = true;
-    result.pulledLibraryCount = pulledLib;
+    result.pulledLibraryCount = pulledLib + pulledCats + pulledNotes;
     result.pulledProgressCount = pulledTracking + pulledProgress;
     result.pushedLibraryCount = pushedLib;
     result.pushedProgressCount = pushedProgress;

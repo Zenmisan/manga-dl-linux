@@ -21,9 +21,11 @@ public:
     quint16 serverPort() const;
 
     static QString generateResponseHtml(bool success);
+    static QString generateFirebaseLoginHtml(quint16 port);
 
 signals:
     void authCodeReceived(const QString &code, const QString &path);
+    void idTokenReceived(const QString &idToken, const QString &email, const QString &displayName);
     void authErrorReceived(const QString &error, const QString &path);
     void timedOut();
 

@@ -94,4 +94,47 @@ SettingsSection {
             }
         }
     }
+
+    SettingsCard {
+        width: Math.min(parent.width, 620)
+        heading: "Alternative Trackers & Tokens"
+        spacing: 12
+
+        Caption {
+            Layout.fillWidth: true
+            text: "Personal access tokens for tracking accounts without OAuth authorization."
+        }
+
+        LabeledField {
+            label: "Kitsu Token"
+            password: true
+            placeholderText: "Kitsu API token"
+            text: AppSettings.kitsuToken
+            onTextEdited: AppSettings.kitsuToken = text
+        }
+
+        LabeledField {
+            label: "MangaUpdates (Baka-Updates) Token"
+            password: true
+            placeholderText: "MangaUpdates user token"
+            text: AppSettings.mangaUpdatesToken
+            onTextEdited: AppSettings.mangaUpdatesToken = text
+        }
+
+        LabeledField {
+            label: "Shikimori Access Token"
+            password: true
+            placeholderText: "Shikimori token"
+            text: AppSettings.shikimoriToken
+            onTextEdited: AppSettings.shikimoriToken = text
+        }
+
+        LabeledField {
+            label: "Bangumi Access Token"
+            password: true
+            placeholderText: "Bangumi token"
+            text: AppSettings.bangumiToken
+            onTextEdited: AppSettings.bangumiToken = text
+        }
+    }
 }

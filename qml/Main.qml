@@ -9,18 +9,26 @@ ApplicationWindow {
     id: window
     width: 1440
     height: 900
-    minimumWidth: 1100
-    minimumHeight: 700
+    minimumWidth: 800
+    minimumHeight: 520
     visible: true
     title: "manga-dl"
     color: Theme.bg
     font.family: Theme.body
 
+    onClosing: (close) => {
+        if (AppSettings.keepRunningInTray) {
+            close.accepted = false
+            window.hide()
+        }
+    }
+
     // First screen. Pass --page <Name> on the command line to start elsewhere (handy for screenshots).
     readonly property string startPage: {
         const args = Qt.application.arguments
         const i = args.indexOf("--page")
-        return i >= 0 && i + 1 < args.length ? args[i + 1] : "Onboarding"
+        if (i >= 0 && i + 1 < args.length) return args[i + 1]
+        return AppSettings.onboardingCompleted ? "Library" : "Onboarding"
     }
 
     // --param key=value (repeatable) passes page parameters to the start page, e.g. --page Extensions --param tab=sources
@@ -59,6 +67,18 @@ ApplicationWindow {
     Component.onCompleted: show(startPage, startParams, false)
 
     Shortcut { sequences: ["Alt+Left", "Back"]; onActivated: if (!window.fullBleed) Nav.back() }
+    Shortcut { sequence: "Escape"; onActivated: if (stack.depth > 1) Nav.back() }
+    Shortcut { sequences: ["Ctrl+K", "Ctrl+F"]; onActivated: Nav.go("Search") }
+    Shortcut { sequence: "Ctrl+,"; onActivated: Nav.go("Settings") }
+    Shortcut { sequence: "Ctrl+L"; onActivated: Nav.go("Library") }
+    Shortcut { sequence: "Ctrl+D"; onActivated: Nav.go("Downloads") }
+    Shortcut { sequence: "Ctrl+U"; onActivated: Nav.go("Updates") }
+    Shortcut {
+        sequence: "F11"
+        onActivated: {
+            window.visibility = (window.visibility === Window.FullScreen) ? Window.Windowed : Window.FullScreen
+        }
+    }
 
     Sidebar {
         id: sidebar

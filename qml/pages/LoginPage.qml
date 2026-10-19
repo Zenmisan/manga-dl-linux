@@ -11,6 +11,7 @@ AuthLayout {
     Connections {
         target: AccountController
         function onAuthSuccess(action) {
+            AppSettings.onboardingCompleted = true
             Nav.toast("Signed in as " + (AccountController.email || AccountController.displayName || "user"))
             Nav.home()
         }
@@ -21,8 +22,23 @@ AuthLayout {
         }
     }
 
-    LabeledField { id: emailField; label: "Email"; placeholderText: "you@example.com" }
-    LabeledField { id: passwordField; label: "Password"; placeholderText: "Your password"; password: true }
+    LabeledField {
+        id: emailField
+        label: "Email"
+        placeholderText: "you@example.com"
+        onAccepted: passwordField.forceActiveFocus()
+    }
+    LabeledField {
+        id: passwordField
+        label: "Password"
+        placeholderText: "Your password"
+        password: true
+        onAccepted: {
+            if (!AccountController.isBusy && emailField.text.length > 0 && passwordField.text.length > 0) {
+                AccountController.signIn(emailField.text, passwordField.text)
+            }
+        }
+    }
     RowLayout {
         Layout.fillWidth: true
         CheckRow { text: "Stay signed in"; checked: true; font.pixelSize: 13; Layout.fillWidth: true }
@@ -47,7 +63,7 @@ AuthLayout {
         enabled: !AccountController.isBusy
         onClicked: AccountController.signInWithGoogle()
     }
-    Btn { Layout.fillWidth: true; kind: "ghost"; size: "large"; text: "Use Without Account"; onClicked: Nav.home() }
+    Btn { Layout.fillWidth: true; kind: "ghost"; size: "large"; text: "Use Without Account"; onClicked: { AppSettings.onboardingCompleted = true; Nav.home() } }
     Row {
         Layout.topMargin: 8
         BodyMuted { text: "No account?"; anchors.verticalCenter: parent.verticalCenter }

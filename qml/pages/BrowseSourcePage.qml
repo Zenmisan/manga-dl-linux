@@ -7,12 +7,16 @@ import MangaDl
 Item {
     id: page
     property string source: "MangaDex"
+    property string tab: "popular"
 
     BrowseSourceController {
         id: controller
     }
 
     Component.onCompleted: {
+        if (page.tab === "latest" || page.tab === "popular") {
+            controller.setBrowseMode(page.tab)
+        }
         controller.load(page.source)
     }
 

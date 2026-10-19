@@ -31,6 +31,8 @@ public:
     int pullLibrary(const QString &userId, const QString &accessToken);
     int pullReadTracking(const QString &userId, const QString &accessToken);
     int pullReadingProgressAndHistory(const QString &userId, const QString &accessToken);
+    int pullUserCategories(const QString &userId, const QString &accessToken);
+    int pullMangaNotes(const QString &userId, const QString &accessToken);
 
     // Push operations
     bool pushLibraryItem(const QString &userId, const QString &accessToken, const LibraryEntity &item, bool subscribed);
@@ -39,8 +41,17 @@ public:
                             const QString &chapterId, int page,
                             const QString &mangaTitle, const QString &chapterTitle,
                             bool isCompleted);
+    bool pushUserCategories(const QString &userId, const QString &accessToken);
+    bool pushMangaNote(const QString &userId, const QString &accessToken,
+                       const QString &provider, const QString &mangaId,
+                       const QString &note, int rating);
     int pushAllLibrary(const QString &userId, const QString &accessToken);
     int pushAllReadTracking(const QString &userId, const QString &accessToken);
+    int pushAllMangaNotes(const QString &userId, const QString &accessToken);
+
+    // Cloud Backup & Restore (Supabase Storage bucket: manga-backups)
+    bool uploadCloudBackup(const QString &userId, const QString &accessToken, const QByteArray &backupJson, QString *outFileName = nullptr, QString *outError = nullptr);
+    QByteArray downloadLatestCloudBackup(const QString &userId, const QString &accessToken, QString *outFileName = nullptr, QString *outError = nullptr);
 
     // Debounced chapter sync
     void queueChapterSync(const QString &userId, const QString &accessToken,

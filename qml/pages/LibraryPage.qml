@@ -3,9 +3,17 @@ import QtQuick.Controls.Basic
 import QtQuick.Layouts
 import MangaDl
 
-// Library: continue-reading cards, category chips and the cover grid.
+// Library: continue-reading cards, category chips, content/status filters, and the cover grid/list.
 Item {
     id: libraryRoot
+
+    Component.onCompleted: {
+        LibraryModel.contentType = AppSettings.libraryContentType || "all"
+        LibraryModel.filterMode = AppSettings.libraryFilterMode || "all"
+        if (!AppSettings.libraryTourCompleted) {
+            quickTour.open()
+        }
+    }
 
     PageScroll {
         anchors.fill: parent
@@ -13,29 +21,62 @@ Item {
         // Header
         RowLayout {
             width: parent.width
-            spacing: 16
+            spacing: 14
+
             PageTitle { text: "Library"; Layout.fillWidth: true }
+
             SearchField {
-                Layout.preferredWidth: 320
+                Layout.preferredWidth: 280
                 placeholderText: "Search library   Ctrl K"
                 text: LibraryModel.searchFilter
                 onTextChanged: LibraryModel.searchFilter = text
             }
+
+            // View Mode toggle: Grid vs List
             Btn {
                 kind: "ghost"
+                size: "small"
+                text: AppSettings.libraryViewMode === "list" ? "List" : "Grid"
+                iconName: AppSettings.libraryViewMode === "list" ? "PageSpread" : "Apps"
+                iconSize: 14
+                onClicked: {
+                    AppSettings.libraryViewMode = AppSettings.libraryViewMode === "list" ? "grid" : "list"
+                }
+            }
+
+            // Density toggle: Normal vs Compact
+            Btn {
+                kind: "ghost"
+                size: "small"
+                text: AppSettings.libraryDensity === "compact" ? "Compact" : "Normal"
+                iconName: "Settings"
+                iconSize: 14
+                onClicked: {
+                    AppSettings.libraryDensity = AppSettings.libraryDensity === "compact" ? "normal" : "compact"
+                }
+            }
+
+            // Sort button
+            Btn {
+                kind: "ghost"
+                size: "small"
                 text: {
                     switch (LibraryModel.sortMode) {
-                    case 1: return "Sort: Title"
-                    case 2: return "Sort: Unread"
-                    default: return "Sort: Last read"
+                    case 1: return "Title"
+                    case 2: return "Unread"
+                    default: return "Recent"
                     }
                 }
                 iconName: "Sort"
+                iconSize: 14
                 onClicked: LibraryModel.sortMode = (LibraryModel.sortMode + 1) % 3
             }
+
             Btn {
-                text: "Update Library"
+                size: "small"
+                text: "Update"
                 iconName: "Refresh"
+                iconSize: 14
                 onClicked: {
                     LibraryModel.refresh()
                     Nav.toast("Checking library for new chapters")
@@ -43,11 +84,71 @@ Item {
             }
         }
 
+        // Secondary filter toolbar: Content Type pills + Filter mode pills
+        RowLayout {
+            width: parent.width
+            spacing: 16
+
+            // Content Type (All | Manga | Novels)
+            Row {
+                spacing: 6
+                ButtonGroup { id: typeGroup }
+                Repeater {
+                    model: [
+                        { label: "All Types", val: "all" },
+                        { label: "Manga", val: "manga" },
+                        { label: "Novels", val: "novel" }
+                    ]
+                    Chip {
+                        required property var modelData
+                        small: true
+                        text: modelData.label
+                        checked: (AppSettings.libraryContentType || "all") === modelData.val
+                        ButtonGroup.group: typeGroup
+                        onClicked: {
+                            AppSettings.libraryContentType = modelData.val
+                            LibraryModel.contentType = modelData.val
+                        }
+                    }
+                }
+            }
+
+            Rectangle { width: 1; height: 18; color: Theme.track }
+
+            // Filter Mode (All | Unread | Downloaded | Started | Completed)
+            Row {
+                spacing: 6
+                ButtonGroup { id: filterGroup }
+                Repeater {
+                    model: [
+                        { label: "All", val: "all" },
+                        { label: "Unread", val: "unread" },
+                        { label: "Downloaded", val: "downloaded" },
+                        { label: "Started", val: "started" },
+                        { label: "Completed", val: "completed" }
+                    ]
+                    Chip {
+                        required property var modelData
+                        small: true
+                        text: modelData.label
+                        checked: (AppSettings.libraryFilterMode || "all") === modelData.val
+                        ButtonGroup.group: filterGroup
+                        onClicked: {
+                            AppSettings.libraryFilterMode = modelData.val
+                            LibraryModel.filterMode = modelData.val
+                        }
+                    }
+                }
+            }
+
+            Item { Layout.fillWidth: true }
+        }
+
         // Continue reading
         Column {
             width: parent.width
             spacing: 12
-            visible: LibraryModel.continueReading.length > 0
+            visible: AppSettings.continueReadingRow && LibraryModel.continueReading.length > 0
 
             Eyebrow { text: "Continue reading" }
             AutoGrid {
@@ -63,8 +164,16 @@ Item {
                     radius: 16
                     fill: Theme.surfaceRaised
                     Accessible.name: "Resume " + (modelData.manga ? modelData.manga.title : "")
-                    onClicked: Nav.open("Reader", { manga: modelData.manga })
-                    Rectangle {   // border
+                    onClicked: {
+                        const isNovel = modelData.manga && (modelData.manga.type === "novel" || modelData.manga.contentType === "novel")
+                        Nav.open(isNovel ? "NovelReader" : "Reader", {
+                            manga: modelData.manga,
+                            chapterId: modelData.chapterId || "",
+                            chapterTitle: modelData.chapterTitle || "",
+                            chapterNumber: modelData.chapterNumber || 0
+                        })
+                    }
+                    Rectangle {
                         width: parent.width; height: parent.height; radius: 16
                         color: "transparent"; border.color: Theme.dividerStrong
                     }
@@ -79,10 +188,21 @@ Item {
                         }
                         ColumnLayout {
                             Layout.fillWidth: true
+                            Layout.preferredWidth: 0
                             Layout.rightMargin: 12
                             spacing: 6
-                            ItemTitle { Layout.fillWidth: true; text: modelData.manga ? modelData.manga.title : "" }
-                            Caption { Layout.fillWidth: true; text: modelData.where || "" }
+                            ItemTitle {
+                                Layout.fillWidth: true
+                                Layout.preferredWidth: 0
+                                text: modelData.manga ? modelData.manga.title : ""
+                                elide: Text.ElideRight
+                            }
+                            Caption {
+                                Layout.fillWidth: true
+                                Layout.preferredWidth: 0
+                                text: modelData.where || ""
+                                elide: Text.ElideRight
+                            }
                             Progress { Layout.fillWidth: true; value: modelData.progress || 0 }
                         }
                     }
@@ -116,17 +236,99 @@ Item {
             }
         }
 
-        // Covers: 7 across at 1440 px, reflows with the window.
+        // Grid View
         AutoGrid {
             width: parent.width
-            minItemWidth: 140
-            spacing: 20
-            visible: LibraryModel.count > 0
+            minItemWidth: AppSettings.libraryDensity === "compact" ? 112 : 144
+            spacing: AppSettings.libraryDensity === "compact" ? 12 : 20
+            visible: LibraryModel.count > 0 && AppSettings.libraryViewMode !== "list"
             model: LibraryModel
             delegate: CoverTile {
                 required property var modelData
                 width: parent.cellWidth
                 manga: modelData
+                showBadges: AppSettings.unreadBadges
+            }
+        }
+
+        // List View
+        Column {
+            width: parent.width
+            spacing: 6
+            visible: LibraryModel.count > 0 && AppSettings.libraryViewMode === "list"
+
+            Repeater {
+                model: LibraryModel
+                delegate: Clickable {
+                    required property var modelData
+                    width: parent.width
+                    height: AppSettings.libraryDensity === "compact" ? 56 : 72
+                    radius: 10
+                    fill: Theme.surfaceRaised
+                    onClicked: Nav.open("MangaDetail", { manga: modelData })
+
+                    RowLayout {
+                        anchors { fill: parent; leftMargin: 10; rightMargin: 16 }
+                        spacing: 14
+
+                        CoverArt {
+                            width: AppSettings.libraryDensity === "compact" ? 34 : 44
+                            height: AppSettings.libraryDensity === "compact" ? 48 : 62
+                            radius: 6
+                            cover: modelData.cover || "#1A2433"
+                        }
+
+                        ColumnLayout {
+                            Layout.fillWidth: true
+                            spacing: 2
+                            Txt {
+                                text: modelData.title || ""
+                                font.pixelSize: AppSettings.libraryDensity === "compact" ? 13 : 15
+                                font.weight: Font.Bold
+                                elide: Text.ElideRight
+                                Layout.fillWidth: true
+                            }
+                            Txt {
+                                text: (modelData.provider || modelData.source || "") + (modelData.type === "novel" ? " · Light Novel" : " · Manga")
+                                font.pixelSize: 11
+                                color: Theme.fgSubtle
+                            }
+                        }
+
+                        // Chapters badge
+                        Txt {
+                            text: (modelData.totalChapters || 0) + " ch."
+                            color: Theme.fgSubtle
+                            font.pixelSize: 12
+                            Layout.preferredWidth: 80
+                            horizontalAlignment: Text.AlignRight
+                        }
+
+                        // Downloaded icon
+                        Icon {
+                            name: "Download"
+                            size: 14
+                            color: modelData.downloaded ? Theme.accentLight : "transparent"
+                        }
+
+                        // Unread badge
+                        Rectangle {
+                            visible: AppSettings.unreadBadges && (modelData.unread > 0)
+                            width: Math.max(22, unreadTxt.implicitWidth + 10)
+                            height: 20
+                            radius: 10
+                            color: Theme.accent
+                            Txt {
+                                id: unreadTxt
+                                anchors.centerIn: parent
+                                text: modelData.unread || 0
+                                font.pixelSize: 11
+                                font.weight: Font.Bold
+                                color: Theme.white
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -173,5 +375,37 @@ Item {
                 }
             }
         }
+    }
+
+    // Quick Tour for First Run / Library
+    QuickTourModal {
+        id: quickTour
+        tourId: "library"
+        steps: [
+            {
+                title: "Welcome to manga-dl",
+                subtitle: "Fast, distraction-free reading",
+                icon: "Play",
+                description: "Your local-first manga and light novel center. Organize your reading library, sort by titles or unread chapters, and access your favorite stories anytime."
+            },
+            {
+                title: "38+ Built-in Sources",
+                subtitle: "Search, discover & read",
+                icon: "Search",
+                description: "Browse extensions across MangaDex, Comick, MangaFox, and community repositories. Search once across multiple sources simultaneously."
+            },
+            {
+                title: "Supercharged Reader",
+                subtitle: "Tailored reading ergonomics",
+                icon: "Pages",
+                description: "Seamless single/spread reading, webtoon continuous scroll, image sharpening, ambilight glow, and customizable keyboard shortcuts."
+            },
+            {
+                title: "Cloud Sync & Backups",
+                subtitle: "Cross-platform continuity",
+                icon: "Backup",
+                description: "Link your Supabase account or self-hosted backend, synchronize reading progress across devices, and connect external trackers like AniList and MyAnimeList."
+            }
+        ]
     }
 }

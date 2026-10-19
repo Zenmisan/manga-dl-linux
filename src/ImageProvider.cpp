@@ -36,6 +36,9 @@ public:
         QNetworkRequest req(url);
         req.setHeader(QNetworkRequest::UserAgentHeader, HttpService::userAgent());
         req.setRawHeader("Accept", "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8");
+        req.setRawHeader("Sec-Fetch-Dest", "image");
+        req.setRawHeader("Sec-Fetch-Mode", "no-cors");
+        req.setRawHeader("Sec-Fetch-Site", "cross-site");
         req.setAttribute(QNetworkRequest::RedirectPolicyAttribute, QNetworkRequest::NoLessSafeRedirectPolicy);
         req.setTransferTimeout(30000);
 
@@ -111,11 +114,30 @@ AsyncImageResponse::AsyncImageResponse(const QString &id, const QSize &requested
     }
 
     // Decode percent-encoding if the protocol or path was encoded
-    if (raw.startsWith(QLatin1String("http%3A"), Qt::CaseInsensitive) ||
-        raw.startsWith(QLatin1String("https%3A"), Qt::CaseInsensitive) ||
-        raw.startsWith(QLatin1String("comixto%3A"), Qt::CaseInsensitive) ||
-        raw.startsWith(QLatin1String("%2F"), Qt::CaseInsensitive)) {
-        raw = QUrl::fromPercentEncoding(raw.toUtf8());
+    while (raw.contains(QLatin1String("%3A"), Qt::CaseInsensitive) ||
+           raw.contains(QLatin1String("%2F"), Qt::CaseInsensitive) ||
+           raw.contains(QLatin1String("%25"), Qt::CaseInsensitive)) {
+        const QString decoded = QUrl::fromPercentEncoding(raw.toUtf8());
+        if (decoded == raw) break;
+        raw = decoded;
+    }
+
+    // Strip any accidental leading slashes from QUrl path parsing
+    while (raw.startsWith(QLatin1Char('/')) &&
+           (raw.contains(QLatin1String("http://"), Qt::CaseInsensitive) ||
+            raw.contains(QLatin1String("https://"), Qt::CaseInsensitive) ||
+            raw.contains(QLatin1String("http:/"), Qt::CaseInsensitive) ||
+            raw.contains(QLatin1String("https:/"), Qt::CaseInsensitive))) {
+        raw = raw.mid(1);
+    }
+
+    // Fix single-slash protocol (https:/ -> https://)
+    if (raw.startsWith(QLatin1String("https:/"), Qt::CaseInsensitive) && !raw.startsWith(QLatin1String("https://"), Qt::CaseInsensitive)) {
+        raw.replace(0, 7, QStringLiteral("https://"));
+    } else if (raw.startsWith(QLatin1String("http:/"), Qt::CaseInsensitive) && !raw.startsWith(QLatin1String("http://"), Qt::CaseInsensitive)) {
+        raw.replace(0, 6, QStringLiteral("http://"));
+    } else if (raw.startsWith(QLatin1String("//"))) {
+        raw = QStringLiteral("https:") + raw;
     }
 
     // Check local file
@@ -170,7 +192,26 @@ AsyncImageResponse::AsyncImageResponse(const QString &id, const QSize &requested
     }
 
     if (referer.isEmpty()) {
-        referer = fetchUrl.scheme() + QLatin1String("://") + fetchUrl.host() + QLatin1Char('/');
+        const QString host = fetchUrl.host().toLower();
+        if (host.contains(QLatin1String("asuracomic")) || host.contains(QLatin1String("asura"))) {
+            referer = QStringLiteral("https://asuracomic.net/");
+        } else if (host.contains(QLatin1String("flamecomics")) || host.contains(QLatin1String("flamescans"))) {
+            referer = QStringLiteral("https://flamecomics.me/");
+        } else if (host.contains(QLatin1String("mghubcdn")) || host.contains(QLatin1String("mangakakalot")) || host.contains(QLatin1String("manganato")) || host.contains(QLatin1String("kakadx"))) {
+            referer = QStringLiteral("https://mangakakalot.com/");
+        } else if (host.contains(QLatin1String("mangakatana"))) {
+            referer = QStringLiteral("https://mangakatana.com/");
+        } else if (host.contains(QLatin1String("batotoo")) || host.contains(QLatin1String("bato.to"))) {
+            referer = QStringLiteral("https://bato.to/");
+        } else if (host.contains(QLatin1String("mangahere"))) {
+            referer = QStringLiteral("https://www.mangahere.cc/");
+        } else if (host.contains(QLatin1String("mangapill"))) {
+            referer = QStringLiteral("https://mangapill.com/");
+        } else if (host.contains(QLatin1String("webtoons"))) {
+            referer = QStringLiteral("https://www.webtoons.com/");
+        } else {
+            referer = fetchUrl.scheme() + QLatin1String("://") + fetchUrl.host() + QLatin1Char('/');
+        }
     }
 
     // Download asynchronously on background thread
@@ -233,6 +274,7 @@ void AsyncImageResponse::finishWithImage(const QImage &image)
 void AsyncImageResponse::finishWithError(const QString &error)
 {
     m_error = error;
+    qWarning().noquote() << QStringLiteral("ImageProvider error: ") << error;
     QTimer::singleShot(0, this, [this] { emit finished(); });
 }
 

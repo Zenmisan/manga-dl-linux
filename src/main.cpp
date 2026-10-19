@@ -36,6 +36,8 @@
 #include "NotificationsController.h"
 #include "updates/UpdateCheckerService.h"
 #include <QSystemTrayIcon>
+#include <QMenu>
+#include <QAction>
 
 using namespace mangadl;
 
@@ -158,6 +160,59 @@ int main(int argc, char *argv[])
     if (QSystemTrayIcon::isSystemTrayAvailable()) {
         trayIcon = new QSystemTrayIcon(QIcon(QStringLiteral(":/qt/qml/MangaDl/assets/icons/manga-dl.png")), &app);
         trayIcon->setToolTip(QStringLiteral("manga-dl"));
+
+        auto *trayMenu = new QMenu();
+        trayMenu->setStyleSheet(QStringLiteral(
+            "QMenu {"
+            "  background-color: #18181b;"
+            "  color: #f4f4f5;"
+            "  border: 1px solid #3f3f46;"
+            "  border-radius: 8px;"
+            "  padding: 6px;"
+            "  font-size: 13px;"
+            "}"
+            "QMenu::item {"
+            "  padding: 6px 24px 6px 12px;"
+            "  border-radius: 4px;"
+            "  background-color: transparent;"
+            "}"
+            "QMenu::item:selected {"
+            "  background-color: #e11d48;"
+            "  color: #ffffff;"
+            "}"
+            "QMenu::separator {"
+            "  height: 1px;"
+            "  background-color: #27272a;"
+            "  margin: 4px 6px;"
+            "}"
+        ));
+        auto *showAction = trayMenu->addAction(QStringLiteral("Show manga-dl"));
+        auto *hideAction = trayMenu->addAction(QStringLiteral("Hide"));
+        trayMenu->addSeparator();
+        auto *quitAction = trayMenu->addAction(QStringLiteral("Quit"));
+
+        QObject::connect(showAction, &QAction::triggered, [&engine]() {
+            if (!engine.rootObjects().isEmpty()) {
+                if (auto *window = qobject_cast<QQuickWindow *>(engine.rootObjects().first())) {
+                    window->show();
+                    window->raise();
+                    window->requestActivate();
+                }
+            }
+        });
+
+        QObject::connect(hideAction, &QAction::triggered, [&engine]() {
+            if (!engine.rootObjects().isEmpty()) {
+                if (auto *window = qobject_cast<QQuickWindow *>(engine.rootObjects().first())) {
+                    window->hide();
+                }
+            }
+        });
+
+        QObject::connect(quitAction, &QAction::triggered, &app, &QCoreApplication::quit);
+
+        trayIcon->setContextMenu(trayMenu);
+
         QObject::connect(trayIcon, &QSystemTrayIcon::activated, [&engine](QSystemTrayIcon::ActivationReason reason) {
             if (reason == QSystemTrayIcon::Trigger || reason == QSystemTrayIcon::DoubleClick) {
                 if (!engine.rootObjects().isEmpty()) {

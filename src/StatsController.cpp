@@ -9,8 +9,13 @@
 
 namespace mangadl {
 
+static StatsController *s_statsInstance = nullptr;
+
 StatsController &StatsController::instance()
 {
+    if (s_statsInstance) {
+        return *s_statsInstance;
+    }
     static StatsController s_instance;
     return s_instance;
 }
@@ -24,6 +29,7 @@ StatsController::StatsController(MangaDatabase *db, QObject *parent)
     : QObject(parent)
     , m_db(db ? db : MangaDatabase::instance())
 {
+    s_statsInstance = this;
     if (m_db) {
         connect(m_db, &MangaDatabase::historyChanged, this, &StatsController::refresh);
         connect(m_db, &MangaDatabase::progressChanged, this, &StatsController::refresh);
@@ -47,9 +53,14 @@ void StatsController::refresh()
 
     const QDate today = QDate::currentDate();
     int currentMonthChapters = 0;
+    int last7DaysCount = 0;
+    const qint64 sevenDaysAgo = QDateTime::currentDateTime().addDays(-7).toMSecsSinceEpoch();
 
     for (const auto &h : history) {
         historyTimestamps.append(h.readAt);
+        if (h.readAt >= sevenDaysAgo) {
+            last7DaysCount++;
+        }
         const QDate d = QDateTime::fromMSecsSinceEpoch(h.readAt).toLocalTime().date();
         if (d.year() == today.year() && d.month() == today.month()) {
             currentMonthChapters++;
@@ -57,17 +68,19 @@ void StatsController::refresh()
     }
 
     m_chaptersRead = std::max(static_cast<int>(completedProgress.size()), static_cast<int>(history.size()));
-    const int hours = m_chaptersRead > 0 ? std::max(1, m_chaptersRead * 7 / 60) : 0;
-    m_timeReading = QStringLiteral("%1h").arg(hours);
+    const int totalMinutes = m_chaptersRead * 7;
+    if (totalMinutes < 60) {
+        m_timeReading = QStringLiteral("%1m").arg(totalMinutes);
+    } else {
+        m_timeReading = QStringLiteral("%1h").arg(totalMinutes / 60);
+    }
 
     m_currentStreak = GamificationService::calculateStreak(historyTimestamps, today);
-    const int pace = m_chaptersRead > 0 ? std::max(1, m_chaptersRead / 8) : 0;
-    m_readingPace = QStringLiteral("%1/wk").arg(pace);
+    m_readingPace = QStringLiteral("%1/wk").arg(last7DaysCount);
 
     // Reading goals
-    const int monthlyCount = std::max(currentMonthChapters, std::min(m_chaptersRead, 25));
-    m_monthlyGoalProgress = std::clamp(static_cast<double>(monthlyCount) / 25.0, 0.0, 1.0);
-    m_monthlyGoalText = QStringLiteral("%1 / 25").arg(monthlyCount);
+    m_monthlyGoalProgress = std::clamp(static_cast<double>(currentMonthChapters) / 25.0, 0.0, 1.0);
+    m_monthlyGoalText = QStringLiteral("%1 / 25").arg(currentMonthChapters);
 
     const int yearlyManga = static_cast<int>(library.size());
     m_yearlyGoalProgress = std::clamp(static_cast<double>(yearlyManga) / 50.0, 0.0, 1.0);

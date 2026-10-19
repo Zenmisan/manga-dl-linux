@@ -18,21 +18,23 @@ Rectangle {
         DisplayText { text: "manga-dl"; font.pixelSize: 24; Layout.leftMargin: 12; Layout.bottomMargin: 18 }
 
         NavItem { Layout.fillWidth: true; text: "Library"; iconName: "Library"; selected: bar.current === "Library"; onClicked: Nav.go("Library") }
-        NavItem { Layout.fillWidth: true; text: "Updates"; iconName: "Updates"; badge: "8"; selected: bar.current === "Updates"; onClicked: Nav.go("Updates") }
+        NavItem {
+            Layout.fillWidth: true; text: "Updates"; iconName: "Updates"
+            badge: UpdatesModel.totalNewChapters > 0 ? ("" + UpdatesModel.totalNewChapters) : ""
+            selected: bar.current === "Updates"
+            onClicked: Nav.go("Updates")
+        }
         NavItem { Layout.fillWidth: true; text: "History"; iconName: "History"; selected: bar.current === "History"; onClicked: Nav.go("History") }
         NavItem { Layout.fillWidth: true; text: "Browse"; iconName: "Browse"; selected: bar.current === "Browse"; onClicked: Nav.go("Extensions") }
-        NavItem { Layout.fillWidth: true; text: "Downloads"; iconName: "Download"; badge: "3"; selected: bar.current === "Downloads"; onClicked: Nav.go("Downloads") }
+        NavItem {
+            Layout.fillWidth: true; text: "Downloads"; iconName: "Download"
+            badge: DownloadsModel.queueCount > 0 ? ("" + DownloadsModel.queueCount) : ""
+            selected: bar.current === "Downloads"
+            onClicked: Nav.go("Downloads")
+        }
         NavItem { Layout.fillWidth: true; text: "Stats"; iconName: "Stats"; selected: bar.current === "Stats"; onClicked: Nav.go("Stats") }
 
         Item { Layout.fillHeight: true }
-
-        NavItem {
-            Layout.fillWidth: true
-            visible: AppInfo.debugPages
-            text: "All pages (debug)"; iconName: "List"
-            selected: bar.current === "AllPages"
-            onClicked: Nav.go("AllPages")
-        }
         NavItem { Layout.fillWidth: true; text: "Notifications"; iconName: "Mail"; selected: bar.current === "Notifications"; onClicked: Nav.go("Notifications") }
         NavItem { Layout.fillWidth: true; text: "Settings"; iconName: "Settings"; selected: bar.current === "Settings"; onClicked: Nav.go("Settings") }
         NavItem { Layout.fillWidth: true; text: "Help"; iconName: "Help"; selected: bar.current === "Help"; onClicked: Nav.go("Help") }

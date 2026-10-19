@@ -10,8 +10,19 @@ ColumnLayout {
     property alias placeholderText: input.placeholderText
     property alias password: input.password
     property alias error: input.error
+    signal accepted()
+
+    function forceActiveFocus() {
+        input.forceActiveFocus()
+    }
+
     Layout.fillWidth: true
     spacing: 8
     FieldLabel { id: lbl }
-    Field { id: input; Layout.fillWidth: true; Accessible.name: lbl.text }
+    Field {
+        id: input
+        Layout.fillWidth: true
+        Accessible.name: lbl.text
+        onAccepted: parent.accepted()
+    }
 }

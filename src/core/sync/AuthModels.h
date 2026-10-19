@@ -11,6 +11,7 @@ struct AuthSession {
     QString refreshToken;
     QString userId;
     QString email;
+    QString displayName;
 
     bool isValid() const {
         return !accessToken.isEmpty() && !userId.isEmpty();

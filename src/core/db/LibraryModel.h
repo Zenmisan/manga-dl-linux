@@ -12,6 +12,8 @@ class LibraryModel : public QAbstractListModel {
 
     Q_PROPERTY(QString categoryFilter READ categoryFilter WRITE setCategoryFilter NOTIFY filterChanged)
     Q_PROPERTY(QString searchFilter READ searchFilter WRITE setSearchFilter NOTIFY filterChanged)
+    Q_PROPERTY(QString contentType READ contentType WRITE setContentType NOTIFY filterChanged)
+    Q_PROPERTY(QString filterMode READ filterMode WRITE setFilterMode NOTIFY filterChanged)
     Q_PROPERTY(int sortMode READ sortMode WRITE setSortMode NOTIFY sortModeChanged)
     Q_PROPERTY(int count READ count NOTIFY countChanged)
     Q_PROPERTY(int totalUnread READ totalUnread NOTIFY totalUnreadChanged)
@@ -50,6 +52,12 @@ public:
     QString searchFilter() const { return m_searchFilter; }
     void setSearchFilter(const QString &filter);
 
+    QString contentType() const { return m_contentType; }
+    void setContentType(const QString &type);
+
+    QString filterMode() const { return m_filterMode; }
+    void setFilterMode(const QString &mode);
+
     int sortMode() const { return m_sortMode; }
     void setSortMode(int mode);
 
@@ -84,6 +92,8 @@ private:
     MangaDatabase *m_db = nullptr;
     QString m_categoryFilter = QStringLiteral("All");
     QString m_searchFilter;
+    QString m_contentType = QStringLiteral("all");
+    QString m_filterMode = QStringLiteral("all");
     int m_sortMode = 0; // 0 = Last read/updated, 1 = Title A-Z, 2 = Unread
     std::vector<Item> m_items;
 };

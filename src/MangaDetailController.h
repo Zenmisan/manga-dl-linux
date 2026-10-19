@@ -22,10 +22,18 @@ class MangaDetailController : public QObject
     Q_PROPERTY(QVariantMap resumeChapter READ resumeChapter NOTIFY resumeChapterChanged)
     Q_PROPERTY(int totalChapters READ totalChapters NOTIFY totalChaptersChanged)
     Q_PROPERTY(int unreadCount READ unreadCount NOTIFY unreadCountChanged)
+    Q_PROPERTY(int personalRating READ personalRating NOTIFY personalNoteChanged)
+    Q_PROPERTY(QString personalNote READ personalNote NOTIFY personalNoteChanged)
+    Q_PROPERTY(bool pinned READ isPinned NOTIFY pinnedChanged)
+    Q_PROPERTY(bool muted READ isMuted NOTIFY mutedChanged)
+    Q_PROPERTY(bool hasOverride READ hasOverride NOTIFY overrideChanged)
+    Q_PROPERTY(bool isNovel READ isNovel NOTIFY detailChanged)
 
 public:
     explicit MangaDetailController(QObject *parent = nullptr);
     ~MangaDetailController() override = default;
+
+    bool isNovel() const;
 
     QString provider() const { return m_provider; }
     QString mangaId() const { return m_mangaId; }
@@ -37,6 +45,11 @@ public:
     QVariantMap resumeChapter() const { return m_resumeChapter; }
     int totalChapters() const { return static_cast<int>(m_chapters.size()); }
     int unreadCount() const { return m_unreadCount; }
+    int personalRating() const { return m_personalRating; }
+    QString personalNote() const { return m_personalNote; }
+    bool isPinned() const { return m_pinned; }
+    bool isMuted() const { return m_muted; }
+    bool hasOverride() const { return m_hasOverride; }
 
     Q_INVOKABLE void load(const QString &provider, const QString &mangaId);
     Q_INVOKABLE void reload();
@@ -44,8 +57,26 @@ public:
     Q_INVOKABLE void addToLibrary();
     Q_INVOKABLE void removeFromLibrary();
     Q_INVOKABLE void markChapterRead(const QString &chapterId, bool read);
+    Q_INVOKABLE void markPreviousChaptersRead(const QString &chapterId);
     Q_INVOKABLE QStringList getCategories() const;
     Q_INVOKABLE void setCategories(const QStringList &categoryIds);
+
+    // Notes & Overrides
+    Q_INVOKABLE void savePersonalNote(int rating, const QString &note);
+    Q_INVOKABLE void saveOverride(const QString &title, const QString &coverUrl, const QString &synopsis);
+    Q_INVOKABLE void resetOverride();
+    Q_INVOKABLE void togglePinned();
+    Q_INVOKABLE void toggleMuted();
+
+    // Chapter Bookmarks
+    Q_INVOKABLE bool isChapterBookmarked(const QString &chapterId) const;
+    Q_INVOKABLE void toggleChapterBookmark(const QString &chapterId);
+
+    // Comments
+    Q_INVOKABLE QVariantList getComments(const QString &chapterId = QString()) const;
+    Q_INVOKABLE bool addComment(const QString &text, const QString &chapterId = QString(), const QString &parentId = QString());
+    Q_INVOKABLE bool toggleCommentLike(const QString &commentId);
+    Q_INVOKABLE bool deleteComment(const QString &commentId);
 
 signals:
     void providerChanged();
@@ -58,6 +89,11 @@ signals:
     void resumeChapterChanged();
     void totalChaptersChanged();
     void unreadCountChanged();
+    void personalNoteChanged();
+    void pinnedChanged();
+    void mutedChanged();
+    void overrideChanged();
+    void commentsChanged();
 
 private:
     void updateResumeChapterAndUnread();
@@ -71,4 +107,9 @@ private:
     bool m_inLibrary = false;
     QVariantMap m_resumeChapter;
     int m_unreadCount = 0;
+    int m_personalRating = 0;
+    QString m_personalNote;
+    bool m_pinned = false;
+    bool m_muted = false;
+    bool m_hasOverride = false;
 };

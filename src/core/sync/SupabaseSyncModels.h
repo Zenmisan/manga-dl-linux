@@ -112,6 +112,62 @@ struct SupabaseReadingProgressRecord {
     }
 };
 
+struct SupabaseUserCategoriesRecord {
+    QString userId;
+    QJsonArray customCategories;
+    QJsonObject mangaAssignments;
+    QString updatedAt;
+
+    QJsonObject toJson() const {
+        QJsonObject obj;
+        obj[QStringLiteral("user_id")] = userId;
+        obj[QStringLiteral("custom_categories")] = customCategories;
+        obj[QStringLiteral("manga_assignments")] = mangaAssignments;
+        if (!updatedAt.isEmpty()) obj[QStringLiteral("updated_at")] = updatedAt;
+        return obj;
+    }
+
+    static SupabaseUserCategoriesRecord fromJson(const QJsonObject &obj) {
+        SupabaseUserCategoriesRecord rec;
+        rec.userId = obj.value(QStringLiteral("user_id")).toString();
+        rec.customCategories = obj.value(QStringLiteral("custom_categories")).toArray();
+        rec.mangaAssignments = obj.value(QStringLiteral("manga_assignments")).toObject();
+        rec.updatedAt = obj.value(QStringLiteral("updated_at")).toString();
+        return rec;
+    }
+};
+
+struct SupabaseMangaNoteRecord {
+    QString userId;
+    QString provider;
+    QString mangaId;
+    QString note;
+    int rating = 0;
+    QString updatedAt;
+
+    QJsonObject toJson() const {
+        QJsonObject obj;
+        obj[QStringLiteral("user_id")] = userId;
+        obj[QStringLiteral("provider")] = provider;
+        obj[QStringLiteral("manga_id")] = mangaId;
+        obj[QStringLiteral("note")] = note;
+        obj[QStringLiteral("rating")] = rating;
+        if (!updatedAt.isEmpty()) obj[QStringLiteral("updated_at")] = updatedAt;
+        return obj;
+    }
+
+    static SupabaseMangaNoteRecord fromJson(const QJsonObject &obj) {
+        SupabaseMangaNoteRecord rec;
+        rec.userId = obj.value(QStringLiteral("user_id")).toString();
+        rec.provider = obj.value(QStringLiteral("provider")).toString();
+        rec.mangaId = obj.value(QStringLiteral("manga_id")).toString();
+        rec.note = obj.value(QStringLiteral("note")).toString();
+        rec.rating = obj.value(QStringLiteral("rating")).toInt(0);
+        rec.updatedAt = obj.value(QStringLiteral("updated_at")).toString();
+        return rec;
+    }
+};
+
 struct SyncResult {
     bool success = false;
     int pulledLibraryCount = 0;

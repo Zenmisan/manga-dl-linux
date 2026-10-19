@@ -52,8 +52,9 @@ QUrl HttpService::resolveUrl(const QString &url)
     // Extensions were written for the web backend, which exposes a fetch proxy:
     //   /manga/proxy/html?url=<encoded>      /manga/proxy/json?url=<encoded>
     // A native app talks to the site directly, so unwrap the real target.
-    if (url.startsWith(QLatin1String("/manga/proxy/")) || url.startsWith(QLatin1String("/manga/image-proxy"))) {
-        const QUrl dummy(QLatin1String("http://proxy.invalid") + url);  // only used to parse the query string
+    if (url.startsWith(QLatin1String("/manga/proxy/")) || url.startsWith(QLatin1String("/manga/image-proxy")) ||
+        url.contains(QLatin1String("image-proxy")) || url.contains(QLatin1String("/proxy/"))) {
+        const QUrl dummy = url.startsWith(QLatin1Char('/')) ? QUrl(QLatin1String("http://proxy.invalid") + url) : QUrl(url);
         const QString target = QUrlQuery(dummy).queryItemValue(QStringLiteral("url"), QUrl::FullyDecoded);
         if (!target.isEmpty())
             return QUrl(target);

@@ -3,32 +3,67 @@ import QtQuick.Controls.Basic
 import QtQuick.Layouts
 import MangaDl
 
-// Global search across sources, with a filter panel on the right.
+// Global search across sources, responsive for all window sizes and Wayland.
 Item {
     id: root
+    property bool showFilters: width >= 1150
 
     SearchController {
         id: controller
     }
 
+    readonly property var currentTabSources: {
+        const all = controller.availableSources
+        if (controller.activeTab === 0) {
+            return all.filter(s => s.type !== "novel")
+        } else if (controller.activeTab === 1) {
+            return all.filter(s => s.type === "novel")
+        }
+        return all
+    }
+
     PageScroll {
-        anchors { left: parent.left; top: parent.top; bottom: parent.bottom; right: filters.left }
+        anchors {
+            left: parent.left
+            top: parent.top
+            bottom: parent.bottom
+            right: filters.visible ? filters.left : parent.right
+        }
         spacing: 16
 
-        Item {
+        // Search Input Header
+        RowLayout {
             width: parent.width
-            height: search.height
+            spacing: 12
+
             SearchField {
                 id: search
-                width: parent.width
+                Layout.fillWidth: true
                 large: true
-                placeholderText: "Search all sources"
+                placeholderText: "Search all sources..."
                 onAccepted: controller.search(text)
             }
+
+            Btn {
+                kind: "ghost"
+                iconName: "Sliders"
+                text: "Filters"
+                implicitHeight: 48
+                onClicked: root.showFilters = !root.showFilters
+            }
+        }
+
+        // Status text / count
+        RowLayout {
+            width: parent.width
+            visible: controller.statusText.length > 0
+            spacing: 8
             Caption {
                 text: controller.statusText
-                anchors { right: parent.right; rightMargin: 18; verticalCenter: parent.verticalCenter }
+                font.pixelSize: 13
+                color: Theme.fgSubtle
             }
+            Item { Layout.fillWidth: true }
         }
 
         Tabs {
@@ -145,84 +180,109 @@ Item {
         }
     }
 
-    // Filters
+    // Collapsible Filters Panel
     Rectangle {
         id: filters
-        width: 300
+        visible: root.showFilters
+        width: Math.min(280, root.width * 0.35)
         anchors { top: parent.top; bottom: parent.bottom; right: parent.right }
         color: Theme.navBg
         Rectangle { width: 1; height: parent.height; color: Theme.dividerStrong }
 
-        ColumnLayout {
-            anchors { left: parent.left; right: parent.right; top: parent.top; margins: 24; topMargin: 28 }
-            spacing: 20
-            SectionTitle { Layout.fillWidth: true; text: "Search filters" }
+        Flickable {
+            anchors.fill: parent
+            contentHeight: filterCol.implicitHeight + 48
+            clip: true
+
             ColumnLayout {
-                spacing: 2
-                Eyebrow { text: "Sources"; muted: true; Layout.bottomMargin: 6 }
-                Repeater {
-                    model: controller.availableSources.slice(0, 6)
-                    delegate: CheckRow {
-                        required property var modelData
-                        text: modelData.name
-                        checked: controller.selectedSources.length === 0 || controller.selectedSources.indexOf(modelData.id) !== -1
-                        onToggled: controller.toggleSource(modelData.id)
-                    }
-                }
-            }
-            ColumnLayout {
-                spacing: 10
-                Eyebrow { text: "Status"; muted: true }
-                Row {
-                    spacing: 6
-                    ButtonGroup { id: status }
-                    Chip {
-                        small: true; leftPadding: 12; text: "Any"
-                        checked: controller.selectedStatus === "Any"
-                        ButtonGroup.group: status
-                        onClicked: controller.selectedStatus = "Any"
-                    }
-                    Chip {
-                        small: true; leftPadding: 12; text: "Ongoing"
-                        checked: controller.selectedStatus === "Ongoing"
-                        ButtonGroup.group: status
-                        onClicked: controller.selectedStatus = "Ongoing"
-                    }
-                    Chip {
-                        small: true; leftPadding: 12; text: "Completed"
-                        checked: controller.selectedStatus === "Completed"
-                        ButtonGroup.group: status
-                        onClicked: controller.selectedStatus = "Completed"
-                    }
-                }
-            }
-            ColumnLayout {
-                Layout.fillWidth: true
-                spacing: 8
-                Eyebrow { text: "Sort by"; muted: true }
-                MdCombo {
+                id: filterCol
+                anchors { left: parent.left; right: parent.right; top: parent.top; margins: 20; topMargin: 24 }
+                spacing: 18
+
+                RowLayout {
                     Layout.fillWidth: true
-                    model: ["Relevance", "Latest update", "Title A–Z"]
-                    Accessible.name: "Sort by"
-                    onActivated: index => controller.sortBy = model[index]
+                    SectionTitle { text: "Search filters"; Layout.fillWidth: true }
+                    Btn {
+                        kind: "icon"; iconName: "Close"; iconSize: 14
+                        onClicked: root.showFilters = false
+                    }
                 }
-            }
-        }
-        RowLayout {
-            anchors { left: parent.left; right: parent.right; bottom: parent.bottom; margins: 24; bottomMargin: 28 }
-            spacing: 8
-            Btn {
-                Layout.fillWidth: true
-                kind: "ghost"
-                text: "Reset"
-                implicitHeight: 44
-                onClicked: controller.resetFilters()
-            }
-            Btn {
-                Layout.fillWidth: true
-                text: "Apply"
-                implicitHeight: 44
-                onClicked: controller.search(search.text)
+
+                // Sources list filtered by active tab
+                ColumnLayout {
+                    spacing: 4
+                    Eyebrow { text: "Sources"; muted: true; Layout.bottomMargin: 4 }
+                    Repeater {
+                        model: root.currentTabSources.slice(0, 10)
+                        delegate: CheckRow {
+                            required property var modelData
+                            text: modelData.name
+                            checked: controller.selectedSources.length === 0 || controller.selectedSources.indexOf(modelData.id) !== -1
+                            onToggled: controller.toggleSource(modelData.id)
+                        }
+                    }
+                }
+
+                // Status
+                ColumnLayout {
+                    spacing: 8
+                    Eyebrow { text: "Status"; muted: true }
+                    Row {
+                        spacing: 6
+                        ButtonGroup { id: status }
+                        Chip {
+                            small: true; leftPadding: 10; text: "Any"
+                            checked: controller.selectedStatus === "Any"
+                            ButtonGroup.group: status
+                            onClicked: controller.selectedStatus = "Any"
+                        }
+                        Chip {
+                            small: true; leftPadding: 10; text: "Ongoing"
+                            checked: controller.selectedStatus === "Ongoing"
+                            ButtonGroup.group: status
+                            onClicked: controller.selectedStatus = "Ongoing"
+                        }
+                        Chip {
+                            small: true; leftPadding: 10; text: "Completed"
+                            checked: controller.selectedStatus === "Completed"
+                            ButtonGroup.group: status
+                            onClicked: controller.selectedStatus = "Completed"
+                        }
+                    }
+                }
+
+                // Sort By
+                ColumnLayout {
+                    Layout.fillWidth: true
+                    spacing: 6
+                    Eyebrow { text: "Sort by"; muted: true }
+                    MdCombo {
+                        Layout.fillWidth: true
+                        model: ["Relevance", "Latest update", "Title A–Z"]
+                        Accessible.name: "Sort by"
+                        onActivated: index => controller.sortBy = model[index]
+                    }
+                }
+
+                // Buttons
+                RowLayout {
+                    Layout.fillWidth: true
+                    Layout.topMargin: 12
+                    spacing: 8
+                    Btn {
+                        Layout.fillWidth: true
+                        kind: "ghost"
+                        text: "Reset"
+                        implicitHeight: 40
+                        onClicked: controller.resetFilters()
+                    }
+                    Btn {
+                        Layout.fillWidth: true
+                        text: "Apply"
+                        implicitHeight: 40
+                        onClicked: controller.search(search.text)
+                    }
+                }
             }
         }
     }

@@ -1,6 +1,11 @@
 #include "AccountController.h"
 #include "src/core/settings/AppSettings.h"
 #include "src/core/sync/SecretStorage.h"
+#include "core/db/LibraryModel.h"
+#include "core/db/HistoryModel.h"
+#include "core/db/UpdatesModel.h"
+#include "StatsController.h"
+#include "ProfileController.h"
 #include <QDesktopServices>
 #include <QUrl>
 #include <QElapsedTimer>
@@ -17,8 +22,45 @@ AccountController::AccountController(QObject *parent)
     const QString anonKey = settings->supabaseAnonKey();
 
     m_authService = std::make_unique<SupabaseAuthService>(url, anonKey, this);
+    m_firebaseAuth = std::make_unique<FirebaseAuthService>(QStringLiteral("AIzaSyDzw5OFZJ_r4uO_wtGK30c8i92qV_aaXbw"), this);
     m_syncService = std::make_unique<SupabaseSyncService>(MangaDatabase::instance(), url, anonKey, this);
     m_loopback = std::make_unique<OAuthLoopbackListener>(this);
+
+    connect(m_firebaseAuth.get(), &FirebaseAuthService::signInFinished,
+            this, [this](const FirebaseAuthResult &result) {
+                if (result.success) {
+                    setBusy(false);
+                    if (!result.email.isEmpty()) {
+                        AppSettings::instance()->setUserEmail(result.email);
+                    }
+                    if (!result.displayName.isEmpty()) {
+                        AppSettings::instance()->setDisplayName(result.displayName);
+                    }
+                    AuthSession session;
+                    session.userId = result.localId;
+                    session.email = result.email;
+                    session.accessToken = result.idToken;
+                    session.refreshToken = result.refreshToken;
+                    session.displayName = result.displayName;
+                    handleAuthSuccess(session);
+                    emit authSuccess(QStringLiteral("signIn"));
+                }
+            });
+
+    connect(m_loopback.get(), &OAuthLoopbackListener::idTokenReceived,
+            this, [this](const QString &idToken, const QString &email, const QString &displayName) {
+                if (!email.isEmpty()) {
+                    AppSettings::instance()->setUserEmail(email);
+                }
+                if (!displayName.isEmpty()) {
+                    AppSettings::instance()->setDisplayName(displayName);
+                }
+                emit profileChanged();
+                ProfileController::instance().refresh();
+
+                // Exchange Google/Firebase ID token with Supabase to establish database session
+                m_authService->signInWithIdToken(idToken);
+            });
 
     connect(m_loopback.get(), &OAuthLoopbackListener::authCodeReceived,
             this, &AccountController::onGoogleAuthCodeReceived);
@@ -35,12 +77,15 @@ AccountController::AccountController(QObject *parent)
 
     connect(m_authService.get(), &SupabaseAuthService::signInFinished,
             this, [this](bool success, const AuthSession &session, const QString &err) {
-                setBusy(false);
                 if (success) {
+                    setBusy(false);
                     handleAuthSuccess(session);
                     emit authSuccess(QStringLiteral("signIn"));
                 } else {
-                    setErrorMessage(err);
+                    if (!signedIn()) {
+                        setBusy(false);
+                        setErrorMessage(err);
+                    }
                 }
             });
 
@@ -89,6 +134,11 @@ AccountController::AccountController(QObject *parent)
             AppSettings::instance()->setLastSyncTime(QDateTime::currentSecsSinceEpoch());
             emit lastSyncedTextChanged();
         }
+        LibraryModel::instance().refresh();
+        HistoryModel::instance().refresh();
+        UpdatesModel::instance().refresh();
+        StatsController::instance().refresh();
+        ProfileController::instance().refresh();
     });
 }
 
@@ -174,6 +224,14 @@ void AccountController::handleAuthSuccess(const AuthSession &session)
     auto *settings = AppSettings::instance();
     settings->setUserId(session.userId);
     settings->setUserEmail(session.email);
+    if (!session.displayName.trimmed().isEmpty()) {
+        settings->setDisplayName(session.displayName.trimmed());
+    } else if (settings->displayName().trimmed().isEmpty() && !session.email.trimmed().isEmpty()) {
+        const QString prefix = session.email.split(QLatin1Char('@')).first();
+        if (!prefix.isEmpty()) {
+            settings->setDisplayName(prefix.left(1).toUpper() + prefix.mid(1));
+        }
+    }
 
     SecretStorage::storeSecret(QStringLiteral("supabase_access_token"), session.accessToken);
     SecretStorage::storeSecret(QStringLiteral("supabase_refresh_token"), session.refreshToken);
@@ -181,6 +239,7 @@ void AccountController::handleAuthSuccess(const AuthSession &session)
     setErrorMessage(QString());
     emit signedInChanged();
     emit profileChanged();
+    ProfileController::instance().refresh();
 
     // Trigger sync
     syncNow();
@@ -190,6 +249,11 @@ void AccountController::signIn(const QString &email, const QString &password)
 {
     setBusy(true);
     setErrorMessage(QString());
+    if (!email.trimmed().isEmpty()) {
+        AppSettings::instance()->setUserEmail(email.trimmed());
+        emit profileChanged();
+    }
+    m_firebaseAuth->signInWithPassword(email.trimmed(), password);
     m_authService->signInWithPassword(email.trimmed(), password);
 }
 
@@ -197,6 +261,14 @@ void AccountController::signUp(const QString &username, const QString &email, co
 {
     setBusy(true);
     setErrorMessage(QString());
+    if (!email.trimmed().isEmpty()) {
+        AppSettings::instance()->setUserEmail(email.trimmed());
+    }
+    if (!username.trimmed().isEmpty()) {
+        AppSettings::instance()->setDisplayName(username.trimmed());
+    }
+    emit profileChanged();
+    m_firebaseAuth->signUp(email.trimmed(), password);
     m_authService->signUp(username.trimmed(), email.trimmed(), password);
 }
 
@@ -204,6 +276,7 @@ void AccountController::requestPasswordReset(const QString &email)
 {
     setBusy(true);
     setErrorMessage(QString());
+    m_firebaseAuth->sendPasswordReset(email.trimmed());
     m_authService->requestPasswordReset(email.trimmed());
 }
 
@@ -232,19 +305,14 @@ void AccountController::signInWithGoogle()
     setBusy(true);
     setErrorMessage(QString());
 
-    const auto pkce = SupabaseAuthService::generatePkceS256();
-    m_googleCodeVerifier = pkce.first;
-
-    const QString redirectUri = AppSettings::instance()->googleRedirectUri();
-    const QString authUrl = m_authService->getOAuthAuthorizeUrl(QStringLiteral("google"), redirectUri, pkce.second);
-
     if (!m_loopback->start(5678, 120000)) {
         setBusy(false);
-        setErrorMessage(QStringLiteral("Could not start local OAuth listener on port 5678."));
+        setErrorMessage(QStringLiteral("Could not start local listener on port 5678 for Google sign-in."));
         return;
     }
 
-    QDesktopServices::openUrl(QUrl(authUrl));
+    const QString localAuthUrl = QStringLiteral("http://localhost:%1/google-login").arg(m_loopback->serverPort());
+    QDesktopServices::openUrl(QUrl(localAuthUrl));
 }
 
 void AccountController::onGoogleAuthCodeReceived(const QString &code, const QString &path)

@@ -37,6 +37,10 @@ public:
     bool addToLibrary(const LibraryEntity &item);
     bool removeFromLibrary(const QString &provider, const QString &mangaId);
     bool updateTotalChapters(const QString &provider, const QString &mangaId, int totalChapters);
+    bool setMangaPinned(const QString &provider, const QString &mangaId, bool pinned);
+    bool isMangaPinned(const QString &provider, const QString &mangaId) const;
+    bool setMangaMuted(const QString &provider, const QString &mangaId, bool muted);
+    bool isMangaMuted(const QString &provider, const QString &mangaId) const;
     int getUnreadCount(const QString &provider, const QString &mangaId) const;
     int getCompletedChaptersCount(const QString &provider, const QString &mangaId) const;
     bool migrateManga(const QString &oldProvider, const QString &oldMangaId,
@@ -93,6 +97,37 @@ public:
     bool removeNewChapter(const QString &id);
     bool clearNewChapters();
 
+    // --- Manga Notes & Ratings ---------------------------------------------------
+    std::optional<MangaNoteEntity> getMangaNote(const QString &provider, const QString &mangaId) const;
+    bool saveMangaNote(const QString &provider, const QString &mangaId, const QString &note, int rating, qint64 updatedAt = 0);
+    QList<MangaNoteEntity> getAllMangaNotes() const;
+
+    // --- Manga Metadata Overrides ------------------------------------------------
+    std::optional<MangaOverrideEntity> getMangaOverride(const QString &provider, const QString &mangaId) const;
+    bool saveMangaOverride(const MangaOverrideEntity &overrideEntity);
+    bool deleteMangaOverride(const QString &provider, const QString &mangaId);
+
+    // --- Chapter Bookmarks & Hidden Chapters -------------------------------------
+    QStringList getBookmarkedChapters(const QString &provider, const QString &mangaId) const;
+    bool isChapterBookmarked(const QString &provider, const QString &mangaId, const QString &chapterId) const;
+    bool setChapterBookmarked(const QString &provider, const QString &mangaId, const QString &chapterId, bool bookmarked);
+
+    QStringList getHiddenChapters(const QString &provider, const QString &mangaId) const;
+    bool isChapterHidden(const QString &provider, const QString &mangaId, const QString &chapterId) const;
+    bool setChapterHidden(const QString &provider, const QString &mangaId, const QString &chapterId, bool hidden);
+    bool clearHiddenChapters(const QString &provider, const QString &mangaId);
+
+    // --- Reading Sessions --------------------------------------------------------
+    bool recordReadingSession(const ReadingSessionEntity &session);
+    QList<ReadingSessionEntity> getReadingSessions(int limit = 500) const;
+
+    // --- Comments (Local + Offline Cache) ----------------------------------------
+    QList<CommentEntity> getComments(const QString &provider, const QString &mangaId, const QString &chapterId = QString()) const;
+    bool saveComment(const CommentEntity &comment);
+    bool toggleCommentLike(const QString &commentId);
+    bool deleteComment(const QString &commentId);
+    QList<CommentEntity> getUserComments(const QString &userId = QString()) const;
+
 signals:
     void libraryChanged();
     void libraryItemChanged(const QString &provider, const QString &mangaId);
@@ -103,11 +138,18 @@ signals:
     void downloadUpdated(const QString &id);
     void newChaptersChanged();
     void trackerBindsChanged();
+    void mangaNotesChanged(const QString &provider, const QString &mangaId);
+    void mangaOverridesChanged(const QString &provider, const QString &mangaId);
+    void bookmarksChanged(const QString &provider, const QString &mangaId);
+    void hiddenChaptersChanged(const QString &provider, const QString &mangaId);
+    void readingSessionsChanged();
+    void commentsChanged(const QString &provider, const QString &mangaId);
 
 private:
     QSqlDatabase getThreadConnection() const;
     bool runMigrations(QSqlDatabase &db);
     bool applyMigration1(QSqlDatabase &db);
+    bool applyMigration2(QSqlDatabase &db);
 
     QString m_dbPath;
     bool m_initialized = false;

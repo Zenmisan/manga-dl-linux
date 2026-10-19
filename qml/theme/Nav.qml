@@ -24,7 +24,7 @@ QtObject {
         Extensions: "Browse", Search: "Browse", BrowseSource: "Browse", Import: "Browse",
         Downloads: "Downloads", Stats: "Stats",
         Notifications: "Notifications", Settings: "Settings", Help: "Help",
-        AllPages: "AllPages", Profile: ""
+        Profile: ""
     })
 
     function go(page, params) { navigate(page, params || {}, false) }

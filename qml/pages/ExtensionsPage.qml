@@ -20,12 +20,16 @@ Item {
     function extStatusColor(s) { return s === "update" ? Theme.accentSoft : s === "installed" ? Theme.successText : s === "broken" ? Theme.errorText : Theme.fgSubtle }
     function extAction(s) { return s === "update" ? "Update" : s === "installed" ? "Uninstall" : s === "broken" ? "Reinstall" : "Install" }
 
-    component SourceRow: Item {
+    component SourceRow: Clickable {
         property var source
         Layout.fillWidth: true
         width: parent ? parent.width : 0
-        height: 62
-        HairLine { width: parent.width }
+        implicitHeight: 62
+        radius: 8
+        onClicked: Nav.open("BrowseSource", { source: source.id || source.name, tab: "popular" })
+
+        HairLine { width: parent.width; anchors.top: parent.top }
+
         RowLayout {
             anchors { fill: parent; leftMargin: 12; rightMargin: 12 }
             spacing: 14
@@ -36,9 +40,10 @@ Item {
                 Txt { Layout.fillWidth: true; text: source.name; font.pixelSize: 15; font.weight: Font.Bold }
                 Caption { Layout.fillWidth: true; text: source.meta }
             }
-            Btn { kind: "ghost"; size: "pill"; text: "Popular"; onClicked: Nav.open("BrowseSource", { source: source.id || source.name, tab: "popular" }) }
-            Btn { kind: "ghost"; size: "pill"; text: "Latest"; onClicked: Nav.open("BrowseSource", { source: source.id || source.name, tab: "latest" }) }
+            Btn { z: 2; kind: "ghost"; size: "pill"; text: "Popular"; onClicked: Nav.open("BrowseSource", { source: source.id || source.name, tab: "popular" }) }
+            Btn { z: 2; kind: "ghost"; size: "pill"; text: "Latest"; onClicked: Nav.open("BrowseSource", { source: source.id || source.name, tab: "latest" }) }
             Btn {
+                z: 2
                 kind: "icon"
                 iconName: "Pin"
                 iconSize: 18
