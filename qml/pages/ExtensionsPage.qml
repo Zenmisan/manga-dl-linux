@@ -32,16 +32,36 @@ Item {
 
         RowLayout {
             anchors { fill: parent; leftMargin: 12; rightMargin: 12 }
-            spacing: 14
+            spacing: 12
             Initial { size: 40; text: source.initial; color: source.color; radius: 10 }
             ColumnLayout {
                 Layout.fillWidth: true
+                Layout.preferredWidth: 0
                 spacing: 0
-                Txt { Layout.fillWidth: true; text: source.name; font.pixelSize: 15; font.weight: Font.Bold }
-                Caption { Layout.fillWidth: true; text: source.meta }
+                Txt {
+                    Layout.fillWidth: true
+                    Layout.preferredWidth: 0
+                    elide: Text.ElideRight
+                    text: source.name
+                    font.pixelSize: 15
+                    font.weight: Font.Bold
+                }
+                Caption {
+                    Layout.fillWidth: true
+                    Layout.preferredWidth: 0
+                    elide: Text.ElideRight
+                    text: source.meta
+                }
             }
-            Btn { z: 2; kind: "ghost"; size: "pill"; text: "Popular"; onClicked: Nav.open("BrowseSource", { source: source.id || source.name, tab: "popular" }) }
-            Btn { z: 2; kind: "ghost"; size: "pill"; text: "Latest"; onClicked: Nav.open("BrowseSource", { source: source.id || source.name, tab: "latest" }) }
+            Btn {
+                z: 2; kind: "ghost"; size: "pill"; text: "Popular"
+                onClicked: Nav.open("BrowseSource", { source: source.id || source.name, tab: "popular" })
+            }
+            Btn {
+                z: 2; kind: "ghost"; size: "pill"; text: "Latest"
+                visible: page.width >= 560
+                onClicked: Nav.open("BrowseSource", { source: source.id || source.name, tab: "latest" })
+            }
             Btn {
                 z: 2
                 kind: "icon"
@@ -58,13 +78,26 @@ Item {
         anchors.fill: parent
         spacing: 18
 
-        RowLayout {
+        // Header (Responsive wrapping layout)
+        Flow {
             width: parent.width
             spacing: 12
-            PageTitle { text: "Browse"; Layout.fillWidth: true }
+
+            PageTitle {
+                text: "Browse"
+                width: parent.width < 560 ? parent.width : undefined
+            }
+
+            Item {
+                visible: parent.width >= 560
+                width: Math.max(0, parent.width - 480)
+                height: 1
+            }
+
             // Looks like a search field; opens global search.
             Clickable {
-                implicitWidth: 340; implicitHeight: 42
+                implicitWidth: parent.width < 560 ? parent.width : 280
+                implicitHeight: 42
                 radius: 12
                 fill: Theme.surfaceRaised
                 Accessible.name: "Search all sources"
@@ -107,7 +140,8 @@ Item {
             visible: page.tab === "extensions"
             width: parent.width
             spacing: 18
-            RowLayout {
+            // Filter bar (wrapping Flow layout)
+            Flow {
                 width: parent.width
                 spacing: 8
                 ButtonGroup { id: lang }
@@ -128,12 +162,17 @@ Item {
                     checked: controller.show18Plus
                     onClicked: controller.show18Plus = !controller.show18Plus
                 }
-                Item { Layout.fillWidth: true }
+                Item {
+                    visible: page.width >= 780
+                    width: Math.max(0, page.width - 640)
+                    height: 1
+                }
                 Txt {
                     text: "Index: manga-dl · " + controller.installedCount + " installed"
                     font.pixelSize: 13
                     color: Theme.fgSubtle
-                    Layout.rightMargin: 8
+                    visible: page.width >= 620
+                    anchors.verticalCenter: parent ? parent.verticalCenter : undefined
                 }
                 Btn {
                     text: "Update All"
@@ -150,12 +189,12 @@ Item {
                 RowLayout {
                     width: parent.width
                     height: 36
-                    spacing: 16
+                    spacing: 12
                     TableHeader { text: "Extension"; Layout.fillWidth: true; Layout.leftMargin: 12 }
-                    TableHeader { text: "Language"; Layout.preferredWidth: 120 }
-                    TableHeader { text: "Version"; Layout.preferredWidth: 140 }
-                    TableHeader { text: "Status"; Layout.preferredWidth: 160 }
-                    TableHeader { text: "Action"; Layout.preferredWidth: 140; horizontalAlignment: Text.AlignRight; Layout.rightMargin: 12 }
+                    TableHeader { text: "Language"; visible: page.width >= 700; Layout.preferredWidth: 100 }
+                    TableHeader { text: "Version"; visible: page.width >= 820; Layout.preferredWidth: 100 }
+                    TableHeader { text: "Status"; visible: page.width >= 560; Layout.preferredWidth: 120 }
+                    TableHeader { text: "Action"; Layout.preferredWidth: 90; horizontalAlignment: Text.AlignRight; Layout.rightMargin: 12 }
                 }
                 Repeater {
                     model: controller.extensions
@@ -166,21 +205,48 @@ Item {
                         HairLine { width: parent.width }
                         RowLayout {
                             anchors { fill: parent; leftMargin: 12; rightMargin: 12 }
-                            spacing: 16
-                            Row {
+                            spacing: 12
+                            RowLayout {
                                 Layout.fillWidth: true
+                                Layout.preferredWidth: 0
                                 spacing: 12
                                 Rectangle {
                                     width: 36; height: 36; radius: 9; color: modelData.color
                                     DisplayText { anchors.centerIn: parent; text: modelData.initial; font.pixelSize: 15 }
                                 }
-                                Txt { text: modelData.name; font.weight: Font.Bold; anchors.verticalCenter: parent.verticalCenter }
+                                Txt {
+                                    text: modelData.name
+                                    font.weight: Font.Bold
+                                    Layout.fillWidth: true
+                                    Layout.preferredWidth: 0
+                                    elide: Text.ElideRight
+                                }
                             }
-                            Txt { text: modelData.language; font.pixelSize: 13; color: Theme.fgSoft; Layout.preferredWidth: 120 }
-                            Txt { text: modelData.version; font.pixelSize: 13; color: Theme.fgSoft; Layout.preferredWidth: 140 }
-                            Txt { text: page.extStatus(modelData.state); font.pixelSize: 12; font.weight: Font.Bold; color: page.extStatusColor(modelData.state); Layout.preferredWidth: 160 }
+                            Txt {
+                                text: modelData.language
+                                font.pixelSize: 13
+                                color: Theme.fgSoft
+                                visible: page.width >= 700
+                                Layout.preferredWidth: 100
+                            }
+                            Txt {
+                                text: modelData.version
+                                font.pixelSize: 13
+                                color: Theme.fgSoft
+                                visible: page.width >= 820
+                                Layout.preferredWidth: 100
+                            }
+                            Txt {
+                                text: page.extStatus(modelData.state)
+                                font.pixelSize: 12
+                                font.weight: Font.Bold
+                                color: page.extStatusColor(modelData.state)
+                                visible: page.width >= 560
+                                Layout.preferredWidth: 120
+                                elide: Text.ElideRight
+                            }
                             Item {
-                                Layout.preferredWidth: 140
+                                Layout.preferredWidth: 90
                                 implicitHeight: 36
                                 Btn {
                                     anchors.right: parent.right

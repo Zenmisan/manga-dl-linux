@@ -6,6 +6,7 @@ import MangaDl
 // Global search across sources, responsive for all window sizes and Wayland.
 Item {
     id: root
+    readonly property bool isCompact: width < 800
     property bool showFilters: width >= 1150
 
     SearchController {
@@ -27,7 +28,7 @@ Item {
             left: parent.left
             top: parent.top
             bottom: parent.bottom
-            right: filters.visible ? filters.left : parent.right
+            right: (!root.isCompact && filters.visible) ? filters.left : parent.right
         }
         spacing: 16
 
@@ -180,11 +181,24 @@ Item {
         }
     }
 
+    // Compact overlay scrim
+    Rectangle {
+        visible: root.isCompact && filters.visible
+        z: 15
+        anchors.fill: parent
+        color: Qt.rgba(0, 0, 0, 0.45)
+        MouseArea {
+            anchors.fill: parent
+            onClicked: root.showFilters = false
+        }
+    }
+
     // Collapsible Filters Panel
     Rectangle {
         id: filters
+        z: root.isCompact ? 20 : 1
         visible: root.showFilters
-        width: Math.min(280, root.width * 0.35)
+        width: root.isCompact ? Math.min(320, root.width) : Math.min(300, Math.max(260, root.width * 0.3))
         anchors { top: parent.top; bottom: parent.bottom; right: parent.right }
         color: Theme.navBg
         Rectangle { width: 1; height: parent.height; color: Theme.dividerStrong }

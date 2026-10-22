@@ -1,6 +1,7 @@
 #include "BackupService.h"
 #include "TachibkParser.h"
 #include "src/core/util/FileNaming.h"
+#include "src/core/settings/AppSettings.h"
 #include <QFile>
 #include <QFileInfo>
 #include <QJsonDocument>
@@ -150,6 +151,22 @@ QByteArray BackupService::exportBackupBytes() const
         bindsArray.append(o);
     }
     root[QStringLiteral("trackerBinds")] = bindsArray;
+
+    // Full schema parity with Web (.mangadl)
+    root[QStringLiteral("bookmarks")] = QJsonArray();
+
+    auto *settings = AppSettings::instance();
+    QJsonObject settingsObj;
+    settingsObj[QStringLiteral("theme")] = settings->theme();
+    settingsObj[QStringLiteral("readerMode")] = settings->readerMode();
+    settingsObj[QStringLiteral("readingDirection")] = settings->readingDirection();
+    settingsObj[QStringLiteral("twoPageSpread")] = settings->twoPageSpread();
+    settingsObj[QStringLiteral("cropBorders")] = settings->cropBorders();
+    settingsObj[QStringLiteral("webtoonSidePadding")] = settings->webtoonSidePadding();
+    settingsObj[QStringLiteral("imageBrightness")] = settings->imageBrightness();
+    settingsObj[QStringLiteral("imageGrayscale")] = settings->imageGrayscale();
+    settingsObj[QStringLiteral("imageInvert")] = settings->imageInvert();
+    root[QStringLiteral("settings")] = settingsObj;
 
     return QJsonDocument(root).toJson(QJsonDocument::Indented);
 }
@@ -401,6 +418,20 @@ MangadlRestoreSummary BackupService::restoreBackup(const QByteArray &data)
                 e.remoteTitle = o.value(QStringLiteral("remoteTitle")).toString();
                 e.lastChapterRead = o.value(QStringLiteral("lastChapterRead")).toDouble();
                 backup.trackerBinds.append(e);
+            }
+
+            if (root.contains(QStringLiteral("settings")) && root.value(QStringLiteral("settings")).isObject()) {
+                const QJsonObject sObj = root.value(QStringLiteral("settings")).toObject();
+                auto *settings = AppSettings::instance();
+                if (sObj.contains(QStringLiteral("theme"))) settings->setTheme(sObj.value(QStringLiteral("theme")).toString());
+                if (sObj.contains(QStringLiteral("readerMode"))) settings->setReaderMode(sObj.value(QStringLiteral("readerMode")).toString());
+                if (sObj.contains(QStringLiteral("readingDirection"))) settings->setReadingDirection(sObj.value(QStringLiteral("readingDirection")).toString());
+                if (sObj.contains(QStringLiteral("twoPageSpread"))) settings->setTwoPageSpread(sObj.value(QStringLiteral("twoPageSpread")).toBool());
+                if (sObj.contains(QStringLiteral("cropBorders"))) settings->setCropBorders(sObj.value(QStringLiteral("cropBorders")).toBool());
+                if (sObj.contains(QStringLiteral("webtoonSidePadding"))) settings->setWebtoonSidePadding(sObj.value(QStringLiteral("webtoonSidePadding")).toInt());
+                if (sObj.contains(QStringLiteral("imageBrightness"))) settings->setImageBrightness(sObj.value(QStringLiteral("imageBrightness")).toInt());
+                if (sObj.contains(QStringLiteral("imageGrayscale"))) settings->setImageGrayscale(sObj.value(QStringLiteral("imageGrayscale")).toBool());
+                if (sObj.contains(QStringLiteral("imageInvert"))) settings->setImageInvert(sObj.value(QStringLiteral("imageInvert")).toBool());
             }
 
             const auto summary = restoreMangadlBackup(backup);

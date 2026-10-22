@@ -10,11 +10,13 @@ Item {
         anchors.fill: parent
         spacing: 16
 
-        RowLayout {
+        // Header (Responsive wrapping layout)
+        Flow {
             width: parent.width
             spacing: 12
+
             Column {
-                Layout.fillWidth: true
+                width: parent.width >= 640 ? parent.width - 320 : parent.width
                 PageTitle { text: "Updates" }
                 Caption {
                     text: "Last checked " + UpdatesModel.lastCheckedText + " · background sync every 30 min"
@@ -22,23 +24,27 @@ Item {
                     topPadding: 4
                 }
             }
-            Btn {
-                kind: "ghost"
-                text: "Download All New"
-                iconName: "Download"
-                enabled: UpdatesModel.totalNewChapters > 0
-                onClicked: {
-                    UpdateCheckerService.checkUpdates(true)
-                    Nav.toast("Queued new chapters for download")
+
+            Row {
+                spacing: 8
+                Btn {
+                    kind: "ghost"
+                    text: "Download All New"
+                    iconName: "Download"
+                    enabled: UpdatesModel.totalNewChapters > 0
+                    onClicked: {
+                        UpdateCheckerService.checkUpdates(true)
+                        Nav.toast("Queued new chapters for download")
+                    }
                 }
-            }
-            Btn {
-                text: UpdateCheckerService.isChecking ? "Checking..." : "Check Now"
-                iconName: "Refresh"
-                enabled: !UpdateCheckerService.isChecking
-                onClicked: {
-                    UpdateCheckerService.checkUpdates(false)
-                    Nav.toast("Checking library for new chapters...")
+                Btn {
+                    text: UpdateCheckerService.isChecking ? "Checking..." : "Check Now"
+                    iconName: "Refresh"
+                    enabled: !UpdateCheckerService.isChecking
+                    onClicked: {
+                        UpdateCheckerService.checkUpdates(false)
+                        Nav.toast("Checking library for new chapters...")
+                    }
                 }
             }
         }
@@ -87,12 +93,13 @@ Item {
                         HairLine { width: parent.width }
                         RowLayout {
                             anchors { fill: parent; leftMargin: 12; rightMargin: 12 }
-                            spacing: 16
+                            spacing: 12
                             CoverArt { width: 40; height: 60; radius: 6; cover: modelData.manga.cover }
                             Btn {
                                 kind: "link"; textColor: Theme.fg; fontSize: 15; leftPadding: 0; alignLeft: true
                                 text: modelData.manga.title
-                                Layout.preferredWidth: 260
+                                Layout.fillWidth: true
+                                Layout.preferredWidth: 0
                                 onClicked: Nav.go("MangaDetail", {
                                     provider: modelData.provider,
                                     mangaId: modelData.manga.id,
@@ -100,8 +107,20 @@ Item {
                                     coverUrl: modelData.manga.cover
                                 })
                             }
-                            Txt { text: modelData.chapter; color: Theme.fgSoft; Layout.fillWidth: true; elide: Text.ElideRight }
-                            Txt { text: modelData.source; font.pixelSize: 13; color: Theme.fgSubtle; Layout.preferredWidth: 120 }
+                            Txt {
+                                text: modelData.chapter
+                                color: Theme.fgSoft
+                                Layout.preferredWidth: root.width < 700 ? 90 : 140
+                                elide: Text.ElideRight
+                            }
+                            Txt {
+                                text: modelData.source
+                                font.pixelSize: 13
+                                color: Theme.fgSubtle
+                                visible: root.width >= 650
+                                Layout.preferredWidth: 100
+                                elide: Text.ElideRight
+                            }
                             Btn {
                                 kind: "ghost"; size: "small"; text: "Download"; font.weight: Font.Bold
                                 onClicked: {

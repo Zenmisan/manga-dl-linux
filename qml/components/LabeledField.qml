@@ -4,6 +4,7 @@ import MangaDl
 
 // Label above a Field.
 ColumnLayout {
+    id: root
     property alias label: lbl.text
     property alias field: input
     property alias text: input.text
@@ -23,6 +24,6 @@ ColumnLayout {
         id: input
         Layout.fillWidth: true
         Accessible.name: lbl.text
-        onAccepted: parent.accepted()
+        onAccepted: root.accepted()
     }
 }

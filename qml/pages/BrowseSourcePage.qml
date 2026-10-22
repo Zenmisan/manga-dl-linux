@@ -51,23 +51,39 @@ Item {
             fontSize: 13; leftPadding: 0; onClicked: Nav.back()
         }
 
-        RowLayout {
+        // Header (Responsive wrapping layout)
+        Flow {
             width: parent.width
-            spacing: 12
-            PageTitle { text: controller.sourceName; Layout.fillWidth: true }
+            spacing: 10
+
+            PageTitle {
+                text: controller.sourceName
+                width: parent.width < 620 ? parent.width : undefined
+            }
+
+            Item {
+                visible: parent.width >= 620
+                width: Math.max(0, parent.width - 550)
+                height: 1
+            }
+
             SearchField {
                 id: searchInput
-                Layout.preferredWidth: 300
+                width: parent.width < 620 ? Math.max(160, parent.width - 170) : 260
                 placeholderText: "Search " + controller.sourceName
                 onAccepted: controller.search(text)
             }
+
             Btn {
-                kind: "ghost"; text: "Open in Browser"; iconName: "Globe"
+                kind: "ghost"
+                text: parent.width < 540 ? "Browser" : "Open in Browser"
+                iconName: "Globe"
                 onClicked: controller.openInBrowser()
             }
         }
 
-        Row {
+        Flow {
+            width: parent.width
             spacing: 8
             ButtonGroup { id: order }
             Chip {
@@ -82,7 +98,7 @@ Item {
                 ButtonGroup.group: order
                 onClicked: controller.setBrowseMode("latest")
             }
-            Rectangle { width: 1; height: 24; color: Theme.track; anchors.verticalCenter: parent.verticalCenter }
+            Rectangle { width: 1; height: 24; color: Theme.track; anchors.verticalCenter: parent.verticalCenter; visible: parent.width >= 400 }
             FilterChip { label: "Ongoing"; anchors.verticalCenter: parent.verticalCenter }
         }
 

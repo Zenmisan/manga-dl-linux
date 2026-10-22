@@ -333,6 +333,8 @@ Rectangle {
             clip: true
             spacing: 0
             boundsBehavior: Flickable.StopAtBounds
+            reuseItems: true
+            cacheBuffer: 1200
             model: controller.pages
             delegate: Item {
                 id: webtoonItem

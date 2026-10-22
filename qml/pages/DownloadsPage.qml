@@ -27,19 +27,29 @@ Item {
     PageScroll {
         anchors.fill: parent
 
-        RowLayout {
+        Flow {
             width: parent.width
-            spacing: 32
+            spacing: 24
 
             ColumnLayout {
-                Layout.fillWidth: true
-                Layout.alignment: Qt.AlignTop
+                width: parent.width >= 780 ? (parent.width - 324) : parent.width
                 spacing: 20
 
-                RowLayout {
+                Flow {
                     Layout.fillWidth: true
                     spacing: 10
-                    PageTitle { text: "Downloads"; Layout.fillWidth: true }
+
+                    PageTitle {
+                        text: "Downloads"
+                        width: parent.width < 500 ? parent.width : undefined
+                    }
+
+                    Item {
+                        visible: parent.width >= 500
+                        width: Math.max(0, parent.width - 380)
+                        height: 1
+                    }
+
                     Btn {
                         kind: "ghost"; text: "Clear Finished"
                         onClicked: DownloadsModel.clearFinished()
@@ -95,11 +105,14 @@ Item {
                             CoverArt { width: 40; height: 60; radius: 6; cover: model.manga.cover }
                             ColumnLayout {
                                 Layout.fillWidth: true
+                                Layout.preferredWidth: 0
                                 spacing: 8
                                 RowLayout {
                                     Layout.fillWidth: true
                                     Txt {
                                         Layout.fillWidth: true
+                                        Layout.preferredWidth: 0
+                                        elide: Text.ElideRight
                                         textFormat: Text.StyledText
                                         text: model.manga.title + "<font color='" + Theme.fgSubtle + "'> · " + model.chapter + "</font>"
                                         font.weight: Font.Bold
@@ -130,9 +143,7 @@ Item {
             }
 
             Card {
-                Layout.preferredWidth: 300
-                Layout.alignment: Qt.AlignTop
-                Layout.topMargin: 8
+                width: parent.width >= 780 ? 300 : parent.width
                 kind: "list"
                 padding: 20
                 radius: 16

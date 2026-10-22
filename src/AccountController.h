@@ -76,6 +76,7 @@ private:
     std::unique_ptr<SupabaseSyncService> m_syncService;
     std::unique_ptr<OAuthLoopbackListener> m_loopback;
 
+    AuthSession m_pendingFirebaseSession;
     QString m_googleCodeVerifier;
     bool m_isSyncing = false;
     bool m_isBusy = false;

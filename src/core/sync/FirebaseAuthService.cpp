@@ -97,6 +97,11 @@ void FirebaseAuthService::signInWithPassword(const QString &email, const QString
 
 void FirebaseAuthService::signUp(const QString &email, const QString &password)
 {
+    signUp(QString(), email, password);
+}
+
+void FirebaseAuthService::signUp(const QString &username, const QString &email, const QString &password)
+{
     const QString urlStr = QStringLiteral("https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=%1")
                                .arg(m_apiKey);
     QNetworkRequest req{QUrl(urlStr)};
@@ -108,7 +113,7 @@ void FirebaseAuthService::signUp(const QString &email, const QString &password)
     json[QStringLiteral("returnSecureToken")] = true;
 
     QNetworkReply *reply = m_net.post(req, QJsonDocument(json).toJson(QJsonDocument::Compact));
-    connect(reply, &QNetworkReply::finished, this, [this, reply]() {
+    connect(reply, &QNetworkReply::finished, this, [this, reply, username]() {
         reply->deleteLater();
         const QByteArray responseData = reply->readAll();
         FirebaseAuthResult res;
@@ -123,6 +128,12 @@ void FirebaseAuthService::signUp(const QString &email, const QString &password)
                 res.localId = obj.value(QStringLiteral("localId")).toString();
                 res.email = obj.value(QStringLiteral("email")).toString();
                 res.displayName = obj.value(QStringLiteral("displayName")).toString();
+
+                if (!username.trimmed().isEmpty() && !res.idToken.isEmpty()) {
+                    res.displayName = username.trimmed();
+                    updateProfile(res.idToken, username.trimmed());
+                }
+
                 emit signUpFinished(res);
                 return;
             }
@@ -132,6 +143,24 @@ void FirebaseAuthService::signUp(const QString &email, const QString &password)
         res.errorMessage = friendlyError(extractErrorMessage(responseData));
         emit signUpFinished(res);
     });
+}
+
+void FirebaseAuthService::updateProfile(const QString &idToken, const QString &displayName)
+{
+    if (idToken.isEmpty() || displayName.isEmpty()) return;
+
+    const QString urlStr = QStringLiteral("https://identitytoolkit.googleapis.com/v1/accounts:update?key=%1")
+                               .arg(m_apiKey);
+    QNetworkRequest req{QUrl(urlStr)};
+    req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
+
+    QJsonObject json;
+    json[QStringLiteral("idToken")] = idToken;
+    json[QStringLiteral("displayName")] = displayName;
+    json[QStringLiteral("returnSecureToken")] = true;
+
+    QNetworkReply *reply = m_net.post(req, QJsonDocument(json).toJson(QJsonDocument::Compact));
+    connect(reply, &QNetworkReply::finished, reply, &QObject::deleteLater);
 }
 
 void FirebaseAuthService::sendPasswordReset(const QString &email)

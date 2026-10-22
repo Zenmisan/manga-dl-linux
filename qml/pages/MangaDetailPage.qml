@@ -119,12 +119,21 @@ Item {
 
             RowLayout {
                 id: heroRow
-                anchors { left: parent.left; right: parent.right; top: parent.top; leftMargin: 40; rightMargin: 40; topMargin: 24 }
-                spacing: 32
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    top: parent.top
+                    leftMargin: page.width < 700 ? 16 : 40
+                    rightMargin: page.width < 700 ? 16 : 40
+                    topMargin: 24
+                }
+                spacing: page.width < 700 ? 16 : 32
 
                 CoverArt {
                     Layout.alignment: Qt.AlignBottom
-                    width: 200; height: 300; radius: 14
+                    width: page.width < 640 ? 130 : 200
+                    height: page.width < 640 ? 195 : 300
+                    radius: 14
                     cover: page.coverSrc
                 }
 
@@ -142,7 +151,7 @@ Item {
                     DisplayText {
                         Layout.fillWidth: true
                         text: page.titleText
-                        font.pixelSize: 52
+                        font.pixelSize: Math.max(24, Math.min(48, Math.round(page.width * 0.045)))
                         wrapMode: Text.Wrap
                     }
 
@@ -150,6 +159,7 @@ Item {
                         Layout.fillWidth: true
                         text: (page.authorsText.length > 0 ? (page.authorsText + " · ") : "") + page.statusText + (page.sourceText.length > 0 ? (" · " + page.sourceText) : "")
                         color: Theme.fgStrong
+                        wrapMode: Text.Wrap
                     }
 
                     ColumnLayout {
@@ -179,7 +189,8 @@ Item {
                         }
                     }
 
-                    Row {
+                    Flow {
+                        Layout.fillWidth: true
                         Layout.topMargin: 6
                         spacing: 10
 
@@ -375,42 +386,37 @@ Item {
         }
 
         // Chapter filters
-        RowLayout {
-            x: 40
-            width: parent.width - 80
-            height: 56
-            spacing: 12
+        Flow {
+            x: page.width < 700 ? 16 : 40
+            width: parent.width - (page.width < 700 ? 32 : 80)
+            spacing: 10
             visible: !controller.loading || controller.chapters.length > 0
 
             SectionTitle {
                 text: page.filteredChapters.length + " of " + controller.totalChapters + " chapters"
-                Layout.alignment: Qt.AlignVCenter
             }
 
-            Item { Layout.fillWidth: true; Layout.minimumWidth: 16 }
-
             SearchField {
-                Layout.preferredWidth: 200
-                Layout.alignment: Qt.AlignVCenter
+                width: page.width < 600 ? parent.width : 200
                 placeholderText: "Filter chapters..."
                 text: page.chapterSearch
                 onTextChanged: page.chapterSearch = text
             }
 
             Chip {
-                small: true; text: "Unread"; Layout.alignment: Qt.AlignVCenter
+                small: true; text: "Unread"
                 checked: page.filterUnread
                 onClicked: page.filterUnread = !page.filterUnread
             }
 
             Chip {
-                small: true; text: "Downloaded"; Layout.alignment: Qt.AlignVCenter
+                small: true; text: "Downloaded"
                 checked: page.filterDownloaded
                 onClicked: page.filterDownloaded = !page.filterDownloaded
             }
 
             Chip {
-                small: true; text: "Bookmarked"; Layout.alignment: Qt.AlignVCenter
+                small: true; text: "Bookmarked"
                 checked: page.filterBookmarked
                 onClicked: page.filterBookmarked = !page.filterBookmarked
             }
@@ -418,15 +424,15 @@ Item {
             Btn {
                 kind: "ghost"; size: "pill"
                 text: page.sortAscending ? "Oldest first" : "Newest first"
-                iconName: "Sort"; iconSize: 14; Layout.alignment: Qt.AlignVCenter
+                iconName: "Sort"; iconSize: 14
                 onClicked: page.sortAscending = !page.sortAscending
             }
         }
 
         // Chapter table
         Column {
-            x: 40
-            width: parent.width - 80
+            x: page.width < 700 ? 16 : 40
+            width: parent.width - (page.width < 700 ? 32 : 80)
             topPadding: 12
             bottomPadding: 40
             visible: !controller.loading || controller.chapters.length > 0
@@ -434,13 +440,13 @@ Item {
             RowLayout {
                 width: parent.width
                 height: 36
-                spacing: 12
-                TableHeader { text: ""; Layout.preferredWidth: 36; Layout.leftMargin: 8 }
-                TableHeader { text: "No."; Layout.preferredWidth: 80 }
-                TableHeader { text: "Title"; Layout.fillWidth: true; Layout.minimumWidth: 160 }
-                TableHeader { text: "Released"; Layout.preferredWidth: 160 }
-                TableHeader { text: "Group"; Layout.preferredWidth: 160 }
-                TableHeader { text: "Status"; Layout.preferredWidth: 120; horizontalAlignment: Text.AlignRight; Layout.rightMargin: 12 }
+                spacing: 8
+                TableHeader { text: ""; Layout.preferredWidth: 32; Layout.leftMargin: 4 }
+                TableHeader { text: "No."; Layout.preferredWidth: page.width < 600 ? 48 : 68 }
+                TableHeader { text: "Title"; Layout.fillWidth: true; Layout.preferredWidth: 0; Layout.minimumWidth: 80 }
+                TableHeader { visible: page.width >= 700; text: "Released"; Layout.preferredWidth: 110 }
+                TableHeader { visible: page.width >= 850; text: "Group"; Layout.preferredWidth: 130 }
+                TableHeader { text: "Status"; Layout.preferredWidth: page.width < 600 ? 76 : 100; horizontalAlignment: Text.AlignRight; Layout.rightMargin: 8 }
             }
 
             Repeater {
@@ -479,12 +485,12 @@ Item {
 
                     RowLayout {
                         width: parent.width; height: parent.height
-                        spacing: 12
+                        spacing: 8
                         opacity: modelData.read ? 0.5 : 1
 
                         Clickable {
-                            Layout.preferredWidth: 36; height: 36
-                            Layout.leftMargin: 8
+                            Layout.preferredWidth: 32; height: 32
+                            Layout.leftMargin: 4
                             radius: 6
                             onClicked: {
                                 controller.toggleChapterBookmark(modelData.id)
@@ -502,25 +508,31 @@ Item {
                         Txt {
                             text: modelData.number || modelData.id
                             font.weight: Font.Bold
-                            Layout.preferredWidth: 80
+                            Layout.preferredWidth: page.width < 600 ? 48 : 68
+                            elide: Text.ElideRight
                         }
 
                         Txt {
                             text: modelData.title || ("Chapter " + (modelData.number || modelData.id))
                             Layout.fillWidth: true
+                            Layout.preferredWidth: 0
                             elide: Text.ElideRight
                         }
 
                         Txt {
+                            visible: page.width >= 700
                             text: modelData.released || ""
                             color: Theme.fgSubtle
-                            Layout.preferredWidth: 160
+                            Layout.preferredWidth: 110
+                            elide: Text.ElideRight
                         }
 
                         Txt {
+                            visible: page.width >= 850
                             text: modelData.group || ""
                             color: Theme.fgSubtle
-                            Layout.preferredWidth: 160
+                            Layout.preferredWidth: 130
+                            elide: Text.ElideRight
                         }
 
                         Txt {
@@ -528,7 +540,8 @@ Item {
                             font.pixelSize: 12; font.weight: Font.Bold
                             color: modelData.status && modelData.status.startsWith("Page") ? Theme.accentLight : Theme.fgSoft
                             horizontalAlignment: Text.AlignRight
-                            Layout.preferredWidth: 120; Layout.rightMargin: 12
+                            Layout.preferredWidth: page.width < 600 ? 76 : 100; Layout.rightMargin: 8
+                            elide: Text.ElideRight
                         }
                     }
                 }

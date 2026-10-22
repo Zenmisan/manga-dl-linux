@@ -24,16 +24,20 @@ Item {
         anchors.fill: parent
         spacing: 22
 
-        RowLayout {
+        // Header (Responsive wrapping layout)
+        Flow {
             width: parent.width
+            spacing: 12
+
             Column {
-                Layout.fillWidth: true
+                width: parent.width >= 620 ? parent.width - rankPill.width - 20 : parent.width
                 PageTitle { text: "Statistics" }
                 Caption { text: "Your reading habits and Hunter rank, at a glance"; font.pixelSize: 14; topPadding: 4 }
             }
 
             // Hunter Rank pill
             Rectangle {
+                id: rankPill
                 radius: 12
                 color: StatsController.rankBgColor !== "" ? StatsController.rankBgColor : Theme.surface
                 border.width: 1
@@ -71,24 +75,34 @@ Item {
             }
         }
 
-        // Stat tiles
-        RowLayout {
+        // Stat tiles (Responsive AutoGrid adapts to 2x2 on narrow/tiling windows)
+        AutoGrid {
             width: parent.width
+            minItemWidth: 140
+            maxColumns: 4
             spacing: 14
-            Repeater {
-                model: [
-                    ["Chapters read", StatsController.chaptersRead.toString()],
-                    ["Time reading", StatsController.timeReading],
-                    ["Current streak", StatsController.currentStreak + "d"],
-                    ["Reading pace", StatsController.readingPace]
-                ]
-                Card {
-                    required property var modelData
-                    Layout.fillWidth: true
-                    Layout.preferredWidth: 1
-                    kind: "list"; radius: 16; padding: 18; spacing: 8
-                    Txt { text: modelData[0]; font.pixelSize: 13; font.weight: Font.DemiBold; color: Theme.fgSubtle }
-                    DisplayText { text: modelData[1]; font.pixelSize: 40; upper: false }
+            model: [
+                ["Chapters read", StatsController.chaptersRead.toString()],
+                ["Time reading", StatsController.timeReading],
+                ["Current streak", StatsController.currentStreak + "d"],
+                ["Reading pace", StatsController.readingPace]
+            ]
+            delegate: Card {
+                required property var modelData
+                width: parent.cellWidth
+                kind: "list"; radius: 16; padding: 16; spacing: 8
+                Txt {
+                    text: modelData[0]
+                    font.pixelSize: 13
+                    font.weight: Font.DemiBold
+                    color: Theme.fgSubtle
+                    elide: Text.ElideRight
+                    width: parent.width
+                }
+                DisplayText {
+                    text: modelData[1]
+                    font.pixelSize: page.width < 600 ? 28 : 36
+                    upper: false
                 }
             }
         }
@@ -133,12 +147,14 @@ Item {
             }
         }
 
-        // Goals and breakdowns
-        RowLayout {
+        // Goals and breakdowns (Responsive Flow layout)
+        Flow {
             width: parent.width
             spacing: 14
+            readonly property real cardWidth: width < 720 ? width : (width < 1040 ? Math.floor((width - 14) / 2) : Math.floor((width - 28) / 3))
+
             Card {
-                Layout.fillWidth: true; Layout.preferredWidth: 1; Layout.fillHeight: true
+                width: parent.cardWidth
                 kind: "faint"; spacing: 14
                 Eyebrow { text: "Reading goals"; muted: true }
 
@@ -173,7 +189,7 @@ Item {
                 }
             }
             Card {
-                Layout.fillWidth: true; Layout.preferredWidth: 1; Layout.fillHeight: true
+                width: parent.cardWidth
                 kind: "faint"; spacing: 12
                 Eyebrow { text: "By category"; muted: true }
                 Repeater {
@@ -188,7 +204,7 @@ Item {
                 }
             }
             Card {
-                Layout.fillWidth: true; Layout.preferredWidth: 1; Layout.fillHeight: true
+                width: parent.cardWidth
                 kind: "faint"; spacing: 12
                 Eyebrow { text: "By source"; muted: true }
                 Repeater {

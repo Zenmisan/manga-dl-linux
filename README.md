@@ -11,15 +11,16 @@ A high-performance, native Linux client for **manga-dl**, built with C++20 and Q
 - **Native Image Descrambling**: In-memory descrambler supporting Comixto (PRNG XOR/LCG descramble) and Asura Scans (5×5 tile reassembly) with custom `image://` providers.
 - **Manga & Novel Readers**:
   - Manga reader with single-page, two-page spread, vertical, and continuous webtoon modes; RTL/LTR reading direction; keyboard/mouse navigation; and ambilight backdrop tinting.
+  - Webtoon mode features delegate virtualization (`reuseItems: true`, bounded cache buffer) for ultra-low memory footprints on 100+ page chapters.
   - Web novel reader with customizable fonts, themes (AMOLED, Dark, Paper, Sepia), font sizes, and line heights.
   - Direct reading from local archives without extraction to temp directories (`image://cbz/`).
 - **Downloads & Local Archive Imports**:
   - High-concurrency download manager saving chapters directly to valid `.cbz` archives (uncompressed `STORE` mode with `ComicInfo.xml` metadata) or EPUB 3.0 files.
   - Local import service supporting `.cbz`, `.zip`, `.epub`, loose image folders, natural sorting, and drag-and-drop.
 - **Cloud Accounts & Bidirectional Sync**:
-  - Supabase GoTrue authentication (Email/Password, PKCE Google sign-in with local TCP loopback listener).
+  - Native authentication architecture: Supabase GoTrue for email/password and account lifecycle; Firebase Auth loopback listener for Google Sign-In (`z-manga-dl`).
   - Secure credential storage using `libsecret-1` (GNOME Keyring / KWallet) with fallback to 0600 file settings.
-  - Bidirectional PostgREST sync engine synchronizing subscriptions, reading progress, and profile details.
+  - Bidirectional PostgREST sync engine synchronizing subscriptions, reading progress, user categories, manga notes, and profile details with Supabase.
 - **Trackers**:
   - AniList (OAuth PKCE + GraphQL viewer/media search/mutation).
   - MyAnimeList (Plain PKCE + REST v2 `@me` status).
@@ -33,7 +34,7 @@ A high-performance, native Linux client for **manga-dl**, built with C++20 and Q
   - System tray icon with minimize-to-tray and restore.
   - Automated background chapter update checker (30-minute timer).
   - Storage statistics (`QStorageInfo`), image cache clearing, and desktop autostart toggle (`~/.config/autostart`).
-  - Universal backup & restore supporting `.mangadl` and Tachiyomi `.tachibk` (gzipped protobuf).
+  - Universal backup & restore with 100% cross-platform schema parity supporting `.mangadl` (`library`, `progress`, `trackerBinds`, `categories`, `mangaCategories`, `bookmarks`, `settings`) and Tachiyomi `.tachibk` (gzipped protobuf).
 
 ---
 

@@ -9,8 +9,8 @@ ApplicationWindow {
     id: window
     width: 1440
     height: 900
-    minimumWidth: 800
-    minimumHeight: 520
+    minimumWidth: 500
+    minimumHeight: 480
     visible: true
     title: "manga-dl"
     color: Theme.bg

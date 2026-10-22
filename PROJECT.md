@@ -2,7 +2,7 @@
 
 > Web source: `/home/zenmi/Projects/manga-dl`  
 > Stack: React 19 + Vite + TypeScript · FastAPI + Python · SQLite · Supabase · Firebase  
-> Platforms: Web (Firebase) · Android (`manga-dl-android`, native Kotlin/Jetpack Compose) · Windows (`manga-dl-windows`, native WinUI 3/C#) · Linux (`manga-dl-linux`, native GTK4/Vala)
+> Platforms: Web (Firebase) · Android (`manga-dl-android`, native Kotlin/Jetpack Compose) · Windows (`manga-dl-windows`, native WinUI 3/C#) · Linux (`manga-dl-linux`, native Qt 6 · C++20 + QML)
 
 ---
 
@@ -29,12 +29,12 @@ Browser
 ### Native apps (self-contained, no backend)
 
 ```
-Native UI (Jetpack Compose / WinUI 3 / GTK4+libadwaita)
+Native UI (Jetpack Compose / WinUI 3 / Qt 6 QML)
   │
-  ├── Embedded JS Engine (QuickJS-Android / ChakraCore / QuickJS C)
+  ├── Embedded JS Engine (QuickJS-Android / ChakraCore / QuickJS-ng C++)
   │       └── evaluates same .js extension files from backend/app/services/extensions/
   │           apiFetch() → native HTTP client (no CORS, no proxy needed)
-  ├── Local SQLite (Room / sqlite-net-pcl / SQLite3)
+  ├── Local SQLite (Room / sqlite-net-pcl / QtSql SQLite WAL)
   └── Optional Supabase sync (background only, never on critical path)
 ```
 
@@ -311,4 +311,12 @@ See `DESKTOP-WINDOWS.md` in this directory.
 
 ## Linux App (`manga-dl-linux`)
 
-See `/home/zenmi/Projects/manga-dl-linux/DESKTOP-LINUX.md`.
+**Stack:** Qt 6.4+ · C++20 · Qt Quick (QML) · QuickJS-ng v0.17.0 · QtSql (SQLite WAL) · libzip · libsecret-1
+
+- **UI**: Modern dark theme matching the Stitch design system, hardware-accelerated via Qt Quick Scene Graph, Wayland and X11 native.
+- **Extension Bridge**: Integrated `quickjs-ng` runtime on dedicated worker thread with asynchronous non-blocking QtNetwork `apiFetch`, full live DOM tree mutation support, and CSS selector engine (`HtmlParser` + `Selector`).
+- **Descrambling**: Native C++ pixel unscrambling for Comix.to and Asura Scans tiles with custom `image://page/` provider.
+- **Sync & Auth**: Supabase GoTrue email/password + Firebase Auth Google OAuth with local loopback listener.
+- **Backups**: Unified `.mangadl` and Tachiyomi `.tachibk` import/export.
+
+See `README.md` in this directory for build and installation instructions.

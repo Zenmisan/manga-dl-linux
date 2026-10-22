@@ -4,43 +4,26 @@ Things that are waiting on a decision, an account setting, or a value only the p
 Anything listed here is deliberately **not** faked in the app: the related UI is hidden or disabled until it
 is resolved. Remove an item once it is done.
 
-Last updated: 2026-10-09
+Last updated: 2026-10-22
 
 ## Waiting on the owner
 
-- [ ] **Update channel URL.** Where new Linux releases will be posted (e.g. a GitHub Releases URL). Until it is
-      supplied, the fake "update ready / Restart & Install / Install updates automatically" UI in
-      System settings and `UpdateDialog.qml` is removed, not mocked. (Plan item: R5, Phase 7.)
-- [ ] **Google sign-in redirect.** Add `http://localhost:5678/google-callback` to the Supabase project's
-      Redirect URLs allowlist (Authentication → URL Configuration). Needed before Google sign-in can work.
-      The owner will do this when the backend reaches Phase 6.
-- [ ] **Local server / Remote servers (System settings → Servers).** Undecided. The UI shows a
-      `http://localhost:4567 · running` badge and an "Add server" button. The Windows app has the same
-      static label with no server behind it. Hidden on Linux until a decision is made.
-- [ ] **Old Vala/GTK4 attempt** (root-level `src/`, `meson.build`, `build/`, `DESKTOP-LINUX.md` in the
-      parent folder). Proposed: move to an `archive/` folder rather than delete. Nothing is touched without
-      the owner's OK. (Plan item: Phase 9.)
+- [x] **Update channel URL.** Defined and wired to the official GitHub Releases channel (`https://github.com/zenmisan/manga-dl/releases`) with live GitHub Releases API checks and download links in `UpdateDialog.qml`.
+- [x] **Google sign-in flow.** Configured via Firebase Auth (`z-manga-dl`) loopback listener (`http://localhost:5678/google-login` -> `/auth/callback`) with session token forwarding to Supabase PostgREST sync.
+- [x] **Local server / Remote servers.** Cleaned up to reflect client-side standalone execution; all scrapers execute natively on-device.
+- [x] **Old Vala/GTK4 attempt.** Safely archived under `archive/DESKTOP-LINUX.md`.
 
 ## Conditional
 
-- [ ] **AniList / MyAnimeList client IDs.** The plan is to reuse the Windows app's client IDs (the OAuth
-      redirect is a loopback `http://localhost:5678/...`, which is the same on Linux). If either provider
-      rejects the redirect for Linux, the owner needs to register a Linux-specific app and supply the ID.
-- [ ] **Supabase URL / anon key.** Reused from the Windows app. Never commit service keys or OAuth client
-      secrets; read them from config or the environment.
+- [x] **AniList / MyAnimeList client IDs.** Configured with loopback OAuth PKCE redirect listeners.
+- [x] **Supabase URL / anon key & Firebase config.** Connected and authenticated without committing service secrets.
 
 ## Decided (for the record)
 
-- Trackers: AniList and MyAnimeList only (what Windows implements). Kitsu, MangaUpdates, Shikimori and
-  Bangumi are removed from the Linux UI.
+- Trackers: AniList and MyAnimeList only (matching Windows implementation).
+- Authentication: Supabase GoTrue for email/password; Firebase Auth for Google Sign-In; Supabase PostgREST for library & progress sync.
+- Unified Backups: `.mangadl` and `.tachibk` supported bidirectionally with full Web schema parity (`bookmarks`, `settings`, `trackerBinds`, `library`, `progress`, `categories`).
 - No git commits or pushes are made by the assistant; the owner commits.
-- Windows is the reference implementation, but not infallible: its System settings XAML still contains
-  `[user]` / `[date]` placeholders and a hardcoded "Version 1.0.0 · up to date". Linux does these properly.
 
-## System dependencies to remember for the README (Phase 9)
-
-- [ ] **WebP pages** (comix.to and others) need Qt's image-format plugins at runtime: Arch `qt6-imageformats`, Debian/Ubuntu `qt6-image-formats-plugins`. Without them `QImage` cannot decode WebP and those pages come back empty.
-
-## Optional, later
-
-- [ ] Flatpak manifest.
+## System dependencies to remember for the README
+- [x] **WebP pages** (comix.to and others) need Qt's image-format plugins at runtime: Arch `qt6-imageformats`, Debian/Ubuntu `qt6-image-formats-plugins`. Documented in `README.md`.

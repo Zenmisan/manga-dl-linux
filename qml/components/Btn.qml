@@ -74,6 +74,10 @@ Button {
                 color: control.textColor
                 opacity: control.enabled ? 1 : 0.5
                 anchors.verticalCenter: parent.verticalCenter
+                elide: Text.ElideRight
+                width: control.alignLeft && control.width > 0
+                    ? Math.max(0, control.width - control.leftPadding - control.rightPadding - (control.iconName !== "" ? (control.iconSize + 8) : 0))
+                    : implicitWidth
             }
         }
     }

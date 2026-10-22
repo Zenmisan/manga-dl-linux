@@ -29,6 +29,8 @@ public:
 
     void signInWithPassword(const QString &email, const QString &password);
     void signUp(const QString &email, const QString &password);
+    void signUp(const QString &username, const QString &email, const QString &password);
+    void updateProfile(const QString &idToken, const QString &displayName);
     void sendPasswordReset(const QString &email);
 
     static QString extractErrorMessage(const QByteArray &body);

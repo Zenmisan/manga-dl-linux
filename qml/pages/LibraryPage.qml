@@ -18,15 +18,25 @@ Item {
     PageScroll {
         anchors.fill: parent
 
-        // Header
-        RowLayout {
+        // Header (Responsive wrapping layout)
+        Flow {
             width: parent.width
-            spacing: 14
+            spacing: 10
 
-            PageTitle { text: "Library"; Layout.fillWidth: true }
+            PageTitle {
+                text: "Library"
+                width: parent.width < 600 ? parent.width : undefined
+            }
+
+            Item {
+                // Spacer for desktop wide views
+                visible: parent.width >= 600
+                width: Math.max(0, parent.width - 720)
+                height: 1
+            }
 
             SearchField {
-                Layout.preferredWidth: 280
+                width: parent.width < 600 ? parent.width : 220
                 placeholderText: "Search library   Ctrl K"
                 text: LibraryModel.searchFilter
                 onTextChanged: LibraryModel.searchFilter = text
@@ -85,9 +95,9 @@ Item {
         }
 
         // Secondary filter toolbar: Content Type pills + Filter mode pills
-        RowLayout {
+        Flow {
             width: parent.width
-            spacing: 16
+            spacing: 14
 
             // Content Type (All | Manga | Novels)
             Row {
@@ -113,7 +123,7 @@ Item {
                 }
             }
 
-            Rectangle { width: 1; height: 18; color: Theme.track }
+            Rectangle { width: 1; height: 18; color: Theme.track; anchors.verticalCenter: parent.verticalCenter; visible: parent.width >= 600 }
 
             // Filter Mode (All | Unread | Downloaded | Started | Completed)
             Row {
@@ -140,8 +150,6 @@ Item {
                     }
                 }
             }
-
-            Item { Layout.fillWidth: true }
         }
 
         // Continue reading
@@ -210,25 +218,35 @@ Item {
             }
         }
 
-        // Categories
-        Row {
-            spacing: 8
-            ButtonGroup { id: categories }
-            Repeater {
-                model: CategoryModel.categoryChips
-                Chip {
-                    required property string modelData
-                    required property int index
-                    text: modelData
-                    checked: index === 0
-                    ButtonGroup.group: categories
-                    onClicked: {
-                        if (index === 0) {
-                            LibraryModel.categoryFilter = ""
-                        } else {
-                            const names = CategoryModel.names
-                            if (index - 1 < names.length) {
-                                LibraryModel.categoryFilter = names[index - 1]
+        // Categories (Scrollable horizontal container to prevent offscreen overflow)
+        Flickable {
+            width: parent.width
+            height: catRow.height + 4
+            contentWidth: catRow.width
+            clip: true
+            flickableDirection: Flickable.HorizontalFlick
+            boundsBehavior: Flickable.StopAtBounds
+
+            Row {
+                id: catRow
+                spacing: 8
+                ButtonGroup { id: categories }
+                Repeater {
+                    model: CategoryModel.categoryChips
+                    Chip {
+                        required property string modelData
+                        required property int index
+                        text: modelData
+                        checked: index === 0
+                        ButtonGroup.group: categories
+                        onClicked: {
+                            if (index === 0) {
+                                LibraryModel.categoryFilter = ""
+                            } else {
+                                const names = CategoryModel.names
+                                if (index - 1 < names.length) {
+                                    LibraryModel.categoryFilter = names[index - 1]
+                                }
                             }
                         }
                     }

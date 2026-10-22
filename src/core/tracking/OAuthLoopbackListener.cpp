@@ -98,6 +98,7 @@ void OAuthLoopbackListener::handleClientData()
 
     const QUrlQuery query(url);
     const QString idToken = query.queryItemValue(QStringLiteral("id_token"));
+    const QString userId = query.queryItemValue(QStringLiteral("user_id"));
     const QString email = query.queryItemValue(QStringLiteral("email"));
     const QString displayName = query.queryItemValue(QStringLiteral("display_name"));
     const QString code = query.queryItemValue(QStringLiteral("code"));
@@ -129,7 +130,7 @@ void OAuthLoopbackListener::handleClientData()
 
     if (success) {
         if (!idToken.isEmpty()) {
-            emit idTokenReceived(idToken, email, displayName);
+            emit idTokenReceived(idToken, userId, email, displayName);
         } else {
             emit authCodeReceived(code, path);
         }
@@ -172,11 +173,16 @@ QString OAuthLoopbackListener::generateFirebaseLoginHtml(quint16 port)
         "    <div class=\"status\" id=\"status\">Connecting to Firebase Auth...</div>\n"
         "  </div>\n"
         "  <script>\n"
-        "    firebase.initializeApp({\n"
+        "    const firebaseConfig = {\n"
         "      apiKey: \"AIzaSyDzw5OFZJ_r4uO_wtGK30c8i92qV_aaXbw\",\n"
         "      authDomain: \"z-manga-dl.firebaseapp.com\",\n"
-        "      projectId: \"z-manga-dl\"\n"
-        "    });\n"
+        "      projectId: \"z-manga-dl\",\n"
+        "      storageBucket: \"z-manga-dl.firebasestorage.app\",\n"
+        "      messagingSenderId: \"912012648755\",\n"
+        "      appId: \"1:912012648755:web:1c2f4197c23e9dd6409e46\",\n"
+        "      measurementId: \"G-M1HFP6V2DS\"\n"
+        "    };\n"
+        "    firebase.initializeApp(firebaseConfig);\n"
         "    let started = false;\n"
         "    async function doGoogleSignIn() {\n"
         "      const status = document.getElementById('status');\n"
@@ -187,9 +193,10 @@ QString OAuthLoopbackListener::generateFirebaseLoginHtml(quint16 port)
         "        status.innerText = 'Authenticated! Syncing with manga-dl...';\n"
         "        const credential = firebase.auth.GoogleAuthProvider.credentialFromResult(result);\n"
         "        const idToken = credential?.idToken || (await result.user.getIdToken());\n"
+        "        const userId = encodeURIComponent(result.user.uid || '');\n"
         "        const email = encodeURIComponent(result.user.email || '');\n"
         "        const displayName = encodeURIComponent(result.user.displayName || '');\n"
-        "        window.location.href = 'http://localhost:%1/auth/callback?id_token=' + encodeURIComponent(idToken) + '&email=' + email + '&display_name=' + displayName;\n"
+        "        window.location.href = 'http://localhost:%1/auth/callback?id_token=' + encodeURIComponent(idToken) + '&user_id=' + userId + '&email=' + email + '&display_name=' + displayName;\n"
         "      } catch (err) {\n"
         "        status.innerText = err.message || 'Google sign-in was cancelled or failed.';\n"
         "      }\n"

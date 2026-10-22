@@ -22,6 +22,9 @@ TextField {
     verticalAlignment: TextInput.AlignVCenter
     Accessible.name: placeholderText
 
+    Keys.onReturnPressed: (event) => { accepted(); }
+    Keys.onEnterPressed: (event) => { accepted(); }
+
     background: Rectangle {
         radius: 12
         color: control.error ? Theme.accentFaint : Theme.surface

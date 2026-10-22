@@ -26,66 +26,14 @@ AccountController::AccountController(QObject *parent)
     m_syncService = std::make_unique<SupabaseSyncService>(MangaDatabase::instance(), url, anonKey, this);
     m_loopback = std::make_unique<OAuthLoopbackListener>(this);
 
-    connect(m_firebaseAuth.get(), &FirebaseAuthService::signInFinished,
-            this, [this](const FirebaseAuthResult &result) {
-                if (result.success) {
-                    setBusy(false);
-                    if (!result.email.isEmpty()) {
-                        AppSettings::instance()->setUserEmail(result.email);
-                    }
-                    if (!result.displayName.isEmpty()) {
-                        AppSettings::instance()->setDisplayName(result.displayName);
-                    }
-                    AuthSession session;
-                    session.userId = result.localId;
-                    session.email = result.email;
-                    session.accessToken = result.idToken;
-                    session.refreshToken = result.refreshToken;
-                    session.displayName = result.displayName;
-                    handleAuthSuccess(session);
-                    emit authSuccess(QStringLiteral("signIn"));
-                }
-            });
-
-    connect(m_loopback.get(), &OAuthLoopbackListener::idTokenReceived,
-            this, [this](const QString &idToken, const QString &email, const QString &displayName) {
-                if (!email.isEmpty()) {
-                    AppSettings::instance()->setUserEmail(email);
-                }
-                if (!displayName.isEmpty()) {
-                    AppSettings::instance()->setDisplayName(displayName);
-                }
-                emit profileChanged();
-                ProfileController::instance().refresh();
-
-                // Exchange Google/Firebase ID token with Supabase to establish database session
-                m_authService->signInWithIdToken(idToken);
-            });
-
-    connect(m_loopback.get(), &OAuthLoopbackListener::authCodeReceived,
-            this, &AccountController::onGoogleAuthCodeReceived);
-    connect(m_loopback.get(), &OAuthLoopbackListener::authErrorReceived,
-            this, [this](const QString &err, const QString &) {
-                setBusy(false);
-                setErrorMessage(err);
-            });
-    connect(m_loopback.get(), &OAuthLoopbackListener::timedOut,
-            this, [this]() {
-                setBusy(false);
-                setErrorMessage(QStringLiteral("Google sign-in timed out."));
-            });
-
     connect(m_authService.get(), &SupabaseAuthService::signInFinished,
             this, [this](bool success, const AuthSession &session, const QString &err) {
+                setBusy(false);
                 if (success) {
-                    setBusy(false);
                     handleAuthSuccess(session);
                     emit authSuccess(QStringLiteral("signIn"));
                 } else {
-                    if (!signedIn()) {
-                        setBusy(false);
-                        setErrorMessage(err);
-                    }
+                    setErrorMessage(err);
                 }
             });
 
@@ -93,8 +41,12 @@ AccountController::AccountController(QObject *parent)
             this, [this](bool success, const QString &msg, const QString &err) {
                 setBusy(false);
                 if (success) {
-                    setErrorMessage(QString());
-                    emit authSuccess(msg.isEmpty() ? QStringLiteral("signUp") : msg);
+                    if (!msg.isEmpty()) {
+                        setErrorMessage(msg);
+                    } else {
+                        setErrorMessage(QString());
+                    }
+                    emit authSuccess(QStringLiteral("signUp"));
                 } else {
                     setErrorMessage(err);
                 }
@@ -117,9 +69,47 @@ AccountController::AccountController(QObject *parent)
                 if (success) {
                     handleAuthSuccess(session);
                     emit authSuccess(QStringLiteral("google"));
+                } else if (!m_pendingFirebaseSession.userId.isEmpty()) {
+                    AuthSession fbSession = m_pendingFirebaseSession;
+                    m_pendingFirebaseSession = AuthSession{};
+                    handleAuthSuccess(fbSession);
+                    emit authSuccess(QStringLiteral("google"));
                 } else {
                     setErrorMessage(err);
                 }
+            });
+
+    connect(m_loopback.get(), &OAuthLoopbackListener::idTokenReceived,
+            this, [this](const QString &idToken, const QString &userId, const QString &email, const QString &displayName) {
+                if (!email.isEmpty()) {
+                    AppSettings::instance()->setUserEmail(email);
+                }
+                if (!displayName.isEmpty()) {
+                    AppSettings::instance()->setDisplayName(displayName);
+                }
+                emit profileChanged();
+                ProfileController::instance().refresh();
+
+                m_pendingFirebaseSession.userId = userId;
+                m_pendingFirebaseSession.email = email;
+                m_pendingFirebaseSession.accessToken = idToken;
+                m_pendingFirebaseSession.displayName = displayName;
+
+                // Send to Supabase to handle the rest
+                m_authService->signInWithIdToken(idToken);
+            });
+
+    connect(m_loopback.get(), &OAuthLoopbackListener::authCodeReceived,
+            this, &AccountController::onGoogleAuthCodeReceived);
+    connect(m_loopback.get(), &OAuthLoopbackListener::authErrorReceived,
+            this, [this](const QString &err, const QString &) {
+                setBusy(false);
+                setErrorMessage(err);
+            });
+    connect(m_loopback.get(), &OAuthLoopbackListener::timedOut,
+            this, [this]() {
+                setBusy(false);
+                setErrorMessage(QStringLiteral("Google sign-in timed out."));
             });
 
     connect(m_syncService.get(), &SupabaseSyncService::syncStarted, this, [this]() {
@@ -253,7 +243,6 @@ void AccountController::signIn(const QString &email, const QString &password)
         AppSettings::instance()->setUserEmail(email.trimmed());
         emit profileChanged();
     }
-    m_firebaseAuth->signInWithPassword(email.trimmed(), password);
     m_authService->signInWithPassword(email.trimmed(), password);
 }
 
@@ -268,7 +257,6 @@ void AccountController::signUp(const QString &username, const QString &email, co
         AppSettings::instance()->setDisplayName(username.trimmed());
     }
     emit profileChanged();
-    m_firebaseAuth->signUp(email.trimmed(), password);
     m_authService->signUp(username.trimmed(), email.trimmed(), password);
 }
 
@@ -276,7 +264,6 @@ void AccountController::requestPasswordReset(const QString &email)
 {
     setBusy(true);
     setErrorMessage(QString());
-    m_firebaseAuth->sendPasswordReset(email.trimmed());
     m_authService->requestPasswordReset(email.trimmed());
 }
 

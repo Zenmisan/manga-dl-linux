@@ -25,7 +25,7 @@ public:
 
 signals:
     void authCodeReceived(const QString &code, const QString &path);
-    void idTokenReceived(const QString &idToken, const QString &email, const QString &displayName);
+    void idTokenReceived(const QString &idToken, const QString &userId, const QString &email, const QString &displayName);
     void authErrorReceived(const QString &error, const QString &path);
     void timedOut();
 
